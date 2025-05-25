@@ -1,70 +1,154 @@
+/* --- Global Body & Header Styles --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8; /* Light background for the overall page */
 }
 
-
 header {
-    background-color: #105afc;
+    background-color: #105afc; /* Your chosen blue color */
     color: #fff;
     padding: 1em;
     text-align: center;
-  }
-  
-  .movie-grid {
+    margin-bottom: 20px; /* Space below the header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for the header */
+}
+
+/* --- Responsive Movie Grid --- */
+/* This rule applies to both the ID used by JavaScript and the class used by static HTML */
+#movie-grid, 
+.movie-grid { 
+    display: grid; /* THIS IS THE KEY: Enables the grid layout */
+    /* UPDATED: Reduced minmax from 350px to 250px to allow more columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* THIS IS THE KEY: Defines responsive columns */
+    gap: 20px; /* Space between your movie boxes */
+    
+    /* UPDATED: Increased max-width to take up more page width, and adjusted padding */
+    max-width: 1400px; /* Increased max-width to allow more space for columns */
+    padding: 20px 10px; /* Reduced side padding slightly for a wider feel */
+    margin: 0 auto; /* Centers the entire grid on the page */
+}
+
+/* --- Individual Movie Card Styles (matching JS generated class and static HTML class) --- */
+.movie-card, /* Used by your JavaScript */
+.movie {      /* Used by your static HTML files */
+    background-color: #fff; /* White background for each movie card */
+    border: 1px solid #ddd;   /* Subtle border */
+    border-radius: 8px;       /* Rounded corners for the card */
+    padding: 15px;            /* Padding inside each movie box */
+    box-sizing: border-box;   /* Ensures padding doesn't add to the total width/height of the box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Nicer subtle shadow for depth */
+
+    /* Makes content inside the movie box stack nicely and align */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  
-  .movie {
-    width: 20%;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    padding: 10px;
-  }
-  
-  .movie img {
-    width: 100%;
-    height: 200px; /* Increase the height to make the images larger */
-    object-fit: cover;
-    border-radius: 10px;
-  }
-    .movie a {
-        text-decoration: none;
-        color: #333;
-    }
+    flex-direction: column; /* Stacks children (title, description, video) vertically */
+    align-items: center;    /* Centers children horizontally within the movie box */
+    justify-content: space-between; /* Distributes space to push video to bottom */
+    text-align: center;     /* Centers text content like titles */
+}
+
+/* --- Styles for movie titles (paragraphs inside .movie-card or .movie) --- */
+.movie-card p,
+.movie p { 
+    margin: 5px 0; /* Adjust vertical spacing for paragraphs */
+    font-size: 1.1em; /* Slightly larger font for titles */
+    font-weight: bold; /* Keep titles bold */
+    color: #333; /* Darker color for titles */
+}
+
+/* --- Movie Description Styles (with scrollbar for longer text) --- */
+.movie-description {
+    max-height: 120px; /* Adjust this height as needed after testing locally */
+    overflow-y: auto;  /* Adds a vertical scrollbar if text exceeds max-height */
+    padding-right: 15px; /* Important: adds space so text doesn't touch the scrollbar */
+    line-height: 1.4;  /* Improves readability of the text */
+    margin-top: 10px;  /* Space above the description */
+    margin-bottom: 10px; /* Space below the description */
+    padding-left: 10px; /* Consistent padding on the left for text */
+    text-align: left;  /* Descriptions usually look better left-aligned */
+    color: #555;       /* A slightly softer color than pure black for body text */
+    width: 100%;       /* Ensures the description takes full available width within its parent */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+/* --- Responsive Video Player Styles (CRITICAL for iframes) --- */
+.video-responsive {
+    position: relative; /* Needed for absolute positioning of the iframe */
+    padding-bottom: 56.25%; /* This creates a 16:9 aspect ratio (9 / 16 = 0.5625) */
+    /* If your OK.RU videos consistently look squished, try 75% for 4:3 aspect ratio. */
+    height: 0;           /* Sets height to 0, letting padding control the height */
+    overflow: hidden;    /* Hides any overflow outside this box */
+    width: 100%;         /* Ensures the video player takes the full width of its parent (.movie-card/.movie) */
     
-    .pagination {
-        text-align: center;
-        padding: 1em;
-    }
+    margin-top: auto;    /* Pushes the video to the bottom of the movie card */
+    margin-bottom: 15px; /* Space below the video box */
     
-    .pagination a {
-        margin: 0.5em;
-        text-decoration: none;
-        color: #333;
+    border-radius: 6px;  /* Slightly rounded corners for the video frame */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for the video player */
+}
+
+.video-responsive iframe {
+    position: absolute; /* Positions the iframe exactly within its parent (.video-responsive) */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the iframe fill the responsive container's width */
+    height: 100%; /* Makes the iframe fill the responsive container's height */
+    border: 0;   /* Removes any default iframe border */
+}
+
+/* --- Pagination Styles (for JS generated pagination) --- */
+#pagination { /* Targeting by ID for the main pagination container */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-button { /* Styles for the dynamically generated buttons */
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-button.active {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    font-weight: bold;
+}
+
+/* --- Media Queries for Responsive Adjustments --- */
+@media (max-width: 768px) {
+    #movie-grid, .movie-grid {
+        gap: 15px; /* Slightly less gap on medium screens */
+        padding: 15px 10px; /* Adjusted padding for medium screens */
     }
-    
-    .pagination a.active {
-        font-weight: bold;
+    .movie-card, .movie {
+        padding: 15px; /* Consistent padding */
     }
-    .pagination {
-        text-align: center;
-        margin-top: 20px;
-      }
-      
-      .prev-page, .next-page, .home-page {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: #4CAF50;
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-      
-      .prev-page:hover, .next-page:hover, .home-page:hover {
-        background-color: #3e8e41;
-      }
+    .movie-description {
+        max-height: 100px; /* Slightly shorter descriptions on medium screens */
+    }
+}
+
+@media (max-width: 480px) { /* Styles specifically for very small phone screens */
+    #movie-grid, .movie-grid {
+        padding: 10px 5px; /* Even less padding on smallest screens */
+        gap: 10px;
+    }
+    .movie-card, .movie {
+        padding: 10px; /* Less padding inside movie box */
+    }
+    .movie-description {
+        max-height: 80px; /* Even shorter descriptions on smallest screens to save vertical space */
+    }
+}
