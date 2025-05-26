@@ -124,6 +124,11 @@ header {
     background-color: #0056b3;
     border-color: #0056b3;
     font-weight: bold;
+    /* Add to your existing .pagination-button styles */
+.pagination-button:disabled {
+    opacity: 0.5; /* Makes the button look faded */
+    cursor: not-allowed; /* Changes the mouse cursor to indicate it's not clickable */
+}
 }
 
 /* --- Media Queries for Responsive Adjustments --- */
@@ -152,3 +157,4 @@ header {
         max-height: 80px; /* Even shorter descriptions on smallest screens to save vertical space */
     }
 }
+
