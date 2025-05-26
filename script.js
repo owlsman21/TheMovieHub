@@ -117,7 +117,7 @@ const movies = [
         source: "okru"
     },
     {
-        title: "The.Girl.Next.Door.2007.720p.BluRay",
+        title: "The Girl Next Door 2007",
         description: "Based on a disturbing true story, a teenage girl is subjected to horrific abuse by her aunt and cousins.",
         embedId: "2207886740121",
         source: "okru"
@@ -224,6 +224,19 @@ const movies = [
         embedId: "2575196097177",
         source: "okru"
     },
+    // --- NEW YOUTUBE MOVIE ADDED HERE ---
+    {
+        title: "PRISONER OF WAR Tom Hardy", // You can change this title
+        description: "Tom Hardy stars in the Hollywood war action movie In PRISONER OF WAR which was released in English in high definition. The film showcases Hardy's acting skills in a war action genre.", // You can change this description
+        embedId: "6YHTnOquIBY", // The NEW YouTube ID you provided
+        source: "youtube" // Explicitly set source to youtube
+    },
+     {
+        title: "12 HOURS - Nicolas Cage", // You can change this title
+        description: " An action film starring Nicolas Cage as Will Montgomery, a former thief who must rescue his kidnapped daughter within 12 hours to avoid dire consequences", // You can change this description
+        embedId: "yWRCE71ZWcQ", // The NEW YouTube ID you provided
+        source: "youtube" // Explicitly set source to youtube
+    },
 ];
 
 const moviesPerPage = 20; // You can adjust this number
@@ -272,7 +285,8 @@ function displayMovies(page) {
 
             let videoSourceUrl = '';
             if (movie.source === 'youtube') {
-                videoSourceUrl = `http://www.youtube.com/embed/$${movie.embedId}`;
+                // CORRECTED YOUTUBE EMBED URL FORMAT
+                videoSourceUrl = `https://www.youtube.com/embed/${movie.embedId}`;
             } else {
                 videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
             }
