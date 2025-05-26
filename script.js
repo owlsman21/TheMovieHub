@@ -4,7 +4,7 @@ const movies = [
         title: "Ulzanas Raid (1972)",
         description: "The story revolves around Scout McIntosh and an U.S. Cavalry Lieutenant DeBuin, who set out to catch a group of Apache renegades who are being led by chieftain, Ulzana.",
         embedId: "6410503522969",
-        source: "okru" // Explicitly set source
+        source: "okru"
     },
     {
         title: "She wore a yellow ribbon",
@@ -138,8 +138,7 @@ const movies = [
         title: "Master and Commander: The Far Side of the World",
         description: "During the Napoleonic Wars, a daring British captain pursues a formidable French warship.",
         embedId: "1004226742937",
-        source: "okru" // This was the one you asked to change to YouTube, but I'm keeping it okru for now.
-                        // If you want it YouTube, change embedId to YouTube ID and source to "youtube"
+        source: "okru"
     },
     {
         title: "I am wrath",
@@ -220,60 +219,11 @@ const movies = [
         source: "okru"
     },
     {
-        title: "SiIent House 2011",
-        description: "A girl is trapped inside her family's lakeside retreat and becomes unable to contact the outside world as supernatural forces haunt the house with mysterious energy and consequences.",
-        embedId: "1012485065369",
+        title: "Frgiles 2005 BluRay 720p",
+        description: "At her new job in a rundown children's hospital, a nurse desperately tries to keep her patients safe from a plague of random, mysterious attacks.",
+        embedId: "2575196097177",
         source: "okru"
     },
-     {
-        title: "Truth or Dare 2018",
-        description: "A harmless game of Truth or Dare among friends turns deadly when someone - or something - begins to punish those who tell a lie or refuse the dare.",
-        embedId: "1012279806617",
-        source: "okru"
-    },
-     {
-        title: "Inbred 2011",
-        description: "Four young offenders and their care workers visit the remote Yorkshire village of Mortlake, which prides on keeping itself to itself. A minor incident with locals rapidly escalates into a blood-soaked, deliriously warped nightmare.",
-        embedId: "1012280330905",
-        source: "okru"
-    },
-     {
-        title: "Wyatt Earp.1994.HD",
-        description: "Wyatt Earp is a 1994 American epic biographical Western drama film about the lawman of the same name. Directed by Lawrence Kasdan, who co-wrote the screenplay with Dan Gordon",
-        embedId: "1010676468377",
-        source: "okru"
-    },
-     {
-        title: "The.Burrowers.2008",
-        description: "The Burrowers is a 2008 American Western horror film written and directed by J. T. Petty. It stars Clancy Brown, William Mapother, Karl Geary, Sean Patrick Thomas, and Doug Hutchison.",
-        embedId: "1010671487641",
-        source: "okru"
-    },
-      {
-        title: "The.Bad.Nun.2018",
-        description: " A young woman staying at an isolated convent turned bed and breakfast is visited by a nun at the door who begins to show her true colors ",
-        embedId: "1009218488985",
-        source: "okru"
-    },
-      {
-        title: "SiIent House 2011",
-        description: "A girl is trapped inside her family's lakeside retreat and becomes unable to contact the outside world as supernatural forces haunt the house with mysterious energy and consequences.",
-        embedId: "1012485065369",
-        source: "okru"
-    },
-      {
-        title: "SiIent House 2011",
-        description: "A girl is trapped inside her family's lakeside retreat and becomes unable to contact the outside world as supernatural forces haunt the house with mysterious energy and consequences.",
-        embedId: "1012485065369",
-        source: "okru"
-    },
-      {
-        title: "SiIent House 2011",
-        description: "A girl is trapped inside her family's lakeside retreat and becomes unable to contact the outside world as supernatural forces haunt the house with mysterious energy and consequences.",
-        embedId: "1012485065369",
-        source: "okru"
-    },
-
 ];
 
 const moviesPerPage = 20; // You can adjust this number
@@ -318,21 +268,15 @@ function displayMovies(page) {
             const iframe = document.createElement('iframe');
             iframe.title = movie.title + " Video";
             iframe.frameBorder = "0";
-            iframe.allow = "autoplay; fullscreen"; // Note: 'autoplay' should be used carefully as it can be annoying to users.
+            iframe.allow = "autoplay; fullscreen";
 
-            // --- IMPORTANT CHANGE HERE: Determine video source URL ---
             let videoSourceUrl = '';
             if (movie.source === 'youtube') {
-                // Use YouTube embed URL
-                videoSourceUrl = `http://www.youtube.com/embed/${movie.embedId}`;
-                // You can add more YouTube parameters if desired:
-                // For example, `?rel=0&modestbranding=1` to hide related videos and branding
-                // videoSourceUrl = `http://www.youtube.com/embed/${movie.embedId}?rel=0&modestbranding=1`;
+                videoSourceUrl = `http://www.youtube.com/embed/$${movie.embedId}`;
             } else {
-                // Default to ok.ru if source is not specified or is 'okru'
                 videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
             }
-            iframe.src = videoSourceUrl; // Set the iframe's source
+            iframe.src = videoSourceUrl;
 
             videoResponsiveDiv.appendChild(iframe);
             movieCard.appendChild(videoResponsiveDiv);
