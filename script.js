@@ -225,61 +225,60 @@ const movies = [
         source: "okru"
     },
     {
-        title: "Prisoner of war", // Keep this for testing YouTube embeds
+        title: "Prisoner of war",
         description: "early Tom Hardy Movie.",
-        embedId: "6YHTnOquIBY", // The YouTube ID you provided
+        embedId: "6YHTnOquIBY",
         source: "youtube"
     },
-    // --- NEW RUMBLE MOVIE ADDED HERE ---
     {
-        title: "Please Sir", // You can change this title
-        description: "Fun with the Fenn st gang", // You can change this description
-        embedId: "v6rgy5d/?pub=792qb", // This is the embed ID you provided
-        source: "rumble" // New source type
+        title: "Please Sir",
+        description: "Fun with the Fenn st gang",
+        embedId: "v6rgy5d/?pub=792qb",
+        source: "rumble"
     },
-      {
-        title: "Cass", // Keep this for testing YouTube embeds
+    {
+        title: "Cass",
         description: " Cass is a 2008 British crime drama film. It stars Nonso Anozie as Cass Pennant and is directed by Jon S. Baird. Cass is based on the true story of the life of Cass Pennant, adapted from his book.",
-        embedId: "_uurzT-1Sck", // The YouTube ID you provided
+        embedId: "_uurzT-1Sck",
         source: "youtube"
     },
-      {
-        title: "Rise of the Footsoldier 2021", // Keep this for testing YouTube embeds
+    {
+        title: "Rise of the Footsoldier 2021",
         description: " Rise of the Footsoldier is a British gangster film franchise written and directed by Julian Gilbey, Will Gilbey, Ricci Harnett, Zackary Adler, Andrew Loveday and Nick Nevern, ",
-        embedId: "qLFepx1SF80", // Corrected YouTube ID
+        embedId: "qLFepx1SF80",
         source: "youtube"
     },
-      {
-        title: "The Hot Potato Movie 2011", // Keep this for testing YouTube embeds
+    {
+        title: "The Hot Potato Movie 2011",
         description: " he Hot Potato is a 2012 British comedy crime thriller film. It was directed and written by Tim Lewiston and stars Ray Winstone, Colm Meaney and Jack Huston in the lead roles.",
-        embedId: "O85tflN5Krg", // Corrected YouTube ID
+        embedId: "O85tflN5Krg",
         source: "youtube"
     },
-      {
+    {
         title: "Open Graves 2009",
         description: " A group of surfers discover an old board game which claims a life every time it is played.",
         embedId: "9519433386534",
         source: "okru"
     },
-      {
+    {
         title: "Ouija: A New Beginning (2025)",
         description: "Molly Price is a woman on the run, but when her oldest daughter finds a Ouija board and attempts to communicate with her deceased father, she invites the spirit of an ancient witch into her soul and puts the entire family at risk.",
         embedId: "9517571574310",
         source: "okru"
     },
-      {
+    {
         title: "Abduct (2025) ",
         description: " A woman's peaceful mountain getaway takes a bizarre turn when her boyfriend disappears, and a random naked man shows up claiming to be him.",
         embedId: "9517374966310",
         source: "okru"
     },
-      {
+    {
         title: "I Was Honey Boo Boo (2025) ",
         description: " Alana Thompson, famously known as honey boo boo reveals her story of rising to fame and the secrets behind the cameras.",
         embedId: "9517224757798",
         source: "okru"
     },
-      {
+    {
         title: "The Surrender 2015 ",
         description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
         embedId: "9516826429990",
@@ -303,97 +302,97 @@ const movies = [
         embedId: "9500551088678",
         source: "okru"
     },
-      {
-        title: "Crossfire 2022", // Keep this for testing YouTube embeds
+    {
+        title: "Crossfire 2022",
         description: "After a shooting, Jo's family vacations turns into turmoil.",
-        embedId: "pF_YIqju9gw", // Corrected YouTube ID
+        embedId: "pF_YIqju9gw",
         source: "youtube"
     },
-      {
-        title: "Blood Predator", // Keep this for testing YouTube embeds
+    {
+        title: "Blood Predator",
         description: " A handful of people wind up stranded in a desolate snowy mountain area in the wake of an airplane crash. They seek refuge in an old abandoned cabin. The group find themselves being terrorized by a lethal predatory extraterrestrial beast residing in the basement of the cabin.",
-        embedId: "wN6OhOR43a4", // The YouTube ID you provided
+        embedId: "wN6OhOR43a4",
         source: "youtube"
     },
-      {
-        title: "Archangel 2005", // Keep this for testing YouTube embeds
+    {
+        title: "Archangel 2005",
         description: " A British college professor, working in Russia, investigates certain mysteries surrounding the life and death of Joseph Stalin.",
-        embedId: "zsZYaPNWcl4", // The YouTube ID you provided
+        embedId: "zsZYaPNWcl4",
         source: "youtube"
     },
-      {
-        title: "Assassin 2015", // Keep this for testing YouTube embeds
+    {
+        title: "Assassin 2015",
         description: " Jamie is a contract killer tasked with eliminating a crooked official, but complications arise when he falls for the daughter of his target.",
-        embedId: "jTR6N8Ip6DM", // The YouTube ID you provided
+        embedId: "jTR6N8Ip6DM",
         source: "youtube"
     },
-      {
-        title: "Air Force One Is Down", // Keep this for testing YouTube embeds
+    {
+        title: "Air Force One Is Down",
         description: " Alistair Maclean's highly charged novel is brought to life for a contemporary audience in this tense, international thriller.",
-        embedId: "WzrYrcQPJqE", // The YouTube ID you provided
+        embedId: "WzrYrcQPJqE",
         source: "youtube"
     },
-      {
-        title: "The Day of the Triffids 2009", // Keep this for testing YouTube embeds
+    {
+        title: "The Day of the Triffids 2009",
         description: " With most of the world blinded and the dangerous carnivorous Triffids set loose, it falls upon a band of scattered survivors to fight this plant invasion and the madness following.",
-        embedId: "s4yS-X2525g", // Corrected YouTube ID (was _uurzT-1Sck, which is "Cass")
+        embedId: "s4yS-X2525g",
         source: "youtube"
     },
-      {
-        title: "Decoys 2004", // Keep this for testing YouTube embeds
+    {
+        title: "Decoys 2004",
         description: " Luke and Roger are just another couple of college guys trying to lose their virginity. But when Luke sees something unusual, he begins to suspect that the girls on campus aren't exactly human.",
-        embedId: "rWS9TaHh0Jo", // The YouTube ID you provided
+        embedId: "rWS9TaHh0Jo",
         source: "youtube"
     },
-      {
-        title: "Mercury Plains 2004", // Keep this for testing YouTube embeds
+    {
+        title: "Mercury Plains 2004",
         description: " A troubled man runs away to Mexico and is recruited to join a paramilitary group of teens fighting the drug cartels. He proves himself to the group, but questions their motive.",
-        embedId: "qwkiu0sk-9k", // The YouTube ID you provided
+        embedId: "qwkiu0sk-9k",
         source: "youtube"
     },
-      {
+    {
         title: "Wolf Town 2011 ",
         description: " Kyle, a shy college student finds himself and three of his friends trapped in an old western ghost town by a pack of ferocious wolves and has to overcome his personal fears to confront the wolves and lead his friends to safety.",
         embedId: "978941381273",
         source: "okru"
     },
-      {
+    {
         title: "Shadowland 2008 ",
         description: "A taut reinvention of vampire lore, Shadowland opens in modern day North America, where construction workers uncover an old stone cross and what appears to be a wooden stake. They remove the stake from the ground, allowing Laura (Caitlin McIntosh), a slumbering vampire, to revive and rise from the earth",
         embedId: "979663850137",
         source: "okru"
     },
-      {
+    {
         title: "The Surrender 2015 ",
         description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
         embedId: "9516826429990",
         source: "okru"
     },
-      {
+    {
         title: "Aliens.vs.Predator.Requiem.2007 ",
         description: " Residents (Steven Pasquale, Reiko Aylesworth, John Ortiz) of Gunnison, Colorado, are caught up in the crossfire when two deadly extraterrestrial species bring their longstanding conflict to Earth. On the one side, nearly indestructible Aliens; on the other, a lone Predator whose mission is to wipe out all traces of the Alien infestation from Earth, no matter who gets in the way.",
         embedId: "1005714934425",
         source: "okru"
     },
-      {
+    {
         title: "The Devil's Rock ",
         description: " Set in the Channel Islands on the eve of D Day, two Kiwi commandos, sent to destroy German gun emplacements to distract Hitler's forces away from Normandy, discover a Nazi occult plot to unleash demonic forces to win the war",
         embedId: "979809208985",
         source: "okru"
     },
-      {
+    {
         title: "The Surrender 2015 ",
         description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
         embedId: "9516826429990",
         source: "okru"
     },
-      {
+    {
         title: "The Surrender 2015 ",
         description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
         embedId: "9516826429990",
         source: "okru"
     },
-      {
+    {
         title: "The Surrender 2015 ",
         description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
         embedId: "9516826429990",
@@ -401,10 +400,11 @@ const movies = [
     },
 ];
 
-const moviesPerPage = 20; // You can adjust this number
+const moviesPerPage = 20;
 let currentPage = 1;
+let currentMovies = [...movies]; // Initialize with all movies
 
-function displayMovies(page) {
+function displayMovies(page, moviesToDisplayList = currentMovies) {
     const movieGrid = document.getElementById('movie-grid');
     if (!movieGrid) {
         console.error("Movie grid element not found!");
@@ -414,9 +414,22 @@ function displayMovies(page) {
 
     const startIndex = (page - 1) * moviesPerPage;
     const endIndex = startIndex + moviesPerPage;
-    const moviesToDisplay = movies.slice(startIndex, endIndex);
+    const moviesToShowOnPage = moviesToDisplayList.slice(startIndex, endIndex);
 
-    moviesToDisplay.forEach(movie => {
+    // Update search results info
+    const searchResultsInfo = document.getElementById('search-results-info');
+    if (searchResultsInfo) {
+        if (moviesToDisplayList === movies) { // No active search
+            searchResultsInfo.textContent = '';
+        } else if (moviesToDisplayList.length === 0) {
+            searchResultsInfo.textContent = 'No movies found matching your search.';
+        } else {
+            searchResultsInfo.textContent = `Found ${moviesToDisplayList.length} movie(s).`;
+        }
+    }
+
+
+    moviesToShowOnPage.forEach(movie => {
         const movieCard = document.createElement('div');
         movieCard.classList.add('movie-card');
 
@@ -424,10 +437,9 @@ function displayMovies(page) {
         const movieTitleP = document.createElement('p');
         movieTitleP.style.textAlign = 'center';
         movieTitleP.style.fontWeight = 'bold';
-        // Ensure text wrapping for longer titles
-        movieTitleP.style.whiteSpace = 'normal'; // Allows text to wrap
-        movieTitleP.style.overflowWrap = 'break-word'; // Breaks long words if they don't fit (standard)
-        movieTitleP.style.wordBreak = 'break-all'; // More aggressive breaking for very long strings without spaces
+        movieTitleP.style.whiteSpace = 'normal';
+        movieTitleP.style.overflowWrap = 'break-word';
+        movieTitleP.style.wordBreak = 'break-all';
         movieTitleP.textContent = movie.title;
         movieCard.appendChild(movieTitleP);
 
@@ -447,12 +459,11 @@ function displayMovies(page) {
             const iframe = document.createElement('iframe');
             iframe.title = movie.title + " Video";
             iframe.frameBorder = "0";
-            iframe.allow = "autoplay; fullscreen"; // Keep this for feature policy
-            iframe.allowFullscreen = true; // Explicitly set the boolean attribute for fullscreen
+            iframe.allow = "autoplay; fullscreen";
+            iframe.allowFullscreen = true;
 
             let videoSourceUrl = '';
             if (movie.source === 'youtube') {
-                // Corrected YouTube embed URL construction
                 videoSourceUrl = `https://www.youtube.com/embed/${movie.embedId}`;
             } else if (movie.source === 'okru') {
                 videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
@@ -477,13 +488,13 @@ function displayPagination() {
     }
     pagination.innerHTML = '';
 
-    const totalPages = Math.ceil(movies.length / moviesPerPage);
+    // Calculate total pages based on the *currentMovies* list
+    const totalPages = Math.ceil(currentMovies.length / moviesPerPage);
 
     // --- Home Button ---
     const homeButton = document.createElement('button');
     homeButton.textContent = 'Home';
-    homeButton.classList.add('pagination-button');
-    homeButton.classList.add('px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
+    homeButton.classList.add('pagination-button', 'px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
     homeButton.classList.add(currentPage === 1 ? 'bg-gray-500' : 'bg-blue-600', 'hover:bg-blue-500');
     homeButton.disabled = currentPage === 1;
     homeButton.addEventListener('click', () => {
@@ -496,8 +507,7 @@ function displayPagination() {
     // --- Back Button ---
     const backButton = document.createElement('button');
     backButton.textContent = 'Back';
-    backButton.classList.add('pagination-button');
-    backButton.classList.add('px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
+    backButton.classList.add('pagination-button', 'px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
     backButton.classList.add(currentPage === 1 ? 'bg-gray-500' : 'bg-blue-600', 'hover:bg-blue-500');
     backButton.disabled = currentPage === 1;
     backButton.addEventListener('click', () => {
@@ -508,11 +518,25 @@ function displayPagination() {
     pagination.appendChild(backButton);
 
     // --- Numbered Page Buttons ---
-    for (let i = 1; i <= totalPages; i++) {
+    const maxPageButtons = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxPageButtons / 2));
+    let endPage = Math.min(totalPages, startPage + maxPageButtons - 1);
+
+    if (endPage - startPage + 1 < maxPageButtons) {
+        startPage = Math.max(1, endPage - maxPageButtons + 1);
+    }
+
+    if (startPage > 1) {
+        const ellipsis = document.createElement('span');
+        ellipsis.textContent = '...';
+        ellipsis.classList.add('px-2', 'py-2', 'text-gray-400');
+        pagination.appendChild(ellipsis);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
         const pageButton = document.createElement('button');
         pageButton.textContent = i;
-        pageButton.classList.add('pagination-button');
-        pageButton.classList.add('px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
+        pageButton.classList.add('pagination-button', 'px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
         pageButton.classList.add(currentPage === i ? 'bg-blue-500' : 'bg-gray-700', 'hover:bg-gray-600');
         pageButton.addEventListener('click', () => {
             currentPage = i;
@@ -522,11 +546,17 @@ function displayPagination() {
         pagination.appendChild(pageButton);
     }
 
+    if (endPage < totalPages) {
+        const ellipsis = document.createElement('span');
+        ellipsis.textContent = '...';
+        ellipsis.classList.add('px-2', 'py-2', 'text-gray-400');
+        pagination.appendChild(ellipsis);
+    }
+
     // --- Next Button ---
     const nextButton = document.createElement('button');
     nextButton.textContent = 'Next';
-    nextButton.classList.add('pagination-button');
-    nextButton.classList.add('px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
+    nextButton.classList.add('pagination-button', 'px-4', 'py-2', 'rounded-md', 'text-white', 'focus:outline-none');
     nextButton.classList.add(currentPage === totalPages ? 'bg-gray-500' : 'bg-blue-600', 'hover:bg-blue-500');
     nextButton.disabled = currentPage === totalPages;
     nextButton.addEventListener('click', () => {
@@ -536,6 +566,47 @@ function displayPagination() {
     });
     pagination.appendChild(nextButton);
 }
+
+// --- Search Functionality ---
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const clearSearchButton = document.getElementById('clear-search-button'); // Get the new clear button
+
+function performSearch() {
+    const searchTerm = searchInput.value.toLowerCase().trim(); // Trim whitespace
+
+    if (searchTerm === '') {
+        currentMovies = [...movies]; // If search bar is empty, show all movies
+    } else {
+        currentMovies = movies.filter(movie =>
+            movie.title.toLowerCase().includes(searchTerm) ||
+            (movie.description && movie.description.toLowerCase().includes(searchTerm))
+        );
+    }
+    currentPage = 1; // Always reset to the first page of the current results
+    displayMovies(currentPage);
+    displayPagination();
+}
+
+// Event listeners for search
+if (searchInput) {
+    searchInput.addEventListener('keyup', (event) => {
+        // Trigger search on Enter key press or if input is cleared
+        if (event.key === 'Enter' || searchInput.value.trim() === '') {
+            performSearch();
+        }
+    });
+}
+if (searchButton) {
+    searchButton.addEventListener('click', performSearch);
+}
+if (clearSearchButton) { // Event listener for the new clear button
+    clearSearchButton.addEventListener('click', () => {
+        searchInput.value = ''; // Clear the input field
+        performSearch(); // Perform search with empty term to show all movies
+    });
+}
+
 
 // Initial display when the page loads
 displayMovies(currentPage);
