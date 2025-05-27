@@ -261,7 +261,7 @@ const movies = [
         source: "okru"
     },
     {
-        title: "Ouija: A New Beginning (2025)",
+        title: "Ouija: A New Beginning (2025) ",
         description: "Molly Price is a woman on the run, but when her oldest daughter finds a Ouija board and attempts to communicate with her deceased father, she invites the spirit of an ancient witch into her soul and puts the entire family at risk.",
         embedId: "9517571574310",
         source: "okru"
@@ -404,92 +404,125 @@ const moviesPerPage = 20;
 let currentPage = 1;
 let currentMovies = [...movies]; // Initialize with all movies
 
-function displayMovies(page, moviesToDisplayList = currentMovies) {
-    const movieGrid = document.getElementById('movie-grid');
-    if (!movieGrid) {
-        console.error("Movie grid element not found!");
+const movieGrid = document.getElementById('movie-grid');
+const pagination = document.getElementById('pagination');
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const clearSearchButton = document.getElementById('clear-search-button');
+const searchResultsInfo = document.getElementById('search-results-info');
+
+// Helper function to sanitize titles for URL hashes
+function sanitizeTitleForUrl(title) {
+    // Replace spaces with underscores, remove non-alphanumeric characters except underscore
+    return title.toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '');
+}
+
+// Helper function to create a single movie card HTML element
+function createMovieCard(movie) {
+    const movieCard = document.createElement('div');
+    movieCard.classList.add('movie-card');
+
+    // Click event to update URL hash and display single movie
+    movieCard.addEventListener('click', () => {
+        window.location.hash = sanitizeTitleForUrl(movie.title);
+        // handleHashChange will be triggered by the hashchange event
+    });
+
+    // 1. Movie Title
+    const movieTitleP = document.createElement('p');
+    movieTitleP.style.textAlign = 'center';
+    movieTitleP.style.fontWeight = 'bold';
+    movieTitleP.style.whiteSpace = 'normal';
+    movieTitleP.style.overflowWrap = 'break-word';
+    movieTitleP.style.wordBreak = 'break-all';
+    movieTitleP.textContent = movie.title;
+    movieCard.appendChild(movieTitleP);
+
+    // 2. Movie Description
+    if (movie.description) {
+        const movieDescriptionP = document.createElement('p');
+        movieDescriptionP.classList.add('movie-description');
+        movieDescriptionP.textContent = movie.description;
+        movieCard.appendChild(movieDescriptionP);
+    }
+
+    // 3. Responsive Video Player
+    if (movie.embedId) {
+        const videoResponsiveDiv = document.createElement('div');
+        videoResponsiveDiv.classList.add('video-responsive');
+
+        const iframe = document.createElement('iframe');
+        iframe.title = movie.title + " Video";
+        iframe.frameBorder = "0";
+        iframe.allow = "autoplay; fullscreen";
+        iframe.allowFullscreen = true;
+
+        let videoSourceUrl = '';
+        if (movie.source === 'youtube') {
+            videoSourceUrl = `https://www.youtube.com/embed/${movie.embedId}`;
+        } else if (movie.source === 'okru') {
+            videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
+        } else if (movie.source === 'rumble') {
+            videoSourceUrl = `https://rumble.com/embed/${movie.embedId}`;
+        }
+        iframe.src = videoSourceUrl;
+
+        videoResponsiveDiv.appendChild(iframe);
+        movieCard.appendChild(videoResponsiveDiv);
+    }
+
+    return movieCard;
+}
+
+// Main function to display content (either paginated list or single movie)
+function displayContent(data, isSingleMovie = false) {
+    if (!movieGrid || !pagination || !searchResultsInfo) {
+        console.error("Required DOM elements not found!");
         return;
     }
     movieGrid.innerHTML = ''; // Clear previous movies
 
-    const startIndex = (page - 1) * moviesPerPage;
-    const endIndex = startIndex + moviesPerPage;
-    const moviesToShowOnPage = moviesToDisplayList.slice(startIndex, endIndex);
+    if (isSingleMovie) {
+        // Display a single movie
+        pagination.style.display = 'none'; // Hide pagination
+        searchResultsInfo.style.display = 'none'; // Hide search info
 
-    // Update search results info
-    const searchResultsInfo = document.getElementById('search-results-info');
-    if (searchResultsInfo) {
-        if (moviesToDisplayList === movies) { // No active search
+        movieGrid.appendChild(createMovieCard(data));
+
+    } else {
+        // Display paginated/search results
+        pagination.style.display = 'flex'; // Show pagination
+        searchResultsInfo.style.display = 'block'; // Show search info
+
+        // Update search results info for multiple movies
+        if (data === movies) { // No active search
             searchResultsInfo.textContent = '';
-        } else if (moviesToDisplayList.length === 0) {
+        } else if (data.length === 0) {
             searchResultsInfo.textContent = 'No movies found matching your search.';
         } else {
-            searchResultsInfo.textContent = `Found ${moviesToDisplayList.length} movie(s).`;
+            searchResultsInfo.textContent = `Found ${data.length} movie(s).`;
         }
+
+        const startIndex = (currentPage - 1) * moviesPerPage;
+        const endIndex = startIndex + moviesPerPage;
+        const moviesToShowOnPage = data.slice(startIndex, endIndex);
+
+        moviesToShowOnPage.forEach(movie => {
+            movieGrid.appendChild(createMovieCard(movie));
+        });
+        displayPagination(data); // Call pagination based on the provided data list
     }
-
-
-    moviesToShowOnPage.forEach(movie => {
-        const movieCard = document.createElement('div');
-        movieCard.classList.add('movie-card');
-
-        // 1. Movie Title
-        const movieTitleP = document.createElement('p');
-        movieTitleP.style.textAlign = 'center';
-        movieTitleP.style.fontWeight = 'bold';
-        movieTitleP.style.whiteSpace = 'normal';
-        movieTitleP.style.overflowWrap = 'break-word';
-        movieTitleP.style.wordBreak = 'break-all';
-        movieTitleP.textContent = movie.title;
-        movieCard.appendChild(movieTitleP);
-
-        // 2. Movie Description
-        if (movie.description) {
-            const movieDescriptionP = document.createElement('p');
-            movieDescriptionP.classList.add('movie-description');
-            movieDescriptionP.textContent = movie.description;
-            movieCard.appendChild(movieDescriptionP);
-        }
-
-        // 3. Responsive Video Player
-        if (movie.embedId) {
-            const videoResponsiveDiv = document.createElement('div');
-            videoResponsiveDiv.classList.add('video-responsive');
-
-            const iframe = document.createElement('iframe');
-            iframe.title = movie.title + " Video";
-            iframe.frameBorder = "0";
-            iframe.allow = "autoplay; fullscreen";
-            iframe.allowFullscreen = true;
-
-            let videoSourceUrl = '';
-            if (movie.source === 'youtube') {
-                videoSourceUrl = `https://www.youtube.com/embed/${movie.embedId}`;
-            } else if (movie.source === 'okru') {
-                videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
-            } else if (movie.source === 'rumble') {
-                videoSourceUrl = `https://rumble.com/embed/${movie.embedId}`;
-            }
-            iframe.src = videoSourceUrl;
-
-            videoResponsiveDiv.appendChild(iframe);
-            movieCard.appendChild(videoResponsiveDiv);
-        }
-
-        movieGrid.appendChild(movieCard);
-    });
 }
 
-function displayPagination() {
-    const pagination = document.getElementById('pagination');
+
+function displayPagination(moviesToPaginate = currentMovies) {
     if (!pagination) {
         console.error("Pagination element not found!");
         return;
     }
     pagination.innerHTML = '';
 
-    // Calculate total pages based on the *currentMovies* list
-    const totalPages = Math.ceil(currentMovies.length / moviesPerPage);
+    const totalPages = Math.ceil(moviesToPaginate.length / moviesPerPage);
 
     // --- Home Button ---
     const homeButton = document.createElement('button');
@@ -499,8 +532,7 @@ function displayPagination() {
     homeButton.disabled = currentPage === 1;
     homeButton.addEventListener('click', () => {
         currentPage = 1;
-        displayMovies(currentPage);
-        displayPagination();
+        displayContent(moviesToPaginate, false);
     });
     pagination.appendChild(homeButton);
 
@@ -512,8 +544,7 @@ function displayPagination() {
     backButton.disabled = currentPage === 1;
     backButton.addEventListener('click', () => {
         currentPage--;
-        displayMovies(currentPage);
-        displayPagination();
+        displayContent(moviesToPaginate, false);
     });
     pagination.appendChild(backButton);
 
@@ -540,8 +571,7 @@ function displayPagination() {
         pageButton.classList.add(currentPage === i ? 'bg-blue-500' : 'bg-gray-700', 'hover:bg-gray-600');
         pageButton.addEventListener('click', () => {
             currentPage = i;
-            displayMovies(currentPage);
-            displayPagination();
+            displayContent(moviesToPaginate, false);
         });
         pagination.appendChild(pageButton);
     }
@@ -561,37 +591,50 @@ function displayPagination() {
     nextButton.disabled = currentPage === totalPages;
     nextButton.addEventListener('click', () => {
         currentPage++;
-        displayMovies(currentPage);
-        displayPagination();
+        displayContent(moviesToPaginate, false);
     });
     pagination.appendChild(nextButton);
 }
 
 // --- Search Functionality ---
-const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
-const clearSearchButton = document.getElementById('clear-search-button'); // Get the new clear button
-
 function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase().trim(); // Trim whitespace
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    window.location.hash = ''; // Clear hash when performing a search
 
     if (searchTerm === '') {
-        currentMovies = [...movies]; // If search bar is empty, show all movies
+        currentMovies = [...movies];
     } else {
         currentMovies = movies.filter(movie =>
             movie.title.toLowerCase().includes(searchTerm) ||
             (movie.description && movie.description.toLowerCase().includes(searchTerm))
         );
     }
-    currentPage = 1; // Always reset to the first page of the current results
-    displayMovies(currentPage);
-    displayPagination();
+    currentPage = 1;
+    displayContent(currentMovies, false);
 }
 
-// Event listeners for search
+// --- Hash Change Handler ---
+function handleHashChange() {
+    const hash = window.location.hash.substring(1); // Get hash without '#'
+
+    if (hash) {
+        const foundMovie = movies.find(movie => sanitizeTitleForUrl(movie.title) === hash);
+        if (foundMovie) {
+            displayContent(foundMovie, true);
+        } else {
+            // Hash didn't match a movie, revert to main list
+            window.location.hash = ''; // Clear invalid hash
+            displayContent(currentMovies, false);
+        }
+    } else {
+        // No hash, or hash cleared, display paginated list
+        displayContent(currentMovies, false);
+    }
+}
+
+// --- Event Listeners ---
 if (searchInput) {
     searchInput.addEventListener('keyup', (event) => {
-        // Trigger search on Enter key press or if input is cleared
         if (event.key === 'Enter' || searchInput.value.trim() === '') {
             performSearch();
         }
@@ -600,14 +643,14 @@ if (searchInput) {
 if (searchButton) {
     searchButton.addEventListener('click', performSearch);
 }
-if (clearSearchButton) { // Event listener for the new clear button
+if (clearSearchButton) {
     clearSearchButton.addEventListener('click', () => {
-        searchInput.value = ''; // Clear the input field
-        performSearch(); // Perform search with empty term to show all movies
+        searchInput.value = '';
+        window.location.hash = ''; // Clear hash when clearing search
+        performSearch(); // This will display all movies
     });
 }
 
-
-// Initial display when the page loads
-displayMovies(currentPage);
-displayPagination();
+// Initial load: check hash or display main list
+window.addEventListener('DOMContentLoaded', handleHashChange);
+window.addEventListener('hashchange', handleHashChange); // Listen for direct hash changes
