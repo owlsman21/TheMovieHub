@@ -1,5 +1,5 @@
 const movies = [
-    // --- Movies from your original index.html (Page 1) ---
+    // --- Existing Movies (Ok.ru and YouTube) ---
     {
         title: "Ulzanas Raid (1972)",
         description: "The story revolves around Scout McIntosh and an U.S. Cavalry Lieutenant DeBuin, who set out to catch a group of Apache renegades who are being led by chieftain, Ulzana.",
@@ -117,7 +117,7 @@ const movies = [
         source: "okru"
     },
     {
-        title: "The Girl Next Door 2007",
+        title: "The.Girl.Next.Door.2007",
         description: "Based on a disturbing true story, a teenage girl is subjected to horrific abuse by her aunt and cousins.",
         embedId: "2207886740121",
         source: "okru"
@@ -224,18 +224,18 @@ const movies = [
         embedId: "2575196097177",
         source: "okru"
     },
-    // --- NEW YOUTUBE MOVIE ADDED HERE ---
     {
-        title: "PRISONER OF WAR Tom Hardy", // You can change this title
-        description: "Tom Hardy stars in the Hollywood war action movie In PRISONER OF WAR which was released in English in high definition. The film showcases Hardy's acting skills in a war action genre.", // You can change this description
-        embedId: "6YHTnOquIBY", // The NEW YouTube ID you provided
-        source: "youtube" // Explicitly set source to youtube
+        title: "YouTube Sample", // Keep this for testing YouTube embeds
+        description: "This is a sample video from YouTube.",
+        embedId: "6YHTnOquIBY", // The YouTube ID you provided
+        source: "youtube"
     },
-     {
-        title: "12 HOURS - Nicolas Cage", // You can change this title
-        description: " An action film starring Nicolas Cage as Will Montgomery, a former thief who must rescue his kidnapped daughter within 12 hours to avoid dire consequences", // You can change this description
-        embedId: "yWRCE71ZWcQ", // The NEW YouTube ID you provided
-        source: "youtube" // Explicitly set source to youtube
+    // --- NEW RUMBLE MOVIE ADDED HERE ---
+    {
+        title: "5 Card Stud 1968", // You can change this title
+        description: "5 Card Stud is a 1968 American Western mystery film, directed by Henry Hathaway and starring Dean Martin and Robert Mitchum", // You can change this description
+        embedId: "v6rq6mt/?pub=2hjbj4", // This is the embed ID you provided
+        source: "rumble" // New source type
     },
 ];
 
@@ -285,10 +285,11 @@ function displayMovies(page) {
 
             let videoSourceUrl = '';
             if (movie.source === 'youtube') {
-                // CORRECTED YOUTUBE EMBED URL FORMAT
                 videoSourceUrl = `https://www.youtube.com/embed/${movie.embedId}`;
-            } else {
+            } else if (movie.source === 'okru') {
                 videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
+            } else if (movie.source === 'rumble') { // NEW: Handle Rumble videos
+                videoSourceUrl = `https://rumble.com/embed/${movie.embedId}`;
             }
             iframe.src = videoSourceUrl;
 
