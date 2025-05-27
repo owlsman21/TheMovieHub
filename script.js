@@ -249,6 +249,127 @@ const movies = [
         embedId: "qLFepx1SF80?si", // The YouTube ID you provided
         source: "youtube"
     },
+     {
+        title: "The Hot Potato Movie 2011", // Keep this for testing YouTube embeds
+        description: " he Hot Potato is a 2012 British comedy crime thriller film. It was directed and written by Tim Lewiston and stars Ray Winstone, Colm Meaney and Jack Huston in the lead roles.",
+        embedId: "O85tflN5Krg?si=Dpzu_axFgUknbwjf", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Open Graves 2009",
+        description: " A group of surfers discover an old board game which claims a life every time it is played.",
+        embedId: "9519433386534",
+        source: "okru"
+    },
+     {
+        title: "Ouija: A New Beginning (2025)",
+        description: "Molly Price is a woman on the run, but when her oldest daughter finds a Ouija board and attempts to communicate with her deceased father, she invites the spirit of an ancient witch into her soul and puts the entire family at risk.",
+        embedId: "9517571574310",
+        source: "okru"
+    },
+     {
+        title: "Abduct (2025) ",
+        description: " A woman's peaceful mountain getaway takes a bizarre turn when her boyfriend disappears, and a random naked man shows up claiming to be him.",
+        embedId: "9517374966310",
+        source: "okru"
+    },
+     {
+        title: "I Was Honey Boo Boo (2025) ",
+        description: " Alana Thompson, famously known as honey boo boo reveals her story of rising to fame and the secrets behind the cameras.",
+        embedId: "9517224757798",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+    {
+        title: "Final Destination: Bloodlines 2025 ",
+        description: " Plagued by a recurring violent nightmare, a college student returns home to find the one person who can break the cycle and save her family from the horrific fate that inevitably awaits them.",
+        embedId: "9514534111782",
+        source: "okru"
+    },
+    {
+        title: "Antisocial 2 2015 ",
+        description: "Years after having her newborn child stolen from her, Sam searches a world infested with infected users from the Social Redroom website. After befriending a young girl named Bean, Sam is captured and locked in a facility dedicated to finding a cure for the Redroom Virus",
+        embedId: "9506057947686",
+        source: "okru"
+    },
+    {
+        title: "Antisocial 2013 ",
+        description: " Five university friends gather at a house party to ring in the New Year. Unbeknownst to them, an epidemic has erupted outside, causing outbreaks around the world.",
+        embedId: "9500551088678",
+        source: "okru"
+    },
+     {
+        title: "Crossfire 2022", // Keep this for testing YouTube embeds
+        description: "After a shooting, Jo's family vacations turns into turmoil.",
+        embedId: "pF_YIqju9gw?si", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Blood Predator", // Keep this for testing YouTube embeds
+        description: " A handful of people wind up stranded in a desolate snowy mountain area in the wake of an airplane crash. They seek refuge in an old abandoned cabin. The group find themselves being terrorized by a lethal predatory extraterrestrial beast residing in the basement of the cabin.",
+        embedId: "wN6OhOR43a4", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Archangel 2005", // Keep this for testing YouTube embeds
+        description: " A British college professor, working in Russia, investigates certain mysteries surrounding the life and death of Joseph Stalin.",
+        embedId: "zsZYaPNWcl4", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Assassin 2015", // Keep this for testing YouTube embeds
+        description: " Jamie is a contract killer tasked with eliminating a crooked official, but complications arise when he falls for the daughter of his target.",
+        embedId: "jTR6N8Ip6DM", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Air Force One Is Down", // Keep this for testing YouTube embeds
+        description: " Alistair Maclean's highly charged novel is brought to life for a contemporary audience in this tense, international thriller.",
+        embedId: "WzrYrcQPJqE", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "The Day of the Triffids 2009", // Keep this for testing YouTube embeds
+        description: " With most of the world blinded and the dangerous carnivorous Triffids set loose, it falls upon a band of scattered survivors to fight this plant invasion and the madness following.",
+        embedId: "_uurzT-1Sck", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Decoys 2004", // Keep this for testing YouTube embeds
+        description: " Luke and Roger are just another couple of college guys trying to lose their virginity. But when Luke sees something unusual, he begins to suspect that the girls on campus aren't exactly human.",
+        embedId: "rWS9TaHh0Jo", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Mercury Plains 2004", // Keep this for testing YouTube embeds
+        description: " A troubled man runs away to Mexico and is recruited to join a paramilitary group of teens fighting the drug cartels. He proves himself to the group, but questions their motive.",
+        embedId: "qwkiu0sk-9k", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Wolf Town 2011 ",
+        description: " Kyle, a shy college student finds himself and three of his friends trapped in an old western ghost town by a pack of ferocious wolves and has to overcome his personal fears to confront the wolves and lead his friends to safety.",
+        embedId: "978941381273",
+        source: "okru"
+    },
+     {
+        title: "Shadowland 2008 ",
+        description: "A taut reinvention of vampire lore, Shadowland opens in modern day North America, where construction workers uncover an old stone cross and what appears to be a wooden stake. They remove the stake from the ground, allowing Laura (Caitlin McIntosh), a slumbering vampire, to revive and rise from the earth",
+        embedId: "979663850137",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+
 ];
 
 const moviesPerPage = 20; // You can adjust this number
