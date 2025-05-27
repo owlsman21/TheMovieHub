@@ -95,7 +95,7 @@ const movies = [
     {
         title: "Nightbreed.1990.1080p.BluRay",
         description: "A young man discovers a hidden world of monsters and becomes their unlikely leader.",
-        embedId: "2575682570905",
+        embedId: "2575196097177",
         source: "okru"
     },
     {
@@ -117,7 +117,7 @@ const movies = [
         source: "okru"
     },
     {
-        title: "The.Girl.Next.Door.2007",
+        title: "The.Girl.Next.Door.2007.720p.BluRay",
         description: "Based on a disturbing true story, a teenage girl is subjected to horrific abuse by her aunt and cousins.",
         embedId: "2207886740121",
         source: "okru"
@@ -225,17 +225,29 @@ const movies = [
         source: "okru"
     },
     {
-        title: "YouTube Sample", // Keep this for testing YouTube embeds
-        description: "This is a sample video from YouTube.",
+        title: "Prisoner of war", // Keep this for testing YouTube embeds
+        description: "early Tom Hardy Movie.",
         embedId: "6YHTnOquIBY", // The YouTube ID you provided
         source: "youtube"
     },
     // --- NEW RUMBLE MOVIE ADDED HERE ---
     {
-        title: "5 Card Stud 1968", // You can change this title
-        description: "5 Card Stud is a 1968 American Western mystery film, directed by Henry Hathaway and starring Dean Martin and Robert Mitchum", // You can change this description
-        embedId: "v6rq6mt/?pub=2hjbj4", // This is the embed ID you provided
+        title: "Please Sir", // You can change this title
+        description: "Fun with the Fenn st gang", // You can change this description
+        embedId: "v6rgy5d/?pub=792qb", // This is the embed ID you provided
         source: "rumble" // New source type
+    },
+     {
+        title: "Cass", // Keep this for testing YouTube embeds
+        description: " Cass is a 2008 British crime drama film. It stars Nonso Anozie as Cass Pennant and is directed by Jon S. Baird. Cass is based on the true story of the life of Cass Pennant, adapted from his book.",
+        embedId: "_uurzT-1Sck", // The YouTube ID you provided
+        source: "youtube"
+    },
+     {
+        title: "Rise of the Footsoldier 2021", // Keep this for testing YouTube embeds
+        description: " Rise of the Footsoldier is a British gangster film franchise written and directed by Julian Gilbey, Will Gilbey, Ricci Harnett, Zackary Adler, Andrew Loveday and Nick Nevern, ",
+        embedId: "qLFepx1SF80?si", // The YouTube ID you provided
+        source: "youtube"
     },
 ];
 
@@ -281,14 +293,15 @@ function displayMovies(page) {
             const iframe = document.createElement('iframe');
             iframe.title = movie.title + " Video";
             iframe.frameBorder = "0";
-            iframe.allow = "autoplay; fullscreen";
+            iframe.allow = "autoplay; fullscreen"; // Keep this for feature policy
+            iframe.allowFullscreen = true; // NEW: Explicitly set the boolean attribute for fullscreen
 
             let videoSourceUrl = '';
             if (movie.source === 'youtube') {
                 videoSourceUrl = `https://www.youtube.com/embed/${movie.embedId}`;
             } else if (movie.source === 'okru') {
                 videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
-            } else if (movie.source === 'rumble') { // NEW: Handle Rumble videos
+            } else if (movie.source === 'rumble') {
                 videoSourceUrl = `https://rumble.com/embed/${movie.embedId}`;
             }
             iframe.src = videoSourceUrl;
