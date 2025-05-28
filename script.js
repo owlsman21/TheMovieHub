@@ -482,6 +482,36 @@ const movies = [
         embedId: "1076555680409",
         source: "okru"
     },
+       {
+        title: "The Pilots Wife (2002)",
+        description: " Kathryn is distraught at the news of her husband's death delivered by a stranger from the airline for whom he was a pilot. She starts however to uncover information which leads to her arrival in London for further investigation...and further devastation.",
+        embedId: "1092629367449",
+        source: "okru"
+    },
+       {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+       {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+       {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+       {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
 
 ];
 

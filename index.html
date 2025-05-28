@@ -43,14 +43,17 @@
             text-overflow: ellipsis;
         }
 
-        .movie-description {
-            font-size: 0.9em;
-            color: #555;
-            flex-grow: 1; /* Allow description to take available space */
-            margin-bottom: 15px;
-            max-height: 100px; /* Limit description height */
-            overflow: hidden;
-            text-overflow: ellipsis;
+       .movie-description {
+    font-size: 0.9em;
+    color: #555;
+    flex-grow: 1; /* Allow description to take available space */
+    margin-bottom: 15px;
+    max-height: 100px; /* Limit description height */
+    /* --- CHANGE THIS LINE --- */
+    overflow-y: auto; /* Changed from overflow: hidden; */
+    /* ----------------------- */
+    text-overflow: ellipsis; /* This will still apply if content doesn't scroll fully */
+
         }
 
         .video-responsive {
