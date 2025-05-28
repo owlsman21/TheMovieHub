@@ -381,9 +381,9 @@ const movies = [
         source: "okru"
     },
     {
-        title: "The Surrender 2015 ",
-        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
-        embedId: "9516826429990",
+        title: "The Last of the Mohicans (1992) ",
+        description: "The last members of a dying Native American tribe, the Mohicans -- Uncas (Eric Schweig), his father Chingachgook (Russell Means), and his adopted half-white brother Hawkeye (Daniel Day-Lewis) -- live in peace alongside British colonists. But when the daughters (Madeleine Stowe, Jodhi May) of a British colonel are kidnapped by a traitorous scout, Hawkeye and Uncas must rescue them in the crossfire of a gruesome military conflict of which they wanted no part: the French and Indian War.",
+        embedId: "967004064409",
         source: "okru"
     },
     {
