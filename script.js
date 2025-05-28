@@ -333,10 +333,10 @@ const movies = [
         source: "youtube"
     },
     {
-        title: "The Day of the Triffids 2009",
-        description: " With most of the world blinded and the dangerous carnivorous Triffids set loose, it falls upon a band of scattered survivors to fight this plant invasion and the madness following.",
-        embedId: "s4yS-X2525g",
-        source: "youtube"
+        title: "union 2019",
+        description: "A woman disguises herself as her dead brother, Henry, in order to survive in the Confederate ranks during the Civil War. He marries a widow to rescue her from an arranged marriage. They keep each others secrets and find true love.",
+        embedId: "1367854418585",
+        source: "okru"
     },
     {
         title: "Decoys 2004",
@@ -387,17 +387,102 @@ const movies = [
         source: "okru"
     },
     {
-        title: "The Surrender 2015 ",
-        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
-        embedId: "9516826429990",
+        title: "Mohawk 2018 ",
+        description: "Late in the War of 1812, a young Mohawk woman and her two lovers battle a squad of American soldiers hell-bent on revenge.",
+        embedId: "1351353633433",
         source: "okru"
     },
     {
+        title: "Young Guns 2 ",
+        description: "En route to Mexico from the United States, Billy the Kid (Emilio Estevez) and his associates are pursued by federal agents hell-bent on bringing them to justice. But when Billy, Doc (Kiefer Sutherland) and Chavez (Lou Diamond Phillips) prove too difficult to track down, the frustrated authorities enlist an old friend of theirs, reformed outlaw Pat Garrett (William Petersen), to take down the elusive gunslinger. But Billy has a head start, and his crew of outlaws is growing by the minute.",
+        embedId: "1012291275417",
+        source: "okru"
+    },
+     {
+        title: "Wyatt Earp.1994.HD ",
+        description: " The epic biography of western lawman Wyatt Earp, who at an early age, is taught that nothing matters more than family and the law. He becomes a respected sheriff in Dodge City and Tombstone. Joined by his brothers and Doc Holliday, Earp wages war on the dreaded Clanton and McLaury gangs.",
+        embedId: "1010676468377",
+        source: "okru"
+    },
+     {
+        title: "The.Salvation.2014.720p.BluRay ",
+        description: " After shooting the man who murdered his wife, a Danish settler (Mads Mikkelsen) incurs the wrath of the man's brother (Jeffrey Dean Morgan), a ruthless land baron who rules their frontier town.",
+        embedId: "1010670897817",
+        source: "okru"
+    },
+     {
         title: "The Surrender 2015 ",
         description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
         embedId: "9516826429990",
         source: "okru"
     },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+     {
+        title: "The Surrender 2015 ",
+        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+        embedId: "9516826429990",
+        source: "okru"
+    },
+
 ];
 
 const moviesPerPage = 20;
