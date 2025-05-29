@@ -735,21 +735,15 @@ const movies = [
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "The Perfect Storm [2000]  ",
+        description: "An unusually intense storm pattern catches some commercial fishermen unaware and puts them in mortal danger.",
+        embedId: "725902166561",
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        source: "okru"
-    },
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "Titanic 1997 ",
+        description: " A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        embedId: "9605610932881",
         source: "okru"
     },
      {
