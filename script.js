@@ -525,17 +525,154 @@ const movies = [
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        title: "Hamburger.Hill.1987 ",
+        description: " A brutal and realistic war film focuses on the lives of a squad of 14 U.S. Army soldiers of B Company, 3rd Battalion, 187th Infanty Regiment, 101st Airborne Division during the brutal 10 day (May 11-20, 1969) battle for Hill 937 in the A Shau Valley of Vietnam as they try again and again to take the fortified hill held by the North Vietnamese, and the faults and casualties they take every time in which the battle was later dubbed Hamburger Hill because enemy fire was so fierce that the fusillade of bullets turned assaulting troops into shreded hamburger meat.",
+        embedId: "1440487049881",
+        source: "okru"
+    },
+     {
+        title: "Threads 1983",
+        description: " The effects of a nuclear holocaust on the working class city of Sheffield, England and the eventual long-term effects of nuclear war on civilization.",
+        embedId: "6410542975641",
+        source: "okru"
+    },
+     {
+        title: "Mission of Honor",
+        description: "The exploits of 303 Squadron RAF during the Battle of Britain. The squadron consisted of Polish pilots, many of whom were veterans of the air battles involved in Germany's invasion of Poland.",
+        embedId: "1004758633113",
+        source: "okru"
+    },
+     {
+        title: "bravo two zero ",
+        description: "British soldier Andy McNab (Sean Bean) leads a British Special Air Services patrol deployed during the Gulf War to take down Saddam Hussein's growing arsenal of Scud missiles. The fearless unit successfully inserts itself behind enemy lines, but inclement weather and loss of radio communication threatens to doom its mission. Captured and taken prisoner by the Iraqi army, the heroic soldiers of Bravo Two Zero must overcome the odds to escape almost certain torture or death.",
+        embedId: "976455010969",
+        source: "okru"
+    },
+     {
+        title: "My Lai Four ",
+        description: "The reenactment of the brutal massacre in Mi Lai a village in South Vietnam perpetrated by American Military forces on 16th of March 1968.",
+        embedId: "1004028431001",
+        source: "okru"
+    },
+     {
+        title: "Lone Survivor ",
+        description: "Marcus Luttrell and his team set out on a mission to capture or kill notorious Taliban leader Ahmad Shah, in late June 2005. Marcus and his team are left to fight for their lives in one of the most valiant efforts of modern warfare.",
+        embedId: "1015881337497",
+        source: "okru"
+    },
+     {
+        title: "Alone.We.Fight.2018.1080p",
+        description: "On a mission to stop an advancing German unit from breaking through the Allied line during WWII, a small -- but determined -- band of American soldiers ventures into dangerous enemy territory.",
+        embedId: "1086013311641",
+        source: "okru"
+    },
+     {
+        title: "Act of valor 2012 ",
+        description: "An elite team of Navy SEALs embark on a covert mission to recover a kidnapped CIA agent.",
+        embedId: "1460879952537",
+        source: "okru"
+    },
+     {
+        title: "The.Green.Berets.1968.720p.BluRay ",
+        description: "Col. Mike Kirby picks two teams of crack Green Berets for a mission in South Vietnam. First off is to build and control a camp that is trying to be taken by the enemy the second mission is to kidnap a North Vietnamese General.",
+        embedId: "1447574112921",
+        source: "okru"
+    },
+     {
+        title: "Black Hawk Down (2001) ",
+        description: " Action/war drama based on the best-selling book detailing a near-disastrous mission in Somalia on October 3, 1993. On this date nearly 100 U.S. Army Rangers, commanded by Capt. Mike Steele, were dropped by helicopter deep into the capital city of Mogadishu to capture two top lieutenants of a Somali warlord. This led to a large and drawn-out firefight between the Army Ranges, US Special Forces, and hundreds of Somali gunmen; resulting in the destruction of two U.S. Black Hawk helicopters. The film focuses on the heroic efforts of various Rangers to get to the downed black hawks, centering on SSG Eversmann, leading the Ranger unit Chalk Four to the first black hawk crash site, Chief Warrant Officer Durant who was captured after being the only survivor of the second black hawk crash, as well as many others who were involved.",
+        embedId: "1440484952729",
+        source: "okru"
+    },
+     {
+        title: "Green Street Hooligans 2 (2009) ",
+        description: " After the brutal mass brawl fans of two football teams go to jail, where their feud raised to a new level of cruelty.",
+        embedId: "10207745018482",
+        source: "okru"
+    },
+     {
+        title: "Green.Street.2005.720p ",
+        description: "A wrongfully expelled Harvard undergrad moves to London, where he is introduced to the violent underworld of football hooliganism.",
+        embedId: "10207743511154",
+        source: "okru"
+    },
+     {
+        title: "The Bayou 2025",
+        description: " Vacation turns disaster when Houston grad, Kyle and her friends escape a plane crash in the desolate Louisiana everglades, only to discover there's something way more dangerous lurking in the shallows.",
         embedId: "1076555680409",
         source: "okru"
     },
+     {
+        title: "Mission: Impossible - Dead Reckoning Part One (2023) ",
+        description: "Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands.",
+        embedId: "10414497598066",
+        source: "okru"
+    },
+     {
+        title: "Teeth 2007 ",
+        description: "Still a stranger to her own body, a high school student discovers she has a physical advantage when she becomes the object of male violence.",
+        embedId: "9490268686886",
+        source: "okru"
+    },
+
      {
         title: "urge 2016 ",
         description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
         embedId: "1076555680409",
         source: "okru"
     },
+
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
+
+
 
 
 ];
