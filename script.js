@@ -710,24 +710,84 @@ const movies = [
         source: "okru"
     },
       {
-        title: "Bone Tomahawk (2015) ",
-        description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
-        embedId: "6461509208614",
+        title: "We Were Soldiers 2002 ",
+        description: " The story of the first major battle of the American phase of the Vietnam War, and the soldiers on both sides that fought it, while their wives wait nervously and anxiously at home for the good news or the bad news.",
+        embedId: "7790913129175",
         source: "okru"
     },
       {
-        title: "Bone Tomahawk (2015) ",
-        description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
-        embedId: "6461509208614",
+        title: "Platoon 1986",
+        description: " Chris Taylor, a neophyte recruit in Vietnam, finds himself caught in a battle of wills between two sergeants, one good and the other evil. A shrewd examination of the brutality of war and the duality of man in conflict.",
+        embedId: "9363592120858",
         source: "okru"
     },
       {
-        title: "Bone Tomahawk (2015) ",
-        description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
-        embedId: "6461509208614",
+        title: "Hacksaw Ridge 2016 ",
+        description: " World War II American Army Medic Desmond T. Doss, serving during the Battle of Okinawa, refuses to kill people and becomes the first man in American history to receive the Medal of Honor without firing a shot.",
+        embedId: "10488723737169",
         source: "okru"
     },
 
+     {
+        title: "Soldier Blue 1970 ",
+        description: " After a cavalry patrol is ambushed by the Cheyenne, the two survivors, a soldier and a woman, must reach the safety of the nearest fort",
+        embedId: "6172174715419",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
      {
         title: "urge 2016 ",
         description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
