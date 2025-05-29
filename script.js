@@ -489,29 +489,54 @@ const movies = [
         source: "okru"
     },
        {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "Stan and Ollie.2019.HD ",
+        description: "Laurel and Hardy, the world's most famous comedy duo, attempt to reignite their film careers as they embark on what becomes their swan song - a gruelling theatre tour of post-war Britain.",
+        embedId: "1198585678489",
         source: "okru"
     },
        {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "The Brown+Bunny 2003 ",
+        description: "A motorcycle racer (Vincent Gallo) journeys cross country in search of women to take the place of the one true love (Chloë Sevigny) of his life.",
+        embedId: "1232238086809",
         source: "okru"
     },
        {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "The Guard of Auschwitz 2018.720p ",
+        description: " Follows the events of the Holocaust through the eyes of an SS Soldier.",
+        embedId: "1265936632473",
         source: "okru"
     },
        {
+        title: "A Lonely Place to Die 2011",
+        description: "While hiking and climbing in the Scottish Highlands, a group of five mountaineers discover a young Serbian girl buried in a small chamber. In the attempt to get the girl to safety, they become caught up in a terrifying game of cat and mouse with the kidnappers.",
+        embedId: "968086391449",
+        source: "okru"
+    },
+     {
+        title: "vendetta 2013",
+        description: "Special ops interrogation officer Jimmy Vickers tracks down a gang who slaughtered his parents. With police closing in & his old unit on his trail, he has to to evade capture long enough to complete his gruesome crusade.",
+        embedId: "6410477177497",
+        source: "okru"
+    },
+     {
+        title: "Deepwater (2005)",
+        description: " Nat Banyon (Lucas Black), a drifter en route to Wyoming, rescues Herman Finch (Peter Coyote) at the scene of a car accident. Grateful for his assistance, Finch offers Nat a job and free room and board at his hotel. There, Nat meets Finch's beautiful wife, Iris (Mia Maestro), and learns that his new boss is the ringleader of a local crime syndicate. Fearful that he too will fall prey to Finch's criminal machinations, Nat hatches a plan to run off with Iris.",
+        embedId: "1333519387289",
+        source: "okru"
+    },
+     {
         title: "urge 2016 ",
         description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
         embedId: "1076555680409",
         source: "okru"
     },
+     {
+        title: "urge 2016 ",
+        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
+        embedId: "1076555680409",
+        source: "okru"
+    },
+
 
 ];
 
