@@ -616,9 +616,115 @@ const movies = [
     },
 
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "Redhead 2023 ",
+        description: " Cannibalism and depravity drive Autumn Blacksmith, now widowed, to engage in a relentless revenge binge. Will she kill every man around her?",
+        embedId: "9461777959462",
+        source: "okru"
+    },
+
+     {
+        title: "Drop 2025 ",
+        description: " A widowed mother's first date in years takes a terrifying turn when she's bombarded with anonymous threatening messages on her phone during their upscale dinner, leaving her questioning if her charming date is behind the harassment.",
+        embedId: "9453163252262",
+        source: "okru"
+    },
+
+     {
+        title: "Bone Face (2025) ",
+        description: "When a masked killer slaughters several campers in a small town, a sheriff and a deputy track the murderer to a local diner where, using their investigative skills, they must discover which person in the diner is the actual killer.",
+        embedId: "9235304614438",
+        source: "okru"
+    },
+
+     {
+        title: "Piglet (2025) ",
+        description: " On Kate's 21st birthday camping trip, her friends encounter Piglet, a monstrous human-pig hybrid who brutally murders one of them. They uncover Piglet's origins and Kate must confront her past to survive the relentless killer.",
+        embedId: "9190687115814",
+        source: "okru"
+    },
+
+     {
+        title: "Terrifier 3",
+        description: "Art the Clown is set to unleash chaos on the unsuspecting residents of Miles County as they peacefully drift off to sleep on Christmas Eve.",
+        embedId: "7979902568998",
+        source: "okru"
+    },
+
+     {
+        title: "Near Dark (1987)",
+        description: " A small-town farmer's son reluctantly joins a traveling group of vampires after he is bitten by a beautiful drifter.",
+        embedId: "7723308616230",
+        source: "okru"
+    },
+
+     {
+        title: "Lowlifes (2024)",
+        description: "The survival instincts of a road-tripping family are put to the test when they have no other choice but to stay the night at a remote homestead.",
+        embedId: "7499099933222",
+        source: "okru"
+    },
+
+     {
+        title: "IT 1990 ",
+        description: "In 1960, seven pre-teen outcasts fight an evil demon who poses as a child-killing clown. Thirty years later, they reunite to stop the demon once and for all when it returns to their hometown.",
+        embedId: "7404707383846",
+        source: "okru"
+    },
+     {
+        title: "Geronimo: An American Legend ",
+        description: " The story of the Apache chief and his armed resistance to the U.S. Government's subjugation of his people.",
+        embedId: "7286425389606",
+        source: "okru"
+    },
+
+     {
+        title: "The Bad Seed",
+        description: "A father is forced to question everything he thought he knew about his daughter when he believes that she might have played a role in the tragic death of one of her classmates.",
+        embedId: "1008261991065",
+        source: "okru"
+    },
+
+     {
+        title: "Pay Back 1999 ",
+        description: "Porter (Mel Gibson) is a thief betrayed by both his wife, Lynn (Deborah Kara Unger), and his partner, Val (Gregg Henry), when he is shot in the back after a heist. Slowly, Porter recovers from his wounds and begins a search for Val, intent on recovering his share of the money they stole together. With the aid of prostitute Rosie (Maria Bello), Porter captures Val but still cannot find his cash. For this, Porter will have to challenge an imposing crime syndicate called the Outfit.",
+        embedId: "979802917529",
+        source: "okru"
+    },
+
+     {
+        title: "Bone Tomahawk (2015) ",
+        description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
+        embedId: "6461509208614",
+        source: "okru"
+    },
+      {
+        title: "Jennifer's Body 2019 ",
+        description: " A newly-possessed high-school cheerleader turns into a succubus who specializes in killing her male classmates. Can her best friend put an end to the horror?",
+        embedId: "967038929561",
+        source: "okru"
+    },
+      {
+        title: "Rio Bravo 1959",
+        description: " A small-town sheriff in the American West enlists the help of a disabled man, a drunk, and a young gunfighter in his efforts to hold in jail the brother of the local bad guy.",
+        embedId: "7965129706199",
+        source: "okru"
+    },
+      {
+        title: "Bone Tomahawk (2015) ",
+        description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
+        embedId: "6461509208614",
+        source: "okru"
+    },
+      {
+        title: "Bone Tomahawk (2015) ",
+        description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
+        embedId: "6461509208614",
+        source: "okru"
+    },
+      {
+        title: "Bone Tomahawk (2015) ",
+        description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
+        embedId: "6461509208614",
         source: "okru"
     },
 
@@ -629,47 +735,6 @@ const movies = [
         source: "okru"
     },
 
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        source: "okru"
-    },
-
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        source: "okru"
-    },
-
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        source: "okru"
-    },
-
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        source: "okru"
-    },
-
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        source: "okru"
-    },
-
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        source: "okru"
-    },
 
 
 
