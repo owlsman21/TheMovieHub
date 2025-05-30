@@ -599,7 +599,7 @@ const movies = [
      {
         title: "The Bayou 2025",
         description: " Vacation turns disaster when Houston grad, Kyle and her friends escape a plane crash in the desolate Louisiana everglades, only to discover there's something way more dangerous lurking in the shallows.",
-        embedId: "1076555680409",
+        embedId: "10413556304498",
         source: "okru"
     },
      {
@@ -747,11 +747,42 @@ const movies = [
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "Taken 2008 ",
+        description: " A retired CIA agent travels across Europe and relies on his old skills to save his estranged daughter, who has been kidnapped while on a trip to Paris.",
+        embedId: "9640291732145",
         source: "okru"
     },
+     {
+        title: "Wedding Crashers 2005",
+        description: " John Beckwith and Jeremy Grey, a pair of committed womanizers who sneak into weddings to take advantage of the romantic tinge in the air, find themselves at odds with one another when John meets and falls for Claire Cleary.",
+        embedId: "3551833164343",
+        source: "okru"
+    },
+     {
+        title: "Goldfinger 1964 ",
+        description: " While investigating a gold magnate's smuggling, James Bond uncovers a plot to contaminate the Fort Knox gold reserve.",
+        embedId: "7364356082387",
+        source: "okru"
+    },
+     {
+        title: "Holmes & Watson 2018 ",
+        description: "A humorous take on Sir Arthur Conan Doyle's classic mysteries featuring Sherlock Holmes and Doctor Watson.",
+        embedId: "9530383075878",
+        source: "okru"
+    },
+     {
+        title: "Thirteen 2003 ",
+        description: " A thirteen-year-old girl's relationship with her mother is put to the test as she discovers drugs, sex, and petty crime in the company of her cool but troubled best friend.",
+        embedId: "9519964621350",
+        source: "okru"
+    },
+     {
+        title: "Open Graves 2009 ",
+        description: " A group of surfers discover an old board game which claims a life every time it is played.",
+        embedId: "9519433386534",
+        source: "okru"
+    },
+    
      {
         title: "urge 2016 ",
         description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
@@ -759,35 +790,85 @@ const movies = [
         source: "okru"
     },
      {
-        title: "urge 2016 ",
+        title: "A Sierra Nevada Gunfight (2013) ",
         description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        embedId: "3684168632887",
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "Leave the World Behind 2013 ",
+        description: " A family's getaway to a luxurious rental home takes an ominous turn when a cyberattack knocks out their devices, and two strangers appear at their door.",
+        embedId: "9517395020326",
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "Chaplin (1992)",
+        description: "An elderly Charlie Chaplin discusses his autobiography with his editor, recounting his amazing journey from his poverty-stricken childhood to world-wide success after the ingenious invention of the Little Tramp.",
+        embedId: "9513004239398",
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "The Nanny (2023)",
+        description: "A wealthy couple hire a young girl from Finland to take care of their newborn. These new parents should be in a state of bliss, so why does it seem like they are trying to kill each other?",
+        embedId: "9500319025702",
         source: "okru"
     },
      {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
+        title: "Tuesday 2023",
+        description: "A mother and her teenage daughter must confront Death when it arrives in the form of an astonishing talking bird.",
+        embedId: "9487379925542",
         source: "okru"
     },
+     {
+        title: "Queen of the Ring 2024",
+        description: "In a time when pro wrestling for women was illegal all over the United States, a small town single mother embraces the danger as she dominates America's most masculine sport and becomes the first million dollar female athlete in history.",
+        embedId: "9481252440614",
+        source: "okru"
+    },
+     {
+        title: "The Sexiest Man in Winnipeg",
+        description: "When a polite robber carries out a series of odd bank heists, the police investigation takes a sharp turn, pointing to Steve Vogelsang, a garrulous former broadcaster once known as The Sexiest Man in Winnipeg.",
+        embedId: "9481251785254",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+
+
 
 
 
