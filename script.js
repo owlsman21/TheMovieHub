@@ -832,6 +832,66 @@ const movies = [
         source: "okru"
     },
      {
+        title: "Marijuambies 2025",
+        description: "Marijuambies is a hilarious new comedy that follows the story of a weed dealer and his hippie friend who accidentally sell poisoned weed, turning their customers into zombies. Directed by Brian Foster.",
+        embedId: "9481251326502",
+        source: "okru"
+    },
+     {
+        title: "The Devils Hacksaw 2025",
+        description: "In a quiet little town in Pennsylvania terror strikes when one of the notorious inmates at the Greystone Asylum escapes. With a thirst for vengeance, he embarks on a brutal killing spree, leaving the townsfolk in a state of panic.",
+        embedId: "9468701313574",
+        source: "okru"
+    },
+     {
+        title: "Broke (2025)",
+        description: "Follows True Brandywine, a struggling rodeo rider, as he gets trapped in a blizzard and must confront his life choices while battling the elements for survival.",
+        embedId: "9461776910886",
+        source: "okru"
+    },
+     {
+        title: "Blue 2024",
+        description: "Set on England's Southwest coast, the story follows a father-son pair of struggling fishermen, John Winter and Charlie. A huge loss in their lives leads to a confrontation with emotions neither are equipped to deal with.",
+        embedId: "9459849497126",
+        source: "okru"
+    },
+     {
+        title: "Rust 2024",
+        description: "An orphaned boy of 13 left to fend for himself and his younger brother in 1880s Wyoming is sentenced to hang for the accidental killing of a local rancher. His estranged grandfather breaks him out of jail and they go on the run to Mexico.",
+        embedId: "9453161351718",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+     {
         title: "",
         description: "",
         embedId: "",
