@@ -844,9 +844,9 @@ const movies = [
         source: "okru"
     },
      {
-        title: "Broke (2025)",
-        description: "Follows True Brandywine, a struggling rodeo rider, as he gets trapped in a blizzard and must confront his life choices while battling the elements for survival.",
-        embedId: "9461776910886",
+        title: "Goodfellas.1990. FHD",
+        description: "In 1955, Henry Hill, a high school student, becomes enamored of the criminal life in his neighborhood, and begins working for Paul Paulie Cicero and his associates: James Jimmy the GentConway, a truck hijacker; and Tommy DeVito, a fellow juvenile delinquent. Henry begins as fence for Jimmy, gradually working his way up to more serious crimes. Enjoying the perks of their criminal life, the three associates spend most of their nights at the Copacabana nightclub, carousing with women. Henry starts dating Karen Friedman, a Jewish woman from the Five Towns area of Long Island. Karen is initially troubled by Henry's criminal activities, but is eventually seduced by his glamorous lifestyle. They marry, despite her parents' disapproval...",
+        embedId: "1106851990168",
         source: "okru"
     },
      {
@@ -862,9 +862,63 @@ const movies = [
         source: "okru"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
+        title: "King.Arthur.2004.1080p",
+        description: "A demystified take on the tale of King Arthur and the Knights of the Round Table.",
+        embedId: "6806099331779",
+        source: "okru"
+    },
+     {
+        title: "Snatch (2000)",
+        description: "Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers and supposedly Jewish jewelers fight to track down a priceless stolen diamond.",
+        embedId: "8153582799537",
+        source: "okru"
+    },
+     {
+        title: "Lock, Stock and Two Smoking Barrels 1998",
+        description: "When four small-time criminals lose a rigged poker game against a London kingpin, he gives them one week to settle their enormous debt",
+        embedId: "9602459634262",
+        source: "okru"
+    },
+     {
+        title: "Nosferatu the Vampyre 1978",
+        description: "Count Dracula moves from Transylvania to Wismar, spreading the Black Plague across the land. Only a woman pure of heart can bring an end to his reign of horror.",
+        embedId: "3060519602894",
+        source: "okru"
+    },
+     {
+        title: "The Shawshank Redemption.1994",
+        description: "A banker convicted of uxoricide forms a friendship over a quarter century with a hardened convict, while maintaining his innocence and trying to remain hopeful through simple compassion.",
+        embedId: "7957536901741",
+        source: "okru"
+    },
+     {
+        title: "The Godfather, 2 - (1974)",
+        description: "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+        embedId: "277362379400",
+        source: "okru"
+    },
+     {
+        title: "The Godfather Part III 1990",
+        description: "Follows Michael Corleone, now in his 60s, as he seeks to free his family from crime and find a suitable successor to his empire.",
+        embedId: "6872072915582",
+        source: "okru"
+    },
+     {
+        title: "Pulp.Fiction.1994.1080",
+        description: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        embedId: "7061358971461",
+        source: "okru"
+    },
+     {
+        title: "Schindler's List 1993 1080",
+        description: "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+        embedId: "9135100004896",
+        source: "okru"
+    },
+     {
+        title: "Jaws 1995",
+        description: "When a massive killer shark unleashes chaos on a beach community off Long Island, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
+        embedId: "9666610006702",
         source: "okru"
     },
      {
@@ -903,30 +957,8 @@ const movies = [
         embedId: "",
         source: "okru"
     },
-     {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-     {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-     {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-     {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
+
+
 
 
 
