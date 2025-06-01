@@ -922,9 +922,147 @@ const movies = [
         source: "okru"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
+        title: "The Dark Knight (2008) HD",
+        description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        embedId: "7652106504857",
+        source: "okru"
+    },
+     {
+        title: "Superman III (1983)",
+        description: "Synthetic kryptonite laced with tar splits Superman in two: good Clark Kent and bad Man of Steel.",
+        embedId: "2393667668662",
+        source: "okru"
+    },
+     {
+        title: "Superman IV: The Quest for Peace (1987)",
+        description: "The Man of Steel crusades for nuclear disarmament and meets Lex Luthor's latest creation, Nuclear Man.",
+        embedId: "2393667603126",
+        source: "okru"
+    },
+     {
+        title: "Superman (1978) Special Edition (720p)",
+        description: "RESTORED WITH ADDITIONAL FOOTAGE! Follow the Man of Steel's story from Krypton to Smallville to his life in Metropolis and his alter-ego, mild-mannered Daily Planet reporter Clark Kent. Both Superman and Clark Kent must contend with the brilliant villain Lex Luthor and the tenacious, often-in-danger reporter Lois Lane.",
+        embedId: "2323019860507",
+        source: "okru"
+    },
+     {
+        title: "Superman 2  (1980)  720p",
+        description: "Superman agrees to sacrifice his powers to start a relationship with Lois Lane, unaware that three Kryptonian criminals he inadvertently released are conquering Earth." ,
+        embedId: "382886415088",
+        source: "okru"
+    },
+     {
+        title: "Scum (1979) HD",
+        description: "Scum is a 1979 British crime drama film. It features Ray Winstone, Mick Ford, Julian Firth, John Blundell, Phil Daniels, and Ray Burdis.",
+        embedId: "9350991186638",
+        source: "okru"
+    },
+     {
+        title: "Scrubbers (1982)",
+        description: "Scrubbers is a 1982 British drama film. It features Amanda York, Chrissie Cotterill, Elizabeth Edmonds, Kate Ingram, and Kathy Burke. ",
+        embedId:"9190631475918",
+        source: "okru"
+    },
+     {
+        title: "Planet of the Apes 2001 1080",
+        description: "In 2029, an Air Force astronaut crash-lands on a mysterious planet where evolved, talking apes dominate a race of primitive humans.",
+        embedId: "9227425155812",
+        source: "okru"
+    },
+     {
+        title: "Rocky Balboa 2006 Director's Cut 2160p 4K BluRay",
+        description: "His wife is dead and his son hates him, but this old man still has fight in him! When he loses a highly publicized virtual boxing match to ex-champ Rocky Balboa, reigning heavyweight titleholder Mason Dixon retaliates by challenging Rocky to a nationally televised, 10-round exhibition bout. To the surprise of his son and friends, Rocky agrees to come out of retirement and face an opponent who's faster, stronger, and thirty years his junior.",
+        embedId: "9403827948260",
+        source: "okru"
+    },
+     {
+        title: "Lost In Starlight 2025 1080p",
+        description: "When an astronaut leaves Earth for Mars, the vast infinite space divides star-crossed lovers in this animated romance that crosses the cosmos.",
+        embedId: "9403748584164",
+        source: "okru"
+    },
+     {
+        title: "Sharp Corner 2024 1080p",
+        description: "A dedicated family man becomes obsessed with saving the lives of the car accident victims on the sharp corner in front of his house  an obsession that could cost him everything.",
+        embedId: "9374293297892",
+        source: "okru"
+    },
+     {
+        title: "Rabid.2019.720p",
+        description: "Rabid is a 2019 Canadian horror film directed and co-written by Jen and Sylvia Soska and starring Laura Vandervoort, Ben Hollingsworth, and Phil Brooks. It is a remake of the 1977 film of the same name directed by David Cronenberg.",
+        embedId: "1398321449625",
+        source: "okru"
+    },
+     {
+        title: "The Utah Cabin Murders 2019",
+        description: "Two sisters fight for survival when masked intruders invade their vacation cabin.",
+        embedId: "1375699077785",
+        source: "okru"
+    },
+     {
+        title: "Artik 2019",
+        description: "A comic book obsessed serial killer teaches his son how to get away with a series of brutal murders until the boy befriends a mysterious man who threatens to expose everything.",
+        embedId: "1375699012249",
+        source: "okru"
+    },
+     {
+        title: "Stained 2019",
+        description: "A terrifying, modern adaptation of Shakespeare's Macbeth set in Scotland, CA. Scorning the mediocrity of their mundane lives, John and Jane Macbeth carry out a horrific plan to make the American dream a reality.",
+        embedId: "1375698946713",
+        source: "okru"
+    },
+     {
+        title: "The Unseen 2016 ",
+        description: "A man who abandoned his family now risks everything to find his missing daughter, including exposing the secret that he is becoming invisible.",
+        embedId: "M0d6iuIpR_g",
+        source: "youtube"
+    },
+     {
+        title: "The Foreigner (2017)",
+        description: "Jackie Chan plays Quan Ngoc Minh, a humble London businessman whose daughter is killed in a terrorist bombing claimed by a splinter group of the IRA. He then seeks revenge on those responsible.",
+        embedId: "Xpm7URf-Jb8",
+        source: "youtube"
+    },
+     {
+        title: "Law Abiding Citizen (2009)",
+        description: "Clyde Shelton, intentionally gets himself into prison to orchestrate a complex revenge plot against the corrupt justice system that allowed his family's killers to go free. Jamie Foxx plays Nick Rice, the assistant district attorney who becomes his adversary.",
+        embedId: "-WEsxS-lJKs?si",
+        source: "youtube"
+    },
+     {
+        title: "3 Days to Kill (2014)",
+        description: " Kevin Costner plays Ethan Renner, a CIA assassin who is trying to track down two international terrorists known as The Wolf and his lieutenant, The Albino.",
+        embedId: "kTgGI7pXoMk",
+        source: "youtube"
+    },
+     {
+        title: " Unknown (2011)",
+        description: "Dr. Martin Harris, who awakens from a coma to find that another man has assumed his identity, and even his own wife doesn't recognize him. He then sets out to prove who he is and uncover the conspiracy behind it",
+        embedId: "RWFzTMgrIyI",
+        source: "youtube"
+    },
+     {
+        title: "Stolen (2012)",
+        description: " Nicolas Cage plays a former thief whose daughter is kidnapped, and he has to find $10 million in 12 hours. Danny Huston plays an FBI agent.",
+        embedId: "yWRCE71ZWcQ",
+        source: "youtube"
+    },
+     {
+        title: "Red Dawn (2012)",
+        description: " Chris Hemsworth plays Jed Eckert, a Marine who, along with a group of teenagers, defends their hometown in Washington state from a North Korean invasion. They form a guerrilla resistance group called the Wolverines.",
+        embedId: "2XIlZDElESI",
+        source: "youtube"
+    },
+     {
+        title: "Kingdom of the Vampire 1991",
+        description: "Jeff works the night shift, then comes home to his domineering mother, who has the grisly habit of slaughtering neighborhood children to satisfy her insatiable bloodlust.",
+        embedId: "1365524089497",
+        source: "okru"
+    },
+     {
+        title: "Wicked Witches 2018",
+        description: "Mark returns to Dumpling Farm, his old hangout. His friend Ian, possessed by demonic witches, lures Mark and others into a trap. The witches consume souls, using Ian and the farm to honey-trap their victims.",
+        embedId: "1364470794905",
         source: "okru"
     },
      {
@@ -938,14 +1076,7 @@ const movies = [
         description: "",
         embedId: "",
         source: "okru"
-    },
-     {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-     {
+    }, {
         title: "",
         description: "",
         embedId: "",
