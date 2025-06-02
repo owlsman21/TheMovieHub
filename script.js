@@ -1311,102 +1311,216 @@ const movies = [
         source: "okru"
     },
     {
+        title: "Valhalla.Rising.2009.1080p",
+        description: "In 11th-century Scandinavia, an enslaved man dubbed One Eye (Mads Mikkelsen) because of an old facial wound stages a violent uprising against those who imprisoned him. One Eye links up with Eirik (Ewan Stewart) and other Christian fanatics who aim to use their muscle to spread God's word. Headed for Jerusalem, One Eye and his shipmates must cope with crew infighting and attacks from the coastline. But the journey's challenges are only a harbinger of even greater brutality.",
+        embedId: "1021591292569",
+        source: "okru"
+    },
+    {
+        title: "Darkness.Rising.2017",
+        description: "The lone survivor of a brutal family massacre must revisit her childhood home on the eve of its destruction and confront her past, as well as a deadly evil.",
+        embedId: "1021591358105",
+        source: "okru"
+    },
+    {
+        title: "Werewolf.Rising.2014.720p.BluRay",
+        description: "Emma travels to her family's cabin in the Arkansas hills to get away from the city. After she settles in, she has to fight for her life when a werewolf begins slaughtering everything in its path.",
+        embedId: "1021636184729",
+        source: "okru"
+    },
+    {
+        title: "Mutants 2009",
+        description: "In the middle of a zombie apocalypse, a resourceful couple hides out in an isolated abandoned building. The woman is pregnant and the man is infected, slowly transforming into the kind of inhuman monster they are trying to escape.",
+        embedId: "1021815884441",
+        source: "okru"
+    },
+    {
+        title: "The.House.of.Violent.Desire.2018",
+        description: "Awoken by screams in the night, young Evelyn Whipley is found drenched in blood and mysteriously bound to the bed - A Gothic Horror set in the 1940s, a psychosexual thriller disguised as traditional Ghost Story.",
+        embedId: "1031999392409",
+        source: "okru"
+    },
+    {
+        title: "It Lives Inside 2018",
+        description: "A chronic sleepwalker reads from a mysterious text that foretells his impending demonic possession. He struggles to hold his family together as the ancient evil threatens to consume everything he holds dear.",
+        embedId: "1034554051225",
+        source: "okru"
+    },
+    {
+        title: "Jeepers Creepers 2 2003",
+        description: "Set a few days after the original, a championship basketball team's bus is attacked by The Creeper, the winged, flesh-eating terror, on the last day of his 23-day feeding frenzy.",
+        embedId: "1038368180889",
+        source: "okru"
+    },
+    {
+        title: "Jeepers Creepers (2001)",
+        description: "A brother and sister driving home through isolated countryside for spring break encounter a flesh-eating creature which is in the midst of its ritualistic eating spree.",
+        embedId: "7451752729259",
+        source: "okru"
+    },
+    {
+        title: "Jeepers Creepers 3 (2017)",
+        description: "Sheriff Dan Tashtego and a team of creeper hunters enlist the help of officer Davis Tubbs to help stop the monster's eating spree.",
+        embedId: "2928047557260",
+        source: "okru"
+    },
+    {
+        title: "Dracula: The Dark Prince 2013",
+        description: "In his search for the Lightbringer, Dracula crosses paths with a beautiful crusader named Alina who bears a remarkable resemblance to his murdered bride. One look at her and Dracula is immediately smitten. Could Alina be the reincarnation of his long-dead love? Dracula has Alina kidnapped and brought to his castle where the Beast must now try to win his Beauty's heart.",
+        embedId: "4230911101454",
+        source: "okru"
+    },
+    {
+        title: "All.the.Boys.Love.Mandy.Lane.2006.720p.BluRay",
+        description: "Beautiful Mandy Lane (Amber Heard) isn't a party girl but, when classmate Chloe (Whitney Able) invites the Texas high school student to a bash in the countryside, she reluctantly accepts. After hitching a ride with a vaguely scary older man (Anson Mount), the teens arrive at their destination. Partying ensues, and Mandy's close pal, Emmet (Michael Welch), keeps a watchful eye on the young males making a play for Mandy. Then two of the students are murdered.",
+        embedId: "1071316077209",
+        source: "okru"
+    },
+    {
+        title: "Wrong Turn 2003",
+        description: "Chris and a group of five friends are left stranded deep in the middle of the woods after their cars collide. As they venture deeper into the woods, they face an uncertain and bloodcurdling fate.",
+        embedId: "1079522101913",
+        source: "okru"
+    },
+    {
+        title: "Wrong Turn 2: Dead End 2007",
+        description: "A group of reality show contestants find themselves fighting for their survival against a family of hideously deformed inbred cannibals who plan to ruthlessly butcher them all.",
+        embedId: "1079531539097",
+        source: "okru"
+    },
+    {
+        title: "Wrong Turn 3: Left for Dead 2009",
+        description: "When their transfer bus crashes in a West Virginia forest, a group of convicts and a corrections officer meet a rafter who is on the run from cannibalistic hillbillies who have murdered her friends.",
+        embedId: "1079522232985",
+        source: "okru"
+    },
+    {
+        title: "Wrong Turn 4: Bloody Beginnings 2011",
+        description: "A group of college students gets lost in a storm during their snowmobiling trip and takes shelter in an abandoned sanitarium which, unbeknown to them, is home to deformed cannibals.",
+        embedId: "1079522167449",
+        source: "okru"
+    },
+    {
+        title: "Wrong Turn 5: Bloodlines 2012",
+        description: "A group of college students, on a trip to the Mountain Man Festival on Halloween in West Virginia, encounter a clan of cannibals.",
+        embedId: "1079522036377",
+        source: "okru"
+    },
+    {
+        title: "Wrong Turn 6: Last Resort 2014",
+        description: "An inheritance leads a young man and his friends to an abandoned resort inhabited by two sketchy caretakers and a clan of mutant cannibals.",
+        embedId: "1071531690649",
+        source: "okru"
+    },
+     {
+        title: "Gangsters.Guns.Zombies.2012.720p.BluRay",
+        description: "Q, Tony, Danny and Steve think the police are their biggest problem after they pull off a robbery. But when the dead rise from the grave, they have to hide out with a woman and her grandmother in a fortified windmill.",
+        embedId: "1072197012121",
+        source: "okru"
+    },
+     {
+        title: "Cockneys vs Zombies 2012",
+        description: "A gang of bank robbers fight their way out of a zombie-infested London.",
+        embedId: "1072197077657",
+        source: "okru"
+    },
+     {
+        title: "Left Behind 2014",
+        description: "A small group of survivors is left behind after millions of people suddenly vanish and the world is plunged into chaos and destruction.",
+        embedId: "1076555549337",
+        source: "okru"
+    },
+     {
+        title: "Tiger House 2015",
+        description: "Kelly sneaks into her boyfriend's house but tonight, she's not the only unwelcome visitor. As the situation spirals out of control, the suburban house becomes a terrifying arena for violence.",
+        embedId: "1076676987545",
+        source: "okru"
+    },
+     {
+        title: "Cabin Fever 2: Spring Fever 2009",
+        description: "A high school prom faces a deadly threat: a flesh-eating virus that spreads via a popular brand of bottled water.",
+        embedId: "1079522429593",
+        source: "okru"
+    },
+     {
+        title: "Cabin Fever 2002",
+        description: "Five college graduates rent a cabin in the woods and begin to fall victim to a horrifying flesh-eating virus, which attracts the unwanted attention of the homicidal locals.",
+        embedId: "1079539206809",
+        source: "okru"
+    },
+    \ {
+        title: "Cabin Fever 3: Patient Zero 2014",
+        description: "When a group of friends enjoying a bachelor cruise in the Caribbean stumble upon a research facility on a remote island, a deadly virus is unleashed. The group must find a way to survive before the flesh eating virus consumes them all.",
+        embedId: "1079544253081",
+        source: "okru"
+    },
+     {
+        title: "Breathing.Room.2008.720p.BluRay",
+        description: "Thrown naked into a desolate room with thirteen strangers, Tonya discovers that she is the final contestant in a deadly game. Restrained by lethal electronic collars, the players must utilize hints and tools from a box marked "pieces" to find both an exit and the reason for their abduction. One by one the players are eliminated as their "curfew" begins and the lights go out. With each dead body comes another clue, which they use to discover that one of them is the killer.",
+        embedId: "1100126882457",
+        source: "okru"
+    },
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-    {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-    {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-    {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-    {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-    {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-    {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
-    },
-    {
+     {
         title: "",
         description: "",
         embedId: "",
