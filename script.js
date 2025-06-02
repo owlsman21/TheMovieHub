@@ -1066,23 +1066,347 @@ const movies = [
         source: "okru"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        source: "okru"
+        title: "Criminal 2016",
+        description: "A dangerous convict receives an implant containing the memories and skills of a dead CIA agent.",
+        embedId: "o4Em8Sxk4OM",
+        source: "youtube"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
+        title: "Man on Fire 2004",
+        description: "In Mexico City, a former CIA operative swears vengeance on those who committed an unspeakable act against the family he was hired to protect.",
+        embedId: "967003081369",
         source: "okru"
     }, {
+        title: "30 Daye of Nights 2007",
+        description: "After an Alaskan town is plunged into darkness for a month, it is attacked by a bloodthirsty gang of vampires.",
+        embedId: "967003802265",
+        source: "okru"
+    },
+     {
+        title: "10.5: Apocalypse 2006",
+        description: "A massive earthquake creates a chain of events that threaten two of the largest nuclear reactors.",
+        embedId: "967976422041",
+        source: "okru"
+    },
+     {
+        title: "The Craving 2011",
+        description: "Leading a double life, Chef Ronnie spends her days as a charming celebrity chef who thrives and shines as owner of a trendy Spanish tapas restaurant in San Francisco, and spends her nights in ways too gruesome to fathom. As Chef Ronnie's reputation scorches up the culinary scene, San Francisco's murder count hits a record high. Haunted by her past in the form a vengeful lover, and caught in the seductive cross fire of an increasingly serious relationship; Chef Ronnie has bitten off more than she can chew.",
+        embedId: "967976487577",
+        source: "okru"
+    },
+     {
+        title: "Howl 2015",
+        description: "When passengers on a train are attacked by a creature, they must band together in order to survive until morning.",
+        embedId: "970099069337",
+        source: "okru"
+    },
+     {
+        title: "One More Shot 2024",
+        description: "Following the attack on the black site in Poland, Navy SEAL Jake Harris is ordered to escort terrorist suspect Amin Mansur to Washington D.C for interrogation.",
+        embedId: "/eGjBfDnpUVs",
+        source: "youtube"
+    },
+     {
+        title: "Final Destination 2000 1080p BluRay",
+        description: "After getting a premonition about a plane crash on his school trip, Alex, a student, saves a few of his classmates. However, their situation gets complicated when death starts chasing them.",
+        embedId: "9371838974692",
+        source: "okru"
+    },
+     {
+        title: "Final Destination 2 2003 1080p BluRay",
+        description: "When Kimberly has a violent premonition of a highway pileup she blocks the freeway, keeping a few others meant to die, safe...Or are they? The survivors mysteriously start dying and it's up to Kimberly to stop it before she's next.",
+        embedId: "9371839302372",
+        source: "okru"
+    },
+     {
+        title: "Final Destination 3 (2006)",
+        description: "Wendy Christensen and a group of teens who escaped a fatal roller-coaster crash face a bloody date with Death.",
+        embedId: "8254576527953",
+        source: "okru"
+    },
+     {
+        title: "The Twilight Saga: Breaking Dawn - Part 2",
+        description: "After the birth of Renesmee/Nessie, the Cullens gather other vampire clans in order to protect the child from a false allegation that puts the family in front of the Volturi.",
+        embedId: "1316303473392",
+        source: "okru"
+    },
+     {
+        title: "Mannequin 2: On The Move (1991)",
+        description: "Although Jason (William Ragsdale) works as a department store clerk, he is also a reincarnated prince. Long ago, his beloved Jessie (Kristy Swanson) was snatched away from him by an evil wizard (Terry Kiser) who used his powers to transform her into wooden statue. Now Jessie is in Jason's department store as a mannequin. When he encounters her, she awakens from her thousand-year sleep. They quickly revive their romance, but the evil wizard has been reincarnated as well, and he's up to no good.",
+        embedId: "943377877542",
+        source: "okru"
+    },
+     {
+        title: "Ghost.Ship.2002",
+        description: "A salvage crew discovers a long-lost 1962 passenger ship floating lifeless in a remote region of the Bering Sea, and soon notices that its long-dead inhabitants may still be on board.",
+        embedId: "705719306785",
+        source: "okru"
+    },
+     {
+        title: "Infernal 2015",
+        description: "A happy young couple welcomes their first child shortly after getting married. Their joy quickly turns to fear when the girl starts acting strangely and unexplained phenomena start happening around the house.",
+        embedId: "977205987993",
+        source: "okru"
+    },
+     {
+        title: "The Inflicted 2012",
+        description: "David O'Hara is a troubled medical student who kidnaps, rapes and murders women. He impregnates his victim, Melissa, in an attempt to replace his lost family. When Melissa escapes, he goes on a murderous rampage to get his family back.",
+        embedId: "977208543897",
+        source: "okru"
+    },
+     {
+        title: "Safe Haven 2013",
+        description: "A young woman with a mysterious past lands in Southport, North Carolina where her bond with a widower forces her to confront the dark secret that haunts her.",
+        embedId: "977407052441",
+        source: "okru"
+    },
+     {
+        title: "Final Destination 2000 1080p BluRay",
+        description: "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
+        embedId: "9371838974692",
+        source: "okru"
+    },
+     {
+        title: "Final Destination 2 2003 1080p BluRay",
+        description: "When Kimberly has a violent premonition of a highway pileup she blocks the freeway, keeping a few others meant to die, safe...Or are they? The survivors mysteriously start dying and it's up to Kimberly to stop it before she's next.",
+        embedId: "9371839302372",
+        source: "okru"
+    },
+     {
+        title: "Final Destination 3 2006",
+        description: "Wendy Christensen and a group of teens who escaped a fatal roller-coaster crash face a bloody date with Death.",
+        embedId: "5050096880350",
+        source: "okru"
+    },
+    {
+        title: "splinter 2008",
+        description: "Trapped in an isolated gas station by a voracious Splinter parasite that transforms its still-living victims into deadly hosts, a young couple and an escaped convict must find a way to work together to survive this primal terror.",
+        embedId: "981264173721",
+        source: "okru"
+    },
+    {
+        title: "I am omega 2007",
+        description: "Father-daughter archaeologists Miles (Denis O'Hare) and Nora Holden (Ashley Hinshaw) discover a unique pyramid that has been buried beneath the Egyptian desert for 5,000 years. Accompanied by a newswoman (Christa-Marie Nicola) and her team, the archaeologists enter the tomb and promptly become trapped. Hopelessly lost within the pyramid's labyrinthine structure, the group faces deadly perils that threaten their escape, including collapsing floors and bloodthirsty predators.",
+        embedId: "981271186073",
+        source: "okru"
+    },
+    {
+        title: "The Tommyknockers 1993",
+        description: "The small town of Haven becomes a hot-bed of inventions all run by a strange green power device. The whole town is digging something up in the woods, and only an alcoholic poet can discover the secret of the Tommyknockers.",
+        embedId: "1002381707929",
+        source: "okru"
+    },
+    {
+        title: "The Amityville Horror (2005)",
+        description: "When George Lutz (Ryan Reynolds) and his wife, Kathy (Melissa George), find a beautiful new house in the small town of Amityville, N.Y., they think the place is too good to be true. After they move in with their kids, they find out the cheap price tag is thanks to the house's sordid history: The former tenant murdered his family after supposedly being possessed by the devil. Believing the home is haunted, the couple finds a priest (Philip Baker Hall) to help them rid the place of evil spirits.",
+        embedId: "1002383411865",
+        source: "okru"
+    },
+    {
+        title: "Guyver II Dark Hero (1994)",
+        description: "Sean Barker, unwilling host to an alien bio-armor known as the Guyver, must fight the Kronos Corporation again before they discover the secrets of the Guyver's origin.",
+        embedId: "1002426274201",
+        source: "okru"
+    },
+    {
+        title: "The Texas Chainsaw Massacre (2003)",
+        description: "After picking up a traumatized young hitchhiker, five friends find themselves stalked and hunted by a deformed chainsaw-wielding loon and his family of equally psychopathic killers.",
+        embedId: "7636091406869",
+        source: "okru"
+    },
+    {
+        title: "Zombie Nation 2004",
+        description: "A psychotic police officer who murders his female arrestees gets what's coming to him when a horde of zombified women rise from their graves to seek revenge.",
+        embedId: "1007769291417",
+        source: "okru"
+    },
+    {
+        title: "Serenity Farm 2014",
+        description: "Undisturbed for over 20 years, this remote forested island in the Pacific Northwest is visited by a group of campers on horseback. The camp tranquility is broken by violence and terror.",
+        embedId: "1007769356953",
+        source: "okru"
+    },
+    {
+        title: "beond skyline 2018 ",
+        description: "Detective Mark Corley storms his way onto an alien spaceship to rescue his estranged son. When the ship crashes in Southeast Asia, he forges an alliance with a band of survivors to take back the planet once and for all.",
+        embedId: "1009147710105",
+        source: "okru"
+    },
+    {
+        title: "COLD MOON (2017)",
+        description: "In a sleepy Southern town, the Larkin family suffer a terrible tragedy and they're about to endure another. Traffic lights blink an eerie warning, a ghostly visage prowls in the streets, and graves erupt from the local cemetery in an implacable march of terror. And beneath the murky surface of the river, a shifting, almost human, shape slowly takes form to seek a terrible vengeance.",
+        embedId: "1009147906713",
+        source: "okru"
+    },
+    {
+        title: "Rampage 2009",
+        description: "A man with a thirst for revenge builds a full body armor from Kevlar and goes on a killing spree.",
+        embedId: "1009180674713",
+        source: "okru"
+    },
+    {
+        title: "Rampage: Capital Punishment",
+        description: "A man takes over a TV station and holds a number of hostages as a political platform to awaken humanity, instead of money.",
+        embedId: "1009180871321",
+        source: "okru"
+    },
+    {
+        title: "The First Purge 2018",
+        description: "America's third political party, the New Founding Fathers of America, comes to power and conducts an experiment: no laws for 12 hours on Staten Island. No one has to stay on the island, but $5,000 is given to anyone who does.",
+        embedId: "1009218423449",
+        source: "okru"
+    },
+    {
+        title: "Inbred 2011",
+        description: "Four young offenders and their care workers visit the remote Yorkshire village of Mortlake, which prides on keeping itself to itself. A minor incident with locals rapidly escalates into a blood-soaked, deliriously warped nightmare.",
+        embedId: "1009869851289",
+        source: "okru"
+    },
+    {
+        title: "Abraham Lincoln: Vampire Hunter 2012",
+        description: "Abraham Lincoln, the 16th President of the United States, discovers vampires are planning to take over the United States. He makes it his mission to eliminate them.",
+        embedId: "1014399437465",
+        source: "okru"
+    },
+    {
+        title: "Prometheus.2012.720p.BluRay.",
+        description: "The discovery of a clue to mankind's origins on Earth leads a team of explorers to the darkest parts of the universe. Two brilliant young scientists lead the expedition. Shaw (Noomi Rapace) hopes that they will meet a race of benevolent, godlike beings who will in some way verify her religious beliefs, while Holloway (Logan Marshall-Green) is out to debunk any spiritual notions. However, neither the scientists nor their shipmates are prepared for the unimaginable terrors that await them.",
+        embedId: "1015245441689",
+        source: "okru"
+    },
+    {
+        title: "Stripped.2012.720p.BluRay",
+        description: "Four friends head to Vegas and meet female strippers at a remote location for a night of fun. However, they don't realize that the women work for an organ trafficker and that they are about to be stripped of theirs.",
+        embedId: "1015912663705",
+        source: "okru"
+    },
+    {
+        title: "The Transporter Refueled 2015",
+        description: "In the south of France, former special-ops mercenary Frank Martin enters into a game of chess with a femme-fatale and her three sidekicks who are looking for revenge against a sinister Russian kingpin.",
+        embedId: "1015894903449",
+        source: "okru"
+    },
+    {
+        title: "Little.Dead.Rotting.Hood.2016.720p",
+        description: "The residents of a small town realize that something is killing wolves and people in the woods.",
+        embedId: "1015905585817",
+        source: "okru"
+    },
+    {
+        title: "Feast 2 sloppy seconds",
+        description: "The monsters have made it into a small neighboring town in the middle of nowhere and the locals have to band with the survivors of the bar' slaughter to figure out how to survive.",
+        embedId: "1016872700569",
+        source: "okru"
+    },
+    {
+        title: "Feast 2005",
+        description: "Patrons locked inside a bar are forced to fight monsters.",
+        embedId: "1016878402201",
+        source: "okru"
+    },
+    {
+        title: "Skinwalkers 2006",
+        description: "A 12-year-old boy and his mother become the targets of two warring werewolf packs, each with different intentions and motives.",
+        embedId: "1016874404505",
+        source: "okru"
+    },
+    {
         title: "",
         description: "",
         embedId: "",
         source: "okru"
     },
-     {
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "",
+        source: "okru"
+    },
+    {
         title: "",
         description: "",
         embedId: "",
