@@ -37,16 +37,16 @@ const upcomingTrailers = [
         releaseDate: "2024-07-19"
     },
     {
-        title: "",
-        description: "",
-        embedId: "", // Actual YouTube ID
+        title: "Caught Stealing 2025",
+        description: "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+        embedId: "6mIvD-GN-p4", // Actual YouTube ID
         source: "youtube",
         releaseDate: "2024-07-19"
     },
     {
-        title: "",
-        description: "",
-        embedId: "", // Actual YouTube ID
+        title: "Predator: Badlands | Teaser Trailer 2025",
+        description: "Coming Soon",
+        embedId: "oFkbsEKaoSE", // Actual YouTube ID
         source: "youtube",
         releaseDate: "2024-07-19"
     },
