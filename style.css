@@ -157,4 +157,11 @@ header {
         max-height: 80px; /* Even shorter descriptions on smallest screens to save vertical space */
     }
 }
+/* styles.css */
+
+#upcoming-trailers-grid {
+    max-height: 400px; /* Adjust this value (e.g., 300px, 500px) based on your preference */
+    overflow-y: auto;  /* Adds a vertical scrollbar if content exceeds max-height */
+    padding-right: 15px; /* Adds space for the scrollbar so content isn't hidden by it */
+}
 
