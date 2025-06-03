@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Movie Hub</title>
-    
+
     <meta property="og:title" content="The Movie Hub - Your Gateway to Classic Cinema">
     <meta property="og:description" content="Explore and stream a hand-picked collection of timeless movies from various eras.">
     <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/The%20Movie%20Hub.png">
-    <meta property="og:image:width" content="1200">   <meta property="og:image:height" content="630">  <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub/">
-    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter
+    <meta name="twitter:title" content="The Movie Hub">
+    <meta name="twitter:description" content="Explore and stream a hand-picked collection of timeless movies.">
+    <meta name="twitter:image" content="https://owlsman21.github.io/TheMovieHub/images/the%20movie%20hub.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
-        /* Basic styling for movie cards and video responsiveness */
+        /* Base styles from previous discussions, adjusted for Tailwind context */
+        body {
+            font-family: Arial, sans-serif; /* Fallback font */
+        }
+
+        /* Movie Card Styling */
         .movie-card {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -43,19 +52,17 @@
             text-overflow: ellipsis;
         }
 
-       .movie-description {
-    font-size: 0.9em;
-    color: #555;
-    flex-grow: 1; /* Allow description to take available space */
-    margin-bottom: 15px;
-    max-height: 100px; /* Limit description height */
-    /* --- CHANGE THIS LINE --- */
-    overflow-y: auto; /* Changed from overflow: hidden; */
-    /* ----------------------- */
-    text-overflow: ellipsis; /* This will still apply if content doesn't scroll fully */
-
+        .movie-description {
+            font-size: 0.9em;
+            color: #555;
+            flex-grow: 1; /* Allow description to take available space */
+            margin-bottom: 15px;
+            max-height: 100px; /* Limit description height */
+            overflow-y: auto; /* Allow scrolling for long descriptions */
+            text-overflow: ellipsis; /* Still applies if content doesn't scroll fully */
         }
 
+        /* Video Responsiveness */
         .video-responsive {
             overflow: hidden;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
@@ -74,7 +81,42 @@
             border-radius: 5px;
         }
 
-        /* Responsive adjustments for movie grid and text */
+        /* Genre Button Styling */
+        #genre-filters {
+            margin-top: 20px; /* Adjust spacing as needed */
+            margin-bottom: 20px;
+            display: flex; /* Use flexbox for button layout */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            justify-content: center; /* Center buttons horizontally */
+            gap: 10px; /* Space between buttons */
+            padding: 0 10px; /* Some padding for smaller screens */
+        }
+
+        .genre-button {
+            padding: 10px 18px;
+            background-color: #e0e0e0; /* Light gray */
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 20px; /* More rounded for a modern look */
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+            white-space: nowrap; /* Prevent button text from wrapping */
+        }
+
+        .genre-button:hover {
+            background-color: #d0d0d0;
+            border-color: #999;
+        }
+
+        .genre-button.active {
+            background-color: #007bff; /* Blue */
+            color: white;
+            border-color: #0056b3;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for active state */
+        }
+
+        /* Responsive adjustments (already good from your previous code) */
         @media (max-width: 768px) {
             .movie-grid {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -107,51 +149,60 @@
             }
         }
     </style>
-    <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/the%20movie%20hub.png">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ECM48V41WY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-ECM48V41WY');
-</script>
-   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECM48V41WY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ECM48V41WY');
+    </script>
 </head>
 <body class="bg-gray-100 font-sans">
 
-  <div class="container mx-auto px-4">
-    <header class="bg-blue-600 text-white p-4 text-center mb-6 rounded-b-lg shadow-lg">
-        <h1 class="text-4xl font-extrabold tracking-tight">The Movie Hub</h1>
-    </header>
+    <div class="container mx-auto px-4">
+        <header class="bg-blue-600 text-white p-4 text-center mb-6 rounded-b-lg shadow-lg">
+            <h1 class="text-4xl font-extrabold tracking-tight">The Movie Hub</h1>
+        </header>
 
-    <div class="search-container mt-8 mb-4 flex flex-col sm:flex-row justify-center items-center w-full px-4 mx-auto">
-        <div class="flex w-full max-w-3xl shadow-xl rounded-full">
-            <input type="text" id="search-input" placeholder="Search movies..."
-                    class="flex-grow p-4 text-lg border-2 border-blue-400 rounded-l-full focus:outline-none focus:ring-4 focus:ring-blue-300 placeholder-gray-500 transition duration-300 ease-in-out">
-            <button id="search-button"
-                    class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-r-full hover:from-blue-700 hover:to-blue-900 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-300 ease-in-out shadow-md">
-                Search
+        <div class="search-container mt-8 mb-4 flex flex-col sm:flex-row justify-center items-center w-full px-4 mx-auto">
+            <div class="flex w-full max-w-3xl shadow-xl rounded-full">
+                <input type="text" id="search-input" placeholder="Search movies..."
+                        class="flex-grow p-4 text-lg border-2 border-blue-400 rounded-l-full focus:outline-none focus:ring-4 focus:ring-blue-300 placeholder-gray-500 transition duration-300 ease-in-out">
+                <button id="search-button"
+                        class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-r-full hover:from-blue-700 hover:to-blue-900 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-300 ease-in-out shadow-md">
+                    Search
+                </button>
+            </div>
+            <button id="clear-search-button"
+                    class="bg-gradient-to-r from-gray-500 to-gray-700 text-white px-6 py-4 text-lg font-semibold rounded-full hover:from-gray-600 hover:to-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-400 transition duration-300 ease-in-out shadow-md mt-3 sm:mt-0 sm:ml-3">
+                Clear
             </button>
         </div>
-        <button id="clear-search-button"
-                class="bg-gradient-to-r from-gray-500 to-gray-700 text-white px-6 py-4 text-lg font-semibold rounded-full hover:from-gray-600 hover:to-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-400 transition duration-300 ease-in-out shadow-md mt-3 sm:mt-0 sm:ml-3">
-            Clear
-        </button>
-    </div>
-</div>
-        <div id="search-results-info" class="text-center text-gray-600 text-lg mb-4"></div>
+
+        <div class="text-center"> <h2 class="text-2xl font-bold text-blue-700 mb-4">Filter by Genre</h2>
+            <div id="genre-filters">
+                <button class="genre-button active" data-genre="All">All</button>
+                <button class="genre-button" data-genre="Action">Action</button>
+                <button class="genre-button" data-genre="Comedy">Comedy</button>
+                <button class="genre-button" data-genre="Horror">Horror</button>
+                <button class="genre-button" data-genre="Sci-Fi">Sci-Fi</button>
+                <button class="genre-button" data-genre="Western">Western</button>
+                <button class="genre-button" data-genre="War">War</button>
+                <button class="genre-button" data-genre="Drama">Drama</button>
+                <button class="genre-button" data-genre="Crime">Crime</button>
+                <button class="genre-button" data-genre="Thriller">Thriller</button>
+                <button class="genre-button" data-genre="Fantasy">Fantasy</button>
+                <button class="genre-button" data-genre="History">History</button>
+                <button class="genre-button" data-genre="Music">Music</button>
+                </div>
+        </div>
+        <div id="search-results-info" class="text-center text-gray-600 text-lg my-4"></div>
 
         <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
             </div>
 
         <div id="pagination" class="flex justify-center flex-wrap gap-2 mt-8 mb-8">
             </div>
-    </div>
-
-   <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
-    
-</body>
+    </div> <script src="movies.js"></script> <script src="script.js"></script> </body>
 </html>
