@@ -1130,10 +1130,10 @@ const movies = [
         source: "okru"
     },
      {
-        title: "Lost In Starlight 2025 1080p",
-        description: "When an astronaut leaves Earth for Mars, the vast infinite space divides star-crossed lovers in this animated romance that crosses the cosmos.",
-        embedId: "9403748584164",
-        genres: ["Sci-Fi"],
+        title: "Everest 2015",
+        description: "On May 10, 1996, mountain guides Rob Hall and Scott Fischer combine their expedition teams for a final ascent to the summit of Mount Everest. With little warning, a storm strikes the mountain and the climbers must now battle to survive.",
+        embedId: "9278677715494",
+        genres: ["Drama"],
         source: "okru"
     },
      {
@@ -1836,38 +1836,31 @@ const movies = [
         source: "youtube"
      },
       {
-        title: "Savage 2011",
-        description: "A blazing fire rips its way through Bear Valley National Park. As the firefighters try to contain it, the animals are being forced out of their habitat including a beast that was better left undiscovered.",
-        embedId: "l_Pzv7MZN9Q",
-        genres: ["Horror","Thriller"],
+        title: "London Boulevard",
+        description: "An ex-con with a reputation tries to go straight by working as a handy man for a reclusive actress but this is unfortunately not the wish of London's underground crime lord.",
+        embedId: "3838862690871",
+        genres: ["Drama","Thriller"],
         source: "okru"
      },
       {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Michael Collins 1996  720p",
+        description: "Neil Jordan's historical biopic of Irish revolutionary Michael Collins, the man who led a guerrilla war against the UK, helped negotiate the creation of the Irish Free State, and led the National Army during the Irish Civil War.",
+        embedId: "1078123301423",
+        genres: ["Drama","Thriller","War"],
         source: "okru"
      },
       {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Outlaw.King.2018.1080p",
+        description: "A true David vs. Goliath story of how the 14th century Scottish 'Outlaw King' Robert the Bruce used cunning and bravery to defeat the much larger and better equipped occupying English army.",
+        embedId: "4982591130190",
+        genres: ["Action","Drama","History"],
         source: "okru"
      },
       {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "The Outfit (2022)",
+        description: "An expert cutter must outwit a dangerous group of mobsters in order to survive a fateful night.",
+        embedId: "3793980295758",
+        genres: ["Drama","Crime"],
         source: "okru"
      },
       {

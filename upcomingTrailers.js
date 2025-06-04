@@ -64,12 +64,20 @@ const upcomingTrailers = [
         source: "youtube",
         releaseDate: "2024-07-19"
     },
-    {
-        title: "",
-        description: "",
-        embedId: "", // Actual YouTube ID
+     {
+        title: "The Batman - Batman Confronts The Penguin ",
+        description: "Batman interrogates the Penguin about criminal activity involving the mayor and workers from the Iceberg lounge.",
+        embedId: "XxliskI7RWE",
+        genres: ["Action"],
         source: "youtube",
         releaseDate: "2024-07-19"
+     },
+    {
+        title: "Superman",
+        description: "Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned.",
+        embedId: "xFU8U4UVUBs", // Actual YouTube ID
+        source: "youtube",
+        releaseDate: "2025-07-19"
     },
     {
         title: "",
@@ -92,6 +100,7 @@ const upcomingTrailers = [
         source: "youtube",
         releaseDate: "2024-07-19"
     },
+    
 
     // Add more upcoming movie trailers here!
 ];

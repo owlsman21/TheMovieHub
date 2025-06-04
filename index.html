@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
     <meta property="og:title" content="The Movie Hub - Your Gateway to Classic Cinema">
-    <meta property="og:description" content="Explore and stream a hand-picked collection of timeless movies from various eras.">
+    <meta property="og:description" content="Explore and stream a hand-picked collection of timeless movies.">
     <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/The%20Movie%20Hub.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -22,8 +22,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
+        /* Your existing custom styles for movie cards, genre buttons, etc. */
         body {
             font-family: Arial, sans-serif;
+            margin-top: 0; /* Ensure body margin is reset */
         }
 
         .movie-card {
@@ -153,6 +155,34 @@
             overflow-y: auto;  /* Adds a vertical scrollbar if content exceeds max-height */
             padding-right: 15px; /* Adds space for the scrollbar so content isn't hidden by it */
         }
+
+        /* Styles for the new main navigation */
+        .main-nav {
+            background-color: #2c3e50; /* Darker blue/grey */
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Use flexbox for horizontal items */
+            justify-content: center; /* Center items */
+            gap: 20px; /* Space between items */
+        }
+        .main-nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .main-nav ul li a:hover {
+            background-color: #34495e; /* Slightly lighter on hover */
+        }
+
     </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECM48V41WY"></script>
@@ -164,6 +194,13 @@
     </script>
 </head>
 <body class="bg-gray-100 font-sans">
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    </nav>
 
     <div class="container mx-auto px-4">
         <header class="bg-blue-600 text-white p-4 text-center mb-6 rounded-b-lg shadow-lg">
