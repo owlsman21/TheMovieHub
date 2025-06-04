@@ -22,6 +22,7 @@ const upcomingTrailersGrid = document.getElementById('upcoming-trailers-grid'); 
 // --- NEW/CORRECTED REFERENCES ---
 const upcomingTrailersSection = document.getElementById('upcoming-trailers-section'); // Get the actual section
 const exploreAllMoviesButton = document.getElementById('explore-all-movies-button'); // Get the Explore button
+const singleMovieBackButtonContainer = document.getElementById('single-movie-back-button-container'); // NEW: Reference to the container
 // --- END NEW/CORRECTED REFERENCES ---
 
 
@@ -74,7 +75,6 @@ function createMovieCard(movie) {
 
         let videoSourceUrl = '';
         if (movie.source === 'youtube') {
-            // Corrected YouTube embed URL (changed '0' to 'embed')
             videoSourceUrl = `https://www.youtube.com/embed/${movie.embedId}`;
         } else if (movie.source === 'okru') {
             videoSourceUrl = `https://ok.ru/videoembed/${movie.embedId}`;
@@ -90,6 +90,50 @@ function createMovieCard(movie) {
     return movieCard;
 }
 
+// Function to reset all UI elements to their default "all movies" view (trailers + explore button visible)
+function showDefaultAllMoviesView() {
+    // Show sections for initial load / all movies view
+    if (upcomingTrailersSection) {
+        upcomingTrailersSection.style.display = 'block';
+    }
+    if (exploreAllMoviesButton) {
+        exploreAllMoviesButton.style.display = 'block';
+    }
+    if (genreFiltersDiv) {
+        genreFiltersDiv.parentElement.style.display = 'block'; // Ensure genre filters are visible
+    }
+    if (searchResultsInfo) {
+        searchResultsInfo.style.display = 'none'; // Hide search info initially
+        searchResultsInfo.textContent = '';
+    }
+    if (pagination) {
+        pagination.style.display = 'none'; // Hide pagination initially
+    }
+    if (movieGrid) {
+        movieGrid.innerHTML = ''; // Clear movie grid initially
+    }
+    if (singleMovieBackButtonContainer) { // NEW: Hide the single movie back button container
+        singleMovieBackButtonContainer.classList.add('hidden');
+        singleMovieBackButtonContainer.innerHTML = ''; // Clear its content
+    }
+
+    // Reset filters and search
+    currentSearchTerm = '';
+    searchInput.value = '';
+    currentFilter = 'All';
+    document.querySelectorAll('.genre-button').forEach(button => {
+        button.classList.remove('active');
+        if (button.dataset.genre === 'All') {
+            button.classList.add('active');
+        }
+    });
+
+    displayUpcomingTrailers(upcomingTrailers); // Re-render trailers
+    // We don't call applyFiltersAndDisplay here, as 'Explore All Movies' button handles showing the grid
+    filteredAndSearchedMovies = [...movies]; // Ensure movies list is ready for 'Explore'
+}
+
+
 // Main function to display content (either paginated list or single movie)
 function displayContent(data, isSingleMovie = false) {
     if (!movieGrid || !pagination || !searchResultsInfo) {
@@ -98,45 +142,58 @@ function displayContent(data, isSingleMovie = false) {
     }
     movieGrid.innerHTML = ''; // Clear previous movies
 
-    // --- Adjust visibility based on content type ---
     if (isSingleMovie) {
+        // --- Single movie view: Hide all other sections and show back button ---
         pagination.style.display = 'none';
         searchResultsInfo.style.display = 'none';
         if (genreFiltersDiv) {
-            genreFiltersDiv.parentElement.style.display = 'none'; // Hide genre filter section
+            genreFiltersDiv.parentElement.style.display = 'none';
         }
         if (upcomingTrailersSection) {
-            upcomingTrailersSection.style.display = 'none'; // Hide upcoming trailers section
+            upcomingTrailersSection.style.display = 'none';
         }
         if (exploreAllMoviesButton) {
-            exploreAllMoviesButton.style.display = 'none'; // Hide explore button
+            exploreAllMoviesButton.style.display = 'none';
         }
-
-        // Create and append the "Back to All Movies" button outside the grid for better layout
-        const backButtonContainer = document.createElement('div');
-        backButtonContainer.classList.add('text-center', 'my-4'); // Center the button with some margin
-        const backButton = document.createElement('button');
-        backButton.textContent = 'Back to All Movies';
-        backButton.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'font-bold', 'py-3', 'px-6', 'rounded-full', 'inline-block', 'shadow-lg');
-        backButton.addEventListener('click', () => {
-            window.location.hash = ''; // Clear the hash, triggering handleHashChange
-            // No need to call applyFiltersAndDisplay() directly here, as handleHashChange will do it
-        });
-        movieGrid.parentElement.insertBefore(backButtonContainer, movieGrid); // Insert before the movie grid
+        // NEW: Show the single movie back button container and inject the button
+        if (singleMovieBackButtonContainer) {
+            singleMovieBackButtonContainer.classList.remove('hidden');
+            singleMovieBackButtonContainer.innerHTML = ''; // Clear previous button if any
+            const backButton = document.createElement('button');
+            backButton.textContent = 'Back to All Movies';
+            backButton.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'font-bold', 'py-3', 'px-6', 'rounded-full', 'inline-block', 'shadow-lg');
+            backButton.addEventListener('click', () => {
+                window.location.hash = ''; // Clear hash, triggering handleHashChange
+                // handleHashChange will now call showDefaultAllMoviesView if no hash
+            });
+            singleMovieBackButtonContainer.appendChild(backButton);
+        }
 
         movieGrid.appendChild(createMovieCard(data)); // Add the single movie card
 
     } else {
-        // When displaying the main list (not a single movie)
-        // Ensure main sections are visible if not currently searching
-        if (!currentSearchTerm && window.location.hash === '') { // Only show if no search is active AND no hash is present
+        // --- List view (all movies, filtered, or searched) ---
+        // Hide the single movie back button container
+        if (singleMovieBackButtonContainer) {
+            singleMovieBackButtonContainer.classList.add('hidden');
+            singleMovieBackButtonContainer.innerHTML = '';
+        }
+
+        pagination.style.display = 'flex';
+        searchResultsInfo.style.display = (currentSearchTerm || currentFilter !== 'All') ? 'block' : 'none';
+        if (genreFiltersDiv) {
+            genreFiltersDiv.parentElement.style.display = 'block';
+        }
+        // Show trailers/explore button ONLY if no search term and no active hash (i.e. default landing or "Back to All Movies" from single movie)
+        if (!currentSearchTerm && window.location.hash === '') {
             if (upcomingTrailersSection) {
                 upcomingTrailersSection.style.display = 'block';
             }
             if (exploreAllMoviesButton) {
                 exploreAllMoviesButton.style.display = 'block';
             }
-        } else { // If there is a search term or a hash is active, hide these
+        } else {
+             // If search is active OR hash is active, hide these
              if (upcomingTrailersSection) {
                 upcomingTrailersSection.style.display = 'none';
             }
@@ -145,23 +202,11 @@ function displayContent(data, isSingleMovie = false) {
             }
         }
 
-        // Remove any dynamically added back button from single movie view
-        const existingBackButtonContainer = movieGrid.parentElement.querySelector('.text-center.my-4');
-        if (existingBackButtonContainer) {
-            existingBackButtonContainer.remove();
-        }
-        
-        pagination.style.display = 'flex'; // Pagination is always visible for lists
-        searchResultsInfo.style.display = (currentSearchTerm || currentFilter !== 'All') ? 'block' : 'none';
-        if (genreFiltersDiv) {
-            genreFiltersDiv.parentElement.style.display = 'block'; // Ensure genre filters are visible
-        }
 
         if (data.length === 0) {
             searchResultsInfo.textContent = 'No movies found matching your criteria.';
             movieGrid.innerHTML = '<p class="text-center text-gray-600 text-xl col-span-full">No movies found matching your criteria.</p>';
         } else {
-            // Update the search results info text
             let resultText = `Showing ${data.length} movie(s)`;
             if (currentSearchTerm) {
                 resultText += ` for "${currentSearchTerm}"`;
@@ -186,7 +231,7 @@ function displayContent(data, isSingleMovie = false) {
 
 // Function to handle all filtering (genre and search) and then display
 function applyFiltersAndDisplay() {
-    let tempMovies = [...movies]; // Start with all movies
+    let tempMovies = [...movies];
 
     if (currentFilter !== 'All') {
         tempMovies = tempMovies.filter(movie =>
@@ -204,7 +249,7 @@ function applyFiltersAndDisplay() {
     }
 
     filteredAndSearchedMovies = tempMovies;
-    currentPage = 1; // Reset to first page for new filter/search
+    currentPage = 1;
 
     displayContent(filteredAndSearchedMovies, false); // Always display as a list, not single movie
 }
@@ -318,10 +363,9 @@ function displayUpcomingTrailers(trailersToDisplay) {
             'text-center'
         );
 
-        // Corrected YouTube embed URL
         const videoSrc = trailer.source === 'youtube'
             ? `https://www.youtube.com/embed/${trailer.embedId}`
-            : `https://ok.ru/videoembed/${trailer.embedId}`; // Assuming okru for non-youtube
+            : `https://ok.ru/videoembed/${trailer.embedId}`;
 
         trailerCard.innerHTML = `
             <h3 class="text-xl font-semibold text-blue-700 mb-2">${trailer.title}</h3>
@@ -354,23 +398,22 @@ function performSearch() {
         }
     });
 
-    // --- LOGIC FOR HIDING/SHOWING SECTIONS ON SEARCH ---
+    // Hide trailers and explore button on search
     if (upcomingTrailersSection) {
-        upcomingTrailersSection.style.display = 'none'; // Always hide trailers on search
+        upcomingTrailersSection.style.display = 'none';
     }
     if (exploreAllMoviesButton) {
-        exploreAllMoviesButton.style.display = 'none'; // Always hide explore button on search
+        exploreAllMoviesButton.style.display = 'none';
     }
     if (searchResultsInfo) {
-        searchResultsInfo.style.display = searchTerm !== '' ? 'block' : 'none'; // Only show info if search term is active
+        searchResultsInfo.style.display = searchTerm !== '' ? 'block' : 'none';
     }
     if (searchTerm === '') {
-        searchResultsInfo.textContent = ''; // Clear info text if search is empty
+        searchResultsInfo.textContent = '';
     }
-    // --- END LOGIC ---
 
     applyFiltersAndDisplay();
-    window.scrollTo({ top: movieGrid.offsetTop, behavior: 'smooth' }); // Scroll to movie grid after search
+    window.scrollTo({ top: movieGrid.offsetTop, behavior: 'smooth' });
 }
 
 // Hash Change Handler
@@ -381,34 +424,21 @@ function handleHashChange() {
         const foundMovie = movies.find(movie => sanitizeTitleForUrl(movie.title) === hash);
         if (foundMovie) {
             displayContent(foundMovie, true); // Display single movie
-            // Scroll to the movie card after it's rendered
-            setTimeout(() => { // Use a small delay to ensure rendering
+            setTimeout(() => {
                 const movieCardElement = document.getElementById(hash);
                 if (movieCardElement) {
-                    movieCardElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    movieCardElement.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Changed to 'center' for better mobile view
                 }
-            }, 100);
-            
+            }, 100); // Small delay to ensure rendering before scrolling
+
         } else {
-            // If hash not found, default to showing all movies
+            // Invalid hash, fallback to default view
             window.location.hash = ''; // Clear invalid hash
-            applyFiltersAndDisplay();
-            // Ensure main sections are visible when falling back to all movies
-            // This case should not be triggered directly if handleInitialLoad is correct
-            // But good to have as a fallback in applyFiltersAndDisplay
+            showDefaultAllMoviesView(); // Show default all movies view
         }
     } else {
-        // No hash, display default all movies view (handled by applyFiltersAndDisplay)
-        applyFiltersAndDisplay();
-        // Ensure main sections are visible when no hash is present AND no search term
-        if (!currentSearchTerm) {
-            if (upcomingTrailersSection) {
-                upcomingTrailersSection.style.display = 'block';
-            }
-            if (exploreAllMoviesButton) {
-                exploreAllMoviesButton.style.display = 'block';
-            }
-        }
+        // No hash, show default all movies view
+        showDefaultAllMoviesView();
     }
 }
 
@@ -426,29 +456,8 @@ if (searchButton) {
 }
 if (clearSearchButton) {
     clearSearchButton.addEventListener('click', () => {
-        searchInput.value = '';
-        currentSearchTerm = '';
-        currentFilter = 'All'; // Reset genre filter on clear
-        document.querySelectorAll('.genre-button').forEach(button => {
-            button.classList.remove('active');
-            if (button.dataset.genre === 'All') {
-                button.classList.add('active');
-            }
-        });
-
-        // Ensure all sections are visible when clearing everything
-        if (upcomingTrailersSection) {
-            upcomingTrailersSection.style.display = 'block';
-        }
-        if (exploreAllMoviesButton) {
-            exploreAllMoviesButton.style.display = 'block';
-        }
-        if (searchResultsInfo) {
-            searchResultsInfo.style.display = 'none'; // Hide search info on clear
-            searchResultsInfo.textContent = ''; // Clear search results info text
-        }
         window.location.hash = ''; // Clear hash on clear
-        applyFiltersAndDisplay(); // Re-display all movies
+        showDefaultAllMoviesView(); // Reset UI to default all movies view
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top of page
     });
 }
@@ -462,33 +471,43 @@ if (genreFiltersDiv) {
             event.target.classList.add('active');
 
             currentFilter = event.target.dataset.genre;
-            currentSearchTerm = ''; // Clear search term when filtering by genre
-            searchInput.value = ''; // Clear search input field
+            currentSearchTerm = '';
+            searchInput.value = '';
 
-            // Ensure all sections are visible for genre filters (unless it's 'All' after a search, but this handles simple genre clicks)
-            if (upcomingTrailersSection) {
-                upcomingTrailersSection.style.display = 'block';
+            // Hide trailers and explore button on genre filter if not 'All'
+            if (currentFilter !== 'All') { // Only hide if specific genre is selected
+                if (upcomingTrailersSection) {
+                    upcomingTrailersSection.style.display = 'none';
+                }
+                if (exploreAllMoviesButton) {
+                    exploreAllMoviesButton.style.display = 'none';
+                }
+            } else { // If 'All' is selected, show them
+                if (upcomingTrailersSection) {
+                    upcomingTrailersSection.style.display = 'block';
+                }
+                if (exploreAllMoviesButton) {
+                    exploreAllMoviesButton.style.display = 'block';
+                }
             }
-            if (exploreAllMoviesButton) {
-                exploreAllMoviesButton.style.display = 'block';
-            }
+
             if (searchResultsInfo) {
-                searchResultsInfo.style.display = 'none'; // Hide search info when filtering
+                searchResultsInfo.style.display = 'none';
             }
-            searchResultsInfo.textContent = ''; // Clear search results info text
+            searchResultsInfo.textContent = '';
 
-            window.location.hash = ''; // Clear hash on genre filter
-            applyFiltersAndDisplay(); // Apply filter and display movies
-            window.scrollTo({ top: movieGrid.offsetTop, behavior: 'smooth' }); // Scroll to movie grid
+            window.location.hash = '';
+            applyFiltersAndDisplay();
+            window.scrollTo({ top: movieGrid.offsetTop, behavior: 'smooth' });
         }
     });
 }
 
-// --- NEW Event Listener for EXPLORE ALL MOVIES button ---
+// Event Listener for EXPLORE ALL MOVIES button
 if (exploreAllMoviesButton) {
     exploreAllMoviesButton.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default hash scroll behavior
-        
+
         // Reset state
         searchInput.value = '';
         currentSearchTerm = '';
@@ -502,10 +521,10 @@ if (exploreAllMoviesButton) {
 
         // Hide trailers, hide explore button
         if (upcomingTrailersSection) {
-            upcomingTrailersSection.style.display = 'none'; // Hide trailers
+            upcomingTrailersSection.style.display = 'none';
         }
         if (exploreAllMoviesButton) {
-            exploreAllMoviesButton.style.display = 'none'; // Hide itself
+            exploreAllMoviesButton.style.display = 'none';
         }
         if (searchResultsInfo) {
             searchResultsInfo.style.display = 'block'; // Show result count for all movies
@@ -513,6 +532,10 @@ if (exploreAllMoviesButton) {
         if (genreFiltersDiv) {
             genreFiltersDiv.parentElement.style.display = 'block'; // Ensure genre filters are visible
         }
+        if (pagination) { // Ensure pagination is shown when exploring all movies
+            pagination.style.display = 'flex';
+        }
+
 
         window.location.hash = ''; // Clear hash
         applyFiltersAndDisplay(); // Display all movies
@@ -522,33 +545,10 @@ if (exploreAllMoviesButton) {
 
 
 // --- Initial Load Handler ---
+// This function is now simplified to just call handleHashChange,
+// which in turn will either show a single movie or the default view
 function handleInitialLoad() {
-    const hash = window.location.hash.substring(1);
-
-    if (hash) {
-        // If there's a hash, bypass initial trailer display and go directly to single movie
-        handleHashChange(); // This will display single movie and hide other sections
-    } else {
-        // No hash, display default view: trailers first, then all movies below after user clicks "Explore"
-        displayUpcomingTrailers(upcomingTrailers); // Display trailers initially
-        
-        // Ensure the sections are visible for the initial load
-        if (upcomingTrailersSection) {
-            upcomingTrailersSection.style.display = 'block';
-        }
-        if (exploreAllMoviesButton) {
-            exploreAllMoviesButton.style.display = 'block';
-        }
-        
-        // Initially hide movie grid, pagination, genre filters, and search info until "Explore All Movies" is clicked
-        if (movieGrid) movieGrid.innerHTML = ''; // Clear grid
-        if (pagination) pagination.style.display = 'none';
-        if (searchResultsInfo) searchResultsInfo.style.display = 'none';
-        if (genreFiltersDiv) genreFiltersDiv.parentElement.style.display = 'none';
-
-        // Set initial filteredAndSearchedMovies to all movies in case explore button is clicked later
-        filteredAndSearchedMovies = [...movies];
-    }
+    handleHashChange(); // Let handleHashChange decide the initial view
 }
 
 // Event listener for DOMContentLoaded
