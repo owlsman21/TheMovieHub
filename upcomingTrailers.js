@@ -51,6 +51,41 @@ const upcomingTrailers = [
         releaseDate: "2024-07-19"
     },
     {
+        title: "The Coin Toss | No Country for Old Men ",
+        description: "Anton Chigurh (Javier Bardem) initiates a coin toss to determine the fate of a chatty gas station clerk.",
+        embedId: "ZY0DG8rUnCA", // Actual YouTube ID
+        source: "youtube",
+        releaseDate: "2024-07-19"
+    },
+    {
+        title: "Do You Have Any Other Questions? Courtroom Scene | A Few Good Men",
+        description: "A military lawyer intends to prove that two US Marines charged with murdering a fellow Marine were only following their base commander's orders.",
+        embedId: "kYPD6TtFJqU", // Actual YouTube ID
+        source: "youtube",
+        releaseDate: "2024-07-19"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "", // Actual YouTube ID
+        source: "youtube",
+        releaseDate: "2024-07-19"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "", // Actual YouTube ID
+        source: "youtube",
+        releaseDate: "2024-07-19"
+    },
+    {
+        title: "",
+        description: "",
+        embedId: "", // Actual YouTube ID
+        source: "youtube",
+        releaseDate: "2024-07-19"
+    },
+    {
         title: "",
         description: "",
         embedId: "", // Actual YouTube ID

@@ -1738,40 +1738,166 @@ const movies = [
         source: "okru"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "The Descent 2023",
+        description: "The film is described as a thriller where a group of individuals in a small, peaceful community must uncover the secrets behind a series of horrifying attacks by mysterious creatures that emerge from the depths of darkness.",
+        embedId: "9538436008486",
+        genres: ["Horror"],
         source: "okru"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "The Shape of Water",
+        description: "At a top secret research facility in the 1960s, a lonely janitor forms a unique relationship with an amphibious creature that is being held in captivity.",
+        embedId: "6544850094630",
+        genres: ["Drama","Sci-Fi"],
         source: "okru"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Womb 2025",
+        description: "Trapped in a remote hunting cabin, a pregnant recovering addict battles to escape the clutches of a deranged hunter obsessed with abducting her full term fetus.",
+        embedId: "9451032152614",
+        genres: ["Horror","Thriller"],
         source: "okru"
     },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "The Squatchers 2025",
+        description: "A group of friends, known as The Squatchers set out to fulfill their dream of finding Bigfoot, only to wind up on a heart-pounding quest for survival against the unknown. This is one adventure you have to see to believe.",
+        embedId: "9450984573478",
+        genres: ["Comedy"],
         source: "okru"
     },
      {
+        title: "War Party (1988) Director's Cut",
+        description: "A group of re-enactors attempt to stage a hundred year anniversary battle between US Cavalry and Blackfeet Indians. Unfortunately racial hostilities and a real gun lead to some all too real casualties, and three young Blackfoot men are caught in the middle.",
+        embedId: "9465828149798",
+        genres: ["Action","Drama"],
+        source: "okru"
+     },
+      {
+        title: "Night of the Tommyknockers 2022",
+        description: "When miners blast for gold in the 1870's, they accidentally release ancient creatures known as Tommyknockers. The Town of Deer Creek, Nevada is soon under siege with only a handful of survivors held up in the local saloon.",
+        embedId: "9273472846374",
+        genres: ["Horror","Weastern","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Blazing Saddles 1974",
+        description: "In order to ruin a western town and steal their land, a corrupt politician appoints a black sheriff, who promptly becomes his most formidable adversary.",
+        embedId: "7502168066598",
+        genres: ["Western","Comedy"],
+        source: "okru"
+     },
+      {
+        title: "Ride With The Devil 1999",
+        description: "During the American Civil War, two friends join the Bushwhackers, a militant group loyal to the Confederacy.",
+        embedId: "7210048883238",
+        genres: ["Western","Drama","War"],
+        source: "okru"
+     },
+      {
+        title: "The Thicket 2024",
+        description: "When a bounty hunter and a band of unlikely heroes pursue a brutal killer, they find themselves in a deadly no-man's-land known as The Thicket.",
+        embedId: "9136509291046",
+        genres: ["Western","Drama"],
+        source: "okru"
+     },
+      {
+        title: "Ghost Town (2023)",
+        description: "In the untamed West of Victorian-era America, a drifter takes a job as a barman in a small Arizona town. After a series of bizarre deaths, he soon finds himself the target of suspicion",
+        embedId: "6364574190118",
+        genres: ["Western","Horror"],
+        source: "okru"
+     },
+      {
+        title: "Mississippi Burning 1988 REMASTERED 1080p",
+        description: "Two FBI agents with wildly different styles arrive in Mississippi to investigate the disappearance of three civil rights activists.",
+        embedId: "8443536542376",
+        genres: ["Crime","Drama","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "From Dusk Till Dawn 1996 ",
+        description: "Two criminals and their hostages unknowingly seek temporary refuge in a truck stop populated by vampires, with chaotic results.",
+        embedId: "6164321405602",
+        genres: ["Horror"],
+        source: "okru"
+     },
+      {
+        title: "Beyond the Night 2018",
+        description: "When a Marine's son reveals damning information about a local gangster's missing daughter, a war of attrition wreaks havoc on their forgotten coal mining town.",
+        embedId: "1L7UpBTOzlU",
+        genres: ["Drama","Thriller"],
+        source: "youtube"
+     },
+      {
+        title: "Extinction: The G.M.O. Chronicles",
+        description: "The remaining survivors of pan-global epidemic face a race against time to find a cure before they succumb to its zombie-inducing effects. Holed up in an abandoned military base, Tom and his fellow survivors, their numbers dwindling with each successive day, desperately search for a way of stopping the outbreak and returning their lives to normal",
+        embedId: "L_njwTIXNA0",
+        genres: ["Horror"],
+        source: "youtube"
+     },
+      {
+        title: "Savage 2011",
+        description: "A blazing fire rips its way through Bear Valley National Park. As the firefighters try to contain it, the animals are being forced out of their habitat including a beast that was better left undiscovered.",
+        embedId: "l_Pzv7MZN9Q",
+        genres: ["Horror","Thriller"],
+        source: "okru"
+     },
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
-     }
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
 
 
 ]
