@@ -142,6 +142,7 @@ const movies = [
         genres: [""],
         source: "okru"
     },
+     // --- Movies from Page 2.html ---
     {
         title: "Dragon Soldiers",
         description: "A group of soldiers must fight mythical creatures in a fantastical setting.",
@@ -256,15 +257,15 @@ const movies = [
     },
    
     {
-        title: "Prisoner of war",
-        description: "early Tom Hardy Movie.",
+        title: "Colditz 2005",
+        description: "While WWII Allied officer Jack Rose is held prisoner in Germany's notorious Colditz Castle, he recruits a band of fellow escape artists in the ultimate break-out only to discover that the greatest betrayal awaits him on safe ground.",
         embedId: "6YHTnOquIBY",
-        genres: ["Drama"],
+        genres: ["Drama","war"],
         source: "youtube"
     },
     {
         title: "Please Sir",
-        description: "Fun with the Fenn st gang",
+        description: "Fun with the Fenn st gang",    
         embedId: "v6rgy5d/?pub=792qb",
         genres: ["Comedy"],
         source: "rumble"
@@ -282,7 +283,9 @@ const movies = [
         embedId: "qLFepx1SF80",
         genres: ["Drama"],
         source: "youtube"
+
     },
+     // --- Movies from Page 3.html ---
     {
         title: "The Hot Potato Movie 2011",
         description: " The Hot Potato is a 2012 British comedy crime thriller film. It was directed and written by Tim Lewiston and stars Ray Winstone, Colm Meaney and Jack Huston in the lead roles.",
@@ -325,6 +328,7 @@ const movies = [
         genres: ["Horror"],
         source: "okru"
     },
+
     {
         title: "Final Destination: Bloodlines 2025 ",
         description: " Plagued by a recurring violent nightmare, a college student returns home to find the one person who can break the cycle and save her family from the horrific fate that inevitably awaits them.",
@@ -382,7 +386,7 @@ const movies = [
         source: "youtube"
     },
     {
-        title: "union 2019",
+        title: "Union 2019",
         description: "A woman disguises herself as her dead brother, Henry, in order to survive in the Confederate ranks during the Civil War. He marries a widow to rescue her from an arranged marriage. They keep each others secrets and find true love.",
         embedId: "1367854418585",
         genres: ["Western"],
@@ -696,13 +700,7 @@ const movies = [
         genres: ["Thriller","Horror"],
         source: "okru"
     },
-     {
-        title: "Mission: Impossible - Dead Reckoning Part One (2023) ",
-        description: "Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands.",
-        embedId: "10414497598066",
-        genres: ["Action"],
-        source: "okru"
-    },
+    
      {
         title: "Teeth 2007 ",
         description: "Still a stranger to her own body, a high school student discovers she has a physical advantage when she becomes the object of male violence.",
@@ -1367,7 +1365,7 @@ const movies = [
         source: "okru"
     },
     {
-        title: "splinter 2008",
+        title: "Splinter",
         description: "Trapped in an isolated gas station by a voracious Splinter parasite that transforms its still-living victims into deadly hosts, a young couple and an escaped convict must find a way to work together to survive this primal terror.",
         embedId: "981264173721",
         genres: ["Horror"],
@@ -1683,7 +1681,7 @@ const movies = [
     },
      {
         title: "Cabin Fever 3 Patient Zero 2014",
-        description: "",
+        description: "When a group of friends enjoying a bachelor cruise in the Caribbean stumble upon a research facility on a remote island, a deadly virus is unleashed. The group must find a way to survive before the flesh eating virus consumes them all.",
         embedId: "1079544253081",
         genres: ["Horror"],
         source: "okru"

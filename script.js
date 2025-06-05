@@ -44,7 +44,7 @@ function createMovieCard(movie) {
     // });
 
     const movieTitleH3 = document.createElement('h3');
-    movieTitleH3.classList.add('movie-title', 'text-xl', 'font-semibold', 'text-blue-700', 'mb-2');
+   movieTitleH3.classList.add('movie-title', 'text-xl', 'font-semibold', 'text-blue-700', 'mb-2', 'w-full', 'break-words');
     movieTitleH3.textContent = movie.title;
     movieCard.appendChild(movieTitleH3);
 
