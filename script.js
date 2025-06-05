@@ -31,7 +31,7 @@ function sanitizeTitleForUrl(title) {
     return title.toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '');
 }
 
-// Helper function to create a single movie card HTML element
+//Helper function to create a single movie card HTML element
 function createMovieCard(movie) {
     const movieCard = document.createElement('div');
     // Ensure movieCard has an ID for direct linking/scrolling
@@ -39,9 +39,9 @@ function createMovieCard(movie) {
     movieCard.classList.add('movie-card', 'bg-white', 'rounded-lg', 'shadow-md', 'p-6', 'flex', 'flex-col', 'items-center', 'text-center');
 
     // Remove click event for now, as direct linking is handled by URL hash
-    // movieCard.addEventListener('click', () => {
-    //     window.location.hash = sanitizeTitleForUrl(movie.title);
-    // });
+     movieCard.addEventListener('click', () => {
+         window.location.hash = sanitizeTitleForUrl(movie.title);
+     });
 
     const movieTitleH3 = document.createElement('h3');
    movieTitleH3.classList.add('movie-title', 'text-xl', 'font-semibold', 'text-blue-700', 'mb-2', 'w-full', 'break-words');

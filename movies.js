@@ -1862,6 +1862,41 @@ const movies = [
         source: "okru"
      },
       {
+        title: "Lakeview Terrace (2008)",
+        description: "A troubled and racist African-American L.A.P.D. Officer will stop at nothing to force out a friendly interracial couple who just moved in next door to him.",
+        embedId: "9447996131878",
+        genres: ["Crime","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Wanted 2008",
+        description: "A frustrated office worker discovers that he is the son of a professional assassin, and that he shares his father's superhuman killing abilities.",
+        embedId: "9414094424614",
+        genres: ["Action","Crime","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Last County 2023",
+        description: "An alcoholic woman with a marriage on the rocks finds an unlikely ally in a wounded drug mule when the two of them are forced to defend her home from a violent siege of corrupt small town cops.",
+        embedId: "9348503177766",
+        genres: ["Crime","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
         title: "",
         description: "",
         embedId: "",
@@ -1889,6 +1924,21 @@ const movies = [
         genres: [""],
         source: "okru"
      },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     
 
 
 ]
