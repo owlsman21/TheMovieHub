@@ -1883,10 +1883,24 @@ const movies = [
         source: "okru"
      },
       {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Stir of Echoes 1999",
+        description: "A man has visions of a missing neighborhood girl.",
+        embedId: "7807656921638",
+        genres: ["Horror","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Event Horizon (1997)",
+        description: "A rescue crew is tasked with investigating the mysterious reappearance of a spaceship that had been lost for seven years.",
+        embedId: "9547193125414",
+        genres: ["Sci-Fi","Horror","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "1992 (2024)",
+        description: "A factory worker must protect his son during the 1992 L.A. uprising after the Rodney King verdict.",
+        embedId: "9544468662822",
+        genres: ["Thriller","Action","Drama"],
         source: "okru"
      },
       {
@@ -1924,21 +1938,7 @@ const movies = [
         genres: [""],
         source: "okru"
      },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-     
+
 
 
 ]
