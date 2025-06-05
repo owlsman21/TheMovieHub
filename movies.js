@@ -1904,10 +1904,31 @@ const movies = [
         source: "okru"
      },
       {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Abduct (2025)",
+        description: "A woman's peaceful mountain getaway takes a bizarre turn when her boyfriend disappears, and a random naked man shows up claiming to be him.",
+        embedId: "9517374966310",
+        genres: ["Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Hell of a Summer 2023",
+        description: "The counselors of a summer camp are terrorized by a masked killer.",
+        embedId: "9435574831654",
+        genres: ["Horror"],
+        source: "okru"
+     },
+      {
+        title: "Dead Mail (2024)",
+        description: "An ominous help note finds its way to a 1980s post office, connecting a dead letter investigator to a kidnapped keyboard technician.",
+        embedId: "9409949600294",
+        genres: ["Horror","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "It Feeds (2025",
+        description: "After a young girl bursts into their home psychiatry practice claiming an entity is feeding on her,Jordan and her clairvoyant mother must find a way to stop the force before the girl is taken completely.",
+        embedId: "9409851886118",
+        genres: ["Horror"],
         source: "okru"
      },
       {
@@ -1917,27 +1938,56 @@ const movies = [
         genres: [""],
         source: "okru"
      },
-      {
+     {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-      {
+     {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-      {
+     {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     
 
 
 
