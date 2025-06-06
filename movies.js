@@ -1932,31 +1932,31 @@ const movies = [
         source: "okru"
      },
       {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Desert Fiends 2024",
+        description: "Six friends on their way to a concert break down in the middle of nowhere and encounter a deranged family that lives in the desert killing anyone they come across.",
+        embedId: "9468714289702",
+        genres: ["Horror"],
         source: "okru"
      },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Nothing to Lose 1997",
+        description: "Nick's wife is in bed with his boss. He later gets a gun to his head by a carjacker but steps on the gas pedal. They end up friends after adventures together:holdups, burglary, reckless driving, and revenge. Twists follow.",
+        embedId: "2677676706342",
+        genres: ["Comedy"],
         source: "okru"
      },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "Nothing But Trouble 1991",
+        description: "A businessman and his friends are captured by a sadistic judge and his equally odd family in a bizarre mansion in the backwoods.",
+        embedId: "4357179247142",
+        genres: ["Comedy"],
         source: "okru"
      },
      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        title: "The Rocky Horror Picture Show 1975",
+        description: "A newly-engaged couple have a breakdown in an isolated area and must seek shelter at the bizarre residence of Dr. Frank-n-Furter.",
+        embedId: "3619420637734",
+        genres: ["Horror","Comedy","Music"],
         source: "okru"
      },
      {
