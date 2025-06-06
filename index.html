@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Movie Hub</title>
-    <link rel="stylesheet" href="style.css">
 
+    <title>The Movie Hub - Classic Cinema, Trailers & Streaming Info</title>
+    <meta name="description" content="Explore The Movie Hub for classic cinema gems, vintage trailers, film history insights, and where to stream timeless movies.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub/">
     <meta property="og:title" content="The Movie Hub - Your Gateway to Classic Cinema">
     <meta property="og:description" content="Explore and stream a hand-picked collection of timeless movies.">
-    <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/The%20Movie%20Hub.png">
+    <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/the%20movie%20hub.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub/">
-    <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Movie Hub">
+    <meta name="twitter:url" content="https://owlsman21.github.io/TheMovieHub/">
+    <meta name="twitter:title" content="The Movie Hub - Your Gateway to Classic Cinema">
     <meta name="twitter:description" content="Explore and stream a hand-picked collection of timeless movies.">
     <meta name="twitter:image" content="https://owlsman21.github.io/TheMovieHub/images/the%20movie%20hub.png">
 
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <style>
         /* Your existing custom styles for movie cards, genre buttons, etc. */
         body {
             font-family: Arial, sans-serif;
-            margin-top: 0; /* Ensure body margin is reset */
+            margin-top: 0;
         }
-
         .movie-card {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -41,7 +42,6 @@
             overflow: hidden;
             height: 100%;
         }
-
         .movie-title {
             font-size: 1.2em;
             margin-bottom: 10px;
@@ -52,7 +52,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
         .movie-description {
             font-size: 0.9em;
             color: #555;
@@ -62,16 +61,14 @@
             overflow-y: auto;
             text-overflow: ellipsis;
         }
-
         .video-responsive {
             overflow: hidden;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             position: relative;
             height: 0;
             margin-top: 15px;
             border-radius: 5px;
         }
-
         .video-responsive iframe {
             left: 0;
             top: 0;
@@ -80,8 +77,6 @@
             position: absolute;
             border-radius: 5px;
         }
-
-        /* Styles for Genre Buttons */
         #genre-filters {
             margin-top: 20px;
             margin-bottom: 20px;
@@ -91,7 +86,6 @@
             gap: 10px;
             padding: 0 10px;
         }
-
         .genre-button {
             padding: 10px 18px;
             background-color: #e0e0e0;
@@ -103,20 +97,16 @@
             transition: background-color 0.2s, color 0.2s, border-color 0.2s;
             white-space: nowrap;
         }
-
         .genre-button:hover {
             background-color: #d0d0d0;
             border-color: #999;
         }
-
         .genre-button.active {
             background-color: #007bff;
             color: white;
             border-color: #0056b3;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
-
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .movie-grid {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -132,7 +122,6 @@
                 font-size: 0.85em;
             }
         }
-
         @media (max-width: 480px) {
             .movie-grid {
                 grid-template-columns: 1fr;
@@ -148,17 +137,13 @@
                 font-size: 0.8em;
             }
         }
-
-        /* CSS for scrollable upcoming trailers grid */
         #upcoming-trailers-grid {
-            max-height: 400px; /* Adjust this value (e.g., 300px, 500px) based on your preference */
-            overflow-y: auto;  /* Adds a vertical scrollbar if content exceeds max-height */
-            padding-right: 15px; /* Adds space for the scrollbar so content isn't hidden by it */
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 15px;
         }
-
-        /* Styles for the new main navigation */
         .main-nav {
-            background-color: #2c3e50; /* Darker blue/grey */
+            background-color: #2c3e50;
             padding: 10px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             text-align: center;
@@ -167,9 +152,9 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            display: flex; /* Use flexbox for horizontal items */
-            justify-content: center; /* Center items */
-            gap: 20px; /* Space between items */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         .main-nav ul li a {
             color: white;
@@ -180,9 +165,8 @@
             transition: background-color 0.3s ease;
         }
         .main-nav ul li a:hover {
-            background-color: #34495e; /* Slightly lighter on hover */
+            background-color: #34495e;
         }
-
     </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECM48V41WY"></script>
@@ -192,8 +176,7 @@
       gtag('js', new Date());
       gtag('config', 'G-ECM48V41WY');
     </script>
-</head>
-<body class="bg-gray-100 font-sans">
+</head><body class="bg-gray-100 font-sans">
 
     <nav class="main-nav">
         <ul>
