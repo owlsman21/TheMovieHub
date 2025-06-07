@@ -1960,27 +1960,83 @@ const movies = [
         source: "okru"
      },
      {
+        title: "The Lost Boys (1987)",
+        description: "When a recently divorced mother and her two teenage boys move to a coastal town to stay with her father, it doesn't take long for the brothers to realize the area is a haven for something much more sinister than party-going surfers.",
+        embedId: "3439021722150",
+        genres: ["Horror"],
+        source: "okru"
+     },
+     {
+        title: "The Great Outdoors 1988",
+        description: "A Chicago man and his family go camping with his obnoxious brother-in-law.",
+        embedId: "3280919202342",
+        genres: ["Comedy"],
+        source: "okru"
+     },
+     {
+        title: "The Jerky Boys (1995)",
+        description: "A hilarious prank phone call pushes the buttons of an angry mob boss.",
+        embedId: "761915574817",
+        genres: ["Comedy","Crime"],
+        source: "okru"
+     },
+     {
+        title: "Behaving Badly (2014) ",
+        description: "Teenager Rick Stevens has a crush on Nina Pennington. They form a friendship and take a rock'n'roll journey together while Nina deals with her overbearing boyfriend Kevin.",
+        embedId: "9115896056358",
+        genres: ["Comedy"],
+        source: "okru"
+     },
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-     {
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-     {
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-     {
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
         title: "",
         description: "",
         embedId: "",
