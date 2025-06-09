@@ -1988,55 +1988,111 @@ const movies = [
         source: "okru"
      },
       {
+        title: "Southern Comfort 1981 1080",
+        description: "During a routine exercise, a team of National Guardsmen are threatened by angry and violent locals.",
+        embedId: "2302014655003",
+        genres: ["Thriller","Action"],
+        source: "okru"
+     },
+      {
+        title: "Frequencies (2013) 1080",
+        description: "In an alternate reality, children learn how lucky they will be (their frequency), knowledge which shapes their destiny. The unluckiest boy must parse the mysteries of free will in order to pursue his forbidden love of the luckiest girl",
+        embedId: "9870089259547",
+        genres: ["Sci-Fi"],
+        source: "okru"
+     },
+      {
+        title: " Freaks 2018  1080",
+        description: "A bold girl discovers a bizarre, threatening, and mysterious new world beyond her front door after she escapes her father's protective and paranoid control.",
+        embedId: "9870088079899",
+        genres: ["Sci-Fi","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Follow Me (1972) (1080p)",
+        description: "A jealous businessman suspects that his wife is having an affair and hires an eccentric private detective to investigate. The suspected infidelity, however, is the tip of the iceberg and an elaborate game of cat and mouse ensues.",
+        embedId: "9844221479451",
+        genres: ["Drama","Comedy"],
+        source: "okru"
+     },
+      {
+        title: "Farmlands (2018) (1080p)",
+        description: "Details the plight of South African farmers.",
+        embedId: "9844218268187",
+        genres: ["Drama","History"],
+        source: "okru"
+     },
+      {
+        title: "The Manhattan Project (2022) (1080p)",
+        description: "When a small-town cocktail-enthusiast decides to kill himself after being diagnosed with a terminal illness he must deal with the repercussion his choice has on his son and his community.",
+        embedId: "9826338343451",
+        genres: ["Comedy","Drama"],
+        source: "okru"
+     },
+      {
+        title: "Firewall (2006) (1080p)",
+        description: "A security specialist is forced into robbing the bank that he's protecting, as a bid to pay off his family's ransom.",
+        embedId: "9813110819355",
+        genres: ["Action","Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Finding Your Feet (2017) 1080",
+        description: "On the eve of retirement a middle class, judgmental snob discovers her husband has been having an affair with her best friend and is forced into exile with her bohemian sister who lives on an impoverished inner-city council estate.",
+        embedId: "9813110557211",
+        genres: ["Comedy","Drama"],
+        source: "okru"
+     },
+     {
+        title: "Finding Graceland (1998) (1080p)",
+        description: "An eccentric drifter claiming to be Elvis Presley hitches a ride with a young man and they find themselves on an adventurous road trip to Memphis.",
+        embedId: "9813091158555",
+        genres: ["Drama"],
+        source: "okru"
+     },
+     {
+        title: "The.Patriot.1998",
+        description: "A respected doctor must race against time to find a cure for a lethal virus unleashed by a paramilitary militia leader.",
+        embedId: "3639686203959",
+        genres: ["Action","Thriller"],
+        source: "okru"
+     },
+     {
+        title: "Requiem for a Scream 2022",
+        description: "A sadistic killer sets his sights on a group of friends partying in an abandoned lake house, determined to make their murders his symphony.",
+        embedId: "3960201546295",
+        genres: ["Horror"],
+        source: "okru"
+     },
+     {
+        title: "Field of Dreams (1989)",
+        description: "Iowa farmer Ray Kinsella is inspired by a voice he can't ignore to pursue a dream he can hardly believe. Supported by his wife, Ray begins the quest by turning his ordinary cornfield into a place where dreams can come true.",
+        embedId: "8345107630702",
+        genres: ["Drama"],
+        source: "okru"
+     },
+     {
+        title: "ConAir 1997",
+        description: "Former US Amy Ranger, Cameron Poe, has just been paroled for manslaughter, but must stop a group of violent and deadly criminals from escaping the country after they seizes control of the prison transport plane he is on.",
+        embedId: "10328404003438",
+        genres: ["Action"],
+        source: "okru"
+     },
+     {
+        title: "A Chefs Deadly Revenge (2024)",
+        description: "A woman moves to a new town and opens her own gourmet restaurant after escaping from an abusive relationship. She soon finds herself in a deadly game of cat and mouse when she becomes the target of constant harassment from a jealous man.",
+        embedId: "7953109879406",
+        genres: ["Thriller"],
+        source: "okru"
+     },
+     {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
+     {
         title: "",
         description: "",
         embedId: "",
