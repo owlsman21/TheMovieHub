@@ -28,13 +28,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Add any other main pages of your Movie Hub here, for example: -->
-  <!-- <url>
+  <!-- Movies Page -->
+  <url>
     <loc>https://owlsman21.github.io/TheMovieHub/movies.html</loc>
     <lastmod>2025-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url> -->
+  </url>
   <!-- If you have specific movie detail pages (e.g., movie-details-avatar.html) -->
   <!-- <url>
     <loc>https://owlsman21.github.io/TheMovieHub/movie-details-avatar.html</loc>
