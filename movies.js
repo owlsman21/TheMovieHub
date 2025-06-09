@@ -2115,10 +2115,10 @@ const movies = [
         source: "okru"
      },
      {
-        title: "The.Vampire.Next.Door.2024.",
+        title: "The Vampire Next Door 2024",
         description: "Introverted Cameron, is desperately in love with his high school crush Diane. But his romantic pursuit is halted when Victoria, a female vampire moves in next door. Cameron soon discovers he's in the middle of a life-and-death adventure.",
         embedId: "7576537795182",
-        genres: ["hORROR"],
+        genres: ["Horror"],
         source: "okru"
      },
      {
