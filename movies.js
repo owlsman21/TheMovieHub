@@ -2086,6 +2086,63 @@ const movies = [
         source: "okru"
      },
      {
+        title: "I Know What You Did Last Summer (1997)",
+        description: "Four young friends bound by a tragic accident are reunited when they find themselves being stalked by a hook-wielding maniac in their small seaside town.",
+        embedId: "7590589303406",
+        genres: ["Horror"],
+        source: "okru"
+     },
+     
+     {
+        title: "I Still Know What You Did Last Summer (1998)",
+        description: "The murderous fisherman with a hook is back to once again stalk the two surviving teens, Julie and Ray, who had left him for dead, as well as cause even more murder and mayhem, this time at a posh island resort.",
+        embedId: "7590592645742",
+        genres: ["Horror"],
+        source: "okru"
+     },
+     {
+        title: "When.Darkness.Falls.2022.",
+        description: "Andrea and Jess go trekking in Scotland and get separated. Jess searches for Andrea but finds danger instead. Now in peril herself, Jess struggles to locate her missing friend and discern who she can trust.",
+        embedId: "7576565123694",
+        genres: ["Thriller"],
+        source: "okru"
+     },
+     {
+        title: "House of Inequity 2021",
+        description: "A day trip takes a turn for the worse when a group of friends investigate an abandoned house. The nightmares quickly become a reality when they're forced to face their own personal fears, and survive a night in The House of Inequity.",
+        embedId: "7576554572398",
+        genres: ["Horror"],
+        source: "okru"
+     },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
         title: "",
         description: "",
         embedId: "",
