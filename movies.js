@@ -2122,34 +2122,104 @@ const movies = [
         source: "okru"
      },
      {
+        title: "Woman With The Red Lipstick (2024)",
+        description: "Looking to spice things up, Lucy and her boyfriend assume fake names and roleplay meeting for the first time in a bar. A few days later Lucy sees a news report about a missing persons case where the victim has the same name she just used.",
+        embedId: "7567417739886",
+        genres: ["Thriller"],
+        source: "okru"
+     },
+     {
+        title: "Nanny Dearest (2023)",
+        description: "After receiving fertile eggs from a donor, Rebecca and Caleb are finally able to have a child and start a family. Four years later, a strange woman appears in their life and becomes oddly drawn to their daughter.",
+        embedId: "7567330445934",
+        genres: ["Thriller"],
+        source: "okru"
+     },
+     {
+        title: "Breakwater (2023)",
+        description: "A young ex-con risks his newfound freedom to track down the estranged daughter of a fellow inmate, and unknowingly brings a devil from her past straight to her doorstep.",
+        embedId: "7476133956206",
+        genres: ["Thriller"],
+        source: "okru"
+     },
+     {
+        title: "When The Bough Breaks (2016)",
+        description: "A surrogate mom for a couple becomes dangerously obsessed with the soon-to-be father.",
+        embedId: "7174931352174",
+        genres: ["Thriller","Drama"],
+        source: "okru"
+     },
+     {
+        title: "Nightmare School Moms (2023)",
+        description: "Two mothers battle to see which of their overachieving daughters will be accepted to a prestigious university. However, when one of their methods quickly spirals out of control, the games turned deadly.",
+        embedId: "7329874119278",
+        genres: ["Thriller"],
+        source: "okru"
+     },
+      {
+        title: "Ondine (2009)",
+        description: "An Irish fisherman discovers a woman in his fishing net whom his precocious daughter believes to be a selkie.",
+        embedId: "9919012801134",
+        genres: ["Drama"],
+        source: "okru"
+     },
+      {
+        title: "Kingdom of Heaven (2005)",
+        description: "In the twelfth century, blacksmith Balian travels to Jerusalem, a city seething with religious wars. He transforms into a defending warrior who saves the city and its people.",
+        embedId: "3680264260327",
+        genres: ["Action","Drama","War"],
+        source: "okru"
+     },
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-     {
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-     {
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-     {
+      {
         title: "",
         description: "",
         embedId: "",
         genres: [""],
         source: "okru"
      },
-     {
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
         title: "",
         description: "",
         embedId: "",
