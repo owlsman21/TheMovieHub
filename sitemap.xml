@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Homepage -->
   <url>
     <loc>https://owlsman21.github.io/TheMovieHub/</loc>
-    <lastmod>2025-05-24</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  </urlset>
+  <!-- Explicit Index Page (if your site serves index.html explicitly) -->
+  <url>
+    <loc>https://owlsman21.github.io/TheMovieHub/index.html</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- About Us Page -->
+  <url>
+    <loc>https://owlsman21.github.io/TheMovieHub/about.html</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Contact Page -->
+  <url>
+    <loc>https://owlsman21.github.io/TheMovieHub/contact.html</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Add any other main pages of your Movie Hub here, for example: -->
+  <!-- <url>
+    <loc>https://owlsman21.github.io/TheMovieHub/movies.html</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  <!-- If you have specific movie detail pages (e.g., movie-details-avatar.html) -->
+  <!-- <url>
+    <loc>https://owlsman21.github.io/TheMovieHub/movie-details-avatar.html</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+</urlset>
