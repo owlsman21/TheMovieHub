@@ -1,0 +1,375 @@
+/* General Body and Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a0a0a; /* Very dark background */
+    color: #eee; /* Light text for contrast */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Apply gothic fonts to headings and logo */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Metal Mania', cursive;
+    color: #ffcc00; /* Vibrant yellow for headings */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Global Link Styling */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+/* Main Header */
+.main-header {
+    background-color: #0d0404;
+    padding: 15px 0;
+    border-bottom: 3px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-logo {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Creepster', cursive; /* Specific gothic font for the logo */
+}
+
+.site-logo a {
+    color: #ffcc00;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: #eee;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #ffcc00;
+    color: #111;
+    text-shadow: none;
+}
+
+/* Main Content Sections */
+.main-content {
+    padding: 40px 0; /* Add back general padding for main content */
+}
+
+/* Base section styling */
+section {
+    background-color: #111; /* Slightly lighter than body for sections */
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #cc0000; /* Blood red button */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #ffcc00; /* Yellow border for accent */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* Yellow on hover */
+    color: #111; /* Dark text on yellow hover */
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-secondary {
+    background-color: #333;
+    border-color: #666;
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Hero Section (Homepage Banner with Text Content) */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px; /* Adjusted padding */
+    background-color: #0d0404; /* Dark background color */
+    color: #fff;
+    border-bottom: 5px solid #cc0000;
+    margin-bottom: 30px; /* Standard margin for sections */
+}
+
+.hero-section h2 {
+    font-size: 3em;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    color: #ccc;
+}
+
+/* Latest Movies Section */
+.latest-movies-section {
+    /* Inherits general section styles */
+    text-align: center;
+}
+
+.latest-movies-section h2 {
+    margin-bottom: 25px;
+}
+
+/* Movie Grid Common Styles (for both latest-movie-grid and movie-grid) */
+.movie-grid-section {
+    /* Inherits general section styles */
+    text-align: center;
+}
+
+#latest-movie-grid, #movie-grid {
+    display: grid;
+    /* Tailwind classes handle grid columns and gap, no need to duplicate */
+}
+
+/* Product Item (used for individual movie cards) */
+.product-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #444;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #555;
+}
+
+.product-item h4 {
+    font-size: 1.4em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 0.95em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.btn-view-product {
+    /* Inherits .btn styles, can be overridden if needed */
+}
+
+/* Filter and Search Section (from movies.html) */
+.filter-search-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-search-section h2 {
+    margin-bottom: 25px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    /* Tailwind classes are used in movies.html for these inputs */
+}
+
+.genre-filters {
+    /* Tailwind classes are used in movies.html for grid and gap */
+    margin-top: 15px;
+}
+
+.genre-button {
+    /* Tailwind classes are used in movies.html for these buttons */
+}
+
+/* Pagination Section (from movies.html) */
+.pagination-section {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+#pagination {
+    /* Tailwind classes are used for flex, justify-center, space-x-2 */
+}
+
+/* Movie Detail Section (from movie-detail.html) */
+.movie-detail-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center; /* Center content within the detail section */
+}
+
+.movie-detail-section .product-item {
+    background: none; /* Override product-item background */
+    box-shadow: none; /* Override product-item shadow */
+    border: none; /* Override product-item border */
+    padding: 0;
+}
+
+.movie-detail-section img {
+    max-width: 300px; /* Control image size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin: 0 auto 20px auto;
+}
+
+.video-embed-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.video-player {
+    width: 100%;
+    height: 400px; /* Default height, can be responsive via JS if needed */
+    border-radius: 8px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #0d0404;
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #ffcc00;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-links a {
+    color: #ffcc00;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5em;
+    }
+
+    /* Adjust movie detail section for smaller screens */
+    .movie-detail-section {
+        padding: 20px;
+    }
+
+    .video-player {
+        height: 250px; /* Adjust height for mobile */
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+        margin-left: 0; /* Remove margin-left for stacked buttons */
+    }
+
+    .genre-filters {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}

@@ -1,274 +1,373 @@
-const movies = [
+const allMovies = [
     // --- Existing Movies (Ok.ru and YouTube) ---
+ 
     {
-        title: "Ulzanas Raid (1972)",
+        id: 'Ulzanas-Raid', // Added unique ID
+        title: "Ulzanas Raid",
         description: "The story revolves around Scout McIntosh and an U.S. Cavalry Lieutenant DeBuin, who set out to catch a group of Apache renegades who are being led by chieftain, Ulzana.",
         embedId: "6410503522969",
-        source: "okru",
         genres: ["Western"],
+        source: "okru",
+        posterUrl:  'images/ulzana.jpg', // Placeholder image
+        year: 1972 // Added year for consistency
     },
-    {
+    {   id: 'she-wore-ayellow-ribbon', 
         title: "She wore a yellow ribbon",
         description: "Captain Nathan Brittles heads his last assignment before retirement to stop a Native American attack. But the job gets challenging when his superior instructs him to escort two women to safety.",
         embedId: "8921446943385",
         source: "okru",
         genres: ["Western"],
+        posterUrl:  'images/she wore a yellow ribbon.jpg',
+        year: 1949
     },
-    {
+    {   id: 'They-Died-with-Their-Boots-On', 
         title: "They Died with Their Boots On (1941)",
         description: "A movie which showcases the famous battle of Little Big Horn and the life of General Custer from the time he enters West Point military academy, the American Civil War and his death at Big Horn.",
         embedId: "8921449302681",
         source: "okru",
         genres: ["Western"],
-    },
+        posterUrl:  'images/they died with their boots on.jpg',
+        year: 1949
+     },
     {
-        title: "Dog.Soldiers.2002.720p.BluRay",
+        id: 'Dog-Soldiers', 
+        title: "Dog Soldiers.720p.BluRay",
         description: "During a routine nighttime training mission in the Scottish Highlands, a small squad of British soldiers expected to rendezvous with a special ops unit instead find a bloody massacre with a sole survivor. The savage attackers of the special ops team return, and the men are rescued by Megan (Emma Cleasby), a zoologist who identifies what hunts them as werewolves. Without transport or communications, the group is forced to retreat to a farmhouse to wait for the full moon to disappear at dawn.",
         embedId: "1632050940569",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/dog soldiers.jpg',
+        year: 2002
     },
     {
-        title: "THE SHATTERING_ HD 2020",
+        id: 'The-Shattering', 
+        title: "THE SHATTERING_ HD ",
         description: "Donovan lures several friends into the woods to meet a healer with his cancer-stricken girlfriend. Lucy. As they are hunted by creatures and commandos, the friends realize they were set up to pay for Lucy's cure.",
         embedId: "2054985288345",
         source: "okru",
-        genres: ["Horror"],
+        genres: ["Thriller"],
+        posterUrl:  'images/the shattering.jpg',
+        year: 2015
     },
-    {
-        title: "Downrange+2018.HD",
-        description: "Stranded survivors of a roadside ambush must find a way to escape a deadly sniper.",
+     {
+        id: 'Downrange', 
+        title: "Downrange ",
+        description: "Stranded at the side of the road after a tire blowout, a group of friends become targets for an enigmatic sniper.",
         embedId: "1281124600473",
         source: "okru",
-        genres: ["Horror", "Action"],
+        genres: ["Horror"],
+        posterUrl:  'images/downrange.jpg',
+        year: 2017
     },
+    
+   
     {
+        id: 'mary-had-a-little-lamb', 
         title: "mary had a little-lamb-2023",
         description: "A horror film reimagining the classic nursery rhyme with a terrifying twist.",
         embedId: "8916412664473",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/mary.jpg',
+        year: 2023
     },
     {
-        title: "The-horse-soldiers-1959",
+        id: 'The-horse-soldiers', 
+        title: "The-horse-soldiers",
         description: "During the Civil War, a Union cavalry unit is sent on a perilous mission behind Confederate lines.",
         embedId: "8921430297241",
         source: "okru",
         genres: ["Western"],
+        posterUrl:  'images/the horse soldiers.jpg',
+        year: 1959
     },
     {
+        id: 'Training-Day', 
         title: "Training Day",
         description: "A rookie detective is pushed to his limits by a corrupt narcotics officer during a single, intense day.",
         embedId: "6458634209830",
         source: "okru",
-        genres: [""],
+        genres: ["Thriller"],
+        posterUrl:  'images/training day.jpg',
+        year: 2001
     },
-    {
-        title: "wrong_turn",
+    { 
+        id: 'Wrong-Turn', 
+        title: "wrong turn",
         description: "A group of friends gets lost in the woods and becomes prey for a family of cannibalistic mutants.",
         embedId: "3630121945753",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wrong turn.jpg',
+        year: 2001
     },
     {
+        id: 'Wrong-Turn2', 
         title: "Wrong Turn2:Dead_End",
         description: "Contestants on a reality TV show fight for survival against a family of inbred cannibals.",
         embedId: "3630122273433",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wrong turn2.jpg',
+        year: 2007
     },
     {
+        id: 'Wrong-Turn3', 
         title: "wrong turn 3 left for dead",
         description: "Escaped convicts and a group of college students find themselves hunted by cannibals in the wilderness.",
         embedId: "3630123649689",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wrong turn3.jpg',
+        year: 2009
     },
     {
+        id: 'Wrong-Turn4', 
         title: "Wrong Turn 4: Bloody Beginnings",
         description: "A group of college students gets stranded in a snowstorm and takes refuge in an abandoned asylum, where they are hunted by mutants.",
         embedId: "3630125222553",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wrong turn4.jpg',
+        year: 2011
     },
     {
+        id: 'Wrong-Turn5', 
         title: "Wrong Turn 5:Bloodlines",
         description: "A Halloween music festival takes a terrifying turn when a group of friends becomes targets for a family of cannibals.",
         embedId: "3630125812377",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wrong turn5.jpg',
+        year: 2012
     },
     {
+        id: 'Wrong-Turn6', 
         title: "Wrong Turn 6: Last Resort",
         description: "A young man inherits a forgotten resort, only to discover it's home to a sinister family of cannibals.",
         embedId: "3630126271129",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wrong turn6.jpg',
+        year: 2014
     },
 
     // --- Movies from Page 2.html ---
     {
-        title: "Nightbreed.1990.1080p.BluRay",
+        id: 'Nightbreed', 
+        title: "Nightbreed.1080p.BluRay",
         description: "A young man discovers a hidden world of monsters and becomes their unlikely leader.",
         embedId: "2575196097177",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/nightbreed.jpg',
+        year: 1990
     },
     {
-        title: "The Sweeney (2012) 720p",
+        id: 'The-Sweeney', 
+        title: "The Sweeney.720p",
         description: "A hard-hitting police drama following a flying squad of detectives in London.",
         embedId: "2480859581081",
         source: "okru",
-        genres: [""],
+        genres: ["Thriller"],
+        posterUrl:  'images/the sweeney.jpg',
+        year: 2012
     },
+    
     {
-        title: "Wolf Creek Horror 720p HD",
+        id: 'wolf-creek', 
+        title: "Wolf Creek 720p HD",
         description: "Three backpackers stranded in the Australian outback fall prey to a sadistic killer.",
         embedId: "2054941575833",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wolf creek.jpg',
+        year: 2005
     },
+    
     {
-        title: "Wolf Creek 2 (2013)",
+        id: 'wolf-creek2', 
+        title: "Wolf Creek 2 ",
         description: "A sequel continuing the terrifying journey of the infamous Australian serial killer, Mick Taylor.",
         embedId: "3290426641064",
         source: "okru",
         genres: ["Horror"],
+        posterUrl:  'images/wolf creek2.jpg',
+        year: 2013
     },
     {
-        title: "The.Girl.Next.Door.2007.720p.BluRay",
+        id: 'The-Girl-Next-Door', 
+        title: "The.Girl.Next.Door.720p.BluRay",
         description: "Based on a disturbing true story, a teenage girl is subjected to horrific abuse by her aunt and cousins.",
         embedId: "2207886740121",
-        genres: [""],
-        source: "okru"
+        genres: ["Drama"],
+        source: "okru",
+        posterUrl:  'images/girl next door.jpg',
+        year: 2007
     },
      // --- Movies from Page 2.html ---
     {
+        id: 'Dragon-Soldiers', 
         title: "Dragon Soldiers",
         description: "A group of soldiers must fight mythical creatures in a fantastical setting.",
         embedId: "1630024567449",
         genres: ["Sci-Fi"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/dragon soldiers.jpg',
+        year: 2020
     },
     {
+        id: 'The-Punisher', 
         title: "The punisher 1989",
         description: "An ex-cop wages a one-man war against the criminal underworld after his family is murdered.",
         embedId: "2099299682969",
         genres: [""],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the punisher.jpg',
+        year: 1989
     },
     {
+        id: 'Master-and-Commander', 
         title: "Master and Commander: The Far Side of the World",
         description: "During the Napoleonic Wars, a daring British captain pursues a formidable French warship.",
         embedId: "1004226742937",
         genres: ["War","Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/master.jpg',
+        year: 2003
     },
     {
+        id: 'I-am-wrath',
         title: "I am wrath",
         description: "A man seeks revenge for his wife's murder when corrupt police fail to catch the killers.",
         embedId: "1060182231705",
         genres: ["Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/i am wrath.jpg',
+        year: 2016
     },
     {
-        title: "Brawl.in.Cell.Block.99.2017.1080",
+        id: 'Brawl-in-Cell-Block-99',
+        title: "Brawl in Cell Block 99.1080",
         description: "A former boxer and drug runner ends up in a brutal prison, forced to make impossible choices.",
         embedId: "1200399846041",
         genres: ["Drama","Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/brawl in cell block 99.jpg',
+        year: 2017
     },
     {
+        id: 'True-romance',
         title: "True romance",
         description: "A comic book nerd and a call girl fall in love and go on the run from the mob.",
         embedId: "1189170907801",
         genres: ["Drama","Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/true romance.jpg',
+        year: 1993
     },
     {
+        id: 'Police-Story',
         title: "Police Story",
         description: "A Hong Kong detective is framed for murder and must clear his name while fighting criminals.",
         embedId: "1189169334937",
         genres: ["Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/police story.jpg',
+        year: 1985
     },
     {
+        id: 'Heat',
         title: "Heat full movie",
         description: "A professional thief and an obsessive detective engage in a high-stakes game of cat and mouse.",
         embedId: "1189169138329",
         genres: ["Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/heat.jpg',
+        year: 1995
     },
     {
+        id: 'The-Guvnors',
         title: "The.Guvnors.2014.720p.BluRay",
         description: "A retired gang leader is drawn back into London's violent underworld.",
         embedId: "1123590015641",
         genres: ["Action","Drama"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the guvnors.jpg',
+        year: 2014
     },
     {
-        title: "north vs south",
+        id: 'north-vs-south',
+        title: "North vs South",
         description: "A conflict between two opposing factions in a historical or fictional setting.",
         embedId: "1157638130329",
         genres: ["Drama","Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/north vs south.jpg',
+        year: 2015
     },
+    
+    
     {
-        title: "The.Horse.Soldiers.1959",
-        description: "During the Civil War, a Union cavalry unit is sent on a perilous mission behind Confederate lines.",
-        embedId: "8921430297241",
-        genres: ["Western"],
-        source: "okru"
-    },
-    {
-        title: "Training Day",
-        description: "A rookie detective is pushed to his limits by a corrupt narcotics officer during a single, intense day.",
-        embedId: "6458634209830",
-        genres: ["Drama","Action"],
-        source: "okru"
-    },
-    {
-        title: "Kill Another Day 2016",
-        description: "A point-of-view horror film about a young man surviving a zombie apocalypse. Directed by Zachary Ramelan, it was released in Canada on March 31, 2016,",
+        id: 'Dead-Rush',
+        title: "Dead Rush",
+        description: "ADavid's life is turned upside down when an unknown illness ignites a full-blown zombie epidemic, leaving survivors with few places to hide. David rushes home to protect his pregnant wife, along the way gathering survivors.",
         embedId: "6410479798937",
-        genres: ["Action"],
-        source: "okru"
+        genres: ["Horror"],
+        source: "okru",
+        posterUrl:  'images/dead rush.jpg',
+        year: 2016
     },
     {
-        title: "Frgiles 2005 BluRay 720p",
+        id: 'Fragile',
+        title: "Fragile 2005 BluRay 720p",
         description: "At her new job in a rundown children's hospital, a nurse desperately tries to keep her patients safe from a plague of random, mysterious attacks.",
         embedId: "2575196097177",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/fragile.jpg',
+        year: 2005
     },
     {
-        title: "Darkness Falls 2020",
+        id: 'Darkness-Falls',
+        title: "Darkness Falls",
         description: "After his wife's suicide, Detective Jeff Anderson becomes convinced that she has been murdered. Obsessed with his investigation, he finds out that his wife was the victim of a team of father-and-son serial killers and sets out to stop them.",
         embedId: "2218518055577",
         genres: ["Drama","Action"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/darkness falls.jpg',
+        year: 2020
     },
     {
+        id: 'The-Babysitter',
         title: "The Babysitter 2017",
         description: "When Cole stays up past his bedtime, he discovers that his hot baby sitter belongs to a satanic cult",
         embedId: "1012486376089",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the babysitter.jpg',
+        year: 2017
     },
    
     {
-        title: "Colditz 2005",
+        id: 'Colditz',
+        title: "Colditz",
         description: "While WWII Allied officer Jack Rose is held prisoner in Germany's notorious Colditz Castle, he recruits a band of fellow escape artists in the ultimate break-out only to discover that the greatest betrayal awaits him on safe ground.",
         embedId: "6YHTnOquIBY",
         genres: ["Drama","war"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/colditz.jpg',
+        year: 2005
     },
     {
+        id: 'Please-Sir',
         title: "Please Sir",
         description: "Fun with the Fenn st gang",    
         embedId: "v6rgy5d/?pub=792qb",
         genres: ["Comedy"],
-        source: "rumble"
+        source: "rumble",
+         posterUrl:  'images/please sir.jpg',
+        year: 1968
     },
     {
         title: "Cass",
@@ -2135,48 +2234,146 @@ const movies = [
         genres: ["Thriller"],
         source: "okru"
      },
-     {
+    // movies.js
+
+// This array will hold all your movie data
+
+    {
+        id: 'breakwater-2023', // Added unique ID
         title: "Breakwater (2023)",
         description: "A young ex-con risks his newfound freedom to track down the estranged daughter of a fellow inmate, and unknowingly brings a devil from her past straight to her doorstep.",
         embedId: "7476133956206",
         genres: ["Thriller"],
-        source: "okru"
-     },
-     {
+        source: "okru",
+        posterUrl: 'images/Breakwater.jpg', // Placeholder image for Breakwater
+        year: 2023 // Added year for consistency
+    },
+    {
+        id: 'when-the-bough-breaks-2016', // Added unique ID
         title: "When The Bough Breaks (2016)",
         description: "A surrogate mom for a couple becomes dangerously obsessed with the soon-to-be father.",
         embedId: "7174931352174",
         genres: ["Thriller","Drama"],
-        source: "okru"
-     },
-     {
+        source: "okru",
+        // CORRECTED: Use relative path and forward slashes
+        posterUrl: 'images/when the bough breaks.jpg',
+        year: 2016 // Added year for consistency
+    },
+    {
+        id: 'nightmare-school-moms-2023', // Added unique ID
         title: "Nightmare School Moms (2023)",
         description: "Two mothers battle to see which of their overachieving daughters will be accepted to a prestigious university. However, when one of their methods quickly spirals out of control, the games turned deadly.",
         embedId: "7329874119278",
         genres: ["Thriller"],
-        source: "okru"
-     },
-      {
+        source: "okru",
+        posterUrl: 'images/Nightmare.jpg', // Placeholder image
+        year: 2023 // Added year for consistency
+    },
+    {
+        id: 'ondine-2009', // Added unique ID
         title: "Ondine (2009)",
         description: "An Irish fisherman discovers a woman in his fishing net whom his precocious daughter believes to be a selkie.",
         embedId: "9919012801134",
         genres: ["Drama"],
-        source: "okru"
-     },
-      {
+        source: "okru",
+        posterUrl: 'images/Ondine.jpg', // Placeholder image
+        year: 2009 // Added year for consistency
+    },
+    {
+        id: 'kingdom-of-heaven-2005', // Added unique ID
         title: "Kingdom of Heaven (2005)",
         description: "In the twelfth century, blacksmith Balian travels to Jerusalem, a city seething with religious wars. He transforms into a defending warrior who saves the city and its people.",
         embedId: "3680264260327",
         genres: ["Action","Drama","War"],
-        source: "okru"
-     },
+        source: "okru",
+        posterUrl: 'images/Kingdom.jpg', // Placeholder image
+        year: 2005 // Added year for consistency
+    },
+    // Your previously listed movies (continue to ensure they also have posterUrl if you plan to use them dynamically)
+    {
+       
+        id: 'Phenomenon',
+        title: 'Phenomenon',
+        description: 'A cynical American expatriate meets a former lover, with unforeseen complications.',
+        embedId: "8201706932846",
+        source:"okru",
+        posterUrl: 'images/phenomenon.jpg',
+        genre: 'Drama',
+        year: 1996
+    },
+    {
+        id: 'the-godfather',
+        title: 'The Godfather',
+        description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+        posterUrl: 'images/the godfather.jpg',
+        genre: 'Crime',
+        year: 1972
+    },
+    {
+        id: 'pulp-fiction',
+        title: 'Pulp Fiction',
+        description: 'The lives of two mob hitmen, a boxer, a gangster\'s wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
+        posterUrl: 'images/pulp fiction.jpg',
+        genre: 'Crime',
+        year: 1994
+    },
+    {
+        id: 'shawshank-redemption',
+        title: 'The Shawshank Redemption',
+        description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
+        posterUrl: 'images/shawshank.jpg',
+        genre: 'Drama',
+        year: 1994
+    },
+    {
+        id: 'Smokey-And-The-Bandit ',
+        title: 'Smokey And The Bandit',
+        description: 'The Bandit is hired on to run a tractor-trailer full of beer over state lines, in hot pursuit by a pesky sheriff.',
+        embedId: "7792980920942",
+        posterUrl: 'images/smokey.jpg', // Ensure this file exists
+        genre: 'Action',
+        year: 1977
+    },
+     {
+        id: 'Smokey-And-The-Bandit-2 ',
+        title: 'Smokey And The Bandit 2',
+        description: 'The Bandit goes on another cross-country run, transporting an elephant from Florida to Texas. And, once again, Sheriff Buford T. Justice is on his tail.',
+        embedId: "7792984590958",
+        posterUrl: 'images/smokey2.jpg', // Ensure this file exists
+        genre: 'Action',
+        year: 1980
+    },
+     {
+        id: 'Smokey-And-The-Bandit-3 ',
+        title: 'Smokey And The Bandit 3',
+        description: 'Big and Little Enos are opening a sea food restaurant. They bet Sheriff Buford T. Justice that he cannot drive from Miami to the Enos ranch in Texas in a given amount of time. If Buford loses he has to give up his badge.',
+        embedId: "7792987277934",
+        posterUrl: 'images/smokey3.jpg', // Ensure this file exists
+        genre: 'Action',
+        year: 1980
+    },
+    {
+        id: 'Angel-Baby',
+        title: 'Angel Baby',
+        description: 'A loving wife and her husband move away to a remote cabin to heal from the devastating loss of their stillborn twins. Soon she senses an evil presence and is pushed to the edge when dark secrets begin to unravel.',
+        embedId: "7476110101102",
+        posterUrl: 'images/angel baby.jpg', // Ensure this file exists
+        genre: 'Horror',
+        year: 2023
+    },
+    // Add all your other movie objects here, ensuring each has a 'posterUrl'
+
+
+      
       {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
+        id: 'Michael',
+        title: 'Michael (1996)',
+        description: 'An ordinary man sees a bright light descend from the sky, and discovers he now has super-intelligence and telekinesis.',
+         embedId: "8201706932846",
+        posterUrl: 'images/michael.jpg', // Ensure this file exists
+        genre: 'Drama',
+        year: 1996
+    },
       {
         title: "",
         description: "",

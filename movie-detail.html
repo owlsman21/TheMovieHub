@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details - The Movie Hub</title>
+    <!-- Google Fonts for Gothic Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo"><a href="index.html">The Movie Hub</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="movie-detail-section">
+                <div id="movie-details-container" class="product-item">
+                    <!-- Movie details will be loaded here by JavaScript -->
+                    <p>Loading movie details...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 The Movie Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your movies.js file which contains the allMovies array -->
+    <script src="movies.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const movieId = urlParams.get('id');
+            const movieDetailsContainer = document.getElementById('movie-details-container');
+
+            if (movieId && typeof allMovies !== 'undefined') {
+                // Find the movie by its ID
+                const movie = allMovies.find(m => m.id === movieId);
+
+                if (movie) {
+                    // Generate HTML for the movie details
+                    movieDetailsContainer.innerHTML = `
+                        <img src="${movie.posterUrl || 'https://placehold.co/400x600/222/ffcc00?text=No+Image'}" alt="${movie.title}" onerror="this.onerror=null;this.src='https://placehold.co/400x600/222/ffcc00?text=No+Image';">
+                        <h4 class="text-xl font-bold text-yellow-500 mt-4">${movie.title} (${movie.year || 'N/A'})</h4>
+                        <p class="text-gray-300 mt-2">${movie.description}</p>
+                        <p class="text-gray-300 mt-2"><strong>Genre:</strong> ${movie.genres ? movie.genres.join(', ') : 'N/A'}</p>
+                        <p class="text-gray-300 mt-2"><strong>Source:</strong> ${movie.source || 'N/A'}</p>
+                        <div class="video-embed-container mt-4">
+                            ${generateEmbedHtml(movie.embedId, movie.source)}
+                        </div>
+                        <a href="javascript:history.back()" class="btn-view-product mt-4 inline-block px-4 py-2 rounded-md bg-red-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">Back to Movies</a>
+                    `;
+                    // Update page title
+                    document.title = `${movie.title} Details - The Movie Hub`;
+                } else {
+                    movieDetailsContainer.innerHTML = '<p class="text-red-500">Movie not found.</p>';
+                    document.title = 'Movie Not Found - The Movie Hub';
+                }
+            } else {
+                movieDetailsContainer.innerHTML = '<p class="text-red-500">No movie ID provided.</p>';
+                document.title = 'No Movie ID - The Movie Hub';
+            }
+        });
+
+        // Helper function to generate embed HTML based on source
+        function generateEmbedHtml(embedId, source) {
+            if (!embedId) {
+                return '<p class="text-gray-400">No video available for this movie.</p>';
+            }
+
+            switch (source) {
+                case 'okru':
+                    return `
+                        <iframe class="video-player w-full aspect-video rounded-lg shadow-lg" src="https://ok.ru/videoembed/${embedId}"
+                            frameborder="0" allow="autoplay" allowfullscreen></iframe>
+                    `;
+                case 'youtube':
+                    return `
+                        <iframe class="video-player w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/${embedId}"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    `;
+                case 'rumble':
+                    return `
+                        <iframe class="video-player w-full aspect-video rounded-lg shadow-lg" src="https://rumble.com/embed/${embedId}/?pub=792qb"
+                            frameborder="0" allowfullscreen></iframe>
+                    `;
+                default:
+                    return '<p class="text-red-500">Unsupported video source.</p>';
+            }
+        }
+    </script>
+</body>
+</html>

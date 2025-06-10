@@ -35,11 +35,5 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- If you have specific movie detail pages (e.g., movie-details-avatar.html) -->
-  <!-- <url>
-    <loc>https://owlsman21.github.io/TheMovieHub/movie-details-avatar.html</loc>
-    <lastmod>2025-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url> -->
+  <!-- Removed: upcomingTrailers.html -->
 </urlset>

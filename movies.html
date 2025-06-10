@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Movies - The Movie Hub</title>
+    <!-- Google Fonts for Gothic Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo"><a href="index.html">The Movie Hub</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="filter-search-section">
+                <h2 class="section-title">Explore All Movies</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search movies by title, description, or genre..." class="p-2 border border-gray-700 rounded-md bg-gray-800 text-white w-full max-w-md">
+                    <button id="search-button" class="btn ml-2">Search</button>
+                    <button id="clear-search-button" class="btn btn-secondary ml-2">Clear</button>
+                </div>
+                <div class="genre-filters grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 mt-4" id="genre-filters">
+                    <button class="genre-button active px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="All">All</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Action">Action</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Comedy">Comedy</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Drama">Drama</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Horror">Horror</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Sci-Fi">Sci-Fi</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Thriller">Thriller</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Western">Western</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="War">War</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Mystery">Mystery</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Fantasy">Fantasy</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Biography">Biography</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="History">History</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Romance">Romance</button>
+                    <button class="genre-button px-4 py-2 rounded-md bg-gray-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200" data-genre="Reality-TV">Reality-TV</button>
+                </div>
+                <p id="search-results-info" class="text-center text-gray-500 mt-4"></p>
+            </section>
+
+            <section class="movie-grid-section">
+                <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Movie cards will be dynamically loaded here -->
+                    <p class="col-span-full text-center">Loading movies...</p>
+                </div>
+            </section>
+
+            <section class="pagination-section">
+                <div id="pagination" class="flex justify-center items-center space-x-2 mt-8">
+                    <!-- Pagination buttons will be dynamically loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 The Movie Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to your movies.js file which contains the allMovies array -->
+    <script src="movies.js"></script>
+    <!-- Link to your script.js file which handles dynamic loading, search, filter, and pagination -->
+    <script src="script.js"></script>
+</body>
+</html>
