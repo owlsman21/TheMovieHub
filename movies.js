@@ -2317,6 +2317,7 @@ const allMovies = [
         description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
         posterUrl: 'images/the godfather.jpg',
         genre: 'Crime',
+        source: "okru",
         year: 1972
     },
     {
@@ -2325,6 +2326,7 @@ const allMovies = [
         description: 'The lives of two mob hitmen, a boxer, a gangster\'s wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
         posterUrl: 'images/pulp fiction.jpg',
         genre: 'Crime',
+        source: "okru",
         year: 1994
     },
     {
@@ -2333,6 +2335,7 @@ const allMovies = [
         description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
         posterUrl: 'images/shawshank.jpg',
         genre: 'Drama',
+        source: "okru",
         year: 1994
     },
     {
@@ -2342,6 +2345,7 @@ const allMovies = [
         embedId: "7792980920942",
         posterUrl: 'images/smokey.jpg', // Ensure this file exists
         genre: 'Action',
+        source: "okru",
         year: 1977
     },
      {
@@ -2351,6 +2355,7 @@ const allMovies = [
         embedId: "7792984590958",
         posterUrl: 'images/smokey2.jpg', // Ensure this file exists
         genre: 'Action',
+        source: "okru",
         year: 1980
     },
      {
@@ -2360,6 +2365,7 @@ const allMovies = [
         embedId: "7792987277934",
         posterUrl: 'images/smokey3.jpg', // Ensure this file exists
         genre: 'Action',
+        source: "okru",
         year: 1980
     },
     {
@@ -2369,6 +2375,7 @@ const allMovies = [
         embedId: "7476110101102",
         posterUrl: 'images/angel baby.jpg', // Ensure this file exists
         genre: 'Horror',
+        source: "okru",
         year: 2023
     },
     // Add all your other movie objects here, ensuring each has a 'posterUrl'
@@ -2382,6 +2389,7 @@ const allMovies = [
          embedId: "8201706932846",
         posterUrl: 'images/michael.jpg', // Ensure this file exists
         genre: 'Drama',
+        source: "okru",
         year: 1996
     },
       {
