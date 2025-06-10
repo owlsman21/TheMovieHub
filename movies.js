@@ -366,45 +366,55 @@ const allMovies = [
         embedId: "v6rgy5d/?pub=792qb",
         genres: ["Comedy"],
         source: "rumble",
-         posterUrl:  'images/please sir.jpg',
+        posterUrl:  'images/please sir.jpg',
         year: 1968
     },
-    {
+    {   id: 'cass',
         title: "Cass",
         description: " Cass is a 2008 British crime drama film. It stars Nonso Anozie as Cass Pennant and is directed by Jon S. Baird. Cass is based on the true story of the life of Cass Pennant, adapted from his book.",
         embedId: "_uurzT-1Sck",
         genres: ["Drama"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/cass.jpg',
+        year: 2008
     },
-    {
+    {   id: 'Rise-of-the-Footsoldier',
         title: "Rise of the Footsoldier 2021",
         description: " Rise of the Footsoldier is a British gangster film franchise written and directed by Julian Gilbey, Will Gilbey, Ricci Harnett, Zackary Adler, Andrew Loveday and Nick Nevern, ",
         embedId: "qLFepx1SF80",
         genres: ["Drama"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/rise of the foot soldier.jpg',
+        year: 2007
 
     },
      // --- Movies from Page 3.html ---
-    {
-        title: "The Hot Potato Movie 2011",
+    {   id: 'The-Hot-Potato ',
+        title: "The Hot Potato ",
         description: " The Hot Potato is a 2012 British comedy crime thriller film. It was directed and written by Tim Lewiston and stars Ray Winstone, Colm Meaney and Jack Huston in the lead roles.",
         embedId: "O85tflN5Krg",
         genres: ["Drama","Comedy"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/hot potato.jpg',
+        year: 2011
     },
-    {
-        title: "Open Graves 2009",
+    {   id: 'Open-Graves ',
+        title: "Open Graves ",
         description: " A group of surfers discover an old board game which claims a life every time it is played.",
         embedId: "9519433386534",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/open graves.jpg',
+        year: 2009
     },
-    {
-        title: "Ouija: A New Beginning (2025) ",
+    {   id: 'Ouija',
+        title: "Ouija: A New Beginning  ",
         description: "Molly Price is a woman on the run, but when her oldest daughter finds a Ouija board and attempts to communicate with her deceased father, she invites the spirit of an ancient witch into her soul and puts the entire family at risk.",
         embedId: "9517571574310",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/ouija.jpg',
+        year: 2025
     },
     {
         title: "Abduct (2025) ",
