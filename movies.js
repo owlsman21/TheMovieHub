@@ -416,216 +416,270 @@ const allMovies = [
         posterUrl:  'images/ouija.jpg',
         year: 2025
     },
-    {
-        title: "Abduct (2025) ",
+    {   id: 'Abduct ',
+        title: "Abduct ",
         description: " A woman's peaceful mountain getaway takes a bizarre turn when her boyfriend disappears, and a random naked man shows up claiming to be him.",
         embedId: "9517374966310",
         genres: ["Drama"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/abduct.jpg',
+        year: 2025
     },
-    {
-        title: "I Was Honey Boo Boo (2025) ",
+    {   id: 'I-Was-Honey-Boo-Boo ',
+        title: "I Was Honey Boo Boo  ",
         description: " Alana Thompson, famously known as honey boo boo reveals her story of rising to fame and the secrets behind the cameras.",
         embedId: "9517224757798",
         genres: ["Drama"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/boo.jpg',
+        year: 2025
     },
-    {
-        title: "The Surrender 2015 ",
+    {   id: 'The-Surrender',
+        title: "The Surrender ",
         description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
         embedId: "9516826429990",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the surrender.jpg',
+        year: 2025
     },
 
-    {
+    {   id: 'Final-Destination-Bloodlines',
         title: "Final Destination: Bloodlines 2025 ",
         description: " Plagued by a recurring violent nightmare, a college student returns home to find the one person who can break the cycle and save her family from the horrific fate that inevitably awaits them.",
         embedId: "9514534111782",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/final destination bloodlines.jpg',
+        year: 2025
     },
-    {
-        title: "Antisocial 2 2015 ",
+    {   id: 'Antisocial-2',
+        title: "Antisocial 2 ",
         description: "Years after having her newborn child stolen from her, Sam searches a world infested with infected users from the Social Redroom website. After befriending a young girl named Bean, Sam is captured and locked in a facility dedicated to finding a cure for the Redroom Virus",
         embedId: "9506057947686",
-        genres: ["Drama"],
-        source: "okru"
+        genres: ["Horror"],
+        source: "okru",
+        posterUrl:  'images/antisocial 2.jpg',
+        year: 2015
     },
-    {
-        title: "Antisocial 2013 ",
+    {   id: 'Antisocial',
+        title: "Antisocial ",
         description: " Five university friends gather at a house party to ring in the New Year. Unbeknownst to them, an epidemic has erupted outside, causing outbreaks around the world.",
         embedId: "9500551088678",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/antisocial.jpg',
+        year: 2013
     },
-    {
+    {   id: 'Crossfire ',
         title: "Crossfire 2022",
         description: "After a shooting, Jo's family vacations turns into turmoil.",
         embedId: "pF_YIqju9gw",
         genres: ["Action"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/crossfire.jpg',
+        year: 2022
     },
-    {
+    {   id: 'Blood-Predator',
         title: "Blood Predator",
         description: " A handful of people wind up stranded in a desolate snowy mountain area in the wake of an airplane crash. They seek refuge in an old abandoned cabin. The group find themselves being terrorized by a lethal predatory extraterrestrial beast residing in the basement of the cabin.",
         embedId: "wN6OhOR43a4",
         genres: ["Horror"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/blood predator.jpg',
+        year: 2007
     },
-    {
-        title: "Archangel 2005",
+    {   id: 'Archangel',
+        title: "Archangel",
         description: " A British college professor, working in Russia, investigates certain mysteries surrounding the life and death of Joseph Stalin.",
         embedId: "zsZYaPNWcl4",
         genres: ["Drama"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/archangel.jpg',
+        year: 2005
     },
-    {
-        title: "Assassin 2015",
+    {   id: 'Assassin',
+        title: "Assassin",
         description: " Jamie is a contract killer tasked with eliminating a crooked official, but complications arise when he falls for the daughter of his target.",
         embedId: "jTR6N8Ip6DM",
         genres: ["Action"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/Assassin.jpg',
+        year: 2015
     },
-    {
-        title: "Air Force One Is Down",
+    {   id: 'Air-Force-One-Is-Down ',
+        title: " Air Force One Is Down ",
         description: " Alistair Maclean's highly charged novel is brought to life for a contemporary audience in this tense, international thriller.",
         embedId: "WzrYrcQPJqE",
         genres: ["Action","Thriller"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/Air Force One Is Down.jpg',
+        year: 2012
     },
-    {
-        title: "Union 2019",
+    {   id: 'Union ',
+        title: "Union ",
         description: "A woman disguises herself as her dead brother, Henry, in order to survive in the Confederate ranks during the Civil War. He marries a widow to rescue her from an arranged marriage. They keep each others secrets and find true love.",
         embedId: "1367854418585",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/union.jpg',
+        year: 2019
     },
-    {
-        title: "Decoys 2004",
+    {   id: 'Decoys ',
+        title: "Decoys ",
         description: " Luke and Roger are just another couple of college guys trying to lose their virginity. But when Luke sees something unusual, he begins to suspect that the girls on campus aren't exactly human.",
         embedId: "rWS9TaHh0Jo",
         genres: ["Horror","Comedy"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/decoys.jpg',
+        year: 2004
     },
-    {
-        title: "Mercury Plains 2004",
+    {   id: 'Mercury-Plains  ',
+        title: "Mercury Plains",
         description: " A troubled man runs away to Mexico and is recruited to join a paramilitary group of teens fighting the drug cartels. He proves himself to the group, but questions their motive.",
         embedId: "qwkiu0sk-9k",
         genres: ["Action","Drama"],
-        source: "youtube"
+        source: "youtube",
+        posterUrl:  'images/mercury plains.jpg',
+        year: 2004
     },
-    {
-        title: "Wolf Town 2011 ",
+    {   id: 'Wolf-Town  ',
+        title: " Wolf Town  ",
         description: " Kyle, a shy college student finds himself and three of his friends trapped in an old western ghost town by a pack of ferocious wolves and has to overcome his personal fears to confront the wolves and lead his friends to safety.",
         embedId: "978941381273",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/wolf town.jpg',
+        year: 2011
     },
-    {
+    {   id: 'Shadowland   ',
         title: "Shadowland 2008 ",
         description: "A taut reinvention of vampire lore, Shadowland opens in modern day North America, where construction workers uncover an old stone cross and what appears to be a wooden stake. They remove the stake from the ground, allowing Laura (Caitlin McIntosh), a slumbering vampire, to revive and rise from the earth",
         embedId: "979663850137",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/shadowland.jpg',
+        year: 2008
     },
-    {
-        title: "The Surrender 2015 ",
-        description: " When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
-        embedId: "9516826429990",
-        genres: ["Horror"],
-        source: "okru"
-    },
-    {
+    
+    {    id: 'Aliens-vs-Predator-Requiem.  ',
         title: "Aliens.vs.Predator.Requiem.2007 ",
         description: " Residents (Steven Pasquale, Reiko Aylesworth, John Ortiz) of Gunnison, Colorado, are caught up in the crossfire when two deadly extraterrestrial species bring their longstanding conflict to Earth. On the one side, nearly indestructible Aliens; on the other, a lone Predator whose mission is to wipe out all traces of the Alien infestation from Earth, no matter who gets in the way.",
         embedId: "1005714934425",
         genres: ["Horror", "Sci-Fi"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/aliens vs predator requiem.jpg',
+        year: 2007
     },
-    {
+    {  
+         id: 'The-Devils-Rock  ',
         title: "The Devil's Rock ",
         description: " Set in the Channel Islands on the eve of D Day, two Kiwi commandos, sent to destroy German gun emplacements to distract Hitler's forces away from Normandy, discover a Nazi occult plot to unleash demonic forces to win the war",
         embedId: "979809208985",
         genres: ["Horror"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the devils rock.jpg',
+        year: 2011
     },
-    {
-        title: "The Last of the Mohicans (1992) ",
+    {   id: 'The-Last-of-the-Mohicans ',
+        title: "The Last of the Mohicans  ",
         description: "The last members of a dying Native American tribe, the Mohicans -- Uncas (Eric Schweig), his father Chingachgook (Russell Means), and his adopted half-white brother Hawkeye (Daniel Day-Lewis) -- live in peace alongside British colonists. But when the daughters (Madeleine Stowe, Jodhi May) of a British colonel are kidnapped by a traitorous scout, Hawkeye and Uncas must rescue them in the crossfire of a gruesome military conflict of which they wanted no part: the French and Indian War.",
         embedId: "967004064409",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the last of the mohicans.jpg',
+        year: 1992
     },
-    {
-        title: "Mohawk 2018 ",
+    {   id: 'Mohawk',
+        title: "Mohawk ",
         description: "Late in the War of 1812, a young Mohawk woman and her two lovers battle a squad of American soldiers hell-bent on revenge.",
         embedId: "1351353633433",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/mohawk.jpg',
+        year: 2018
     },
-    {
+    
+    {   id: 'Young-Guns-2  ',
         title: "Young Guns 2 ",
         description: "En route to Mexico from the United States, Billy the Kid (Emilio Estevez) and his associates are pursued by federal agents hell-bent on bringing them to justice. But when Billy, Doc (Kiefer Sutherland) and Chavez (Lou Diamond Phillips) prove too difficult to track down, the frustrated authorities enlist an old friend of theirs, reformed outlaw Pat Garrett (William Petersen), to take down the elusive gunslinger. But Billy has a head start, and his crew of outlaws is growing by the minute.",
         embedId: "1012291275417",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/young guns 2.jpg',
+        year: 1990
     },
-     {
-        title: "Wyatt Earp.1994.HD ",
+     {  id: 'Wyatt-Earp  ',
+        title: "Wyatt Earp.HD ",
         description: " The epic biography of western lawman Wyatt Earp, who at an early age, is taught that nothing matters more than family and the law. He becomes a respected sheriff in Dodge City and Tombstone. Joined by his brothers and Doc Holliday, Earp wages war on the dreaded Clanton and McLaury gangs.",
         embedId: "1010676468377",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/wyatt earp.jpg',
+        year: 1994
     },
-     {
-        title: "The.Salvation.2014.720p.BluRay ",
+     {  id: 'The-Salvation',
+        title: "The.Salvation.720p.BluRay ",
         description: " After shooting the man who murdered his wife, a Danish settler (Mads Mikkelsen) incurs the wrath of the man's brother (Jeffrey Dean Morgan), a ruthless land baron who rules their frontier town.",
         embedId: "1010670897817",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the salvation.jpg',
+        year: 2014
     },
-     {
-        title: "The.Burrowers.2008 ",
+     {  id: 'The-Burrowers',
+        title: "The.Burrowers. ",
         description: " A rescue party comes face to face with underground creatures attacking a town.",
         embedId: "1010671487641",
         genres: ["Horror", "Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the burrowers.jpg',
+        year: 2008
     },
-     {
-        title: "The Revenant 2015 ",
+     {  id: 'The-Revenant   ',
+        title: "The Revenant ",
         description: "While exploring the uncharted wilderness in 1823, frontiersman Hugh Glass (Leonardo DiCaprio) sustains life-threatening injuries from a brutal bear attack. When a member (Tom Hardy) of his hunting team kills his young son (Forrest Goodluck) and leaves him for dead, Glass must utilize his survival skills to find a way back to civilization. Grief-stricken and fueled by vengeance, the legendary fur trapper treks through the snowy terrain to track down the man who betrayed him.",
         embedId: "1009119464089",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/the revenant .jpg',
+        year: 2015
     },
-     {
-        title: "Hostiles (2017)",
+     {  id: 'Hostiles',
+        title: "Hostiles",
         description: "In 1892, legendary Army Capt. Joseph Blocker reluctantly agrees to escort a dying Cheyenne war chief and his family back to their tribal land. Embarking on a harrowing and perilous journey from Fort Berringer, N.M., to the grasslands of Montana, they soon encounter a young widow whose family was killed on the plains. The travelers must now band together to survive a punishing landscape that's crawling with hostile Comanches and vicious outliers.",
         embedId: "1009119398553",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/hostiles.jpg',
+        year: 2017
     },
-     {
-        title: "Tombstone (1993) ",
+     {  id: 'Tombstone ',
+        title: "Tombstone ",
         description: "Wyatt Earp (Kurt Russell) and his brothers, Morgan (Bill Paxton) and Virgil (Sam Elliott), have left their gunslinger ways behind them to settle down and start a business in the town of Tombstone, Ariz. While they aren't looking to find trouble, trouble soon finds them when they become targets of the ruthless Cowboy gang. Now, together with Wyatt's best friend, Doc Holliday (Val Kilmer), the brothers pick up their guns once more to restore order to a lawless land.",
         embedId: "967267846809",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/tombstone.jpg',
+        year: 1993
     },
-     {
+     {  id: 'Young-Guns  ',
         title: "Young Guns (1988) ",
         description: "John Tunstall (Terence Stamp), a distinguished British gentleman, employs downtrodden youths to tend his herd on the New Mexican frontier. When Tunstall is gunned down by the crooked Lawrence G. Murphy (Jack Palance), a ragtag group of cow hands -- including Doc Scurlock (Kiefer Sutherland), Richard Brewer (Charlie Sheen) and young William billy the kid Bonney (Emilio Estevez) -- ride forth in search of bloody vengeance for the death of their beloved mentor.",
         embedId: "970239642265",
         genres: ["Western"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/young guns.jpg',
+        year: 1988
     },
-     {
-        title: "In the Tall Grass (2019) ",
+     {  id: 'In-the-Tall-Grass',
+        title: "In the Tall Grass ",
         description: " After hearing a young boy's cry for help, a sister and brother venture into a vast field of tall grass in Kansas but soon discover there may be no way out...and that something evil lurks within.",
         embedId: "1590932015654",
         genres: ["Horror","Sci-Fi"],
-        source: "okru"
+        source: "okru",
+        posterUrl:  'images/in the tall grass.jpg',
+        year: 2019
     },
      {
         title: "The.Inbetweeners.Movie.2011 ",
