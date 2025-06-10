@@ -2276,7 +2276,7 @@ const allMovies = [
         embedId: "9919012801134",
         genres: ["Drama"],
         source: "okru",
-        posterUrl: 'images/Ondine.jpg', // Placeholder image
+        posterUrl: 'images/ondine.jpg', // Placeholder image
         year: 2009 // Added year for consistency
     },
     {
@@ -2286,7 +2286,7 @@ const allMovies = [
         embedId: "3680264260327",
         genres: ["Action","Drama","War"],
         source: "okru",
-        posterUrl: 'images/Kingdom.jpg', // Placeholder image
+        posterUrl: 'images/kingdom.jpg', // Placeholder image
         year: 2005 // Added year for consistency
     },
     // Your previously listed movies (continue to ensure they also have posterUrl if you plan to use them dynamically)
