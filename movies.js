@@ -2245,7 +2245,7 @@ const allMovies = [
         embedId: "7476133956206",
         genres: ["Thriller"],
         source: "okru",
-        posterUrl: 'images/Breakwater.jpg', // Placeholder image for Breakwater
+        posterUrl: 'images/breakwater.jpg', // Placeholder image for Breakwater
         year: 2023 // Added year for consistency
     },
     {
@@ -2266,7 +2266,7 @@ const allMovies = [
         embedId: "7329874119278",
         genres: ["Thriller"],
         source: "okru",
-        posterUrl: 'images/Nightmare.jpg', // Placeholder image
+        posterUrl: 'images/nightmare.jpg', // Placeholder image
         year: 2023 // Added year for consistency
     },
     {
