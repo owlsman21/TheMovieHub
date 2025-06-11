@@ -642,7 +642,7 @@ const allMovies = [
         embedId: "1009119464089",
         genres: ["Western"],
         source: "okru",
-        posterUrl:  'images/the revenant .jpg',
+        posterUrl:  'images/the revenant.jpg',
         year: 2015
     },
      {  id: 'Hostiles',
@@ -681,49 +681,63 @@ const allMovies = [
         posterUrl:  'images/in the tall grass.jpg',
         year: 2019
     },
-     {
-        title: "The.Inbetweeners.Movie.2011 ",
+     {  id: 'The-Inbetweeners-Movie',
+        posterUrl:  'images/The-Inbetweeners-Movie.jpg',
+        year: 2011,
+        title: "The.Inbetweeners.Movie ",
         description: "Now that their final year of school is over, friends Will, Simon, Neil and Jay are off to Crete for a holiday. Hoping to get as much sun, sea and sex as possible, the boys quickly find more trouble than they had bargained for.",
         embedId: "1900462607001",
         genres: ["Comedy"],
         source: "okru"
     },
-     {
-        title: "The.Inbetweeners.2.2014.1080p.BluRay ",
+     {  id: 'The-Inbetweeners2-Movie',
+        posterUrl:  'images/The.Inbetweeners.2.jpg',
+        year: 2014,
+        title: "The Inbetweeners 2.1080p.BluRay ",
         description: "Jay, Neil, Simon and Will reunite in Australia after the gang finds out that Jay is indulging in a life of hedonism and promiscuity as a star DJ in Sydney. However, when they get there, they discover that Jay has vastly overstated his success.",
         embedId: "1900467325593",
         genres: ["Comedy"],
         source: "okru"
     },
-     {
-        title: "0 by mouth ",
+     {  id: 'Nil-by-mouth ',
+        posterUrl:  'images/Nil by mouth.jpg',
+        year: 1997,
+        title: "Nil by mouth ",
         description: "In a working-class London neighborhood, a highly dysfunctional family struggles to survive. The widowed Janet (Laila Morse), a former factory worker, has welcomed relatives into her home. In addition to her elderly mother, Kath (Edna Doré), and her son, Billy (Charlie Creed-Miles), Janet lives with her daughter, Valerie (Kathy Burke), and Valerie's abusive, alcoholic husband, Ray (Ray Winstone). Together they attempt to work out their differences, but drugs, booze and violence get in the way.",
         embedId: "970686663321",
         genres: ["Drama"],
         source: "okru"
     },
-     {
-        title: "One_Flew_Over The Cuckoos Nest (1975) 720p BluRay ",
+     {  id: 'One-Flew-Over-The-Cuckoos-Nest',
+        posterUrl:  'images/One Flew Over The Cuckoos Nest.jpg',
+        year: 1975,
+        title: "One Flew Over The Cuckoos Nest  720p BluRay ",
         description: "A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.",
         embedId: "1490043603609",
         genres: ["Drama"],
         source: "okru"
     },
-     {
-        title: "SAFE HAVEN 2013 ",
+     {  id: 'Safe-Haven',
+        posterUrl:  'images/Safe Haven.jpg',
+        year: 2013,
+        title: "Safe Haven ",
         description: "A young woman with mysterious past land in Southport, North Carolina where her bond with a widower forces her to confront the dark secret that haunts her.",
         embedId: "977407052441",
         genres: ["Drama"],
         source: "okru"
     },
-     {
-        title: "urge 2016 ",
+     {  id: 'urge ',
+        posterUrl:  'images/urge.jpg',
+        year: 2016,
+        title: "urge ",
         description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
         embedId: "1076555680409",
         genres: ["Drama","Sci-Fi"],
         source: "okru"
     },
-       {
+       {id: 'The-Pilots-Wife  ',
+        posterUrl:  'images/the pilots wife.jpg',
+        year: 2002,
         title: "The Pilots Wife (2002)",
         description: " Kathryn is distraught at the news of her husband's death delivered by a stranger from the airline for whom he was a pilot. She starts however to uncover information which leads to her arrival in London for further investigation...and further devastation.",
         embedId: "1092629367449",
@@ -731,132 +745,171 @@ const allMovies = [
         source: "okru"
     },
        {
-        title: "Stan and Ollie.2019.HD ",
+        id: 'Stan-and-Ollie',
+        posterUrl:  'images/stan and ollie.jpg',
+        year: 2019,
+        title: "Stan and Ollie.HD ",
         description: "Laurel and Hardy, the world's most famous comedy duo, attempt to reignite their film careers as they embark on what becomes their swan song - a gruelling theatre tour of post-war Britain.",
         embedId: "1198585678489",
         genres: ["Drama","Comedy"],
         source: "okru"
     },
-       {
-        title: "The Brown+Bunny 2003 ",
+       { id: 'The-Brown-Bunny',
+        posterUrl:  'images/the brown bunny.jpg',
+        year: 2003,
+        title: "The Brown Bunny 2003 ",
         description: "A motorcycle racer (Vincent Gallo) journeys cross country in search of women to take the place of the one true love (Chloë Sevigny) of his life.",
         embedId: "1232238086809",
         genres: ["Drama"],
         source: "okru"
     },
-       {
-        title: "The Guard of Auschwitz 2018.720p ",
+       {id: 'The-Guard-of-Auschwitz',
+        posterUrl:  'images/The Guard of Auschwitz.jpg',
+        year: 2018,
+        title: "The Guard of Auschwitz.720p ",
         description: " Follows the events of the Holocaust through the eyes of an SS Soldier.",
         embedId: "1265936632473",
         genres: ["Drama"],
         source: "okru"
     },
-       {
-        title: "A Lonely Place to Die 2011",
+       {id: 'A-Lonely-Place-to-Die',
+        posterUrl:  'images/A Lonely Place to Die.jpg',
+        year: 2011,
+        title: "A Lonely Place to Die",
         description: "While hiking and climbing in the Scottish Highlands, a group of five mountaineers discover a young Serbian girl buried in a small chamber. In the attempt to get the girl to safety, they become caught up in a terrifying game of cat and mouse with the kidnappers.",
         embedId: "968086391449",
         genres: ["Drama","Thriller"],
         source: "okru"
     },
-     {
-        title: "vendetta 2013",
+     {  id: 'Vendetta',
+        posterUrl:  'images/vendetta.jpg',
+        year: 2013,
+        title: "Vendetta",
         description: "Special ops interrogation officer Jimmy Vickers tracks down a gang who slaughtered his parents. With police closing in & his old unit on his trail, he has to to evade capture long enough to complete his gruesome crusade.",
         embedId: "6410477177497",
         genres: ["Action","Thriller"],
         source: "okru"
     },
-     {
-        title: "Deepwater (2005)",
+     {  id: 'Deepwater',
+        posterUrl:  'images/Deepwater.jpg',
+        year: 2005,
+        title: "Deepwater",
         description: " Nat Banyon (Lucas Black), a drifter en route to Wyoming, rescues Herman Finch (Peter Coyote) at the scene of a car accident. Grateful for his assistance, Finch offers Nat a job and free room and board at his hotel. There, Nat meets Finch's beautiful wife, Iris (Mia Maestro), and learns that his new boss is the ringleader of a local crime syndicate. Fearful that he too will fall prey to Finch's criminal machinations, Nat hatches a plan to run off with Iris.",
         embedId: "1333519387289",
         genres: ["Drama","Thriller"],
         source: "okru"
     },
-     {
+     {  id: 'Hamburger-Hill',
+        posterUrl:  'images/Hamburger Hill.jpg',
+        year: 1987,
         title: "Hamburger.Hill.1987 ",
         description: " A brutal and realistic war film focuses on the lives of a squad of 14 U.S. Army soldiers of B Company, 3rd Battalion, 187th Infanty Regiment, 101st Airborne Division during the brutal 10 day (May 11-20, 1969) battle for Hill 937 in the A Shau Valley of Vietnam as they try again and again to take the fortified hill held by the North Vietnamese, and the faults and casualties they take every time in which the battle was later dubbed Hamburger Hill because enemy fire was so fierce that the fusillade of bullets turned assaulting troops into shreded hamburger meat.",
         embedId: "1440487049881",
         genres: ["War"],
         source: "okru"
     },
-     {
-        title: "Threads 1983",
+     {  id: 'Threads',
+        posterUrl:  'images/Threads.jpg',
+        year: 1984,
+        title: "Threads",
         description: " The effects of a nuclear holocaust on the working class city of Sheffield, England and the eventual long-term effects of nuclear war on civilization.",
         embedId: "6410542975641",
         genres: ["War","Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Mission-of-Honor',
+        posterUrl:  'images/mission of honor.jpg',
+        year: 2018,
         title: "Mission of Honor",
         description: "The exploits of 303 Squadron RAF during the Battle of Britain. The squadron consisted of Polish pilots, many of whom were veterans of the air battles involved in Germany's invasion of Poland.",
         embedId: "1004758633113",
         genres: ["War"],
         source: "okru"
     },
-     {
+     {  id: 'bravo-two-zero',
+        posterUrl:  'images/bravo two zero.jpg',
+        year: 1999,
         title: "bravo two zero ",
         description: "British soldier Andy McNab (Sean Bean) leads a British Special Air Services patrol deployed during the Gulf War to take down Saddam Hussein's growing arsenal of Scud missiles. The fearless unit successfully inserts itself behind enemy lines, but inclement weather and loss of radio communication threatens to doom its mission. Captured and taken prisoner by the Iraqi army, the heroic soldiers of Bravo Two Zero must overcome the odds to escape almost certain torture or death.",
         embedId: "976455010969",
         genres: ["War"],
         source: "okru"
     },
-     {
+     {  id: 'My-Lai-Four',
+        posterUrl:  'images/My Lai Four.jpg',
+        year: 2010,
         title: "My Lai Four ",
         description: "The reenactment of the brutal massacre in Mi Lai a village in South Vietnam perpetrated by American Military forces on 16th of March 1968.",
         embedId: "1004028431001",
         genres: ["War"],
         source: "okru"
     },
-     {
+     {  id: 'Lone-Survivor',
+        posterUrl:  'images/Lone Survivor.jpg',
+        year: 2013,
         title: "Lone Survivor ",
         description: "Marcus Luttrell and his team set out on a mission to capture or kill notorious Taliban leader Ahmad Shah, in late June 2005. Marcus and his team are left to fight for their lives in one of the most valiant efforts of modern warfare.",
         embedId: "1015881337497",
         genres: ["War"],
         source: "okru"
     },
-     {
-        title: "Alone.We.Fight.2018.1080p",
+     {  id: 'Alone-We-Fight',
+        posterUrl:  'images/Alone We Fight.jpg',
+        year: 2018,
+        title: "Alone We Fight.1080p",
         description: "On a mission to stop an advancing German unit from breaking through the Allied line during WWII, a small -- but determined -- band of American soldiers ventures into dangerous enemy territory.",
         embedId: "1086013311641",
         genres: ["War"],
         source: "okru"
     },
-     {
-        title: "Act of valor 2012 ",
+     {  id: 'Act of valor',
+        posterUrl:  'images/Act of valor.jpg',
+        year: 2012,
+        title: "Act of valor",
         description: "An elite team of Navy SEALs embark on a covert mission to recover a kidnapped CIA agent.",
         embedId: "1460879952537",
         genres: ["War","Action"],
         source: "okru"
     },
-     {
-        title: "The.Green.Berets.1968.720p.BluRay ",
+     {  id: 'The-Green-Berets',
+        posterUrl:  'images/The Green Berets.jpg',
+        year: 1968,
+        title: "The Green Berets.720p.BluRay ",
         description: "Col. Mike Kirby picks two teams of crack Green Berets for a mission in South Vietnam. First off is to build and control a camp that is trying to be taken by the enemy the second mission is to kidnap a North Vietnamese General.",
         embedId: "1447574112921",
         genres: ["War"],
         source: "okru"
     },
-     {
-        title: "Black Hawk Down (2001) ",
+     {  id: 'Black-Hawk-Down',
+        posterUrl:  'images/Black Hawk Down.jpg',
+        year: 2001,
+        title: "Black Hawk Down",
         description: " Action/war drama based on the best-selling book detailing a near-disastrous mission in Somalia on October 3, 1993. On this date nearly 100 U.S. Army Rangers, commanded by Capt. Mike Steele, were dropped by helicopter deep into the capital city of Mogadishu to capture two top lieutenants of a Somali warlord. This led to a large and drawn-out firefight between the Army Ranges, US Special Forces, and hundreds of Somali gunmen; resulting in the destruction of two U.S. Black Hawk helicopters. The film focuses on the heroic efforts of various Rangers to get to the downed black hawks, centering on SSG Eversmann, leading the Ranger unit Chalk Four to the first black hawk crash site, Chief Warrant Officer Durant who was captured after being the only survivor of the second black hawk crash, as well as many others who were involved.",
         embedId: "1440484952729",
         genres: ["War"],
         source: "okru"
     },
-     {
+     {  id: 'Green-Street-Hooligans-2',
+        posterUrl:  'images/Green Street Hooligans 2.jpg',
+        year: 2009,
         title: "Green Street Hooligans 2 (2009) ",
         description: " After the brutal mass brawl fans of two football teams go to jail, where their feud raised to a new level of cruelty.",
         embedId: "10207745018482",
         genres: ["Drama","Crime"],
         source: "okru"
     },
-     {
-        title: "Green.Street.2005.720p ",
+     {  id: 'Green-Street',
+        posterUrl:  'images/Green Street.jpg',
+        year: 2005,
+        title: "Green Street 720p ",
         description: "A wrongfully expelled Harvard undergrad moves to London, where he is introduced to the violent underworld of football hooliganism.",
         embedId: "10207743511154",
         genres: ["Drama","Crime"],
         source: "okru"
     },
-     {
+     {  id: 'The-Bayou',
+        posterUrl:  'images/The Bayou 2025.jpg',
+        year: 2025,
         title: "The Bayou 2025",
         description: " Vacation turns disaster when Houston grad, Kyle and her friends escape a plane crash in the desolate Louisiana everglades, only to discover there's something way more dangerous lurking in the shallows.",
         embedId: "10413556304498",
@@ -864,23 +917,29 @@ const allMovies = [
         source: "okru"
     },
     
-     {
-        title: "Teeth 2007 ",
+     {  id: 'Teeth',
+        posterUrl:  'images/Teeth.jpg',
+        year: 2007,
+        title: "Teeth",
         description: "Still a stranger to her own body, a high school student discovers she has a physical advantage when she becomes the object of male violence.",
         embedId: "9490268686886",
         genres: ["Horror"],
         source: "okru"
     },
 
-     {
-        title: "Redhead 2023 ",
+     {  id: 'Redhead',
+        posterUrl:  'images/Redhead.jpg',
+        year: 2023,
+        title: "Redhead ",
         description: " Cannibalism and depravity drive Autumn Blacksmith, now widowed, to engage in a relentless revenge binge. Will she kill every man around her?",
         embedId: "9461777959462",
         genres: ["Horror"],
         source: "okru"
     },
 
-     {
+     {  id: 'Drop',
+        posterUrl:  'images/Drop.jpg',
+        year: 2025,
         title: "Drop 2025 ",
         description: " A widowed mother's first date in years takes a terrifying turn when she's bombarded with anonymous threatening messages on her phone during their upscale dinner, leaving her questioning if her charming date is behind the harassment.",
         embedId: "9453163252262",
@@ -888,7 +947,9 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'Bone Face',
+        posterUrl:  'images/Boneface.jpg',
+        year: 2025,
         title: "Bone Face (2025) ",
         description: "When a masked killer slaughters several campers in a small town, a sheriff and a deputy track the murderer to a local diner where, using their investigative skills, they must discover which person in the diner is the actual killer.",
         embedId: "9235304614438",
@@ -896,7 +957,9 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'Piglet',
+        posterUrl:  'images/Piglet.jpg',
+        year: 2025,
         title: "Piglet (2025) ",
         description: " On Kate's 21st birthday camping trip, her friends encounter Piglet, a monstrous human-pig hybrid who brutally murders one of them. They uncover Piglet's origins and Kate must confront her past to survive the relentless killer.",
         embedId: "9190687115814",
@@ -904,7 +967,9 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'Terrifier-3',
+        posterUrl:  'images/terrifier 3.jpg',
+        year: 2024,
         title: "Terrifier 3",
         description: "Art the Clown is set to unleash chaos on the unsuspecting residents of Miles County as they peacefully drift off to sleep on Christmas Eve.",
         embedId: "7979902568998",
@@ -912,7 +977,9 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'Near-Dark',
+        posterUrl:  'images/near dark.jpg',
+        year: 1987,
         title: "Near Dark (1987)",
         description: " A small-town farmer's son reluctantly joins a traveling group of vampires after he is bitten by a beautiful drifter.",
         embedId: "7723308616230",
@@ -920,7 +987,9 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'Lowlifes',
+        posterUrl:  'images/Lowlifes.jpg',
+        year: 2024,
         title: "Lowlifes (2024)",
         description: "The survival instincts of a road-tripping family are put to the test when they have no other choice but to stay the night at a remote homestead.",
         embedId: "7499099933222",
@@ -928,14 +997,18 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'IT',
+        posterUrl:  'images/IT 1990.jpg',
+        year: 1990,
         title: "IT 1990 ",
         description: "In 1960, seven pre-teen outcasts fight an evil demon who poses as a child-killing clown. Thirty years later, they reunite to stop the demon once and for all when it returns to their hometown.",
         embedId: "7404707383846",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {   id: 'Geronimo',
+        posterUrl:  'images/Geronimo.jpg',
+        year: 1993,
         title: "Geronimo: An American Legend ",
         description: " The story of the Apache chief and his armed resistance to the U.S. Government's subjugation of his people.",
         embedId: "7286425389606",
@@ -943,7 +1016,9 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'The-Bad-Seed',
+        posterUrl:  'images/The bad seed.jpg',
+        year: 2018,
         title: "The Bad Seed",
         description: "A father is forced to question everything he thought he knew about his daughter when he believes that she might have played a role in the tragic death of one of her classmates.",
         embedId: "1008261991065",
@@ -951,23 +1026,29 @@ const allMovies = [
         source: "okru"
     },
 
-     {
-        title: "Pay Back 1999 ",
+     {  id: 'PayBack',
+        posterUrl:  'images/Payback.jpg',
+        year: 1999,
+        title: "PayBack 1999 ",
         description: "Porter (Mel Gibson) is a thief betrayed by both his wife, Lynn (Deborah Kara Unger), and his partner, Val (Gregg Henry), when he is shot in the back after a heist. Slowly, Porter recovers from his wounds and begins a search for Val, intent on recovering his share of the money they stole together. With the aid of prostitute Rosie (Maria Bello), Porter captures Val but still cannot find his cash. For this, Porter will have to challenge an imposing crime syndicate called the Outfit.",
         embedId: "979802917529",
         genres: ["Action"],
         source: "okru"
     },
 
-     {
+     {  id: 'Bone-Tomahawk',
+        posterUrl:  'images/Bone Tomahawk.jpg',
+        year: 2015,
         title: "Bone Tomahawk (2015) ",
         description: " In the Old West, a small-town sheriff and his rag-tag posse set out to rescue several townspeople from a brutal cave-dwelling, cannibalistic Indian tribe.",
         embedId: "6461509208614",
         genres: ["Horror","Western"],
         source: "okru"
     },
-      {
-        title: "Jennifer's Body 2019 ",
+      { id: 'Jennifers-Body',
+        posterUrl:  'images/Jennifers Body.jpg',
+        year: 2019,
+        title: "Jennifers Body 2019 ",
         description: " A newly-possessed high-school cheerleader turns into a succubus who specializes in killing her male classmates. Can her best friend put an end to the horror?",
         embedId: "967038929561",
         genres: ["Horror"],
@@ -1499,13 +1580,7 @@ const allMovies = [
         genres: ["Horror"],
         source: "okru"
     },
-     {
-        title: "Safe Haven 2013",
-        description: "A young woman with a mysterious past lands in Southport, North Carolina where her bond with a widower forces her to confront the dark secret that haunts her.",
-        embedId: "977407052441",
-        genres: ["Drama"],
-        source: "okru"
-    },
+    
      {
         title: "Final Destination 2000 1080p BluRay",
         description: "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
@@ -2446,57 +2521,24 @@ const allMovies = [
         source: "okru",
         year: 1996
     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-      {
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
-        source: "okru"
-     },
-     
-
-
-
+     {
+        id: 'Goin-South ',           // <--- Fill in the unique ID for this movie (e.g., 'phenomenon-1996')
+        posterUrl: 'images/goin south.jpg', // <--- Fill in the exact path to the poster image (e.g., 'images/phenomenon.jpg')
+        year: 1978 ,           // <--- Fill in the release year (e.g., 1996)
+        title: 'Goin South ',        // <--- Fill in the full movie title (e.g., 'Phenomenon')
+        genres: ["western","Comedy" ],       // <--- Fill in the genres as an array (e.g., ["Drama", "Fantasy"])
+        source: 'okru',       // <--- Fill in the video source ('okru', 'youtube', or 'rumble')
+        embedId: '7792993372782',      // <--- Fill in the unique embed ID from the video source
+        description: 'Due to the lack of men after the Civil War, a small western town allows a bachelorette with ulterior motives to save a horse thief from the gallows by marrying him. They must deal with his old gang, the Sheriff, the bank, and each other.'   // <--- Fill in the movie's description
+    },
+    {
+        id: 'Grind ',           // <--- Fill in the unique ID for this movie (e.g., 'phenomenon-1996')
+        posterUrl: 'images/grind.jpg', // <--- Fill in the exact path to the poster image (e.g., 'images/phenomenon.jpg')
+        year: 2003 ,           // <--- Fill in the release year (e.g., 1996)
+        title: 'Grind ',        // <--- Fill in the full movie title (e.g., 'Phenomenon')
+        genres: ["Comedy" ],       // <--- Fill in the genres as an array (e.g., ["Drama", "Fantasy"])
+        source: 'okru',       // <--- Fill in the video source ('okru', 'youtube', or 'rumble')
+        embedId: '7792993372782',      // <--- Fill in the unique embed ID from the video source
+        description: 'Four skaters follow their idol on his summer tour in an attempt to get noticed, get sponsored, and become stars themselves.'   // <--- Fill in the movie's description
+    },
 ]
