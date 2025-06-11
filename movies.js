@@ -1336,293 +1336,370 @@ const allMovies = [
         genres: ["Drama","Crime"],
         source: "okru"
     },
-     {
-        title: "Pulp.Fiction.1994.1080",
-        description: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-        embedId: "7061358971461",
-        genres: ["Drama","Crime"],
-        source: "okru"
-    },
-     {
-        title: "Schindler's List 1993 1080",
+     
+     {  id: 'Schindlers-List',
+        posterUrl:  'images/Schindlers List.jpg',
+        year: 1993,
+        title: "Schindlers List 1993 1080",
         description: "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
         embedId: "9135100004896",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Jaws',
+        posterUrl:  'images/Jaws.jpg',
+        year: 1995,
         title: "Jaws 1995",
         description: "When a massive killer shark unleashes chaos on a beach community off Long Island, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
         embedId: "9666610006702",
         genres: ["Action"],
         source: "okru"
     },
-     {
+     {  id: 'The-Dark-Knight',
+        posterUrl:  'images/The Dark Knight.jpg',
+        year: 2008,
         title: "The Dark Knight (2008) HD",
         description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
         embedId: "7652106504857",
         genres: ["Action"],
         source: "okru"
     },
-     {
-        title: "Superman III (1983)",
+     {  id: 'Superman-3',
+        posterUrl:  'images/Superman 3.jpg',
+        year: 1983,
+        title: "Superman 3 (1983)",
         description: "Synthetic kryptonite laced with tar splits Superman in two: good Clark Kent and bad Man of Steel.",
         embedId: "2393667668662",
         genres: ["Action"],
         source: "okru"
     },
-     {
-        title: "Superman IV: The Quest for Peace (1987)",
+     {  id: 'Superman-4',
+        posterUrl:  'images/Superman 4.jpg',
+        year: 1987,
+        title: "Superman 4: The Quest for Peace (1987)",
         description: "The Man of Steel crusades for nuclear disarmament and meets Lex Luthor's latest creation, Nuclear Man.",
         embedId: "2393667603126",
         genres: ["Action"],
         source: "okru"
     },
-     {
+     {  id: 'Superman',
+        posterUrl:  'images/Superman.jpg',
+        year: 1978,
         title: "Superman (1978) Special Edition (720p)",
         description: "RESTORED WITH ADDITIONAL FOOTAGE! Follow the Man of Steel's story from Krypton to Smallville to his life in Metropolis and his alter-ego, mild-mannered Daily Planet reporter Clark Kent. Both Superman and Clark Kent must contend with the brilliant villain Lex Luthor and the tenacious, often-in-danger reporter Lois Lane.",
         embedId: "2323019860507",
         genres: ["Action"],
         source: "okru"
     },
-     {
+     {  id: 'Superman-2',
+        posterUrl:  'images/Superman 2.jpg',
+        year: 1980,
         title: "Superman 2  (1980)  720p",
         description: "Superman agrees to sacrifice his powers to start a relationship with Lois Lane, unaware that three Kryptonian criminals he inadvertently released are conquering Earth." ,
         embedId: "382886415088",
         genres: ["Action"],
         source: "okru"
     },
-     {
+     {  id: 'Scum',
+        posterUrl:  'images/Scum.jpg',
+        year: 1979,
         title: "Scum (1979) HD",
         description: "Scum is a 1979 British crime drama film. It features Ray Winstone, Mick Ford, Julian Firth, John Blundell, Phil Daniels, and Ray Burdis.",
         embedId: "9350991186638",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Scrubbers',
+        posterUrl:  'images/Scrubbers.jpg',
+        year: 1982,
         title: "Scrubbers (1982)",
         description: "Scrubbers is a 1982 British drama film. It features Amanda York, Chrissie Cotterill, Elizabeth Edmonds, Kate Ingram, and Kathy Burke. ",
         embedId:"9190631475918",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Planet-of-the-Apes',
+        posterUrl:  'images/Planet of the Apes.jpg',
+        year: 2001,
         title: "Planet of the Apes 2001 1080",
         description: "In 2029, an Air Force astronaut crash-lands on a mysterious planet where evolved, talking apes dominate a race of primitive humans.",
         embedId: "9227425155812",
         genres: ["Sci-Fi"],
         source: "okru"
     },
-     {
+     {  id: 'Rocky-Balboa',
+        posterUrl:  'images/Rocky Balboa.jpg',
+        year: 2006,
         title: "Rocky Balboa 2006 Director's Cut 2160p 4K BluRay",
         description: "His wife is dead and his son hates him, but this old man still has fight in him! When he loses a highly publicized virtual boxing match to ex-champ Rocky Balboa, reigning heavyweight titleholder Mason Dixon retaliates by challenging Rocky to a nationally televised, 10-round exhibition bout. To the surprise of his son and friends, Rocky agrees to come out of retirement and face an opponent who's faster, stronger, and thirty years his junior.",
         embedId: "9403827948260",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Everest',
+        posterUrl:  'images/Everest.jpg',
+        year: 2015,
         title: "Everest 2015",
         description: "On May 10, 1996, mountain guides Rob Hall and Scott Fischer combine their expedition teams for a final ascent to the summit of Mount Everest. With little warning, a storm strikes the mountain and the climbers must now battle to survive.",
         embedId: "9278677715494",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Sharp Corner',
+        posterUrl:  'images/Sharp Corner.jpg',
+        year: 2024,
         title: "Sharp Corner 2024 1080p",
         description: "A dedicated family man becomes obsessed with saving the lives of the car accident victims on the sharp corner in front of his house  an obsession that could cost him everything.",
         embedId: "9374293297892",
         genres: ["Drama"],
         source: "okru"
     },
-     {
-        title: "Rabid.2019.720p",
+     {  id: 'Rabid',
+        posterUrl:  'images/Rabid.jpg',
+        year: 2019,
+        title: "Rabid 2019.720p",
         description: "Rabid is a 2019 Canadian horror film directed and co-written by Jen and Sylvia Soska and starring Laura Vandervoort, Ben Hollingsworth, and Phil Brooks. It is a remake of the 1977 film of the same name directed by David Cronenberg.",
         embedId: "1398321449625",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'The-Utah-Cabin-Murders',
+        posterUrl:  'images/The Utah Cabin Murders.jpg',
+        year: 2019,
         title: "The Utah Cabin Murders 2019",
         description: "Two sisters fight for survival when masked intruders invade their vacation cabin.",
         embedId: "1375699077785",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Artik',
+        posterUrl:  'images/Artik.jpg',
+        year: 2019,
         title: "Artik 2019",
         description: "A comic book obsessed serial killer teaches his son how to get away with a series of brutal murders until the boy befriends a mysterious man who threatens to expose everything.",
         embedId: "1375699012249",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Stained',
+        posterUrl:  'images/Stained.jpg',
+        year: 2019,
         title: "Stained 2019",
         description: "A terrifying, modern adaptation of Shakespeare's Macbeth set in Scotland, CA. Scorning the mediocrity of their mundane lives, John and Jane Macbeth carry out a horrific plan to make the American dream a reality.",
         embedId: "1375698946713",
         genres: ["Drama","Horror"],
         source: "okru"
     },
-     {
+     {  id: 'The-Unseen',
+        posterUrl:  'images/The Unseen.jpg',
+        year: 2016,
         title: "The Unseen 2016 ",
         description: "A man who abandoned his family now risks everything to find his missing daughter, including exposing the secret that he is becoming invisible.",
         embedId: "M0d6iuIpR_g",
         genres: ["Sci-Fi"],
         source: "youtube"
     },
-     {
+     {  id: 'The-Foreigner',
+        posterUrl:  'images/The Foreigner.jpg',
+        year: 2017,
         title: "The Foreigner (2017)",
         description: "Jackie Chan plays Quan Ngoc Minh, a humble London businessman whose daughter is killed in a terrorist bombing claimed by a splinter group of the IRA. He then seeks revenge on those responsible.",
         embedId: "Xpm7URf-Jb8",
         genres: ["Action"],
         source: "youtube"
     },
-     {
+     {  id: 'Law-Abiding-Citizen',
+        posterUrl:  'images/Law Abiding Citizen.jpg',
+        year: 2009,
         title: "Law Abiding Citizen (2009)",
         description: "Clyde Shelton, intentionally gets himself into prison to orchestrate a complex revenge plot against the corrupt justice system that allowed his family's killers to go free. Jamie Foxx plays Nick Rice, the assistant district attorney who becomes his adversary.",
         embedId: "-WEsxS-lJKs?si",
         genres: ["Action"],
         source: "youtube"
     },
-     {
+     {  id: '3-Days-to-Kill',
+        posterUrl:  'images/3 Days to Kill.jpg',
+        year: 2014,
         title: "3 Days to Kill (2014)",
         description: " Kevin Costner plays Ethan Renner, a CIA assassin who is trying to track down two international terrorists known as The Wolf and his lieutenant, The Albino.",
         embedId: "kTgGI7pXoMk",
         genres: ["Action"],
         source: "youtube"
     },
-     {
+      {  id: 'Unknown',
+        posterUrl:  'images/Unknown.jpg',
+        year: 2011,
         title: " Unknown (2011)",
         description: "Dr. Martin Harris, who awakens from a coma to find that another man has assumed his identity, and even his own wife doesn't recognize him. He then sets out to prove who he is and uncover the conspiracy behind it",
         embedId: "RWFzTMgrIyI",
         genres: ["Thriller","Drama"],
         source: "youtube"
     },
-     {
+     {  id: 'Stolen',
+        posterUrl:  'images/Stolen.jpg',
+        year: 2012,
         title: "Stolen (2012)",
         description: " Nicolas Cage plays a former thief whose daughter is kidnapped, and he has to find $10 million in 12 hours. Danny Huston plays an FBI agent.",
         embedId: "yWRCE71ZWcQ",
         genres: ["Drama","Thriller"],
         source: "youtube"
     },
-     {
+     {  id: 'Red-Dawn',
+        posterUrl:  'images/Red Dawn.jpg',
+        year: 2012,
         title: "Red Dawn (2012)",
         description: " Chris Hemsworth plays Jed Eckert, a Marine who, along with a group of teenagers, defends their hometown in Washington state from a North Korean invasion. They form a guerrilla resistance group called the Wolverines.",
         embedId: "2XIlZDElESI",
         genres: ["Action"],
         source: "youtube"
     },
-     {
-        title: "Kingdom of the Vampire 1991",
+     {  id: 'Kingdom-of-the-Vampire',
+        posterUrl:  'images/Kingdom of the Vampire.jpg',
+        year: 1991,
+        title: "Kingdom of the Vampire",
         description: "Jeff works the night shift, then comes home to his domineering mother, who has the grisly habit of slaughtering neighborhood children to satisfy her insatiable bloodlust.",
         embedId: "1365524089497",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Wicked-Witches',
+        posterUrl:  'images/Wicked Witches.jpg',
+        year: 2018,
         title: "Wicked Witches 2018",
         description: "Mark returns to Dumpling Farm, his old hangout. His friend Ian, possessed by demonic witches, lures Mark and others into a trap. The witches consume souls, using Ian and the farm to honey-trap their victims.",
         embedId: "1364470794905",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Criminal',
+        posterUrl:  'images/Criminal.jpg',
+        year: 2016,
         title: "Criminal 2016",
         description: "A dangerous convict receives an implant containing the memories and skills of a dead CIA agent.",
         embedId: "o4Em8Sxk4OM",
         genres: ["Crime","Action"],
         source: "youtube"
     },
-     {
+     {  id: 'Man-on-Fire',
+        posterUrl:  'images/Man on Fire.jpg',
+        year: 2004,
         title: "Man on Fire 2004",
         description: "In Mexico City, a former CIA operative swears vengeance on those who committed an unspeakable act against the family he was hired to protect.",
         embedId: "967003081369",
         genres: ["Action","Thriller"],
         source: "okru"
-    }, {
+    }, 
+    {   id: '30-Daye-of-Nights',
+        posterUrl:  'images/30 Daye of Nights.jpg',
+        year: 2007,
         title: "30 Daye of Nights 2007",
         description: "After an Alaskan town is plunged into darkness for a month, it is attacked by a bloodthirsty gang of vampires.",
         embedId: "967003802265",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: '10.5-Apocalypse',
+        posterUrl:  'images/Apocalypse 10.jpg',
+        year: 2006,
         title: "10.5: Apocalypse 2006",
         description: "A massive earthquake creates a chain of events that threaten two of the largest nuclear reactors.",
         embedId: "967976422041",
         genres: ["Sci-Fi"],
         source: "okru"
     },
-     {
+     { id: 'The Craving',
+        posterUrl:  'images/The Craving.jpg',
+        year: 2011,
         title: "The Craving 2011",
         description: "Leading a double life, Chef Ronnie spends her days as a charming celebrity chef who thrives and shines as owner of a trendy Spanish tapas restaurant in San Francisco, and spends her nights in ways too gruesome to fathom. As Chef Ronnie's reputation scorches up the culinary scene, San Francisco's murder count hits a record high. Haunted by her past in the form a vengeful lover, and caught in the seductive cross fire of an increasingly serious relationship; Chef Ronnie has bitten off more than she can chew.",
         embedId: "967976487577",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Howl',
+        posterUrl:  'images/howl.jpg',
+        year: 2015,
         title: "Howl 2015",
         description: "When passengers on a train are attacked by a creature, they must band together in order to survive until morning.",
         embedId: "970099069337",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'One More Shot',
+        posterUrl:  'images/One More Shot.jpg',
+        year: 2024,
         title: "One More Shot 2024",
         description: "Following the attack on the black site in Poland, Navy SEAL Jake Harris is ordered to escort terrorist suspect Amin Mansur to Washington D.C for interrogation.",
         embedId: "/eGjBfDnpUVs",
         genres: ["Action"],
         source: "youtube"
     },
-     {
+     {  id: 'Final-Destination',
+        posterUrl:  'images/Final Destination.jpg',
+        year: 2000,
         title: "Final Destination 2000 1080p BluRay",
         description: "After getting a premonition about a plane crash on his school trip, Alex, a student, saves a few of his classmates. However, their situation gets complicated when death starts chasing them.",
         embedId: "9371838974692",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Final-Destination-2',
+        posterUrl:  'images/Final Destination 2.jpg',
+        year: 2003,
         title: "Final Destination 2 2003 1080p BluRay",
         description: "When Kimberly has a violent premonition of a highway pileup she blocks the freeway, keeping a few others meant to die, safe...Or are they? The survivors mysteriously start dying and it's up to Kimberly to stop it before she's next.",
         embedId: "9371839302372",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Final-Destination-3',
+        posterUrl:  'images/Final Destination 3.jpg',
+        year: 2006,
         title: "Final Destination 3 (2006)",
         description: "Wendy Christensen and a group of teens who escaped a fatal roller-coaster crash face a bloody date with Death.",
         embedId: "8254576527953",
         genres: ["Horror"],
         source: "okru"
     },
-     {
-        title: "The Twilight Saga: Breaking Dawn - Part 2",
+     {  id: 'Twilight-Breaking-Dawn-Part-2',
+        posterUrl:  'images/The Twilight Saga  Breaking Dawn  Part 2.jpg',
+        year: 2012,
+        title: "Twilight Breaking Dawn Part 2",
         description: "After the birth of Renesmee/Nessie, the Cullens gather other vampire clans in order to protect the child from a false allegation that puts the family in front of the Volturi.",
         embedId: "1316303473392",
         genres: ["Drama","Sci-Fi"],
         source: "okru"
     },
-     {
+     {  id: 'Mannequin-2',
+        posterUrl:  'images/Mannequin 2.jpg',
+        year: 1991,
         title: "Mannequin 2: On The Move (1991)",
         description: "Although Jason (William Ragsdale) works as a department store clerk, he is also a reincarnated prince. Long ago, his beloved Jessie (Kristy Swanson) was snatched away from him by an evil wizard (Terry Kiser) who used his powers to transform her into wooden statue. Now Jessie is in Jason's department store as a mannequin. When he encounters her, she awakens from her thousand-year sleep. They quickly revive their romance, but the evil wizard has been reincarnated as well, and he's up to no good.",
         embedId: "943377877542",
         genres: ["Comedy"],
         source: "okru"
     },
-     {
-        title: "Ghost.Ship.2002",
+     {  id: 'Ghost-Ship',
+        posterUrl:  'images/ghost ship.jpg',
+        year: 2002,
+        title: "Ghost Ship (2002)",
         description: "A salvage crew discovers a long-lost 1962 passenger ship floating lifeless in a remote region of the Bering Sea, and soon notices that its long-dead inhabitants may still be on board.",
         embedId: "705719306785",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Infernal',
+        posterUrl:  'images/Infernal.jpg',
+        year: 2015,
         title: "Infernal 2015",
         description: "A happy young couple welcomes their first child shortly after getting married. Their joy quickly turns to fear when the girl starts acting strangely and unexplained phenomena start happening around the house.",
         embedId: "977205987993",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     { id: 'The-Inflicted',
+        posterUrl:  'images/The Inflicted.jpg',
+        year: 2012,
         title: "The Inflicted 2012",
         description: "David O'Hara is a troubled medical student who kidnaps, rapes and murders women. He impregnates his victim, Melissa, in an attempt to replace his lost family. When Melissa escapes, he goes on a murderous rampage to get his family back.",
         embedId: "977208543897",
@@ -1630,35 +1707,20 @@ const allMovies = [
         source: "okru"
     },
     
-     {
-        title: "Final Destination 2000 1080p BluRay",
-        description: "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
-        embedId: "9371838974692",
-        genres: ["Horror"],
-        source: "okru"
-    },
-     {
-        title: "Final Destination 2 2003 1080p BluRay",
-        description: "When Kimberly has a violent premonition of a highway pileup she blocks the freeway, keeping a few others meant to die, safe...Or are they? The survivors mysteriously start dying and it's up to Kimberly to stop it before she's next.",
-        embedId: "9371839302372",
-        genres: ["Horror"],
-        source: "okru"
-    },
-     {
-        title: "Final Destination 3 2006",
-        description: "Wendy Christensen and a group of teens who escaped a fatal roller-coaster crash face a bloody date with Death.",
-        embedId: "5050096880350",
-        genres: ["Horror"],
-        source: "okru"
-    },
-    {
+
+ 
+    {   id: 'Splinter',
+        posterUrl:  'images/Splinter.jpg',
+        year: 2009,
         title: "Splinter",
         description: "Trapped in an isolated gas station by a voracious Splinter parasite that transforms its still-living victims into deadly hosts, a young couple and an escaped convict must find a way to work together to survive this primal terror.",
         embedId: "981264173721",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'I-am-omega',
+        posterUrl:  'images/I am omega.jpg',
+        year: 2007,
         title: "I am omega 2007",
         description: "Father-daughter archaeologists Miles (Denis O'Hare) and Nora Holden (Ashley Hinshaw) discover a unique pyramid that has been buried beneath the Egyptian desert for 5,000 years. Accompanied by a newswoman (Christa-Marie Nicola) and her team, the archaeologists enter the tomb and promptly become trapped. Hopelessly lost within the pyramid's labyrinthine structure, the group faces deadly perils that threaten their escape, including collapsing floors and bloodthirsty predators.",
         embedId: "981271186073",
