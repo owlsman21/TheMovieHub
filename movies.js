@@ -1054,28 +1054,36 @@ const allMovies = [
         genres: ["Horror"],
         source: "okru"
     },
-      {
+      { id: 'Rio-Bravo',
+        posterUrl:  'images/rio bravo.jpg',
+        year: 1959,
         title: "Rio Bravo 1959",
         description: " A small-town sheriff in the American West enlists the help of a disabled man, a drunk, and a young gunfighter in his efforts to hold in jail the brother of the local bad guy.",
         embedId: "7965129706199",
         genres: ["Western"],
         source: "okru"
     },
-      {
+      { id: 'We-Were-Soldiers',
+        posterUrl:  'images/we were soldiers.jpg',
+        year: 2002,
         title: "We Were Soldiers 2002 ",
         description: " The story of the first major battle of the American phase of the Vietnam War, and the soldiers on both sides that fought it, while their wives wait nervously and anxiously at home for the good news or the bad news.",
         embedId: "7790913129175",
         genres: ["War"],
         source: "okru"
     },
-      {
+      { id: 'Platoon',
+        posterUrl:  'images/Platoon.jpg',
+        year: 1986,
         title: "Platoon 1986",
         description: " Chris Taylor, a neophyte recruit in Vietnam, finds himself caught in a battle of wills between two sergeants, one good and the other evil. A shrewd examination of the brutality of war and the duality of man in conflict.",
         embedId: "9363592120858",
         genres: ["War"],
         source: "okru"
     },
-      {
+      { id: 'Hacksaw-Ridge',
+        posterUrl:  'images/Hacksaw Ridge.jpg',
+        year: 2016,
         title: "Hacksaw Ridge 2016 ",
         description: " World War II American Army Medic Desmond T. Doss, serving during the Battle of Okinawa, refuses to kill people and becomes the first man in American history to receive the Medal of Honor without firing a shot.",
         embedId: "10488723737169",
@@ -1083,205 +1091,246 @@ const allMovies = [
         source: "okru"
     },
 
-     {
+     {  id: 'Soldier Blue',
+        posterUrl:  'images/Soldier Blue.jpg',
+        year: 1970,
         title: "Soldier Blue 1970 ",
         description: " After a cavalry patrol is ambushed by the Cheyenne, the two survivors, a soldier and a woman, must reach the safety of the nearest fort",
         embedId: "6172174715419",
         genres: ["Western"],
         source: "okru"
     },
-     {
+     {  id: 'The-Perfect-Storm',
+        posterUrl:  'images/The Perfect Storm.jpg',
+        year: 2000,
         title: "The Perfect Storm [2000]  ",
         description: "An unusually intense storm pattern catches some commercial fishermen unaware and puts them in mortal danger.",
         embedId: "725902166561",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Titanic',
+        posterUrl:  'images/Titanic.jpg',
+        year: 1997,
         title: "Titanic 1997 ",
         description: " A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
         embedId: "9605610932881",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'Taken',
+        posterUrl:  'images/Taken.jpg',
+        year: 2008,
         title: "Taken 2008 ",
         description: " A retired CIA agent travels across Europe and relies on his old skills to save his estranged daughter, who has been kidnapped while on a trip to Paris.",
         embedId: "9640291732145",
         genres: ["Action","Thriller"],
         source: "okru"
     },
-     {
+     {  id: 'Wedding Crashers',
+        posterUrl:  'images/Wedding Crashers.jpg',
+        year: 2005,
         title: "Wedding Crashers 2005",
         description: " John Beckwith and Jeremy Grey, a pair of committed womanizers who sneak into weddings to take advantage of the romantic tinge in the air, find themselves at odds with one another when John meets and falls for Claire Cleary.",
         embedId: "3551833164343",
         genres: ["Comedy"],
         source: "okru"
     },
-     {
+     {  id: 'Goldfinger',
+        posterUrl:  'images/Goldfinger.jpg',
+        year: 1964,
         title: "Goldfinger 1964 ",
         description: " While investigating a gold magnate's smuggling, James Bond uncovers a plot to contaminate the Fort Knox gold reserve.",
         embedId: "7364356082387",
         genres: ["Action"],
         source: "okru"
     },
-     {
-        title: "Holmes & Watson 2018 ",
+     {  id: 'Holmes-and-Watson',
+        posterUrl:  'images/Holmes and Watson.jpg',
+        year: 2018,
+        title: "Holmes and Watson 2018",
         description: "A humorous take on Sir Arthur Conan Doyle's classic mysteries featuring Sherlock Holmes and Doctor Watson.",
         embedId: "9530383075878",
         genres: ["Action","Comedy"],
         source: "okru"
     },
-     {
+     {  id: 'Thirteen',
+        posterUrl:  'images/Thirteen.jpg',
+        year: 2003,
         title: "Thirteen 2003 ",
         description: " A thirteen-year-old girl's relationship with her mother is put to the test as she discovers drugs, sex, and petty crime in the company of her cool but troubled best friend.",
         embedId: "9519964621350",
         genres: ["Drama"],
         source: "okru"
     },
-     {
-        title: "Open Graves 2009 ",
-        description: " A group of surfers discover an old board game which claims a life every time it is played.",
-        embedId: "9519433386534",
-        genres: ["Horror"],
-        source: "okru"
-    },
     
-     {
-        title: "urge 2016 ",
-        description: " An island getaway turns deadly when a mysterious nightclub owner (Pierce Brosnan) introduces a group of friends to a drug that can't be taken more than one time.",
-        embedId: "1076555680409",
-        genres: ["Drama","Sci-Fi"],
-        source: "okru"
-    },
-     {
+ 
+     {  id: 'A-Sierra-Nevada-Gunfight',
+        posterUrl:  'images/A Sierra Nevada Gunfight.jpg',
+        year: 2013,
         title: "A Sierra Nevada Gunfight (2013) ",
         description: " Gold miner Roger Hazard brings his twelve year old son Casper to the treacherous gold fields of 1870s California. The two of them work a small mine in the southern fields but when Roger begins to lose touch with reality young Casper ends up on his own. Casper faces danger around every corner but must find the strength to save his father from himself and still manage to fight off the savage Indians and ruthless bushwhackers that plague them across California's breathtaking Sierra Nevadas. Genre: Western Thriller. In the mold of The Shining and Treasure of the Sierra Madre",
         embedId: "3684168632887",
         genres: ["Western"],
         source: "okru"
     },
-     {
+     {  id: 'Leave the World Behind',
+        posterUrl:  'images/Leave the World Behind.jpg',
+        year: 2013,
         title: "Leave the World Behind 2013 ",
         description: " A family's getaway to a luxurious rental home takes an ominous turn when a cyberattack knocks out their devices, and two strangers appear at their door.",
         embedId: "9517395020326",
         genres: ["Drama","Sci-Fi"],
         source: "okru"
     },
-     {
+     {  id: 'Chaplin',
+        posterUrl:  'images/Chaplin.jpg',
+        year: 1992,
         title: "Chaplin (1992)",
         description: "An elderly Charlie Chaplin discusses his autobiography with his editor, recounting his amazing journey from his poverty-stricken childhood to world-wide success after the ingenious invention of the Little Tramp.",
         embedId: "9513004239398",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'The Nanny',
+        posterUrl:  'images/The Nanny.jpg',
+        year: 2023,
         title: "The Nanny (2023)",
         description: "A wealthy couple hire a young girl from Finland to take care of their newborn. These new parents should be in a state of bliss, so why does it seem like they are trying to kill each other?",
         embedId: "9500319025702",
         genres: ["Drama","Thriller"],
         source: "okru"
     },
-     {
+     {  id: 'Tuesday',
+        posterUrl:  'images/Tuesday.jpg',
+        year: 2023,
         title: "Tuesday 2023",
         description: "A mother and her teenage daughter must confront Death when it arrives in the form of an astonishing talking bird.",
         embedId: "9487379925542",
         genres: ["Drama","Sci-Fi"],
         source: "okru"
     },
-     {
+     {  id: 'Queen-of-the-Ring',
+        posterUrl:  'images/Queen of the ring.jpg',
+        year: 2024,
         title: "Queen of the Ring 2024",
         description: "In a time when pro wrestling for women was illegal all over the United States, a small town single mother embraces the danger as she dominates America's most masculine sport and becomes the first million dollar female athlete in history.",
         embedId: "9481252440614",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     {  id: 'The-Sexiest-Man-in-Winnipeg',
+        posterUrl:  'images/The Sexiest Man in Winnipeg.jpg',
+        year: 2025,
         title: "The Sexiest Man in Winnipeg",
         description: "When a polite robber carries out a series of odd bank heists, the police investigation takes a sharp turn, pointing to Steve Vogelsang, a garrulous former broadcaster once known as The Sexiest Man in Winnipeg.",
         embedId: "9481251785254",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     { id: 'Marijuambies',
+        posterUrl:  'images/Marijuambies.jpg',
+        year: 2025,
         title: "Marijuambies 2025",
         description: "Marijuambies is a hilarious new comedy that follows the story of a weed dealer and his hippie friend who accidentally sell poisoned weed, turning their customers into zombies. Directed by Brian Foster.",
         embedId: "9481251326502",
         genres: ["Drama","Comedy"],
         source: "okru"
     },
-     {
+     {  id: 'The-Devils-Hacksaw',
+        posterUrl:  'images/The Devils Hacksaw.jpg',
+        year: 2025,
         title: "The Devils Hacksaw 2025",
         description: "In a quiet little town in Pennsylvania terror strikes when one of the notorious inmates at the Greystone Asylum escapes. With a thirst for vengeance, he embarks on a brutal killing spree, leaving the townsfolk in a state of panic.",
         embedId: "9468701313574",
         genres: ["Horror"],
         source: "okru"
     },
-     {
-        title: "Goodfellas.1990. FHD",
+     {  id: 'Goodfellas',
+        posterUrl:  'images/Goodfellas.jpg',
+        year: 1990,
+        title: "Goodfellas 1990  FHD",
         description: "In 1955, Henry Hill, a high school student, becomes enamored of the criminal life in his neighborhood, and begins working for Paul Paulie Cicero and his associates: James Jimmy the GentConway, a truck hijacker; and Tommy DeVito, a fellow juvenile delinquent. Henry begins as fence for Jimmy, gradually working his way up to more serious crimes. Enjoying the perks of their criminal life, the three associates spend most of their nights at the Copacabana nightclub, carousing with women. Henry starts dating Karen Friedman, a Jewish woman from the Five Towns area of Long Island. Karen is initially troubled by Henry's criminal activities, but is eventually seduced by his glamorous lifestyle. They marry, despite her parents' disapproval...",
         embedId: "1106851990168",
         genres: ["Drama","Crime","Thriller"],
         source: "okru"
     },
-     {
+     {  id: 'Blue',
+        posterUrl:  'images/Blue.jpg',
+        year: 2024,
         title: "Blue 2024",
         description: "Set on England's Southwest coast, the story follows a father-son pair of struggling fishermen, John Winter and Charlie. A huge loss in their lives leads to a confrontation with emotions neither are equipped to deal with.",
         embedId: "9459849497126",
         genres: ["Drama"],
         source: "okru"
     },
-     {
+     { id: 'Rust',
+        posterUrl:  'images/Rust.jpg',
+        year: 2024,
         title: "Rust 2024",
         description: "An orphaned boy of 13 left to fend for himself and his younger brother in 1880s Wyoming is sentenced to hang for the accidental killing of a local rancher. His estranged grandfather breaks him out of jail and they go on the run to Mexico.",
         embedId: "9453161351718",
         genres: ["Western"],
         source: "okru"
     },
-     {
-        title: "King.Arthur.2004.1080p",
+     {  id: 'King.Arthur',
+        posterUrl:  'images/King Arthur.jpg',
+        year: 2004,
+        title: "King Arthur 2004 1080p",
         description: "A demystified take on the tale of King Arthur and the Knights of the Round Table.",
         embedId: "6806099331779",
         genres: ["Action"],
         source: "okru"
     },
-     {
+     {  id: 'Snatch',
+        posterUrl:  'images/Snatch.jpg',
+        year: 2000,
         title: "Snatch (2000)",
         description: "Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers and supposedly Jewish jewelers fight to track down a priceless stolen diamond.",
         embedId: "8153582799537",
         genres: ["Drama","Comedy","action"],
         source: "okru"
     },
-     {
-        title: "Lock, Stock and Two Smoking Barrels 1998",
+     {  id: 'Lock-Stock',
+        posterUrl:  'images/Lock Stock.jpg',
+        year: 1998,
+        title: "Lock Stock and Two Smoking Barrels 1998",
         description: "When four small-time criminals lose a rigged poker game against a London kingpin, he gives them one week to settle their enormous debt",
         embedId: "9602459634262",
         genres: ["Drama","Comedy","Action"],
         source: "okru"
     },
-     {
+     {  id: 'Nosferatu-the-Vampyre',
+        posterUrl:  'images/Nosferatu the Vampyre.jpg',
+        year: 1978,
         title: "Nosferatu the Vampyre 1978",
         description: "Count Dracula moves from Transylvania to Wismar, spreading the Black Plague across the land. Only a woman pure of heart can bring an end to his reign of horror.",
         embedId: "3060519602894",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'The-Shawshank-Redemption',
+        posterUrl:  'images/The Shawshank Redemption.jpg',
+        year: 1994,
         title: "The Shawshank Redemption.1994",
         description: "A banker convicted of uxoricide forms a friendship over a quarter century with a hardened convict, while maintaining his innocence and trying to remain hopeful through simple compassion.",
         embedId: "7957536901741",
         genres: ["Drama","Crime"],
         source: "okru"
     },
-     {
-        title: "The Godfather, 2 - (1974)",
+     {  id: 'The-Godfather-2',
+        posterUrl:  'images/the godfather 2.jpg',
+        year: 1974,
+        title: "The Godfather 2  (1974)",
         description: "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
         embedId: "277362379400",
         genres: ["Drama","Crime"],
         source: "okru"
     },
-     {
-        title: "The Godfather Part III 1990",
+     {  id: 'The-Godfather-3',
+        posterUrl:  'images/The Godfather 3.jpg',
+        year: 1990,
+        title: "The Godfather 3 1990",
         description: "Follows Michael Corleone, now in his 60s, as he seeks to free his family from crime and find a suitable successor to his empire.",
         embedId: "6872072915582",
         genres: ["Drama","Crime"],
@@ -2458,15 +2507,7 @@ const allMovies = [
         source: "okru",
         year: 1994
     },
-    {
-        id: 'shawshank-redemption',
-        title: 'The Shawshank Redemption',
-        description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
-        posterUrl: 'images/shawshank.jpg',
-        genre: 'Drama',
-        source: "okru",
-        year: 1994
-    },
+   
     {
         id: 'Smokey-And-The-Bandit ',
         title: 'Smokey And The Bandit',
