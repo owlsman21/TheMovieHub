@@ -1727,148 +1727,191 @@ const allMovies = [
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'The-Tommyknockers',
+        posterUrl:  'images/The Tommyknockers.jpg',
+        year: 1993,
         title: "The Tommyknockers 1993",
         description: "The small town of Haven becomes a hot-bed of inventions all run by a strange green power device. The whole town is digging something up in the woods, and only an alcoholic poet can discover the secret of the Tommyknockers.",
         embedId: "1002381707929",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'The-Amityville-Horror',
+        posterUrl:  'images/The Amityville Horror.jpg',
+        year: 2005,
         title: "The Amityville Horror (2005)",
         description: "When George Lutz (Ryan Reynolds) and his wife, Kathy (Melissa George), find a beautiful new house in the small town of Amityville, N.Y., they think the place is too good to be true. After they move in with their kids, they find out the cheap price tag is thanks to the house's sordid history: The former tenant murdered his family after supposedly being possessed by the devil. Believing the home is haunted, the couple finds a priest (Philip Baker Hall) to help them rid the place of evil spirits.",
         embedId: "1002383411865",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "Guyver II Dark Hero (1994)",
+    {   id: 'Guyver-2-Dark-Hero',
+        posterUrl:  'images/Guyver 2.jpg',
+        year: 1994,
+        title: "Guyver 2 Dark Hero (1994)",
         description: "Sean Barker, unwilling host to an alien bio-armor known as the Guyver, must fight the Kronos Corporation again before they discover the secrets of the Guyver's origin.",
         embedId: "1002426274201",
         genres: ["Sci-Fi"],
         source: "okru"
     },
-    {
+    {   id: 'The-Texas-Chainsaw-Massacre',
+        posterUrl:  'images/The Texas Chainsaw Massacre.jpg',
+        year: 2003,
         title: "The Texas Chainsaw Massacre (2003)",
         description: "After picking up a traumatized young hitchhiker, five friends find themselves stalked and hunted by a deformed chainsaw-wielding loon and his family of equally psychopathic killers.",
         embedId: "7636091406869",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Zombie-Nation',
+        posterUrl:  'images/Zombie Nation.jpg',
+        year: 2004,
         title: "Zombie Nation 2004",
         description: "A psychotic police officer who murders his female arrestees gets what's coming to him when a horde of zombified women rise from their graves to seek revenge.",
         embedId: "1007769291417",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Serenity-Farm',
+        posterUrl:  'images/Serenity Farm.jpg',
+        year: 2014,
         title: "Serenity Farm 2014",
         description: "Undisturbed for over 20 years, this remote forested island in the Pacific Northwest is visited by a group of campers on horseback. The camp tranquility is broken by violence and terror.",
         embedId: "1007769356953",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {  id: 'beond-skyline',
+        posterUrl:  'images/beond skyline.jpg',
+        year: 2018,
         title: "beond skyline 2018 ",
         description: "Detective Mark Corley storms his way onto an alien spaceship to rescue his estranged son. When the ship crashes in Southeast Asia, he forges an alliance with a band of survivors to take back the planet once and for all.",
         embedId: "1009147710105",
         genres: ["Sci-Fi"],
         source: "okru"
     },
-    {
+    {   id: 'COLD-MOON',
+        posterUrl:  'images/COLD MOON.jpg',
+        year: 2017,
         title: "COLD MOON (2017)",
         description: "In a sleepy Southern town, the Larkin family suffer a terrible tragedy and they're about to endure another. Traffic lights blink an eerie warning, a ghostly visage prowls in the streets, and graves erupt from the local cemetery in an implacable march of terror. And beneath the murky surface of the river, a shifting, almost human, shape slowly takes form to seek a terrible vengeance.",
         embedId: "1009147906713",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Rampage',
+        posterUrl:  'images/Rampage.jpg',
+        year: 2009,
         title: "Rampage 2009",
         description: "A man with a thirst for revenge builds a full body armor from Kevlar and goes on a killing spree.",
         embedId: "1009180674713",
         genres: ["Crime","Thriller"],
         source: "okru"
     },
-    {
+    {   id: 'Rampage-Capital-Punishment',
+        posterUrl:  'images/Rampage Capital Punishment.jpg',
+        year: 2014,
         title: "Rampage: Capital Punishment",
         description: "A man takes over a TV station and holds a number of hostages as a political platform to awaken humanity, instead of money.",
         embedId: "1009180871321",
         genres: ["Crime","Thriller"],
         source: "okru"
     },
-    {
+    {   id: 'The-First-Purge',
+        posterUrl:  'images/The First Purge.jpg',
+        year: 2018,
         title: "The First Purge 2018",
         description: "America's third political party, the New Founding Fathers of America, comes to power and conducts an experiment: no laws for 12 hours on Staten Island. No one has to stay on the island, but $5,000 is given to anyone who does.",
         embedId: "1009218423449",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Inbred',
+        posterUrl:  'images/Inbred.jpg',
+        year: 2011,
         title: "Inbred 2011",
         description: "Four young offenders and their care workers visit the remote Yorkshire village of Mortlake, which prides on keeping itself to itself. A minor incident with locals rapidly escalates into a blood-soaked, deliriously warped nightmare.",
         embedId: "1009869851289",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "Abraham Lincoln: Vampire Hunter 2012",
+    {   id: 'Abraham-Lincoln-Vampire-Hunter',
+        posterUrl:  'images/Abraham Lincoln Vampire Hunter.jpg',
+        year: 2012,
+        title: "Abraham Lincoln Vampire Hunter 2012",
         description: "Abraham Lincoln, the 16th President of the United States, discovers vampires are planning to take over the United States. He makes it his mission to eliminate them.",
         embedId: "1014399437465",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Prometheus',
+        posterUrl:  'images/Prometheus.jpg',
+        year: 2012,
         title: "Prometheus.2012.720p.BluRay.",
         description: "The discovery of a clue to mankind's origins on Earth leads a team of explorers to the darkest parts of the universe. Two brilliant young scientists lead the expedition. Shaw (Noomi Rapace) hopes that they will meet a race of benevolent, godlike beings who will in some way verify her religious beliefs, while Holloway (Logan Marshall-Green) is out to debunk any spiritual notions. However, neither the scientists nor their shipmates are prepared for the unimaginable terrors that await them.",
         embedId: "1015245441689",
         genres: ["Sci-Fi"],
         source: "okru"
     },
-    {
-        title: "Stripped.2012.720p.BluRay",
+    {   id: 'Stripped',
+        posterUrl:  'images/Stripped.jpg',
+        year: 2012,
+        title: "Stripped 2012 720p BluRay",
         description: "Four friends head to Vegas and meet female strippers at a remote location for a night of fun. However, they don't realize that the women work for an organ trafficker and that they are about to be stripped of theirs.",
         embedId: "1015912663705",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'The-Transporter-Refueled',
+        posterUrl:  'images/The Transporter Refueled.jpg',
+        year: 2015,
         title: "The Transporter Refueled 2015",
         description: "In the south of France, former special-ops mercenary Frank Martin enters into a game of chess with a femme-fatale and her three sidekicks who are looking for revenge against a sinister Russian kingpin.",
         embedId: "1015894903449",
         genres: ["Action"],
         source: "okru"
     },
-    {
-        title: "Little.Dead.Rotting.Hood.2016.720p",
+    {   id: 'Little Dead Rotting Hood',
+        posterUrl:  'images/little dead rotting hood.jpg',
+        year: 2016,
+        title: "Little Dead Rotting Hood 2016.720p",
         description: "The residents of a small town realize that something is killing wolves and people in the woods.",
         embedId: "1015905585817",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Feast-2-sloppy-seconds',
+        posterUrl:  'images/Feast 2 sloppy seconds.jpg',
+        year: 2008,
         title: "Feast 2 sloppy seconds",
         description: "The monsters have made it into a small neighboring town in the middle of nowhere and the locals have to band with the survivors of the bar' slaughter to figure out how to survive.",
         embedId: "1016872700569",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+     
+    {   id: 'Feast',
+        posterUrl:  'images/Feast.jpg',
+        year: 2005,
         title: "Feast 2005",
         description: "Patrons locked inside a bar are forced to fight monsters.",
         embedId: "1016878402201",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Skinwalkers',
+        posterUrl:  'images/Skinwalkers.jpg',
+        year: 2006,
         title: "Skinwalkers 2006",
         description: "A 12-year-old boy and his mother become the targets of two warring werewolf packs, each with different intentions and motives.",
         embedId: "1016874404505",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "Valhalla.Rising.2009.1080p",
+    {   id: 'Valhalla Rising',
+        posterUrl:  'images/Valhalla Rising.jpg',
+        year: 2009,
+        title: "Valhalla Rising 2009.1080p",
         description: "In 11th-century Scandinavia, an enslaved man dubbed One Eye (Mads Mikkelsen) because of an old facial wound stages a violent uprising against those who imprisoned him. One Eye links up with Eirik (Ewan Stewart) and other Christian fanatics who aim to use their muscle to spread God's word. Headed for Jerusalem, One Eye and his shipmates must cope with crew infighting and attacks from the coastline. But the journey's challenges are only a harbinger of even greater brutality.",
         embedId: "1021591292569",
         genres: ["Action"],
