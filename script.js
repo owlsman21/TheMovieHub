@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentGenreFilter = 'All';
     let currentPageNumber = 1;
     // Set how many movies should appear per page on the 'All Movies' (movies.html) page
-    const moviesPerPage = 12;
+    const moviesPerPage = 15;
 
     let displayedMovies = []; // Stores movies that match current search/filter criteria
 

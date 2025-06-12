@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Movies - The Movie Hub</title>
-    <!-- Google Fonts for Gothic Aesthetic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Link to your main CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,16 +57,15 @@
 
             <section class="movie-grid-section">
                 <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <!-- Movie cards will be dynamically loaded here -->
                     <p class="col-span-full text-center">Loading movies...</p>
                 </div>
             </section>
 
-            <section class="pagination-section">
-                <div id="pagination" class="flex justify-center items-center space-x-2 mt-8">
-                    <!-- Pagination buttons will be dynamically loaded here -->
-                </div>
+            <section class="pagination-section" style="overflow: visible !important;">
+                <div id="pagination" class="flex justify-center items-center space-x-2 mt-8" style="flex-wrap: wrap !important; overflow: visible !important;">
+                    </div>
             </section>
+
         </div>
     </main>
 
@@ -83,9 +79,7 @@
         </div>
     </footer>
 
-    <!-- Link to your movies.js file which contains the allMovies array -->
     <script src="movies.js"></script>
-    <!-- Link to your script.js file which handles dynamic loading, search, filter, and pagination -->
     <script src="script.js"></script>
 </body>
 </html>
