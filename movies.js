@@ -416,7 +416,7 @@ const allMovies = [
         posterUrl:  'images/ouija.jpg',
         year: 2025
     },
-    {   id: 'Abduct ',
+    {   id: 'Abduct',
         title: "Abduct ",
         description: " A woman's peaceful mountain getaway takes a bizarre turn when her boyfriend disappears, and a random naked man shows up claiming to be him.",
         embedId: "9517374966310",
@@ -1917,462 +1917,540 @@ const allMovies = [
         genres: ["Action"],
         source: "okru"
     },
-    {
-        title: "Darkness.Rising.2017",
+    {   id: 'Darkness Rising',
+        posterUrl:  'images/Darkness Rising.jpg',
+        year: 2017,
+        title: "Darkness Rising 2017",
         description: "The lone survivor of a brutal family massacre must revisit her childhood home on the eve of its destruction and confront her past, as well as a deadly evil.",
         embedId: "1021591358105",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "Werewolf.Rising.2014.720p.BluRay",
+    {   id: 'Werewolf-Rising',
+        posterUrl:  'images/Werewolf Rising.jpg',
+        year: 2014,
+        title: "Werewolf Rising 2014.720p.BluRay",
         description: "Emma travels to her family's cabin in the Arkansas hills to get away from the city. After she settles in, she has to fight for her life when a werewolf begins slaughtering everything in its path.",
         embedId: "1021636184729",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Mutants',
+        posterUrl:  'images/Mutants.jpg',
+        year: 2009,
         title: "Mutants 2009",
         description: "In the middle of a zombie apocalypse, a resourceful couple hides out in an isolated abandoned building. The woman is pregnant and the man is infected, slowly transforming into the kind of inhuman monster they are trying to escape.",
         embedId: "1021815884441",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "The.House.of.Violent.Desire.2018",
+    {   id: 'The-House-of-Violent-Desire',
+        posterUrl:  'images/The House of Violent Desire.jpg',
+        year: 2018,
+        title: "The House of Violent Desire.2018",
         description: "Awoken by screams in the night, young Evelyn Whipley is found drenched in blood and mysteriously bound to the bed - A Gothic Horror set in the 1940s, a psychosexual thriller disguised as traditional Ghost Story.",
         embedId: "1031999392409",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'It-Lives-Inside',
+        posterUrl:  'images/It Lives Inside.jpg',
+        year: 2018,
         title: "It Lives Inside 2018",
         description: "A chronic sleepwalker reads from a mysterious text that foretells his impending demonic possession. He struggles to hold his family together as the ancient evil threatens to consume everything he holds dear.",
         embedId: "1034554051225",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Jeepers-Creepers-2',
+        posterUrl:  'images/Jeepers Creepers 2.jpg',
+        year: 2003,
         title: "Jeepers Creepers 2 2003",
         description: "Set a few days after the original, a championship basketball team's bus is attacked by The Creeper, the winged, flesh-eating terror, on the last day of his 23-day feeding frenzy.",
         embedId: "1038368180889",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Jeepers-Creepers',
+        posterUrl:  'images/Jeepers Creepers.jpg',
+        year: 2001,
         title: "Jeepers Creepers (2001)",
         description: "A brother and sister driving home through isolated countryside for spring break encounter a flesh-eating creature which is in the midst of its ritualistic eating spree.",
         embedId: "7451752729259",
         genres: ["Horror"],
         source: "okru"
     },
-    {
+    {   id: 'Jeepers-Creepers-3',
+        posterUrl:  'images/Jeepers Creepers 3.jpg',
+        year: 20017,
         title: "Jeepers Creepers 3 (2017)",
         description: "Sheriff Dan Tashtego and a team of creeper hunters enlist the help of officer Davis Tubbs to help stop the monster's eating spree.",
         embedId: "2928047557260",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "Dracula: The Dark Prince 2013",
+    {   id: 'Dracula-The-Dark-Prince',
+        posterUrl:  'images/Dracula The Dark Prince.jpg',
+        year: 20013,
+        title: "Dracula The Dark Prince 2013",
         description: "In his search for the Lightbringer, Dracula crosses paths with a beautiful crusader named Alina who bears a remarkable resemblance to his murdered bride. One look at her and Dracula is immediately smitten. Could Alina be the reincarnation of his long-dead love? Dracula has Alina kidnapped and brought to his castle where the Beast must now try to win his Beauty's heart.",
         embedId: "4230911101454",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "All.the.Boys.Love.Mandy.Lane.2006.720p.BluRay",
+    {   id: 'All-the-Boys-Love-Mandy-Lane',
+        posterUrl:  'images/All the Boys Love Mandy Lane.jpg',
+        year: 2006,
+        title: "All the Boys Love Mandy Lane 2006.720p.BluRay",
         description: "Beautiful Mandy Lane (Amber Heard) isn't a party girl but, when classmate Chloe (Whitney Able) invites the Texas high school student to a bash in the countryside, she reluctantly accepts. After hitching a ride with a vaguely scary older man (Anson Mount), the teens arrive at their destination. Partying ensues, and Mandy's close pal, Emmet (Michael Welch), keeps a watchful eye on the young males making a play for Mandy. Then two of the students are murdered.",
         embedId: "1071316077209",
         genres: ["Horror"],
         source: "okru"
     },
-    {
-        title: "Wrong Turn 2003",
-        description: "Chris and a group of five friends are left stranded deep in the middle of the woods after their cars collide. As they venture deeper into the woods, they face an uncertain and bloodcurdling fate.",
-        embedId: "1079522101913",
-        genres: ["Horror"],
-        source: "okru"
-    },
-    {
-        title: "Wrong Turn 2: Dead End 2007",
-        description: "A group of reality show contestants find themselves fighting for their survival against a family of hideously deformed inbred cannibals who plan to ruthlessly butcher them all.",
-        embedId: "1079531539097",
-        genres: ["Horror"],
-        source: "okru"
-    },
-    {
-        title: "Wrong Turn 3: Left for Dead 2009",
-        description: "When their transfer bus crashes in a West Virginia forest, a group of convicts and a corrections officer meet a rafter who is on the run from cannibalistic hillbillies who have murdered her friends.",
-        embedId: "1079522232985",
-        genres: ["Horror"],
-        source: "okru"
-    },
-    {
-        title: "Wrong Turn 4: Bloody Beginnings 2011",
-        description: "A group of college students gets lost in a storm during their snowmobiling trip and takes shelter in an abandoned sanitarium which, unbeknown to them, is home to deformed cannibals.",
-        embedId: "1079522167449",
-        genres: ["Horror"],
-        source: "okru"
-    },
-    {
-        title: "Wrong Turn 5: Bloodlines 2012",
-        description: "A group of college students, on a trip to the Mountain Man Festival on Halloween in West Virginia, encounter a clan of cannibals.",
-        embedId: "1079522036377",
-        genres: ["Horror"],
-        source: "okru"
-    },
-    {
-        title: "Wrong Turn 6: Last Resort 2014",
-        description: "An inheritance leads a young man and his friends to an abandoned resort inhabited by two sketchy caretakers and a clan of mutant cannibals.",
-        embedId: "1071531690649",
-        genres: ["Horror"],
-        source: "okru"
-    },
-     {
-        title: "Gangsters.Guns.Zombies.2012.720p.BluRay",
+   
+     {  id: 'Gangsters-Guns-Zombies',
+        posterUrl:  'images/Gangsters Guns Zombies.jpg',
+        year: 2012,
+        title: "Gangsters Guns Zombies.2012.720p.BluRay",
         description: "Q, Tony, Danny and Steve think the police are their biggest problem after they pull off a robbery. But when the dead rise from the grave, they have to hide out with a woman and her grandmother in a fortified windmill.",
         embedId: "1072197012121",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     { id: 'Cockneys-vs-Zombies',
+        posterUrl:  'images/Cockneys vs Zombies.jpg',
+        year: 2012,
         title: "Cockneys vs Zombies 2012",
         description: "A gang of bank robbers fight their way out of a zombie-infested London.",
         embedId: "1072197077657",
         genres: ["Horror","Comedy"],
         source: "okru"
     },
-     {
+     {  id: 'Left-Behind',
+        posterUrl:  'images/Left Behind.jpg',
+        year: 2014,
         title: "Left Behind 2014",
         description: "A small group of survivors is left behind after millions of people suddenly vanish and the world is plunged into chaos and destruction.",
         embedId: "1076555549337",
         genres: ["Sci-Fi"],
         source: "okru"
     },
-     {
+     {  id: 'Tiger-House',
+        posterUrl:  'images/Tiger House.jpg',
+        year: 2015,
         title: "Tiger House 2015",
         description: "Kelly sneaks into her boyfriend's house but tonight, she's not the only unwelcome visitor. As the situation spirals out of control, the suburban house becomes a terrifying arena for violence.",
         embedId: "1076676987545",
         genres: ["Horror"],
         source: "okru"
     },
-     {
-        title: "Cabin Fever 2: Spring Fever 2009",
+     {  id: 'Cabin-Fever-2',
+        posterUrl:  'images/Cabin Fever 2 Spring Fever.jpg',
+        year: 2009,
+        title: "Cabin Fever 2 Spring Fever 2009",
         description: "A high school prom faces a deadly threat: a flesh-eating virus that spreads via a popular brand of bottled water.",
         embedId: "1079522429593",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Cabin-Fever',
+        posterUrl:  'images/Cabin Fever.jpg',
+        year: 2002,
         title: "Cabin Fever 2002",
         description: "Five college graduates rent a cabin in the woods and begin to fall victim to a horrifying flesh-eating virus, which attracts the unwanted attention of the homicidal locals.",
         embedId: "1079539206809",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Cabin-Fever-3',
+        posterUrl:  'images/Cabin Fever 3 Patient Zero.jpg',
+        year: 2014,
         title: "Cabin Fever 3 Patient Zero 2014",
         description: "When a group of friends enjoying a bachelor cruise in the Caribbean stumble upon a research facility on a remote island, a deadly virus is unleashed. The group must find a way to survive before the flesh eating virus consumes them all.",
         embedId: "1079544253081",
         genres: ["Horror"],
         source: "okru"
     },
-     {
-        title: "Breathing.Room.2008.720p.BluRay",
+     {  id: 'Breathing-Room',
+        posterUrl:  'images/Breathing Room.jpg',
+        year: 2008,
+        title: "Breathing Room 2008.720p.BluRay",
         description: "Thrown naked into a desolate room with thirteen strangers, Tonya discovers that she is the final contestant in a deadly game. Restrained by lethal electronic collars, the players must utilize hints and tools from a box marked pieces to find both an exit and the reason for their abduction. One by one the players are eliminated as their curfew begins and the lights go out. With each dead body comes another clue, which they use to discover that one of them is the killer.",
         embedId: "1100126882457",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'Running-with-the-Devil',
+        posterUrl:  'images/Running with the Devil.jpg',
+        year: 2019,
         title: "Running with the Devil (2019).",
         description: "The CEO of an international conglomerate sends two of his most regarded executives to investigate why shipments of cocaine are being hijacked and over cut somewhere on the supply chain.",
         embedId: "9f621XHZ6nQ",
-        genres: ["Horror"],
+        genres: ["Thriller"],
         source: "youtube"
     },
-     {
+     {  id: 'The-Bank-Job',
+        posterUrl:  'images/The Bank Job.jpg',
+        year: 2008,
         title: "The Bank Job 2008",
         description: "Martine offers Terry a lead on a foolproof bank hit on London's Baker Street. She targets a roomful of safe deposit boxes worth millions in cash and jewelry along with a treasure trove of dirty secrets.",
         embedId: "GQtwrbZZBzQ",
         genres: ["Action","Crime"],
         source: "youtube"
     },
-     {
+     {  id: 'The-Beverly-Hillbillies',
+        posterUrl:  'images/The Beverly Hillbillies.jpg',
+        year: 1993,
         title: "The Beverly Hillbillies 1993",
         description: "Mild-mannered dirt-poor hill-dweller Jed Clampett strikes it rich when oil is discovered on his property. At his cousin Pearl's insistence, he moves his family to Beverly Hills to better enjoy his newfound wealth.",
         embedId: "7333324327462",
         genres: ["Comedy"],
         source: "okru"
     },
-     {
+     {  id: 'In-Pursuit-of-Honor',
+        posterUrl:  'images/In Pursuit of Honor.jpg',
+        year: 1996,
         title: "In Pursuit of Honor 1996",
         description: "In 1932, a modernizing U.S. Army orders the Cavalry to destroy its horses but some sympathetic cavalrymen, defying orders, steal the horses in order to save them from destruction, to the dismay of the top Army-brass.",
         embedId: "HWU9XIp49lk",
         genres: ["Action"],
         source: "youtube"
     },
-     {
-        title: "War.2007.720p.Bluray",
+     {  id: 'War',
+        posterUrl:  'images/War.jpg',
+        year: 2007,
+        title: "War 2007.720p.Bluray",
         description: "An FBI Agent seeks vengeance on a mysterious assassin known as Rogue who murdered his partner.",
         embedId: "89959697073",
         genres: ["Action"],
         source: "okru"
     },
-     {
+     {  id: 'Prey',
+        posterUrl:  'images/Prey.jpg',
+        year: 2021,
         title: "Prey (2021)",
         description: "A hiking trip into the wild turns into a desperate bid for survival for five friends on the run from a mysterious shooter.",
         embedId: "3300653468252",
         genres: ["Thriller","Drama"],
         source: "okru"
     },
-     {
+     {  id: 'The Descent',
+        posterUrl:  'images/The Descent.jpg',
+        year: 2023,
         title: "The Descent 2023",
         description: "The film is described as a thriller where a group of individuals in a small, peaceful community must uncover the secrets behind a series of horrifying attacks by mysterious creatures that emerge from the depths of darkness.",
         embedId: "9538436008486",
         genres: ["Horror"],
         source: "okru"
     },
-     {
+     {  id: 'The-Shape-of-Water',
+        posterUrl:  'images/The Shape of Water.jpg',
+        year: 2017,
         title: "The Shape of Water",
         description: "At a top secret research facility in the 1960s, a lonely janitor forms a unique relationship with an amphibious creature that is being held in captivity.",
         embedId: "6544850094630",
         genres: ["Drama","Sci-Fi"],
         source: "okru"
     },
-     {
+     {  id: 'Womb',
+        posterUrl:  'images/Womb.jpg',
+        year: 2025,
         title: "Womb 2025",
         description: "Trapped in a remote hunting cabin, a pregnant recovering addict battles to escape the clutches of a deranged hunter obsessed with abducting her full term fetus.",
         embedId: "9451032152614",
         genres: ["Horror","Thriller"],
         source: "okru"
     },
-     {
+     {  id: 'The-Squatchers',
+        posterUrl:  'images/The Squatchers.jpg',
+        year: 2025,
         title: "The Squatchers 2025",
         description: "A group of friends, known as The Squatchers set out to fulfill their dream of finding Bigfoot, only to wind up on a heart-pounding quest for survival against the unknown. This is one adventure you have to see to believe.",
         embedId: "9450984573478",
         genres: ["Comedy"],
         source: "okru"
     },
-     {
-        title: "War Party (1988) Director's Cut",
+     {  id: 'War Party',
+        posterUrl:  'images/War Party.jpg',
+        year: 1988,
+        title: "War Party  Director's Cut",
         description: "A group of re-enactors attempt to stage a hundred year anniversary battle between US Cavalry and Blackfeet Indians. Unfortunately racial hostilities and a real gun lead to some all too real casualties, and three young Blackfoot men are caught in the middle.",
         embedId: "9465828149798",
         genres: ["Action","Drama"],
         source: "okru"
      },
-      {
+      { id: 'Night-of-the-Tommyknockers',
+        posterUrl:  'images/Night of the Tommyknockers.jpg',
+        year: 2022,
         title: "Night of the Tommyknockers 2022",
         description: "When miners blast for gold in the 1870's, they accidentally release ancient creatures known as Tommyknockers. The Town of Deer Creek, Nevada is soon under siege with only a handful of survivors held up in the local saloon.",
         embedId: "9273472846374",
         genres: ["Horror","Weastern","Thriller"],
         source: "okru"
      },
-      {
+      { id: 'Blazing-Saddles',
+        posterUrl:  'images/Blazing Saddles.jpg',
+        year: 1974,
         title: "Blazing Saddles 1974",
         description: "In order to ruin a western town and steal their land, a corrupt politician appoints a black sheriff, who promptly becomes his most formidable adversary.",
         embedId: "7502168066598",
         genres: ["Western","Comedy"],
         source: "okru"
      },
-      {
+      { id: 'Ride-With-The-Devil',
+        posterUrl:  'images/Ride With The Devil.jpg',
+        year: 1999,
         title: "Ride With The Devil 1999",
         description: "During the American Civil War, two friends join the Bushwhackers, a militant group loyal to the Confederacy.",
         embedId: "7210048883238",
         genres: ["Western","Drama","War"],
         source: "okru"
      },
-      {
+      { id: 'The-Thicket',
+        posterUrl:  'images/The Thicket.jpg',
+        year: 2024,
         title: "The Thicket 2024",
         description: "When a bounty hunter and a band of unlikely heroes pursue a brutal killer, they find themselves in a deadly no-man's-land known as The Thicket.",
         embedId: "9136509291046",
         genres: ["Western","Drama"],
         source: "okru"
      },
-      {
+      { 
+        id: 'Ghost-Town',
+        posterUrl:  'images/Ghost Town.jpg',
+        year: 2023,
         title: "Ghost Town (2023)",
         description: "In the untamed West of Victorian-era America, a drifter takes a job as a barman in a small Arizona town. After a series of bizarre deaths, he soon finds himself the target of suspicion",
         embedId: "6364574190118",
         genres: ["Western","Horror"],
         source: "okru"
      },
-      {
+      { id: 'Mississippi-Burning',
+        posterUrl:  'images/Mississippi Burning.jpg',
+        year: 1988,
         title: "Mississippi Burning 1988 REMASTERED 1080p",
         description: "Two FBI agents with wildly different styles arrive in Mississippi to investigate the disappearance of three civil rights activists.",
         embedId: "8443536542376",
         genres: ["Crime","Drama","Thriller"],
         source: "okru"
      },
-      {
+      { id: 'From-Dusk-Till-Dawn',
+        posterUrl:  'images/From Dusk Till Dawn.jpg',
+        year: 1996,
         title: "From Dusk Till Dawn 1996 ",
         description: "Two criminals and their hostages unknowingly seek temporary refuge in a truck stop populated by vampires, with chaotic results.",
         embedId: "6164321405602",
         genres: ["Horror"],
         source: "okru"
      },
-      {
+      { id: 'Beyond-the-Night',
+        posterUrl:  'images/Beyond the Night.jpg',
+        year: 2018,
         title: "Beyond the Night 2018",
         description: "When a Marine's son reveals damning information about a local gangster's missing daughter, a war of attrition wreaks havoc on their forgotten coal mining town.",
         embedId: "1L7UpBTOzlU",
         genres: ["Drama","Thriller"],
         source: "youtube"
      },
-      {
-        title: "Extinction: The G.M.O. Chronicles",
+      { id: 'Extinction',
+        posterUrl:  'images/Extinction The G.M.O. Chronicles.jpg',
+        year: 2011,
+        title: "Extinction The G.M.O. Chronicles",
         description: "The remaining survivors of pan-global epidemic face a race against time to find a cure before they succumb to its zombie-inducing effects. Holed up in an abandoned military base, Tom and his fellow survivors, their numbers dwindling with each successive day, desperately search for a way of stopping the outbreak and returning their lives to normal",
         embedId: "L_njwTIXNA0",
         genres: ["Horror"],
         source: "youtube"
      },
-      {
+      { id: 'London-Boulevard',
+        posterUrl:  'images/London Boulevard.jpg',
+        year: 2010,
         title: "London Boulevard",
         description: "An ex-con with a reputation tries to go straight by working as a handy man for a reclusive actress but this is unfortunately not the wish of London's underground crime lord.",
         embedId: "3838862690871",
         genres: ["Drama","Thriller"],
         source: "okru"
      },
-      {
+      { id: 'Michael-Collins',
+        posterUrl:  'images/Michael Collins.jpg',
+        year: 1996,
         title: "Michael Collins 1996  720p",
         description: "Neil Jordan's historical biopic of Irish revolutionary Michael Collins, the man who led a guerrilla war against the UK, helped negotiate the creation of the Irish Free State, and led the National Army during the Irish Civil War.",
         embedId: "1078123301423",
         genres: ["Drama","Thriller","War"],
         source: "okru"
      },
-      {
-        title: "Outlaw.King.2018.1080p",
+      { id: 'Outlaw King',
+        posterUrl:  'images/Outlaw King.jpg',
+        year: 2018,
+        title: "Outlaw King.2018.1080p",
         description: "A true David vs. Goliath story of how the 14th century Scottish 'Outlaw King' Robert the Bruce used cunning and bravery to defeat the much larger and better equipped occupying English army.",
         embedId: "4982591130190",
         genres: ["Action","Drama","History"],
         source: "okru"
      },
-      {
+      { id: 'The-Outfit',
+        posterUrl:  'images/The Outfit.jpg',
+        year: 2022,
         title: "The Outfit (2022)",
         description: "An expert cutter must outwit a dangerous group of mobsters in order to survive a fateful night.",
         embedId: "3793980295758",
         genres: ["Drama","Crime"],
         source: "okru"
      },
-      {
+      { id: 'Lakeview-Terrace',
+        posterUrl:  'images/Lakeview Terrace.jpg',
+        year: 2008,
         title: "Lakeview Terrace (2008)",
         description: "A troubled and racist African-American L.A.P.D. Officer will stop at nothing to force out a friendly interracial couple who just moved in next door to him.",
         embedId: "9447996131878",
         genres: ["Crime","Thriller"],
         source: "okru"
      },
-      {
+      { 
+        id: 'Wanted',
+        posterUrl:  'images/Wanted.jpg',
+        year: 2008,
         title: "Wanted 2008",
         description: "A frustrated office worker discovers that he is the son of a professional assassin, and that he shares his father's superhuman killing abilities.",
         embedId: "9414094424614",
         genres: ["Action","Crime","Thriller"],
         source: "okru"
      },
-      {
+      { 
+        id: 'Last-County',
+        posterUrl:  'images/Last County.jpg',
+        year: 2023,
         title: "Last County 2023",
         description: "An alcoholic woman with a marriage on the rocks finds an unlikely ally in a wounded drug mule when the two of them are forced to defend her home from a violent siege of corrupt small town cops.",
         embedId: "9348503177766",
         genres: ["Crime","Thriller"],
         source: "okru"
      },
-      {
+      { 
+        id: 'Stir-of-Echoes',
+        posterUrl:  'images/Stir of Echoes.jpg',
+        year: 1999,
         title: "Stir of Echoes 1999",
         description: "A man has visions of a missing neighborhood girl.",
         embedId: "7807656921638",
         genres: ["Horror","Thriller"],
         source: "okru"
      },
-      {
+      { 
+        id: 'Event-Horizon',
+        posterUrl:  'images/Event Horizon.jpg',
+        year: 1997,
         title: "Event Horizon (1997)",
         description: "A rescue crew is tasked with investigating the mysterious reappearance of a spaceship that had been lost for seven years.",
-        embedId: "9547193125414",
+        embedId: "9477842602574",
         genres: ["Sci-Fi","Horror","Thriller"],
         source: "okru"
      },
-      {
-        title: "1992 (2024)",
-        description: "A factory worker must protect his son during the 1992 L.A. uprising after the Rodney King verdict.",
-        embedId: "9544468662822",
-        genres: ["Thriller","Action","Drama"],
-        source: "okru"
-     },
-      {
-        title: "Abduct (2025)",
-        description: "A woman's peaceful mountain getaway takes a bizarre turn when her boyfriend disappears, and a random naked man shows up claiming to be him.",
-        embedId: "9517374966310",
-        genres: ["Thriller"],
-        source: "okru"
-     },
-      {
+     
+    
+      { 
+        id: 'Hell-of-a-Summer',
+        posterUrl:  'images/Hell of a Summer.jpg',
+        year: 2023,
         title: "Hell of a Summer 2023",
         description: "The counselors of a summer camp are terrorized by a masked killer.",
         embedId: "9435574831654",
         genres: ["Horror"],
         source: "okru"
      },
-      {
+      { 
+        id: 'Dead Mail',
+        posterUrl:  'images/Dead Mail.jpg',
+        year: 2024,
         title: "Dead Mail (2024)",
         description: "An ominous help note finds its way to a 1980s post office, connecting a dead letter investigator to a kidnapped keyboard technician.",
         embedId: "9409949600294",
         genres: ["Horror","Thriller"],
         source: "okru"
      },
-      {
-        title: "It Feeds (2025",
+      { 
+        id: 'It-Feeds',
+        posterUrl:  'images/It Feeds.jpg',
+        year: 2025,
+        title: "It Feeds (2025)",
         description: "After a young girl bursts into their home psychiatry practice claiming an entity is feeding on her,Jordan and her clairvoyant mother must find a way to stop the force before the girl is taken completely.",
         embedId: "9409851886118",
         genres: ["Horror"],
         source: "okru"
      },
-      {
+      { 
+        id: 'Desert-Fiends',
+        posterUrl:  'images/Desert Fiends.jpg',
+        year: 2024,
         title: "Desert Fiends 2024",
         description: "Six friends on their way to a concert break down in the middle of nowhere and encounter a deranged family that lives in the desert killing anyone they come across.",
         embedId: "9468714289702",
         genres: ["Horror"],
         source: "okru"
      },
-     {
+     {  
+        id: 'Nothing-to-Lose',
+        posterUrl:  'images/Nothing to Lose.jpg',
+        year: 1997,
         title: "Nothing to Lose 1997",
         description: "Nick's wife is in bed with his boss. He later gets a gun to his head by a carjacker but steps on the gas pedal. They end up friends after adventures together:holdups, burglary, reckless driving, and revenge. Twists follow.",
         embedId: "2677676706342",
         genres: ["Comedy"],
         source: "okru"
      },
-     {
+     {  id: 'Nothing-But-Trouble',
+        posterUrl:  'images/Nothing But Trouble.jpg',
+        year: 1991,
         title: "Nothing But Trouble 1991",
         description: "A businessman and his friends are captured by a sadistic judge and his equally odd family in a bizarre mansion in the backwoods.",
         embedId: "4357179247142",
         genres: ["Comedy"],
         source: "okru"
      },
-     {
+     {  
+        id: 'The-Rocky-Horror-Picture-Show',
+        posterUrl:  'images/The Rocky Horror Picture Show.jpg',
+        year: 1975,
         title: "The Rocky Horror Picture Show 1975",
         description: "A newly-engaged couple have a breakdown in an isolated area and must seek shelter at the bizarre residence of Dr. Frank-n-Furter.",
         embedId: "3619420637734",
         genres: ["Horror","Comedy","Music"],
         source: "okru"
      },
-     {
+     {  
+        id: 'The-Lost-Boys',
+        posterUrl:  'images/The Lost Boys.jpg',
+        year: 1987,
         title: "The Lost Boys (1987)",
         description: "When a recently divorced mother and her two teenage boys move to a coastal town to stay with her father, it doesn't take long for the brothers to realize the area is a haven for something much more sinister than party-going surfers.",
         embedId: "3439021722150",
         genres: ["Horror"],
         source: "okru"
      },
-     {
+     {  
+        id: 'The-Great-Outdoors',
+        posterUrl:  'images/The Great Outdoors.jpg',
+        year: 1988,
         title: "The Great Outdoors 1988",
         description: "A Chicago man and his family go camping with his obnoxious brother-in-law.",
         embedId: "3280919202342",
         genres: ["Comedy"],
         source: "okru"
      },
-     {
+     { 
+        id: 'The-Jerky-Boys',
+        posterUrl:  'images/The Jerky Boys.jpg',
+        year: 1995,
         title: "The Jerky Boys (1995)",
         description: "A hilarious prank phone call pushes the buttons of an angry mob boss.",
         embedId: "761915574817",
         genres: ["Comedy","Crime"],
         source: "okru"
      },
-     {
+     { 
+        id: 'Behaving-Badly',
+        posterUrl:  'images/Behaving Badly.jpg',
+        year: 2014,
         title: "Behaving Badly (2014) ",
         description: "Teenager Rick Stevens has a crush on Nina Pennington. They form a friendship and take a rock'n'roll journey together while Nina deals with her overbearing boyfriend Kevin.",
         embedId: "9115896056358",
@@ -2380,6 +2458,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Southern-Comfort',
+        posterUrl:  'images/Southern Comfort.jpg',
+        year: 1981,
         title: "Southern Comfort 1981 1080",
         description: "During a routine exercise, a team of National Guardsmen are threatened by angry and violent locals.",
         embedId: "2302014655003",
@@ -2387,6 +2468,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Frequencies',
+        posterUrl:  'images/Frequencies.jpg',
+        year: 2013,
         title: "Frequencies (2013) 1080",
         description: "In an alternate reality, children learn how lucky they will be (their frequency), knowledge which shapes their destiny. The unluckiest boy must parse the mysteries of free will in order to pursue his forbidden love of the luckiest girl",
         embedId: "9870089259547",
@@ -2394,6 +2478,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Freaks',
+        posterUrl:  'images/Freaks.jpg',
+        year: 2018,
         title: " Freaks 2018  1080",
         description: "A bold girl discovers a bizarre, threatening, and mysterious new world beyond her front door after she escapes her father's protective and paranoid control.",
         embedId: "9870088079899",
@@ -2401,6 +2488,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Follow-Me',
+        posterUrl:  'images/Follow Me.jpg',
+        year: 1972,
         title: "Follow Me (1972) (1080p)",
         description: "A jealous businessman suspects that his wife is having an affair and hires an eccentric private detective to investigate. The suspected infidelity, however, is the tip of the iceberg and an elaborate game of cat and mouse ensues.",
         embedId: "9844221479451",
@@ -2408,6 +2498,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Farmlands',
+        posterUrl:  'images/Farmlands.jpg',
+        year: 2018,
         title: "Farmlands (2018) (1080p)",
         description: "Details the plight of South African farmers.",
         embedId: "9844218268187",
@@ -2415,6 +2508,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'The Manhattan Project',
+        posterUrl:  'images/The Manhattan Project.jpg',
+        year: 2022,
         title: "The Manhattan Project (2022) (1080p)",
         description: "When a small-town cocktail-enthusiast decides to kill himself after being diagnosed with a terminal illness he must deal with the repercussion his choice has on his son and his community.",
         embedId: "9826338343451",
@@ -2422,6 +2518,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Firewall',
+        posterUrl:  'images/Firewall.jpg',
+        year: 2006,
         title: "Firewall (2006) (1080p)",
         description: "A security specialist is forced into robbing the bank that he's protecting, as a bid to pay off his family's ransom.",
         embedId: "9813110819355",
@@ -2429,6 +2528,9 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Finding-Your-Feet',
+        posterUrl:  'images/Finding Your Feet.jpg',
+        year: 2017,
         title: "Finding Your Feet (2017) 1080",
         description: "On the eve of retirement a middle class, judgmental snob discovers her husband has been having an affair with her best friend and is forced into exile with her bohemian sister who lives on an impoverished inner-city council estate.",
         embedId: "9813110557211",
@@ -2436,6 +2538,9 @@ const allMovies = [
         source: "okru"
      },
      {
+        id: 'Finding-Graceland',
+        posterUrl:  'images/Finding Graceland.jpg',
+        year: 1998,
         title: "Finding Graceland (1998) (1080p)",
         description: "An eccentric drifter claiming to be Elvis Presley hitches a ride with a young man and they find themselves on an adventurous road trip to Memphis.",
         embedId: "9813091158555",
@@ -2443,13 +2548,19 @@ const allMovies = [
         source: "okru"
      },
      {
-        title: "The.Patriot.1998",
+        id: 'The-Patriot',
+        posterUrl:  'images/The Patriot.jpg',
+        year: 1998,
+        title: "The Patriot.1998",
         description: "A respected doctor must race against time to find a cure for a lethal virus unleashed by a paramilitary militia leader.",
         embedId: "3639686203959",
         genres: ["Action","Thriller"],
         source: "okru"
      },
      {
+        id: 'Requiem-for-a-Scream',
+        posterUrl:  'images/Requiem for a Scream.jpg',
+        year: 2022,
         title: "Requiem for a Scream 2022",
         description: "A sadistic killer sets his sights on a group of friends partying in an abandoned lake house, determined to make their murders his symphony.",
         embedId: "3960201546295",
@@ -2457,6 +2568,9 @@ const allMovies = [
         source: "okru"
      },
      {
+        id: 'Field-of-Dreams',
+        posterUrl:  'images/Field of Dreams.jpg',
+        year: 1989,
         title: "Field of Dreams (1989)",
         description: "Iowa farmer Ray Kinsella is inspired by a voice he can't ignore to pursue a dream he can hardly believe. Supported by his wife, Ray begins the quest by turning his ordinary cornfield into a place where dreams can come true.",
         embedId: "8345107630702",
@@ -2464,6 +2578,9 @@ const allMovies = [
         source: "okru"
      },
      {
+        id: 'ConAir',
+        posterUrl:  'images/ConAir.jpg',
+        year: 1997,
         title: "ConAir 1997",
         description: "Former US Amy Ranger, Cameron Poe, has just been paroled for manslaughter, but must stop a group of violent and deadly criminals from escaping the country after they seizes control of the prison transport plane he is on.",
         embedId: "10328404003438",
@@ -2471,6 +2588,9 @@ const allMovies = [
         source: "okru"
      },
      {
+        id: 'A-Chefs-Deadly-Revenge',
+        posterUrl:  'images/A Chefs Deadly Revenge.jpg',
+        year: 2024,
         title: "A Chefs Deadly Revenge (2024)",
         description: "A woman moves to a new town and opens her own gourmet restaurant after escaping from an abusive relationship. She soon finds herself in a deadly game of cat and mouse when she becomes the target of constant harassment from a jealous man.",
         embedId: "7953109879406",
@@ -2478,6 +2598,9 @@ const allMovies = [
         source: "okru"
      },
      {
+        id: 'I Know What You Did Last Summer',
+        posterUrl:  'images/I Know What You Did Last Summer.jpg',
+        year: 1997,
         title: "I Know What You Did Last Summer (1997)",
         description: "Four young friends bound by a tragic accident are reunited when they find themselves being stalked by a hook-wielding maniac in their small seaside town.",
         embedId: "7590589303406",
@@ -2486,6 +2609,9 @@ const allMovies = [
      },
      
      {
+        id: 'I-Still-Know-What-You-Did-Last-Summer',
+        posterUrl:  'images/I Still Know What You Did Last Summer.jpg',
+        year: 1998,
         title: "I Still Know What You Did Last Summer (1998)",
         description: "The murderous fisherman with a hook is back to once again stalk the two surviving teens, Julie and Ray, who had left him for dead, as well as cause even more murder and mayhem, this time at a posh island resort.",
         embedId: "7590592645742",
@@ -2493,13 +2619,19 @@ const allMovies = [
         source: "okru"
      },
      {
-        title: "When.Darkness.Falls.2022.",
+         id: 'When Darkness Falls',
+        posterUrl:  'images/When Darkness Falls.jpg',
+        year: 2022,
+        title: "When Darkness Falls.2022.",
         description: "Andrea and Jess go trekking in Scotland and get separated. Jess searches for Andrea but finds danger instead. Now in peril herself, Jess struggles to locate her missing friend and discern who she can trust.",
         embedId: "7576565123694",
         genres: ["Thriller"],
         source: "okru"
      },
      {
+        id: 'House of Inequity',
+        posterUrl:  'images/House of Inequity.jpg',
+        year: 2021,
         title: "House of Inequity 2021",
         description: "A day trip takes a turn for the worse when a group of friends investigate an abandoned house. The nightmares quickly become a reality when they're forced to face their own personal fears, and survive a night in The House of Inequity.",
         embedId: "7576554572398",
@@ -2507,6 +2639,9 @@ const allMovies = [
         source: "okru"
      },
      {
+        id: 'The-Vampire-Next-Door',
+        posterUrl:  'images/The Vampire Next Door.jpg',
+        year: 2024,
         title: "The Vampire Next Door 2024",
         description: "Introverted Cameron, is desperately in love with his high school crush Diane. But his romantic pursuit is halted when Victoria, a female vampire moves in next door. Cameron soon discovers he's in the middle of a life-and-death adventure.",
         embedId: "7576537795182",
@@ -2514,6 +2649,9 @@ const allMovies = [
         source: "okru"
      },
      {
+        id: 'Woman-With-The-Red-Lipstick',
+        posterUrl:  'images/Woman With The Red Lipstick.jpg',
+        year: 2024,
         title: "Woman With The Red Lipstick (2024)",
         description: "Looking to spice things up, Lucy and her boyfriend assume fake names and roleplay meeting for the first time in a bar. A few days later Lucy sees a news report about a missing persons case where the victim has the same name she just used.",
         embedId: "7567417739886",
@@ -2521,6 +2659,9 @@ const allMovies = [
         source: "okru"
      },
      {
+         id: 'Nanny-Dearest',
+        posterUrl:  'images/Nanny Dearest.jpg',
+        year: 2023,
         title: "Nanny Dearest (2023)",
         description: "After receiving fertile eggs from a donor, Rebecca and Caleb are finally able to have a child and start a family. Four years later, a strange woman appears in their life and becomes oddly drawn to their daughter.",
         embedId: "7567330445934",
@@ -2614,7 +2755,7 @@ const allMovies = [
     },
    
     {
-        id: 'Smokey-And-The-Bandit ',
+        id: 'Smokey-And-The-Bandit',
         title: 'Smokey And The Bandit',
         description: 'The Bandit is hired on to run a tractor-trailer full of beer over state lines, in hot pursuit by a pesky sheriff.',
         embedId: "7792980920942",
@@ -2624,7 +2765,7 @@ const allMovies = [
         year: 1977
     },
      {
-        id: 'Smokey-And-The-Bandit-2 ',
+        id: 'Smokey-And-The-Bandit-2',
         title: 'Smokey And The Bandit 2',
         description: 'The Bandit goes on another cross-country run, transporting an elephant from Florida to Texas. And, once again, Sheriff Buford T. Justice is on his tail.',
         embedId: "7792984590958",
@@ -2634,7 +2775,7 @@ const allMovies = [
         year: 1980
     },
      {
-        id: 'Smokey-And-The-Bandit-3 ',
+        id: 'Smokey-And-The-Bandit-3',
         title: 'Smokey And The Bandit 3',
         description: 'Big and Little Enos are opening a sea food restaurant. They bet Sheriff Buford T. Justice that he cannot drive from Miami to the Enos ranch in Texas in a given amount of time. If Buford loses he has to give up his badge.',
         embedId: "7792987277934",
@@ -2668,7 +2809,7 @@ const allMovies = [
         year: 1996
     },
      {
-        id: 'Goin-South ',           // <--- Fill in the unique ID for this movie (e.g., 'phenomenon-1996')
+        id: 'Goin-South',           // <--- Fill in the unique ID for this movie (e.g., 'phenomenon-1996')
         posterUrl: 'images/goin south.jpg', // <--- Fill in the exact path to the poster image (e.g., 'images/phenomenon.jpg')
         year: 1978 ,           // <--- Fill in the release year (e.g., 1996)
         title: 'Goin South ',        // <--- Fill in the full movie title (e.g., 'Phenomenon')
@@ -2678,7 +2819,7 @@ const allMovies = [
         description: 'Due to the lack of men after the Civil War, a small western town allows a bachelorette with ulterior motives to save a horse thief from the gallows by marrying him. They must deal with his old gang, the Sheriff, the bank, and each other.'   // <--- Fill in the movie's description
     },
     {
-        id: 'Grind ',           // <--- Fill in the unique ID for this movie (e.g., 'phenomenon-1996')
+        id: 'Grind',           // <--- Fill in the unique ID for this movie (e.g., 'phenomenon-1996')
         posterUrl: 'images/grind.jpg', // <--- Fill in the exact path to the poster image (e.g., 'images/phenomenon.jpg')
         year: 2003 ,           // <--- Fill in the release year (e.g., 1996)
         title: 'Grind ',        // <--- Fill in the full movie title (e.g., 'Phenomenon')
@@ -2687,4 +2828,44 @@ const allMovies = [
         embedId: '7792993372782',      // <--- Fill in the unique embed ID from the video source
         description: 'Four skaters follow their idol on his summer tour in an attempt to get noticed, get sponsored, and become stars themselves.'   // <--- Fill in the movie's description
     },
+     {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
 ]
