@@ -217,15 +217,17 @@ const allMovies = [
         year: 2020
     },
     {
-        id: 'The-Punisher', 
-        title: "The punisher 1989",
-        description: "An ex-cop wages a one-man war against the criminal underworld after his family is murdered.",
-        embedId: "2099299682969",
-        genres: [""],
-        source: "okru",
-        posterUrl:  'images/the punisher.jpg',
-        year: 1989
-    },
+      
+    id: 'The-Punisher',
+    title: "The punisher 1989",
+    description: "An ex-cop wages a one-man war against the criminal underworld after his family is murdered.",
+    embedId: "2099299682969",
+    genres: ["Action"], // Changed from "" to "Action"
+    source: "okru",
+    posterUrl:  'images/the punisher.jpg',
+    year: 1989 // Add this line
+},
+    
     {
         id: 'Master-and-Commander', 
         title: "Master and Commander: The Far Side of the World",
@@ -699,7 +701,7 @@ const allMovies = [
         genres: ["Comedy"],
         source: "okru"
     },
-     {  id: 'Nil-by-mouth ',
+     {  id: 'Nil-by-mouth',
         posterUrl:  'images/Nil by mouth.jpg',
         year: 1997,
         title: "Nil by mouth ",
@@ -1982,7 +1984,7 @@ const allMovies = [
     },
     {   id: 'Jeepers-Creepers-3',
         posterUrl:  'images/Jeepers Creepers 3.jpg',
-        year: 20017,
+        year: 2017,
         title: "Jeepers Creepers 3 (2017)",
         description: "Sheriff Dan Tashtego and a team of creeper hunters enlist the help of officer Davis Tubbs to help stop the monster's eating spree.",
         embedId: "2928047557260",
@@ -1991,7 +1993,7 @@ const allMovies = [
     },
     {   id: 'Dracula-The-Dark-Prince',
         posterUrl:  'images/Dracula The Dark Prince.jpg',
-        year: 20013,
+        year: 2013,
         title: "Dracula The Dark Prince 2013",
         description: "In his search for the Lightbringer, Dracula crosses paths with a beautiful crusader named Alina who bears a remarkable resemblance to his murdered bride. One look at her and Dracula is immediately smitten. Could Alina be the reincarnation of his long-dead love? Dracula has Alina kidnapped and brought to his castle where the Beast must now try to win his Beauty's heart.",
         embedId: "4230911101454",
@@ -2829,23 +2831,23 @@ const allMovies = [
         description: 'Four skaters follow their idol on his summer tour in an attempt to get noticed, get sponsored, and become stars themselves.'   // <--- Fill in the movie's description
     },
      {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        id: 'Clown-in-a-Cornfield',
+        posterUrl:  'images/Clown in a Cornfield.jpg',
+        year: 2025,
+        title: "Clown in a Cornfield 2025",
+        description: "A fading midwestern town in which Frendo the clown, a symbol of bygone success, reemerges as a terrifying scourge.",
+        embedId: "9565154904614",
+        genres: ["Horror"],
         source: "okru"
      },
       {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        id: 'Unspeakable-Beyond-the-Wall-of-Sleep',
+        posterUrl:  'images/Unspeakable Beyond the Wall of Sleep.jpg',
+        year: 2025,
+        title: "Unspeakable Beyond the Wall of Sleep 2025",
+        description: "Renowned oneirologist Ambrose London is requested to appear at Arkham Asylum to study the strange case of dissociative identity disorder in patient James Fhelleps/Joe Slater.",
+        embedId: "9565076261414",
+        genres: ["Horror"],
         source: "okru"
      },
       {

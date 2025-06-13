@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Details - The Movie Hub</title>
-    <!-- Google Fonts for Gothic Aesthetic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Link to your main CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,7 +30,6 @@
         <div class="container">
             <section class="movie-detail-section">
                 <div id="movie-details-container" class="product-item">
-                    <!-- Movie details will be loaded here by JavaScript -->
                     <p>Loading movie details...</p>
                 </div>
             </section>
@@ -42,7 +38,7 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 The Movie Hub. All rights reserved.</p>
+            <p>© 2025 The Movie Hub. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
@@ -50,7 +46,6 @@
         </div>
     </footer>
 
-    <!-- Link to your movies.js file which contains the allMovies array -->
     <script src="movies.js"></script>
 
     <script>
@@ -83,6 +78,7 @@
                     document.title = 'Movie Not Found - The Movie Hub';
                 }
             } else {
+                // This message appears if no ID is in the URL, as we saw previously.
                 movieDetailsContainer.innerHTML = '<p class="text-red-500">No movie ID provided.</p>';
                 document.title = 'No Movie ID - The Movie Hub';
             }
@@ -101,6 +97,7 @@
                             frameborder="0" allow="autoplay" allowfullscreen></iframe>
                     `;
                 case 'youtube':
+                    // This is the original, incorrect YouTube embed URL that caused ERR_BLOCKED_BY_CLIENT
                     return `
                         <iframe class="video-player w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/${embedId}"
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

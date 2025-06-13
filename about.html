@@ -1,107 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - The Movie Hub</title>
+    <title>About The Movie Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@300;400;700&family=Metal+Mania&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Reset and Base Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif; /* General fallback for this page */
+            color: #eee;
+            background-color: #1a1a1a;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                padding: 0 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 0 40px;
+            }
+        }
+
+        /* Header Styles (Copied from your style.css) */
+        .main-header {
+            background-color: #0d0d0d;
+            padding: 20px 0;
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .site-logo {
+            font-family: 'Creepster', cursive;
+            font-size: 2.5em;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+            margin: 0;
+            line-height: 1;
+        }
+
+        .site-logo a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #eee;
+            font-weight: 700;
+            padding: 5px 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #1a1a1a;
+            background-color: #ffcc00;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            padding: 40px 0;
+        }
+
+        /* ABOUT PAGE SPECIFIC STYLES - Ensuring fonts, colors, and centering */
+        .section-title {
+            font-family: 'Metal Mania', cursive;
+            font-size: 2.8em;
+            color: #ffcc00;
+            text-align: center; /* Centering for section titles */
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .about-subheading {
+            font-family: 'Creepster', cursive;
+            color: #ffcc00;
+            text-align: center; /* Centering for subheadings */
+            margin-bottom: 20px; /* Add some space below */
+            font-size: 1.8em; /* Adjust size if needed */
+        }
+
+        /* Paragraphs within the main content area */
+        .main-content p {
+            font-family: 'Inter', sans-serif;
+            color: #ccc; /* Your desired text color */
+            font-size: 1.1em; /* Slightly larger for readability */
+            line-height: 1.8; /* Good line spacing */
+            max-width: 900px; /* Control paragraph width for readability */
+            margin-left: auto; /* Centering paragraphs */
+            margin-right: auto; /* Centering paragraphs */
+            text-align: justify; /* Justify text for a cleaner look */
+            margin-bottom: 20px; /* Space between paragraphs */
+        }
+
+        /* You had some Tailwind classes like text-xl, text-gray-300, etc.
+           The .main-content p rule above should override them.
+           If you still see issues, add specific rules here: */
+        .main-content p.text-xl,
+        .main-content p.text-gray-300,
+        .main-content p.leading-relaxed,
+        .main-content p.text-gray-400 {
+            font-family: 'Inter', sans-serif; /* Explicitly ensure Inter for Tailwind classes */
+            color: #ccc;
+            text-align: justify; /* Ensure centering/justification */
+        }
+
+        /* Specific styling for story-text and feature-card paragraphs */
+        .main-content div.story-text p,
+        .main-content .feature-card p,
+        .main-content section.our-vision p {
+            font-family: 'Inter', sans-serif;
+            color: #ccc;
+            text-align: justify;
+        }
+
+        /* Footer Styles (Copied from your style.css) */
+        .main-footer {
+            background-color: #0d0d0d;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-top: 2px solid #ffcc00;
+            text-align: center;
+            font-size: 0.9em;
+            color: #bbb;
+        }
+
+        .main-footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #eee;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffcc00;
+        }
+
+        @media (min-width: 768px) {
+            .main-footer .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <header class="main-header">
         <div class="container">
             <h1 class="site-logo"><a href="index.html">The Movie Hub</a></h1>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="movies.html">Movies</a></li>
-                    <li><a href="about.html" class="active">About</a></li> <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main-content">
-        <div class="container">
+        <section class="about-hero">
+            <div class="container">
+                <h2 class="section-title">Welcome to The Movie Hub:</h2>
+                <h3 class="about-subheading">Your Portal to Cinematic Immersion</h3>
+                <p class="text-xl max-w-4xl mx-auto text-gray-300 leading-relaxed">Step into a world where every frame tells a story, every character breathes life, and every film is a journey. The Movie Hub isn't just a website; it's a testament to the enduring power of the moving picture. We are cinephiles, storytellers, and dreamers, united by an unyielding passion for the magic that unfolds on screen.</p>
+            </div>
+        </section>
 
-            <section class="about-hero text-center py-16">
-                <h2 class="text-4xl font-bold mb-4 font-metal-mania md:text-5xl lg:text-6xl text-gray-100">
-                    <span class="block">Welcome to The Movie Hub:</span>
-                    <span class="block text-3xl md:text-4xl lg:text-5xl font-creepster mt-2">Your Portal to Cinematic Immersion</span>
-                </h2>
-                <p class="text-xl max-w-4xl mx-auto text-gray-300 leading-relaxed">
-                    Step into a world where every frame tells a story, and every film is an adventure waiting to be discovered. We are more than just a website; we are a sanctuary for cinematic souls, a curated collection for the discerning viewer.
-                </p>
-            </section>
+        <section class="our-genesis">
+            <div class="container">
+                <h2 class="section-title">Our Genesis: A Passion for the Moving Picture</h2>
+                <p class="text-gray-400">Born from countless late-night discussions, shared popcorn, and a collective reverence for cinematic artistry, The Movie Hub began as a simple idea: to create a space where fellow enthusiasts could explore, discover, and celebrate the vast universe of film. We noticed a void – a lack of a truly immersive, user-friendly platform that honored both blockbuster epics and hidden indie gems with equal fervor. So, we decided to build it ourselves, frame by painstaking frame.</p>
+            </div>
+        </section>
 
-            <section class="our-story py-12 border-t border-gray-700">
-                <h3 class="section-title text-3xl font-bold mb-8 text-center text-gray-100 font-metal-mania">
-                    Our Genesis: A Passion for the Moving Picture
-                </h3>
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="story-text text-gray-300">
-                        <p class="mb-6 leading-relaxed">
-                            The Movie Hub was born from a singular, fervent passion: to preserve and celebrate the boundless artistry of film. In an age of fleeting trends and endless scrolling, we believe in the enduring power of storytelling through cinema—from the haunting silences of silent-era masterpieces to the explosive narratives of modern classics.
-                        </p>
-                        <p class="leading-relaxed">
-                            Our journey began with a simple desire: to create a curated haven where viewers can delve deep into the annals of film history, uncover forgotten gems, and revisit beloved narratives with renewed appreciation. We champion the art form, the visionaries behind the lens, and the timeless magic that unfolds on screen.
-                        </p>
+        <section class="what-awaits-you">
+            <div class="container">
+                <h2 class="section-title">What Awaits You Within Our Reels</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <h3>Vast Library</h3>
+                        <p>Dive into an ever-expanding collection spanning genres, eras, and cultures. From timeless classics to the latest releases, our library is meticulously curated to cater to every taste.</p>
                     </div>
-                    <div class="story-image">
-                        <img src="images/about-us-cinema.jpg" alt="Vintage film reels or classic cinema scene" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    <div class="feature-card">
+                        <h3>Curated Collections</h3>
+                        <p>Beyond simple categories, we offer thoughtful collections, guiding you through themed cinematic journeys – be it a deep dive into Film Noir, a celebration of Auteur Cinema, or a thrilling ride through the best Sci-Fi epics.</p>
                     </div>
-                </div>
-            </section>
-
-            <section class="what-we-offer py-12 border-t border-gray-700">
-                <h3 class="section-title text-3xl font-bold mb-8 text-center text-gray-100 font-metal-mania">
-                    What Awaits You Within Our Reels
-                </h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="feature-card p-6 border border-gray-700 rounded-lg shadow-lg bg-gray-800 text-center transition-transform hover:scale-105 duration-300">
-                        <h4 class="text-2xl font-semibold mb-3 text-gray-100 font-creepster">A Curated Collection</h4>
-                        <p class="text-gray-400">Beyond algorithms, we hand-pick each film, ensuring a library rich in both iconic classics and hidden treasures across diverse genres and eras.</p>
+                    <div class="feature-card">
+                        <h3>Community & Connection</h3>
+                        <p>The Movie Hub is a place for dialogue. Share your thoughts, discuss theories, and connect with other movie lovers. Your perspective enriches the cinematic experience for all.</p>
                     </div>
-                    <div class="feature-card p-6 border border-gray-700 rounded-lg shadow-lg bg-gray-800 text-center transition-transform hover:scale-105 duration-300">
-                        <h4 class="text-2xl font-semibold mb-3 text-gray-100 font-creepster">Discovery & Exploration</h4>
-                        <p class="text-gray-400">Our platform is designed for genuine discovery, inviting you to explore cinema's vast landscape and forge new connections with compelling stories and groundbreaking artists.</p>
-                    </div>
-                    <div class="feature-card p-6 border border-gray-700 rounded-lg shadow-lg bg-gray-800 text-center transition-transform hover:scale-105 duration-300">
-                        <h4 class="text-2xl font-semibold mb-3 text-gray-100 font-creepster">For Every Cinephile</h4>
-                        <p class="text-gray-400">Whether you're a seasoned scholar of film or a curious newcomer, The Movie Hub offers an enriching and immersive experience tailored to your cinematic journey.</p>
+                    <div class="feature-card">
+                        <h3>Seamless Experience</h3>
+                        <p>Our intuitive design ensures effortless navigation. Find what you love, discover something new, and enjoy a smooth, visually engaging experience every time you visit.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="our-vision text-center py-16 border-t border-gray-700">
-                <h3 class="section-title text-3xl font-bold mb-6 text-gray-100 font-metal-mania">
-                    Our Vision: Cultivating a Community of Film Lovers
-                </h3>
-                <p class="max-w-3xl mx-auto mb-10 text-gray-300 leading-relaxed">
-                    We envision The Movie Hub as more than just a viewing platform—it's a gathering place for those who feel the profound pull of the silver screen. We aim to foster a vibrant community where discussions thrive, insights are shared, and the shared love for cinema is celebrated without bounds. Join us in this unfolding narrative.
-                </p>
-                <a href="movies.html" class="btn btn-primary text-xl px-10 py-5 font-bold transition-all duration-300 hover:tracking-wide">
-                    Begin Your Cinematic Journey
-                </a>
-            </section>
-
-        </div>
+        <section class="our-vision">
+            <div class="container">
+                <h2 class="section-title">Our Vision</h2>
+                <p>We envision The Movie Hub as more than just a database; it’s a living, breathing archive where the legacy of film is honored and its future is enthusiastically embraced. We are committed to constant evolution, adding new features, expanding our library, and listening to our community to ensure The Movie Hub remains your ultimate cinematic companion.</p>
+                <p>Thank you for embarking on this cinematic journey with us. Let the reels roll, and may your movie-watching experience be nothing short of extraordinary!</p>
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 The Movie Hub. All rights reserved.</p>
+            <p>&copy; 2024 The Movie Hub. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
             </div>
         </div>
     </footer>
-
-    </body>
+</body>
 </html>

@@ -2,33 +2,33 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Keep as general fallback */
     color: #eee;
     background-color: #1a1a1a;
     line-height: 1.6;
-    overflow-x: hidden; /* Keep this to prevent overall page scroll */
-    width: 100%; /* Ensure they take full available width */
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Container for main content to control width and centering */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px; /* Slightly reduced base padding for even smaller screens */
-    box-sizing: border-box; /* Crucial for including padding in width */
-    width: 100%; /* Explicitly set width to 100% to ensure it uses all available space up to max-width */
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 /* Responsive padding for the container */
 @media (min-width: 640px) {
     .container {
-        padding: 0 20px; /* Slightly more padding for 'sm' screens */
+        padding: 0 20px;
     }
 }
 
 @media (min-width: 768px) {
     .container {
-        padding: 0 40px; /* Original 40px padding for 'md' screens and up */
+        padding: 0 40px;
     }
 }
 
@@ -91,6 +91,31 @@ body, html {
     padding: 40px 0;
 }
 
+/* --- THE ULTIMATE, HIGH-SPECIFICITY FONT OVERRIDE --- */
+/* Target elements with class AND element selector for maximum specificity,
+   and use !important. This should reliably override Tailwind's Preflight. */
+.main-content p.text-xl,
+.main-content p.text-gray-300,
+.main-content p.leading-relaxed,
+.main-content p.text-gray-400,
+.main-content p,
+.main-content ul li,
+.main-content div.story-text p,
+.main-content .feature-card p,
+.main-content section.our-vision p {
+    font-family: 'Inter', sans-serif !important;
+    color: #ccc !important; /* Keep this to confirm the rule is active */
+}
+
+/* Apply Inter to footer text as well, with !important */
+.main-footer p,
+.main-footer .footer-links a {
+    font-family: 'Inter', sans-serif !important;
+    color: #bbb !important;
+}
+/* --- END ULTIMATE FONT OVERRIDE --- */
+
+
 .section-title {
     font-family: 'Metal Mania', cursive;
     font-size: 2.8em;
@@ -98,6 +123,11 @@ body, html {
     text-align: center;
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+/* Specific styling for the subheading on the About page */
+.about-subheading {
+    font-family: 'Creepster', cursive; /* Apply Creepster font */
+    color: #ffcc00; /* Ensuring it has your brand color */
 }
 
 /* Hero Section (for index.html) */
@@ -350,7 +380,7 @@ body, html {
 
 #pagination {
     display: flex !important;
-    flex-wrap: wrap !important; /* This is the key for horizontal wrapping */
+    flex-wrap: wrap !important;
     justify-content: center !important;
     align-items: center !important;
     padding: 10px !important;

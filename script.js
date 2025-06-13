@@ -233,6 +233,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Initial Render ---
-    filterAndRenderMovies();
+   // --- Initial Render ---
+    // For movies.html, render immediately.
+    // For index.html (homepage), add a small delay to ensure allMovies is fully parsed
+    // before attempting to render "Latest Movies", as there can be a race condition.
+    if (currentPage === 'index.html') {
+        setTimeout(() => {
+            filterAndRenderMovies();
+        }, 100); // 100 milliseconds delay
+    } else {
+        filterAndRenderMovies();
+    }
 });
+
