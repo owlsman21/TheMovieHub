@@ -2851,13 +2851,13 @@ const allMovies = [
         source: "okru"
      },
       {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        id: 'Deciphering-the-Zodiac-Killer',
+        posterUrl:  'images/Deciphering the Zodiac Killer.jpg',
+        year: 2023,
+        title: "Deciphering the Zodiac Killer",
+        description: "The Zodiac Killer terrorized San Francisco with brutal murders and cryptic letters to newspapers. Despite extensive investigations, the killer's identity remains unknown, marking a pivotal case in criminal history.",
+        embedId: "9544518339150",
+        genres: ["History"],
         source: "okru"
      },
       {
