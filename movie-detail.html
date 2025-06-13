@@ -4,32 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Details - The Movie Hub</title> 
+    <!-- Google Fonts for Gothic Aesthetic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS CDN should be loaded BEFORE your custom style.css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to your custom main CSS file -->
     <link rel="stylesheet" href="css/style.css"> 
+    <!-- Favicon link -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- *** Essential Open Graph Meta Tags for Social Media Preview *** -->
+    <!-- These tags define how your page appears when shared on Facebook, LinkedIn, etc. -->
     <meta property="og:title" content="Movie Details - The Movie Hub">
     <meta property="og:description" content="Explore cinematic details for classic films on The Movie Hub.">
+    <!-- Points to the main site image for social media preview -->
     <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg"> 
+    <!-- The canonical URL for this specific detail page -->
     <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub/movie-detail.html"> 
     <meta property="og:type" content="website">
 
+    <!-- *** Essential Twitter Card Meta Tags for Social Media Preview *** -->
+    <!-- These tags define how your page appears when shared on X (Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Movie Details - The Movie Hub">
     <meta name="twitter:description" content="Explore cinematic details for classic films on The Movie Hub.">
+    <!-- Points to the main site image for Twitter preview -->
     <meta name="twitter:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg"> 
 
-    <script src="js/movie-detail.js" defer></script> 
+    <!-- The movie-detail.js script will be included via an inline script at the bottom of the body.
+         If you prefer it here, uncomment the line below and ensure its content is valid. -->
+    <!-- <script src="js/movie-detail.js" defer></script> --> 
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
+            <!-- Site logo linking back to the homepage -->
             <h1 class="site-logo"><a href="index.html">The Movie Hub</a></h1>
+            <!-- Main navigation menu -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -44,7 +59,10 @@
     <main class="main-content">
         <div class="container">
             <section class="movie-detail-section">
-                <div id="movie-details-container" class="product-item">
+                <!-- This div will be populated by JavaScript with movie details.
+                     Added Tailwind classes to limit its maximum width and center it on larger screens,
+                     and add responsive padding. -->
+                <div id="movie-details-container" class="product-item max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
                     <p>Loading movie details...</p>
                 </div>
             </section>
@@ -61,22 +79,37 @@
         </div>
     </footer>
 
+    <!-- *** IMPORTANT: Re-including movies.js for 'allMovies' data *** -->
+    <!-- This script is crucial if your 'allMovies' array is defined within movies.js.
+         It must load before the inline script that uses 'allMovies'. -->
     <script src="movies.js"></script>
 
+    <!-- Inline JavaScript for dynamic movie details loading and display -->
     <script>
+        // Ensure this script runs only after the DOM is fully loaded.
         document.addEventListener('DOMContentLoaded', () => {
+            // Get URL parameters to extract the movie ID.
             const urlParams = new URLSearchParams(window.location.search);
             const movieId = urlParams.get('id');
+            // Get the container where movie details will be displayed.
             const movieDetailsContainer = document.getElementById('movie-details-container');
 
+            // Check if a movie ID is provided in the URL and if 'allMovies' data is available.
             if (movieId && typeof allMovies !== 'undefined') {
-                // Find the movie by its ID
+                // Find the movie object in the 'allMovies' array based on the ID.
                 const movie = allMovies.find(m => m.id === movieId);
 
                 if (movie) {
-                    // Generate HTML for the movie details
+                    // Generate HTML string for the movie details.
+                    // Added Tailwind classes to the <img> tag for responsive sizing and centering:
+                    // w-full: takes full width of its parent.
+                    // max-w-sm: limits max width to small size (e.g., 384px in Tailwind's default config).
+                    // h-auto: maintains aspect ratio.
+                    // mx-auto: centers the image.
+                    // block: ensures mx-auto works.
+                    // rounded-lg shadow-lg: for consistent styling with video embeds.
                     movieDetailsContainer.innerHTML = `
-                        <img src="${movie.posterUrl || 'https://placehold.co/400x600/222/ffcc00?text=No+Image'}" alt="${movie.title}" onerror="this.onerror=null;this.src='https://placehold.co/400x600/222/ffcc00?text=No+Image';">
+                        <img class="w-full max-w-sm h-auto mx-auto block rounded-lg shadow-lg" src="${movie.posterUrl || 'https://placehold.co/400x600/222/ffcc00?text=No+Image'}" alt="${movie.title}" onerror="this.onerror=null;this.src='https://placehold.co/400x600/222/ffcc00?text=No+Image';">
                         <h4 class="text-xl font-bold text-yellow-500 mt-4">${movie.title} (${movie.year || 'N/A'})</h4>
                         <p class="text-gray-300 mt-2">${movie.description}</p>
                         <p class="text-gray-300 mt-2"><strong>Genre:</strong> ${movie.genres ? movie.genres.join(', ') : 'N/A'}</p>
@@ -86,20 +119,21 @@
                         </div>
                         <a href="javascript:history.back()" class="btn-view-product mt-4 inline-block px-4 py-2 rounded-md bg-red-700 text-white hover:bg-yellow-500 hover:text-gray-900 transition-colors duration-200">Back to Movies</a>
                     `;
-                    // Update page title
+                    // Update the browser tab title to reflect the current movie.
                     document.title = `${movie.title} Details - The Movie Hub`;
                 } else {
+                    // Display message if movie is not found.
                     movieDetailsContainer.innerHTML = '<p class="text-red-500">Movie not found.</p>';
                     document.title = 'Movie Not Found - The Movie Hub';
                 }
             } else {
-                // This message appears if no ID is in the URL, as we saw previously.
+                // Display message if no movie ID is provided in the URL.
                 movieDetailsContainer.innerHTML = '<p class="text-red-500">No movie ID provided.</p>';
                 document.title = 'No Movie ID - The Movie Hub';
             }
         });
 
-        // Helper function to generate embed HTML based on source
+        // Helper function to generate appropriate embed HTML based on video source.
         function generateEmbedHtml(embedId, source) {
             if (!embedId) {
                 return '<p class="text-gray-400">No video available for this movie.</p>';
@@ -107,17 +141,20 @@
 
             switch (source) {
                 case 'okru':
+                    // OK.ru embed code
                     return `
                         <iframe class="video-player w-full aspect-video rounded-lg shadow-lg" src="https://ok.ru/videoembed/${embedId}"
                             frameborder="0" allow="autoplay" allowfullscreen></iframe>
                     `;
                 case 'youtube':
-                    // This is the original, incorrect YouTube embed URL that caused ERR_BLOCKED_BY_CLIENT
+                    // *** FIX: Corrected YouTube embed URL format ***
+                    // Ensure you are using the correct embed ID format for YouTube (e.g., 'dQw4w9WgXcQ')
                     return `
                         <iframe class="video-player w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/${embedId}"
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     `;
                 case 'rumble':
+                    // Rumble.com embed code
                     return `
                         <iframe class="video-player w-full aspect-video rounded-lg shadow-lg" src="https://rumble.com/embed/${embedId}/?pub=792qb"
                             frameborder="0" allowfullscreen></iframe>

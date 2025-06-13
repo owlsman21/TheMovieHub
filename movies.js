@@ -2871,13 +2871,13 @@ const allMovies = [
         source: "okru"
      },
       {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        id: 'The-Capture-of-the-Green-River-Killer',
+        posterUrl:  'images/The Capture of the Green River Killer.jpg',
+        year: 2008,
+        title: "The Capture of the Green River Killer",
+        description: "A pair of girls seeking adventure beyond their western Washington trailer park encounter the area's most ruthless serial killer. The series is based on Sheriff David Reichert's book, Chasing the Devil: My Twenty-Year Quest to Capture the Green River Killer",
+        embedId: "7997470608035",
+        genres: ["Crime","Horror"],
         source: "okru"
      },
       {
