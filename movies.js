@@ -2881,6 +2881,67 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'K-O',
+        posterUrl:  'images/ko.jpg',
+        year: 2025,
+        title: "K.O 2025",
+        description: "After accidentally killing his rival in an MMA bout, a man has the chance to make it up to the widow by finding her son.",
+        embedId: "9572706552358",
+        genres: ["Action"],
+        source: "okru"
+     },
+      {
+        id: 'The-Shrouds',
+        posterUrl:  'images/The Shrouds.jpg',
+        year: 2024,
+        title: "The Shrouds 2024",
+        description: "Karsh, an innovative businessman and grieving widower, builds a device to connect with the dead inside a burial shroud.",
+        embedId: "9572658186790",
+        genres: ["Horror"],
+        source: "okru"
+     },
+      {
+        id: 'The-Quiet-Hour',
+        posterUrl:  'images/the quiet hour.jpg',
+        year: 2014,
+        title: "The Quiet Hour 2014",
+        description: "In the aftermath of an alien invasion, a feisty teenage girl sets out to protect her farm from human scavengers who will stop at nothing in order to survive in a post-apocalyptic world.",
+        embedId: "IV4cNRQho1k",
+        genres: ["Sci-Fi"],
+        source: "youtube"
+     },
+      {
+        id: 'Cannibal-Troll',
+        posterUrl:  'images/Cannibal Troll.jpg',
+        year: 2021,
+        title: "Cannibal Troll 2021",
+        description: "A group of female friends on a hen weekend in the countryside find themselves hunted by a beastly - and very hungry - troll.",
+        embedId: "KB-LE45JNns",
+        genres: ["Horror"],
+        source: "youtube"
+     },
+      
+     {
+        id: 'Big-Sky',
+        posterUrl:  'images/big sky.jpg',
+        year: 2015,
+        title: "Big Sky 2015",
+        description: "A teen traveling with her mother to a treatment center for her agoraphobia has to fight for their lives against a gunman who attacks them.",
+        embedId: "/8trxactihoU",
+        genres: ["Thriller","Drama"],
+        source: "youtube"
+     },
+     {
+        id: 'Wake-the-Dead',
+        posterUrl:  'images/Wake the Dead.jpg',
+        year: 2017,
+        title: "Wake the Dead 2017",
+        description: "After a near death incident leaves Kristin scarred with a terrifying connection to the Spirit World, her family attempts to break her free of an Evil Spirit's hold.",
+        embedId: "QRdXBv1MAlY",
+        genres: ["Horror"],
+        source: "youtube"
+     },
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -2890,7 +2951,7 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-      {
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -2900,7 +2961,7 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-      {
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -2910,7 +2971,7 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-      {
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -2920,7 +2981,7 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-      {
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
