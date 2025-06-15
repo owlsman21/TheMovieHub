@@ -427,13 +427,13 @@ const allMovies = [
         posterUrl:  'images/abduct.jpg',
         year: 2025
     },
-    {   id: 'I-Was-Honey-Boo-Boo ',
-        title: "I Was Honey Boo Boo  ",
+    {   id: 'I-Was-Honey-Boo-Boo',
+        title: "I Was Honey Boo Boo (2025)",
         description: " Alana Thompson, famously known as honey boo boo reveals her story of rising to fame and the secrets behind the cameras.",
         embedId: "9517224757798",
         genres: ["Drama"],
         source: "okru",
-        posterUrl:  'images/boo.jpg',
+        posterUrl:'images/boo.jpg',
         year: 2025
     },
     {   id: 'The-Surrender',
