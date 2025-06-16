@@ -2952,6 +2952,46 @@ const allMovies = [
         source: "youtube"
      },
      {
+        id: 'Alien',
+        posterUrl:  'images/alien.jpg',
+        year: 1979,
+        title: "Alien (1979)",
+        description: "After investigating a mysterious transmission of unknown origin, the crew of a commercial spacecraft encounters a deadly lifeform.",
+        embedId: "7528202832426",
+        genres: ["Horror"],
+        source: "okru"
+     },
+     {
+        id: 'Dead Again',
+        posterUrl:  'images/Dead Again.jpg',
+        year: 2021,
+        title: "Dead Again 2021",
+        description: "In a rural village where crime is non existent, a police sergeant is retiring out of boredom. He is sent a young recruit fresh out of police school. All hell is about to break loose in this apocalyptic horror film.",
+        embedId: "2342570756646",
+        genres: ["Horror","Comedy"],
+        source: "okru"
+     },
+     {
+        id: 'BTK',
+        posterUrl:  'images/BTK.jpg',
+        year: 2008,
+        title: "BTK 2008",
+        description: "Dennis L. Rader systematically tortured and killed innocent victims for over two decades, evading the police for over 30 years while living a seemingly normal life as a husband, father, security officer and church president.",
+        embedId: "2276641933862",
+        genres: ["Crime","Horror","History"],
+        source: "okru"
+     },
+     {
+        id: 'Haunting-of-the-Mary-Celeste',
+        posterUrl:  'images/Haunting of the Mary Celeste.jpg',
+        year: 2020,
+        title: "Haunting of the Mary Celeste 2020",
+        description: "Rachel and her team investigate supernatural causes of a family and crew's disappearance from a merchant ship, proving their theory as the ship breaks down and crew members disappear.",
+        embedId: "2200181344806",
+        genres: ["Horror"],
+        source: "okru"
+     },
+      {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -2961,7 +3001,7 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-     {
+      {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -2971,7 +3011,7 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-     {
+      {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -2981,7 +3021,115 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-     {
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+      {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     }, {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     }, {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
