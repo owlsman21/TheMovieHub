@@ -391,7 +391,7 @@ const allMovies = [
 
     },
      // --- Movies from Page 3.html ---
-    {   id: 'The-Hot-Potato ',
+    {   id: 'The-Hot-Potato',
         title: "The Hot Potato ",
         description: " The Hot Potato is a 2012 British comedy crime thriller film. It was directed and written by Tim Lewiston and stars Ray Winstone, Colm Meaney and Jack Huston in the lead roles.",
         embedId: "O85tflN5Krg",
@@ -400,7 +400,7 @@ const allMovies = [
         posterUrl:  'images/hot potato.jpg',
         year: 2011
     },
-    {   id: 'Open-Graves ',
+    {   id: 'Open-Graves',
         title: "Open Graves ",
         description: " A group of surfers discover an old board game which claims a life every time it is played.",
         embedId: "9519433386534",
@@ -473,7 +473,7 @@ const allMovies = [
         posterUrl:  'images/antisocial.jpg',
         year: 2013
     },
-    {   id: 'Crossfire ',
+    {   id: 'Crossfire',
         title: "Crossfire 2022",
         description: "After a shooting, Jo's family vacations turns into turmoil.",
         embedId: "pF_YIqju9gw",
@@ -509,7 +509,7 @@ const allMovies = [
         posterUrl:  'images/Assassin.jpg',
         year: 2015
     },
-    {   id: 'Air-Force-One-Is-Down ',
+    {   id: 'Air-Force-One-Is-Down',
         title: " Air Force One Is Down ",
         description: " Alistair Maclean's highly charged novel is brought to life for a contemporary audience in this tense, international thriller.",
         embedId: "WzrYrcQPJqE",
@@ -518,7 +518,7 @@ const allMovies = [
         posterUrl:  'images/Air Force One Is Down.jpg',
         year: 2012
     },
-    {   id: 'Union ',
+    {   id: 'Union',
         title: "Union ",
         description: "A woman disguises herself as her dead brother, Henry, in order to survive in the Confederate ranks during the Civil War. He marries a widow to rescue her from an arranged marriage. They keep each others secrets and find true love.",
         embedId: "1367854418585",
@@ -527,7 +527,7 @@ const allMovies = [
         posterUrl:  'images/union.jpg',
         year: 2019
     },
-    {   id: 'Decoys ',
+    {   id: 'Decoys',
         title: "Decoys ",
         description: " Luke and Roger are just another couple of college guys trying to lose their virginity. But when Luke sees something unusual, he begins to suspect that the girls on campus aren't exactly human.",
         embedId: "rWS9TaHh0Jo",
@@ -536,7 +536,7 @@ const allMovies = [
         posterUrl:  'images/decoys.jpg',
         year: 2004
     },
-    {   id: 'Mercury-Plains  ',
+    {   id: 'Mercury-Plains',
         title: "Mercury Plains",
         description: " A troubled man runs away to Mexico and is recruited to join a paramilitary group of teens fighting the drug cartels. He proves himself to the group, but questions their motive.",
         embedId: "qwkiu0sk-9k",
@@ -545,8 +545,8 @@ const allMovies = [
         posterUrl:  'images/mercury plains.jpg',
         year: 2004
     },
-    {   id: 'Wolf-Town  ',
-        title: " Wolf Town  ",
+    {   id: 'Wolf-Town',
+        title: " Wolf Town",
         description: " Kyle, a shy college student finds himself and three of his friends trapped in an old western ghost town by a pack of ferocious wolves and has to overcome his personal fears to confront the wolves and lead his friends to safety.",
         embedId: "978941381273",
         genres: ["Horror"],
@@ -554,7 +554,7 @@ const allMovies = [
         posterUrl:  'images/wolf town.jpg',
         year: 2011
     },
-    {   id: 'Shadowland   ',
+    {   id: 'Shadowland',
         title: "Shadowland 2008 ",
         description: "A taut reinvention of vampire lore, Shadowland opens in modern day North America, where construction workers uncover an old stone cross and what appears to be a wooden stake. They remove the stake from the ground, allowing Laura (Caitlin McIntosh), a slumbering vampire, to revive and rise from the earth",
         embedId: "979663850137",
@@ -564,7 +564,7 @@ const allMovies = [
         year: 2008
     },
     
-    {    id: 'Aliens-vs-Predator-Requiem.  ',
+    {    id: 'Aliens-vs-Predator-Requiem.',
         title: "Aliens.vs.Predator.Requiem.2007 ",
         description: " Residents (Steven Pasquale, Reiko Aylesworth, John Ortiz) of Gunnison, Colorado, are caught up in the crossfire when two deadly extraterrestrial species bring their longstanding conflict to Earth. On the one side, nearly indestructible Aliens; on the other, a lone Predator whose mission is to wipe out all traces of the Alien infestation from Earth, no matter who gets in the way.",
         embedId: "1005714934425",
@@ -574,7 +574,7 @@ const allMovies = [
         year: 2007
     },
     {  
-         id: 'The-Devils-Rock  ',
+         id: 'The-Devils-Rock',
         title: "The Devil's Rock ",
         description: " Set in the Channel Islands on the eve of D Day, two Kiwi commandos, sent to destroy German gun emplacements to distract Hitler's forces away from Normandy, discover a Nazi occult plot to unleash demonic forces to win the war",
         embedId: "979809208985",
@@ -583,7 +583,7 @@ const allMovies = [
         posterUrl:  'images/the devils rock.jpg',
         year: 2011
     },
-    {   id: 'The-Last-of-the-Mohicans ',
+    {   id: 'The-Last-of-the-Mohicans',
         title: "The Last of the Mohicans  ",
         description: "The last members of a dying Native American tribe, the Mohicans -- Uncas (Eric Schweig), his father Chingachgook (Russell Means), and his adopted half-white brother Hawkeye (Daniel Day-Lewis) -- live in peace alongside British colonists. But when the daughters (Madeleine Stowe, Jodhi May) of a British colonel are kidnapped by a traitorous scout, Hawkeye and Uncas must rescue them in the crossfire of a gruesome military conflict of which they wanted no part: the French and Indian War.",
         embedId: "967004064409",
@@ -602,7 +602,7 @@ const allMovies = [
         year: 2018
     },
     
-    {   id: 'Young-Guns-2  ',
+    {   id: 'Young-Guns-2',
         title: "Young Guns 2 ",
         description: "En route to Mexico from the United States, Billy the Kid (Emilio Estevez) and his associates are pursued by federal agents hell-bent on bringing them to justice. But when Billy, Doc (Kiefer Sutherland) and Chavez (Lou Diamond Phillips) prove too difficult to track down, the frustrated authorities enlist an old friend of theirs, reformed outlaw Pat Garrett (William Petersen), to take down the elusive gunslinger. But Billy has a head start, and his crew of outlaws is growing by the minute.",
         embedId: "1012291275417",
@@ -611,7 +611,7 @@ const allMovies = [
         posterUrl:  'images/young guns 2.jpg',
         year: 1990
     },
-     {  id: 'Wyatt-Earp  ',
+     {  id: 'Wyatt-Earp',
         title: "Wyatt Earp.HD ",
         description: " The epic biography of western lawman Wyatt Earp, who at an early age, is taught that nothing matters more than family and the law. He becomes a respected sheriff in Dodge City and Tombstone. Joined by his brothers and Doc Holliday, Earp wages war on the dreaded Clanton and McLaury gangs.",
         embedId: "1010676468377",
@@ -638,7 +638,7 @@ const allMovies = [
         posterUrl:  'images/the burrowers.jpg',
         year: 2008
     },
-     {  id: 'The-Revenant   ',
+     {  id: 'The-Revenant',
         title: "The Revenant ",
         description: "While exploring the uncharted wilderness in 1823, frontiersman Hugh Glass (Leonardo DiCaprio) sustains life-threatening injuries from a brutal bear attack. When a member (Tom Hardy) of his hunting team kills his young son (Forrest Goodluck) and leaves him for dead, Glass must utilize his survival skills to find a way back to civilization. Grief-stricken and fueled by vengeance, the legendary fur trapper treks through the snowy terrain to track down the man who betrayed him.",
         embedId: "1009119464089",
@@ -656,7 +656,7 @@ const allMovies = [
         posterUrl:  'images/hostiles.jpg',
         year: 2017
     },
-     {  id: 'Tombstone ',
+     {  id: 'Tombstone',
         title: "Tombstone ",
         description: "Wyatt Earp (Kurt Russell) and his brothers, Morgan (Bill Paxton) and Virgil (Sam Elliott), have left their gunslinger ways behind them to settle down and start a business in the town of Tombstone, Ariz. While they aren't looking to find trouble, trouble soon finds them when they become targets of the ruthless Cowboy gang. Now, together with Wyatt's best friend, Doc Holliday (Val Kilmer), the brothers pick up their guns once more to restore order to a lawless land.",
         embedId: "967267846809",
@@ -665,7 +665,7 @@ const allMovies = [
         posterUrl:  'images/tombstone.jpg',
         year: 1993
     },
-     {  id: 'Young-Guns  ',
+     {  id: 'Young-Guns',
         title: "Young Guns (1988) ",
         description: "John Tunstall (Terence Stamp), a distinguished British gentleman, employs downtrodden youths to tend his herd on the New Mexican frontier. When Tunstall is gunned down by the crooked Lawrence G. Murphy (Jack Palance), a ragtag group of cow hands -- including Doc Scurlock (Kiefer Sutherland), Richard Brewer (Charlie Sheen) and young William billy the kid Bonney (Emilio Estevez) -- ride forth in search of bloody vengeance for the death of their beloved mentor.",
         embedId: "970239642265",
@@ -728,7 +728,7 @@ const allMovies = [
         genres: ["Drama"],
         source: "okru"
     },
-     {  id: 'urge ',
+     {  id: 'urge',
         posterUrl:  'images/urge.jpg',
         year: 2016,
         title: "urge ",
@@ -737,7 +737,7 @@ const allMovies = [
         genres: ["Drama","Sci-Fi"],
         source: "okru"
     },
-       {id: 'The-Pilots-Wife  ',
+       {id: 'The-Pilots-Wife',
         posterUrl:  'images/the pilots wife.jpg',
         year: 2002,
         title: "The Pilots Wife (2002)",
