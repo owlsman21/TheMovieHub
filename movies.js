@@ -3103,6 +3103,65 @@ const allMovies = [
         source: "okru"
      },
       {
+        id: 'Lethal-Weapon-3',
+        posterUrl:  'images/Lethal Weapon 3.jpg',
+        year: 1992,
+        title: "Lethal Weapon 3 1992",
+        description: "Martin Riggs and Roger Murtaugh pursue a former LAPD officer who uses his knowledge of police procedure and policies to steal and sell confiscated guns and ammunition to local street gangs.",
+        embedId: "8351993563834",
+        genres: ["Acton"],
+        source: "okru"
+     },
+      {
+        id: 'Lethal-Weapon-2',
+        posterUrl:  'images/Lethal Weapon 2.jpg',
+        year: 1992,
+        title: "Lethal Weapon 2 1989",
+        description: "Riggs and Murtaugh are on the trail of South African diplomats who are using their immunity to engage in criminal activities.",
+        embedId: "4324245179130",
+        genres: ["Action"],
+        source: "okru"
+     }, {
+        id: 'Lethal-Weapon',
+        posterUrl:  'images/Lethal Weapon.jpg',
+        year: 1987,
+        title: "Lethal Weapon 1987",
+        description: "Two newly paired cops who are complete opposites must put aside their differences in order to catch a gang of drug smugglers.",
+        embedId: "4324245113594",
+        genres: ["Action"],
+        source: "okru"
+     }, 
+     {
+        id: 'Lethal-Weapon-4',
+        posterUrl:  'images/Lethal Weapon 4.jpg',
+        year: 1998,
+        title: "Lethal Weapon 4 1998",
+        description: "With personal crises and age weighing in on them, LAPD officers Riggs and Murtaugh must contend with deadly Chinese triads that are trying to free their former leaders out of prison and onto American soil.",
+        embedId: "4324244982522",
+        genres: ["Action"],
+        source: "okru"
+     },
+     {
+        id: 'Die-Hard',
+        posterUrl:  'images/Die Hard.jpg',
+        year: 1988,
+        title: "Die Hard 1988",
+        description: "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
+        embedId: "4998759254577",
+        genres: ["Action"],
+        source: "okru"
+     },
+     {
+        id: 'Live-Free-or-Die-Hard',
+        posterUrl:  'images/Live Free or Die Hard.jpg',
+        year: 2007,
+        title: "Live Free or Die Hard (2007)",
+        description: "John McClane is forced to team up with a young computer hacker, Matt Farrell, to stop a master cyber-terrorist called Thomas Gabriel, who wants to shut down the entire nations computer infrastructure in a mass cyber attack.",
+        embedId: "4998759123505",
+        genres: ["Action"],
+        source: "okru"
+     },
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -3112,7 +3171,7 @@ const allMovies = [
         genres: [""],
         source: "okru"
      },
-      {
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -3121,7 +3180,8 @@ const allMovies = [
         embedId: "",
         genres: [""],
         source: "okru"
-     }, {
+     },
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
@@ -3130,7 +3190,48 @@ const allMovies = [
         embedId: "",
         genres: [""],
         source: "okru"
-     }, {
+     },
+     {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
+        id: '',
+        posterUrl:  'images/.jpg',
+        year: 2024,
+        title: "",
+        description: "",
+        embedId: "",
+        genres: [""],
+        source: "okru"
+     },
+     {
         id: '',
         posterUrl:  'images/.jpg',
         year: 2024,
