@@ -2830,16 +2830,7 @@ const allMovies = [
         embedId: '7792993372782',      // <--- Fill in the unique embed ID from the video source
         description: 'Four skaters follow their idol on his summer tour in an attempt to get noticed, get sponsored, and become stars themselves.'   // <--- Fill in the movie's description
     },
-     {
-        id: 'Clown-in-a-Cornfield',
-        posterUrl:  'images/Clown in a Cornfield.jpg',
-        year: 2025,
-        title: "Clown in a Cornfield 2025",
-        description: "A fading midwestern town in which Frendo the clown, a symbol of bygone success, reemerges as a terrifying scourge.",
-        embedId: "9565154904614",
-        genres: ["Horror"],
-        source: "okru"
-     },
+    
       {
         id: 'Unspeakable-Beyond-the-Wall-of-Sleep',
         posterUrl:  'images/Unspeakable Beyond the Wall of Sleep.jpg',
