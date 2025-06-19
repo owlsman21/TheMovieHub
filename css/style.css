@@ -222,7 +222,6 @@ body, html {
     flex-direction: column;
 }
 
-/* Movie Card Title */
 .movie-card h3 {
     font-size: 1.5em;
     color: #ffcc00;
@@ -230,12 +229,7 @@ body, html {
     margin-bottom: 10px;
     font-family: 'Metal Mania', cursive;
     line-height: 1.2;
-    /* --- ADD THESE TWO LINES --- */
-    word-wrap: break-word; /* Allows long words to break */
-    white-space: normal;   /* Ensures text wraps normally */
-    /* --------------------------- */
 }
-
 
 .movie-card p {
     font-size: 0.9em;
