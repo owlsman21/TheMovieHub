@@ -1,0 +1,452 @@
+/* General Body and HTML styles for overall page layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* Keep as general fallback */
+    color: #eee;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Container for main content to control width and centering */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Responsive padding for the container */
+@media (min-width: 640px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.site-logo {
+    font-family: 'Creepster', cursive;
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    margin: 0;
+    line-height: 1;
+}
+
+.site-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 700;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #1a1a1a;
+    background-color: #ffcc00;
+}
+
+/* Main Content Area */
+.main-content {
+    padding: 40px 0;
+}
+
+/* --- THE ULTIMATE, HIGH-SPECIFICITY FONT OVERRIDE --- */
+/* Target elements with class AND element selector for maximum specificity,
+   and use !important. This should reliably override Tailwind's Preflight. */
+.main-content p.text-xl,
+.main-content p.text-gray-300,
+.main-content p.leading-relaxed,
+.main-content p.text-gray-400,
+.main-content p,
+.main-content ul li,
+.main-content div.story-text p,
+.main-content .feature-card p,
+.main-content section.our-vision p {
+    font-family: 'Inter', sans-serif !important;
+    color: #ccc !important; /* Keep this to confirm the rule is active */
+}
+
+/* Apply Inter to footer text as well, with !important */
+.main-footer p,
+.main-footer .footer-links a {
+    font-family: 'Inter', sans-serif !important;
+    color: #bbb !important;
+}
+/* --- END ULTIMATE FONT OVERRIDE --- */
+
+
+.section-title {
+    font-family: 'Metal Mania', cursive;
+    font-size: 2.8em;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+/* Specific styling for the subheading on the About page */
+.about-subheading {
+    font-family: 'Creepster', cursive; /* Apply Creepster font */
+    color: #ffcc00; /* Ensuring it has your brand color */
+}
+
+/* Hero Section (for index.html) */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero-section h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 4em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.8);
+}
+
+.hero-section p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #555;
+    color: #eee;
+}
+
+.btn-secondary:hover {
+    background-color: #777;
+}
+
+/* Movie Grid Section */
+.movie-grid-section {
+    margin-top: 40px;
+}
+
+#movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.movie-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.movie-card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card h3 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Metal Mania', cursive;
+    line-height: 1.2;
+}
+
+.movie-card p {
+    font-size: 0.9em;
+    color: #bbb;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.movie-card .genre {
+    font-size: 0.8em;
+    background-color: #444;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.movie-card .btn {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Movie Details Page Specific Styles (for detail.html) */
+.movie-detail-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.movie-detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.movie-detail-poster {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    width: 100%;
+    height: auto;
+}
+
+.movie-detail-info h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 3.5em;
+    color: #ffcc00;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.movie-detail-info .genre {
+    font-size: 1em;
+    background-color: #444;
+    color: #eee;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.movie-detail-info p {
+    font-size: 1.1em;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.movie-detail-info strong {
+    color: #ffcc00;
+}
+
+.movie-detail-info .rating {
+    font-size: 1.2em;
+    color: #ffcc00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .movie-detail-content {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .movie-detail-poster {
+        margin-right: 40px;
+        flex-shrink: 0;
+    }
+
+    .movie-detail-info {
+        flex-grow: 1;
+    }
+}
+
+/* Search and Filter Section */
+.filter-search-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.genre-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+    justify-content: center;
+}
+
+.genre-button {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.genre-button.active {
+    background-color: #ffcc00;
+    color: #111;
+    font-weight: bold;
+    border-color: #ffcc00;
+}
+
+/* Pagination Section - Now relying purely on flex-wrap */
+.main-content .pagination-section {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    overflow: visible !important;
+}
+
+#pagination {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 10px !important;
+    gap: 5px !important;
+    overflow: visible !important;
+}
+
+#pagination a {
+    background-color: #333;
+    color: #eee;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #555;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+#pagination a.active-page {
+    background-color: #ffcc00;
+    color: #111;
+    border-color: #ffcc00;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid #ffcc00;
+    text-align: center;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.main-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #eee;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+@media (min-width: 768px) {
+    .main-footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

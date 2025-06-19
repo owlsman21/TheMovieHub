@@ -1,0 +1,18 @@
+---
+layout: movie-list.njk
+permalink: /movies.html
+title: Our Movie Collection
+---
+
+<section class="movie-collection-section">
+    <h2 class="section-title">Our Collection</h2>
+    {# This is the container where your movies will be rendered by JavaScript #}
+    <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <p class="col-span-full text-center">Loading movies...</p>
+    </div>
+
+    {# This is the container for your pagination controls #}
+    <div id="pagination-controls" class="flex justify-center mt-8 space-x-2">
+        {# Pagination buttons will be inserted here by JavaScript #}
+    </div>
+</section>

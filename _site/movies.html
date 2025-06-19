@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Movie Collection</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="/TheMovieHub/css/style.css">
+    <link rel="icon" href="/TheMovieHub/favicon.ico" type="image/x-icon">
+
+    
+    <meta property="og:title" content="Our Movie Collection">
+    <meta property="og:description" content="Explore cinematic details for classic films on The Movie Hub.">
+    <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg">
+    <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub/movies.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Movie Collection">
+    <meta name="twitter:description" content="Explore cinematic details for classic films on The Movie Hub.">
+    <meta name="twitter:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg">
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6NGSBTJ');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B3173KW1W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4B3173KW1W');
+    </script>
+    
+    <script>
+        window.eleventyPathPrefix = "/TheMovieHub/";
+    </script>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6NGSBTJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo"><a href="/TheMovieHub/">The Movie Hub</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/TheMovieHub/">Home</a></li>
+                    <li><a href="/TheMovieHub/movies.html" class="active">Movies</a></li>
+                    <li><a href="/TheMovieHub/about.html">About</a></li>
+                    <li><a href="/TheMovieHub/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="main-content">
+        
+        <div class="container">
+            
+<section class="movie-collection-section">
+    <h2 class="section-title">Our Collection</h2>
+    
+    <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <p class="col-span-full text-center">Loading movies...</p>
+    </div>
+
+    
+    <div id="pagination-controls" class="flex justify-center mt-8 space-x-2">
+        
+    </div>
+</section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            
+            <p>&copy;  The Movie Hub</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="/TheMovieHub/movies.js"></script>
+    <script src="/TheMovieHub/script.js"></script>
+</body>
+</html>

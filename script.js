@@ -7,10 +7,20 @@
 // <script src="script.js"></script>
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Determine the current HTML file name (e.g., 'index.html', 'movies.html')
-    const currentPage = window.location.pathname.split('/').pop();
+    // Determine the current HTML file name (e.g., 'index.html', 'movies.html', or 'index.njk')
+    const pathParts = window.location.pathname.split('/').filter(part => part !== '');
+    let currentPage = pathParts.pop() || 'index.html'; // Defaults to 'index.html' if path is empty (root)
+    if (currentPage.endsWith('.html')) {
+        // Keep as is if it's already an HTML file
+    } else if (currentPage === 'TheMovieHub') { // Special case for your base path if you visit the root
+        currentPage = 'index.html';
+    } else {
+        // If it's something like /TheMovieHub/ and no specific file, assume index.html
+        currentPage = 'index.html';
+    }
+    console.log("Current Page (determined):", currentPage); // Added for debugging current page name
 
-    // --- Common Elements (present on both index.html and movies.html) ---
+    // --- Common Elements (present on both index.njk and movies.html) ---
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
     const clearSearchButton = document.getElementById('clear-search-button');
@@ -18,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchResultsInfo = document.getElementById('search-results-info');
     // movieGrid is the main grid for all movies on movies.html, and a general reference
     const movieGrid = document.getElementById('movie-grid');
-    const paginationContainer = document.getElementById('pagination');
+    // Corrected ID for pagination container
+    const paginationContainer = document.getElementById('pagination-controls'); 
 
     let currentSearchTerm = '';
     let currentGenreFilter = 'All';
@@ -63,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Includes image (with error fallback), title, truncated description, genres, and a "View Details" link
             let posterHtml = '';
             if (movie.posterUrl) {
-                // Use onerror to provide a fallback placeholder image if the specified posterUrl fails to load
-                posterHtml = `<img src="${movie.posterUrl}" alt="${movie.title} Poster" class="w-full h-72 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x450/cccccc/333333?text=Image+Missing';">`;
+                // Corrected: Prepend window.eleventyPathPrefix to the movie.posterUrl
+                posterHtml = `<img src="${window.eleventyPathPrefix + movie.posterUrl}" alt="${movie.title} Poster" class="w-full h-72 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x450/cccccc/333333?text=Image+Missing';">`;
             } else {
                 // Default placeholder if movie.posterUrl is missing or empty
                 posterHtml = `<img src="https://placehold.co/300x450/cccccc/333333?text=Image+Missing" alt="Image Missing" class="w-full h-72 object-cover">`;
@@ -81,7 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="flex flex-wrap gap-2 mb-4">
                         ${genresHtml}
                     </div>
-                    <a href="movie-detail.html?id=${movie.id}" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">View Details</a>
+                    {# Corrected: Prepend window.eleventyPathPrefix to the "View Details" link #}
+                    <a href="${window.eleventyPathPrefix}movie-detail.html?id=${movie.id}" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">View Details</a>
                 </div>
             `;
             targetGrid.appendChild(movieCard); // Add the newly created movie card to the grid
@@ -90,6 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Function to render pagination buttons at the bottom of the movie list ---
     function renderPagination(totalMovies) {
+        // Only render pagination if the container exists (i.e., on movies.html)
+        if (!paginationContainer) {
+            console.warn("Pagination container not found. Skipping pagination render.");
+            return;
+        }
+
         paginationContainer.innerHTML = ''; // Clear existing pagination buttons
         const totalPages = Math.ceil(totalMovies / moviesPerPage); // Calculate total number of pages
 
@@ -103,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add(
                 'px-4', 'py-2', 'rounded-md', 'font-semibold',
                 'transition', 'duration-200', 'ease-in-out',
-                // Fixed: Use spread operator (...) to add multiple classes from the chosen string
                 ...(currentPageNumber === i ? ['bg-blue-600', 'text-white', 'shadow-lg'] : ['bg-gray-200', 'text-gray-800', 'hover:bg-blue-200'])
             );
             // Add click event listener to change page and re-render movies
@@ -120,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterAndRenderMovies() {
         // --- DIAGNOSTIC LOG: Check initial allMovies length ---
         console.log('--- filterAndRenderMovies START ---');
+        // Ensure allMovies is available from movies.js
         if (typeof allMovies !== 'undefined') {
             console.log('allMovies array loaded. Total movies:', allMovies.length);
         } else {
@@ -157,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update the search results info text to show how many results are displayed
         if (searchResultsInfo) {
-             if (currentSearchTerm || currentGenreFilter !== 'All') {
+            if (currentSearchTerm || currentGenreFilter !== 'All') {
                 searchResultsInfo.textContent = `Displaying ${displayedMovies.length} results.`;
             } else {
                 searchResultsInfo.textContent = ''; // Clear the message if no filters are applied
@@ -234,15 +252,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
    // --- Initial Render ---
-    // For movies.html, render immediately.
-    // For index.html (homepage), add a small delay to ensure allMovies is fully parsed
-    // before attempting to render "Latest Movies", as there can be a race condition.
-    if (currentPage === 'index.html') {
+   // For movies.html, render immediately.
+   // For index.html (homepage), add a small delay to ensure allMovies is fully parsed
+   // before attempting to render "Latest Movies", as there can be a race condition.
+   if (currentPage === 'index.html') {
         setTimeout(() => {
             filterAndRenderMovies();
         }, 100); // 100 milliseconds delay
-    } else {
+   } else {
         filterAndRenderMovies();
-    }
+   }
 });
-

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - The Movie Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    {# Use the | url filter for static assets that need to respect pathPrefix #}
+    <link rel="stylesheet" href="{{ 'css/style.css' | url }}">
+    <link rel="icon" href="{{ 'favicon.ico' | url }}" type="image/x-icon">
+
+    <meta property="og:title" content="The Movie Hub">
+    <meta property="og:description" content="Your ultimate portal to cinematic immersion and classic films.">
+    <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/movie%20hub.jpg">
+    <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Movie Hub">
+    <meta name="twitter:description" content="Your ultimate portal to cinematic immersion and classic films.">
+    <meta name="twitter:image" content="https://owlsman21.github.io/TheMovieHub/images/movie%20hub.jpg">
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6NGSBTJ');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B3173KW1W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4B3173KW1W');
+    </script>
+    <script>
+        // Define a global variable for the Eleventy path prefix
+        // This takes the pathPrefix directly from Eleventy's config
+        // It will be "" if no pathPrefix is set, or "/TheMovieHub/" in your case
+        window.eleventyPathPrefix = "{{ eleventy.config.pathPrefix }}";
+    </script>
+    </head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo"><a href="{{ '/' | url }}">The Movie Hub</a></h1> {# Using | url filter for consistency #}
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ '/' | url }}" class="active">Home</a></li> {# Using | url filter #}
+                    <li><a href="{{ '/movies.html' | url }}">Movies</a></li> {# Using | url filter #}
+                    <li><a href="{{ '/about.html' | url }}">About</a></li> {# Using | url filter #}
+                    <li><a href="{{ '/contact.html' | url }}">Contact</a></li> {# Using | url filter #}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <div class="hero-content-container">
+                    <h2>Welcome to The Movie Hub!</h2>
+                    <p>Your ultimate destination for discovering and watching classic films.</p>
+                    <a href="{{ '/movies.html' | url }}" class="btn">Explore All Movies</a> {# Using | url filter #}
+                </div>
+            </section>
+
+            <section class="latest-movies-section">
+                <h2 class="section-title">Latest Movies</h2>
+                <div id="latest-movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <p class="col-span-full text-center">Loading latest movies...</p>
+                </div>
+            </section>
+
+            </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 The Movie Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    {# Add this script block to define the pathPrefix for your JavaScript #}
+    <script>
+        // Define a global variable for the Eleventy path prefix
+        // This takes the pathPrefix directly from Eleventy's config
+        // It will be "" if no pathPrefix is set, or "/TheMovieHub/" in your case
+        window.eleventyPathPrefix = "{{ eleventy.config.pathPrefix }}";
+    </script>
+    <script src="{{ 'movies.js' | url }}"></script> {# Use | url filter #}
+    <script src="{{ 'script.js' | url }}"></script> {# Use | url filter #}
+</body>
+</html>

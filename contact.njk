@@ -1,0 +1,35 @@
+---
+layout: movie-list.njk
+title: Contact The Movie Hub
+permalink: /contact.html
+---
+
+<main class="main-content">
+    <div class="container">
+        <section class="page-content-section text-center"> {# Added text-center for alignment #}
+            <h2 class="section-title text-3xl font-bold mb-6">Contact Us</h2> {# Adjusted mb #}
+            <p class="leading-relaxed mb-4">Have questions, feedback, or movie suggestions? We'd love to hear from you!</p> {# Removed text-gray-700 #}
+            <p class="leading-relaxed mb-6">You can reach us via email at: <a href="mailto:info@themoviehub.com" class="text-blue-500 hover:underline">info@themoviehub.com</a></p> {# Removed text-gray-700 #}
+
+            <form class="mt-8 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md text-left"> {# Added text-left for form elements #}
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="your.email@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your message here..."></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>

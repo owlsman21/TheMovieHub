@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "The Movie Hub" }}</title> {# This pulls the title from the page's front matter #}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    {# *** CRITICAL: Tailwind CSS CDN *** #}
+    <script src="https://cdn.tailwindcss.com"></script>
+    {# *** CRITICAL: Your custom style.css with url filter *** #}
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+    <link rel="icon" href="{{ '/favicon.ico' | url }}" type="image/x-icon">
+
+    {# Your OG/Twitter Meta Tags #}
+    <meta property="og:title" content="{{ title or 'The Movie Hub' }}">
+    <meta property="og:description" content="Explore cinematic details for classic films on The Movie Hub.">
+    <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg">
+    <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub{{ page.url }}">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title or 'The Movie Hub' }}">
+    <meta name="twitter:description" content="Explore cinematic details for classic films on The Movie Hub.">
+    <meta name="twitter:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg">
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6NGSBTJ');</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B3173KW1W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4B3173KW1W');
+    </script>
+    {# *** CRITICAL FIX: Define eleventyPathPrefix ONCE in your main layout *** #}
+    <script>
+        window.eleventyPathPrefix = "{{ '/' | url }}";
+    </script>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6NGSBTJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo"><a href="{{ '/' | url }}">The Movie Hub</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ '/' | url }}">Home</a></li>
+                    <li><a href="{{ '/movies.html' | url }}"{% if page.url == '/movies.html' %} class="active"{% endif %}>Movies</a></li>
+                    <li><a href="{{ '/about.html' | url }}">About</a></li>
+                    <li><a href="{{ '/contact.html' | url }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {# *** This is the MAIN content block where individual page content is inserted *** #}
+    <main class="main-content">
+        {# The 'container' div can be here in the layout, or in each content page #}
+        <div class="container">
+            {{ content | safe }}
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            {# FIX: Use a method that works for getting the current year #}
+            <p>&copy; {{ 'now' | htmlDateString | slice(0, 4) }} The Movie Hub</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    {# *** CRITICAL FIX: Include your JavaScript files here, at the end of the body, using url filter *** #}
+    <script src="{{ '/movies.js' | url }}"></script>
+    <script src="{{ '/script.js' | url }}"></script>
+</body>
+</html>
