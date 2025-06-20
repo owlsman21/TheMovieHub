@@ -2,13 +2,23 @@ const { DateTime } = require("luxon"); // Add this line at the very top
 
 module.exports = function(eleventyConfig) {
     // Passthrough copies (ensure these match any other static assets you have)
+    // .eleventy.js
+const { DateTime } = require("luxon");
+
+module.exports = function(eleventyConfig) {
+    // Passthrough copies (ensure these match any other static assets you have)
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("fonts");
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("movies.js");
     eleventyConfig.addPassthroughCopy("script.js");
     eleventyConfig.addPassthroughCopy("robots.txt");
-    eleventyConfig.addPassthroughCopy("favicon.ico"); // Add if you have one, you have one listed here
+    eleventyConfig.addPassthroughCopy("favicon.ico");
+    // ADD THIS LINE:
+    eleventyConfig.addPassthroughCopy("movie-detail.html"); // <--- ADD THIS LINE!
+
+    // ... (rest of your config) ...
+};
 
     // Custom date filter for Nunjucks using Luxon
     eleventyConfig.addFilter("readableDate", (dateObj) => {
