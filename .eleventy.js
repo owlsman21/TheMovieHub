@@ -22,12 +22,7 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
     });
 
-    // IMPORTANT FOR LOCAL DEVELOPMENT:
-    // Temporarily comment out or remove these lines when developing locally.
-    // Uncomment them ONLY when building for deployment to GitHub Pages
-    // or another server where your site lives in a subfolder like /TheMovieHub/.
-
-    // eleventyConfig.addGlobalData("pathPrefix", "/TheMovieHub/"); // Commented out for local development
+    
 
     return {
         dir: {
@@ -36,9 +31,6 @@ module.exports = function(eleventyConfig) {
             data: "_data",
             output: "_site" // <<-- Make sure this is exactly "_site"
         },
-        // IMPORTANT FOR LOCAL DEVELOPMENT:
-        // Temporarily comment out or remove this line when developing locally.
-        // Uncomment it ONLY when building for deployment.
-        // pathPrefix: "/TheMovieHub/" // Commented out for local development
+      
     };
 };

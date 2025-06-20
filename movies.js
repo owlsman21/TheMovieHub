@@ -3164,13 +3164,113 @@ const allMovies = [
         source: "okru"
      },
      {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
+        id: 'Zulu',
+        posterUrl:  'images/Zulu.jpg',
+        year: 1964,
+        title: "Zulu",
+        description: "Outnumbered British soldiers do battle with Zulu warriors at Rorke's Drift.",
+        embedId: "7711462394458",
+        genres: ["Action"],
+        source: "okru"
+     },
+     {
+        id: 'Zulu-Dawn',
+        posterUrl:  'images/Zulu Dawn.jpg',
+        year: 1979,
+        title: "Zulu Dawn (1979)",
+        description: "A dramatization of the Battle of Isandlwana, where the British Army met its match against the Zulu nation",
+        embedId: "3937392528031",
+        genres: ["Action"],
+        source: "okru"
+     },
+     {
+        id: 'Planet-Of-The-Apes',
+        posterUrl:  'images/Planet Of The Apes 1968.jpg',
+        year: 1968,
+        title: "Planet Of The Apes (1968)",
+        description: "After being kept in hypersleep during a long expedition into deep space, an astronaut crew crash-lands in the 40th century on a planet where highly intelligent non-human ape species are dominant and humans are enslaved.",
         embedId: "",
-        genres: [""],
+        genres: ["Sci-Fi"],
+        source: "okru"
+     },
+     {
+        id: 'The-Odyssey',
+        posterUrl:  'images/The Odyssey.jpg',
+        year: 1997,
+        title: "The Odyssey (1997)",
+        description: "Follows Odysseus on his wanderings back to Ithaca following the Trojan War.",
+        embedId: "9074546182746",
+        genres: ["Adventure","Action"],
+        source: "okru"
+     },
+     {
+        id: 'Tremors',
+        posterUrl:  'images/Tremors.jpg',
+        year: 1990,
+        title: "Tremors (1990)",
+        description: "Natives of a small isolated town defend themselves against strange underground creatures which are killing them one by one.",
+        embedId: "",
+        genres: ["Horror","Comedy"],
+        source: "okru"
+     },
+     {
+        id: 'Tremors-II-Aftershocks',
+        posterUrl:  'images/Tremors II Aftershocks.jpg',
+        year: 1996,
+        title: "Tremors II: Aftershocks",
+        description: "Earl Bassett, now a washed-up ex-celebrity, is hired by a Mexican oil company to eradicate a Graboid epidemic that's killing more people each day. However, the humans aren't the only one with a new battle plan.",
+        embedId: "",
+        genres: ["Horror","Comedy"],
+        source: "okru"
+     },
+     {
+        id: 'Futureworld',
+        posterUrl:  'images/futureworld.jpg',
+        year: 1976,
+        title: "Futureworld (1976)",
+        description: "Upon attempting to divulge a diabolical plot of the futuristic theme park, Futureworld, an ex-employee is dispatched after he tips off the reporter who exposed Westworld. The reporter and his ex-co-reporter investigate the situation.",
+        embedId: "8924694252122",
+        genres: ["Thriller","Sci-Fi"],
+        source: "okru"
+     },
+     {
+        id: 'She',
+        posterUrl:  'images/she.jpg',
+        year: 1965,
+        title: "She (1965)",
+        description: "An Edwardian archaeologist and two companions stumble upon a lost city in East Africa, run by a beautiful queen whose love holds the promise of immortality.",
+        embedId: "8608074304090",
+        genres: ["Adventure","Action"],
+        source: "okru"
+     },
+     {
+        id: 'The Vengeance Of She',
+        posterUrl:  'images/The Vengeance of She.jpg',
+        year: 1968,
+        title: "The Vengeance Of She (1968)",
+        description: "Carol, a beautiful young girl is possessed by Ayesha's spirit who was once the queen of Kuma. Ayesha's spirit gains control over Carol to achieve her malevolent goals",
+        embedId: "",
+        genres: ["Adventure","Action"],
+        source: "okru"
+     },
+     {
+        id: 'King Kong',
+        posterUrl:  'images/King Kong (1976).jpg',
+        year: 1976,
+        title: "King Kong (1976)",
+        description: "A petroleum exploration expedition comes to an isolated island and encounters a colossal giant gorilla.",
+        embedId: "8145274604122",
+        genres: ["Adventute","action"],
+        source: "okru"
+     },
+     {
+        id: 'Cannibal Holocaust',
+        posterUrl:  'images/Cannibal Holocaust.jpg',
+        year: 1980,
+        title: "Cannibal Holocaust (1980)",
+        description: "An anthropologist ventures into the Amazon rainforest on a rescue mission, where he recovers footage shot by a film crew documenting their disastrous encounters with local cannibal tribes.",
+        embedId: "7761425336922",
+        genres: ["Horror"],
         source: "okru"
      },
      {
