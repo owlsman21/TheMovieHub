@@ -6,6 +6,12 @@ title: Our Movie Collection
 
 <section class="movie-collection-section">
     <h2 class="section-title">Our Collection</h2>
+
+    <div class="search-container flex justify-center items-center mb-8">
+        <input type="text" id="searchInput" placeholder="Search for movies..." class="p-2 rounded-l-md border border-gray-600 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+        <button id="searchButton" class="bg-red-700 hover:bg-yellow-500 hover:text-gray-900 text-white px-4 py-2 rounded-r-md transition-colors duration-200">Search</button>
+    </div>
+
     {# This is the container where your movies will be rendered by JavaScript #}
     <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         <p class="col-span-full text-center">Loading movies...</p>

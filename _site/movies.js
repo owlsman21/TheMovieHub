@@ -3154,13 +3154,13 @@ const allMovies = [
         source: "okru"
      },
      {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        id: 'Gallowwalkers',
+        posterUrl:  'images/gallowwalkers.jpg',
+        year: 2012,
+        title: "Gallowwalkers",
+        description: "A cursed gunman (Snipes) whose victims come back from the dead recruits a young warrior to help in the fight against a gang of zombies.",
+        embedId: "231263636075",
+        genres: ["Horror","Western"],
         source: "okru"
      },
      {

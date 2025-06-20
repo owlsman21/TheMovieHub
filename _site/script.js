@@ -7,6 +7,8 @@
 // <script src="script.js"></script>
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOMContentLoaded fired. Script execution started."); // Added for debugging
+
     // Determine the current HTML file name (e.g., 'index.html', 'movies.html', or 'index.njk')
     const pathParts = window.location.pathname.split('/').filter(part => part !== '');
     let currentPage = pathParts.pop() || 'index.html'; // Defaults to 'index.html' if path is empty (root)
@@ -18,23 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
         // If it's something like /TheMovieHub/ and no specific file, assume index.html
         currentPage = 'index.html';
     }
-    console.log("Current Page (determined):", currentPage); // Added for debugging current page name
+    console.log("Current Page (determined):", currentPage);
 
     // --- Common Elements (present on both index.njk and movies.html) ---
-    const searchInput = document.getElementById('search-input');
-    const searchButton = document.getElementById('search-button');
-    const clearSearchButton = document.getElementById('clear-search-button');
+    // Moved declarations here to ensure they are available early
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    // ADDED DEBUG LOGS HERE
+    console.log("DEBUG: searchInput element (should not be null):", searchInput);
+    console.log("DEBUG: searchButton element (should not be null):", searchButton);
+
+    const clearSearchButton = document.getElementById('clear-search-button'); // This ID might not exist in your current HTML
     const genreFiltersContainer = document.getElementById('genre-filters');
     const searchResultsInfo = document.getElementById('search-results-info');
-    // movieGrid is the main grid for all movies on movies.html, and a general reference
     const movieGrid = document.getElementById('movie-grid');
-    // Corrected ID for pagination container
     const paginationContainer = document.getElementById('pagination-controls'); 
 
     let currentSearchTerm = '';
     let currentGenreFilter = 'All';
     let currentPageNumber = 1;
-    // Set how many movies should appear per page on the 'All Movies' (movies.html) page
     const moviesPerPage = 15;
 
     let displayedMovies = []; // Stores movies that match current search/filter criteria
@@ -42,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Function to render movies to a specific HTML grid element ---
     function renderMovies(moviesToRender, targetGridId) {
         const targetGrid = document.getElementById(targetGridId);
-        // If the target grid element doesn't exist on the current page, log an error and exit
         if (!targetGrid) {
             console.error(`Error: Target grid with ID '${targetGridId}' not found on this page.`);
             return;
@@ -50,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         targetGrid.innerHTML = ''; // Clear any existing content in the grid
 
-        // If no movies match the criteria, display a "No movies found" message
         if (moviesToRender.length === 0) {
             targetGrid.innerHTML = `
                 <div class="col-span-full text-center py-8">
@@ -61,27 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Loop through the movies to render and create a card for each
         moviesToRender.forEach(movie => {
             const movieCard = document.createElement('div');
-            // Add Tailwind CSS classes for styling, responsiveness, and hover effects
             movieCard.classList.add(
                 'bg-white', 'rounded-lg', 'shadow-md', 'overflow-hidden',
                 'transform', 'hover:scale-105', 'transition', 'duration-300', 'ease-in-out'
             );
 
-            // Create the HTML content for each movie card
-            // Includes image (with error fallback), title, truncated description, genres, and a "View Details" link
             let posterHtml = '';
             if (movie.posterUrl) {
-                // Corrected: Prepend window.eleventyPathPrefix to the movie.posterUrl
+                // Corrected: Removed invalid span tags from here
                 posterHtml = `<img src="${window.eleventyPathPrefix + movie.posterUrl}" alt="${movie.title} Poster" class="w-full h-72 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x450/cccccc/333333?text=Image+Missing';">`;
             } else {
-                // Default placeholder if movie.posterUrl is missing or empty
                 posterHtml = `<img src="https://placehold.co/300x450/cccccc/333333?text=Image+Missing" alt="Image Missing" class="w-full h-72 object-cover">`;
             }
 
-            // Fixed: Safely access movie.genres by defaulting to an empty array if undefined/null
             const genresHtml = (movie.genres || []).map(genre => `<span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">${genre}</span>`).join('');
 
             movieCard.innerHTML = `
@@ -92,69 +88,61 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="flex flex-wrap gap-2 mb-4">
                         ${genresHtml}
                     </div>
-                    {# Corrected: Prepend window.eleventyPathPrefix to the "View Details" link #}
                     <a href="${window.eleventyPathPrefix}movie-detail.html?id=${movie.id}" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">View Details</a>
                 </div>
             `;
-            targetGrid.appendChild(movieCard); // Add the newly created movie card to the grid
+            targetGrid.appendChild(movieCard);
         });
     }
 
     // --- Function to render pagination buttons at the bottom of the movie list ---
     function renderPagination(totalMovies) {
-        // Only render pagination if the container exists (i.e., on movies.html)
         if (!paginationContainer) {
             console.warn("Pagination container not found. Skipping pagination render.");
             return;
         }
 
-        paginationContainer.innerHTML = ''; // Clear existing pagination buttons
-        const totalPages = Math.ceil(totalMovies / moviesPerPage); // Calculate total number of pages
+        paginationContainer.innerHTML = '';
+        const totalPages = Math.ceil(totalMovies / moviesPerPage);
 
-        if (totalPages <= 1) return; // If only one page or less, no pagination is needed
+        if (totalPages <= 1) return;
 
-        // Create a button for each page
         for (let i = 1; i <= totalPages; i++) {
             const button = document.createElement('button');
-            button.textContent = i; // Set button text to page number
-            // Add Tailwind CSS classes for styling pagination buttons
+            button.textContent = i;
             button.classList.add(
                 'px-4', 'py-2', 'rounded-md', 'font-semibold',
                 'transition', 'duration-200', 'ease-in-out',
                 ...(currentPageNumber === i ? ['bg-blue-600', 'text-white', 'shadow-lg'] : ['bg-gray-200', 'text-gray-800', 'hover:bg-blue-200'])
             );
-            // Add click event listener to change page and re-render movies
             button.addEventListener('click', () => {
-                currentPageNumber = i; // Update current page number
-                filterAndRenderMovies(); // Re-render movies for the new page
-                window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to the top of the page
+                currentPageNumber = i;
+                filterAndRenderMovies();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
-            paginationContainer.appendChild(button); // Add button to the pagination container
+            paginationContainer.appendChild(button);
         }
     }
 
     // --- Main filtering and rendering logic for movies ---
     function filterAndRenderMovies() {
-        // --- DIAGNOSTIC LOG: Check initial allMovies length ---
         console.log('--- filterAndRenderMovies START ---');
-        // Ensure allMovies is available from movies.js
         if (typeof allMovies !== 'undefined') {
             console.log('allMovies array loaded. Total movies:', allMovies.length);
         } else {
             console.error('ERROR: allMovies array is UNDEFINED. Check movies.js loading order and syntax.');
-            return; // Exit if allMovies is not defined
+            return;
         }
 
         let processedMovies = allMovies;
 
-        // Apply genre filter if a specific genre is selected (not 'All')
         if (currentGenreFilter !== 'All') {
             processedMovies = processedMovies.filter(movie => movie.genres && movie.genres.includes(currentGenreFilter));
             console.log('After genre filter:', processedMovies.length, 'movies.');
         }
 
-        // Apply search term filter if a search term is entered
         if (currentSearchTerm) {
+            console.log('Applying search filter with term:', currentSearchTerm); // Added for debugging
             const lowerCaseSearchTerm = currentSearchTerm.toLowerCase();
             processedMovies = processedMovies.filter(movie =>
                 (movie.title && movie.title.toLowerCase().includes(lowerCaseSearchTerm)) ||
@@ -162,27 +150,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 (movie.genres && movie.genres.some(genre => genre.toLowerCase().includes(lowerCaseSearchTerm)))
             );
             console.log('After search filter:', processedMovies.length, 'movies.');
+        } else {
+            console.log('No search term applied.');
         }
 
-        // Sort movies by year in descending order to show latest movies first
         processedMovies.sort((a, b) => (b.year || 0) - (a.year || 0));
         console.log('After sorting, processedMovies length:', processedMovies.length);
 
-        // Now, assign the fully filtered and sorted list to displayedMovies
         displayedMovies = processedMovies;
         console.log('displayedMovies length (before pagination slice):', displayedMovies.length);
 
 
-        // Update the search results info text to show how many results are displayed
         if (searchResultsInfo) {
             if (currentSearchTerm || currentGenreFilter !== 'All') {
                 searchResultsInfo.textContent = `Displaying ${displayedMovies.length} results.`;
             } else {
-                searchResultsInfo.textContent = ''; // Clear the message if no filters are applied
+                searchResultsInfo.textContent = '';
             }
         }
 
-        // Logic specific to the 'movies.html' page
         if (currentPage === 'movies.html') {
             const startIndex = (currentPageNumber - 1) * moviesPerPage;
             const endIndex = startIndex + moviesPerPage;
@@ -192,12 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             renderMovies(paginatedMovies, 'movie-grid');
             renderPagination(displayedMovies.length);
-        }
-        // Logic specific to the 'index.html' (homepage)
-        else if (currentPage === 'index.html') {
+        } else if (currentPage === 'index.html') {
             const latestMoviesGrid = document.getElementById('latest-movie-grid');
             if (latestMoviesGrid) {
-                const moviesToShow = displayedMovies.slice(0, 5); // Display only the first 5 for "Latest Movies"
+                const moviesToShow = displayedMovies.slice(0, 5);
                 console.log('index.html: Showing first 5 latest movies. Actual count:', moviesToShow.length);
                 renderMovies(moviesToShow, 'latest-movie-grid');
             }
@@ -207,40 +191,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Event Listeners for User Interactions ---
 
-    // Event listener for search input (when Enter key is pressed)
+    // Event listener for search input (fires on every input change, more robust)
     if (searchInput) {
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                currentSearchTerm = searchInput.value.trim();
-                currentPageNumber = 1;
-                filterAndRenderMovies();
-            }
-        });
-    }
-
-    // Event listener for the explicit Search button click
-    if (searchButton) {
-        searchButton.addEventListener('click', () => {
+        console.log("searchInput element found. Attaching input listener.");
+        searchInput.addEventListener('input', (e) => {
+            console.log("Input event on searchInput. Value:", e.target.value);
             currentSearchTerm = searchInput.value.trim();
+            console.log("currentSearchTerm (from input event):", currentSearchTerm);
             currentPageNumber = 1;
             filterAndRenderMovies();
         });
+    } else {
+        console.warn("searchInput element (ID: 'searchInput') NOT found.");
+    }
+
+    // Event listener for the explicit Search button click (KEPT AS IS)
+    if (searchButton) {
+        console.log("searchButton element found. Attaching click listener.");
+        searchButton.addEventListener('click', () => {
+            console.log("Search button clicked. searchInput value:", searchInput ? searchInput.value : 'searchInput is null');
+            currentSearchTerm = searchInput.value.trim();
+            console.log("currentSearchTerm (from button click):", currentSearchTerm);
+            currentPageNumber = 1;
+            filterAndRenderMovies();
+        });
+    } else {
+        console.warn("searchButton element (ID: 'searchButton') NOT found.");
     }
 
     // Event listener for the Clear Search button
     if (clearSearchButton) {
+        console.log("clearSearchButton element found. Attaching click listener.");
         clearSearchButton.addEventListener('click', () => {
-            searchInput.value = '';
+            console.log("Clear search button clicked.");
+            if (searchInput) searchInput.value = '';
             currentSearchTerm = '';
             currentPageNumber = 1;
             filterAndRenderMovies();
         });
+    } else {
+        // console.warn("clearSearchButton element (ID: 'clear-search-button') NOT found. (Expected if not in HTML)");
     }
 
     // Event listener for genre filter buttons (delegated to the container)
     if (genreFiltersContainer) {
+        console.log("genreFiltersContainer element found. Attaching click listener.");
         genreFiltersContainer.addEventListener('click', (e) => {
             if (e.target.classList.contains('genre-button')) {
+                console.log("Genre button clicked:", e.target.dataset.genre);
                 document.querySelectorAll('.genre-button').forEach(btn => btn.classList.remove('active'));
                 e.target.classList.add('active');
 
@@ -249,17 +247,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 filterAndRenderMovies();
             }
         });
+    } else {
+        console.warn("genreFiltersContainer element (ID: 'genre-filters') NOT found.");
     }
 
    // --- Initial Render ---
-   // For movies.html, render immediately.
-   // For index.html (homepage), add a small delay to ensure allMovies is fully parsed
-   // before attempting to render "Latest Movies", as there can be a race condition.
-   if (currentPage === 'index.html') {
-        setTimeout(() => {
+   // Only run filterAndRenderMovies if allMovies is defined, otherwise wait.
+   // This handles cases where movies.js might load slightly after script.js DOMContentLoaded.
+   if (typeof allMovies !== 'undefined') {
+        if (currentPage === 'index.html') {
+            setTimeout(() => {
+                filterAndRenderMovies();
+            }, 100); // Small delay for index page to ensure allMovies is fully parsed
+        } else {
             filterAndRenderMovies();
-        }, 100); // 100 milliseconds delay
+        }
    } else {
-        filterAndRenderMovies();
+        console.warn("allMovies not defined at DOMContentLoaded. Waiting for it to load.");
+        // You might need a more robust way to wait for allMovies if it's loaded asynchronously
+        // For now, assuming movies.js loads synchronously before script.js
    }
 });

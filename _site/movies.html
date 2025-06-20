@@ -12,8 +12,8 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <link rel="stylesheet" href="/TheMovieHub/css/style.css">
-    <link rel="icon" href="/TheMovieHub/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     
     <meta property="og:title" content="Our Movie Collection">
@@ -41,7 +41,7 @@
     </script>
     
     <script>
-        window.eleventyPathPrefix = "/TheMovieHub/";
+        window.eleventyPathPrefix = "/";
     </script>
 </head>
 <body>
@@ -50,13 +50,13 @@
 
     <header class="main-header">
         <div class="container">
-            <h1 class="site-logo"><a href="/TheMovieHub/">The Movie Hub</a></h1>
+            <h1 class="site-logo"><a href="/">The Movie Hub</a></h1>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/TheMovieHub/">Home</a></li>
-                    <li><a href="/TheMovieHub/movies.html" class="active">Movies</a></li>
-                    <li><a href="/TheMovieHub/about.html">About</a></li>
-                    <li><a href="/TheMovieHub/contact.html">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/movies.html" class="active">Movies</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,6 +69,12 @@
             
 <section class="movie-collection-section">
     <h2 class="section-title">Our Collection</h2>
+
+    <div class="search-container flex justify-center items-center mb-8">
+        <input type="text" id="searchInput" placeholder="Search for movies..." class="p-2 rounded-l-md border border-gray-600 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+        <button id="searchButton" class="bg-red-700 hover:bg-yellow-500 hover:text-gray-900 text-white px-4 py-2 rounded-r-md transition-colors duration-200">Search</button>
+    </div>
+
     
     <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         <p class="col-span-full text-center">Loading movies...</p>
@@ -94,7 +100,7 @@
     </footer>
 
     
-    <script src="/TheMovieHub/movies.js"></script>
-    <script src="/TheMovieHub/script.js"></script>
+    <script src="/movies.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

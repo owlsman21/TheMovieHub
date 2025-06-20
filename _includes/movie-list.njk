@@ -39,7 +39,7 @@
       gtag('js', new Date());
       gtag('config', 'G-4B3173KW1W');
     </script>
-    {# *** CRITICAL FIX: Define eleventyPathPrefix ONCE in your main layout *** #}
+    {# Define eleventyPathPrefix for JavaScript to use if needed for assets like posters #}
     <script>
         window.eleventyPathPrefix = "{{ '/' | url }}";
     </script>
@@ -81,7 +81,7 @@
         </div>
     </footer>
 
-    {# *** CRITICAL FIX: Include your JavaScript files here, at the end of the body, using url filter *** #}
+    {# *** CRITICAL FIX: Include your JavaScript files here, at the end of the body, using url filter with leading slash for correct pathPrefix handling *** #}
     <script src="{{ '/movies.js' | url }}"></script>
     <script src="{{ '/script.js' | url }}"></script>
 </body>

@@ -2,11 +2,6 @@ const { DateTime } = require("luxon"); // Add this line at the very top
 
 module.exports = function(eleventyConfig) {
     // Passthrough copies (ensure these match any other static assets you have)
-    // .eleventy.js
-const { DateTime } = require("luxon");
-
-module.exports = function(eleventyConfig) {
-    // Passthrough copies (ensure these match any other static assets you have)
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("fonts");
     eleventyConfig.addPassthroughCopy("images");
@@ -14,11 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("script.js");
     eleventyConfig.addPassthroughCopy("robots.txt");
     eleventyConfig.addPassthroughCopy("favicon.ico");
-    // ADD THIS LINE:
-    eleventyConfig.addPassthroughCopy("movie-detail.html"); // <--- ADD THIS LINE!
-
-    // ... (rest of your config) ...
-};
+    eleventyConfig.addPassthroughCopy("movie-detail.html"); // <--- This line was already good!
 
     // Custom date filter for Nunjucks using Luxon
     eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -31,9 +22,12 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
     });
 
-    // This is crucial for your URLs on GitHub Pages or if you're serving from a subfolder
-    // It prepends '/TheMovieHub/' to all generated URLs.
-    eleventyConfig.addGlobalData("pathPrefix", "/TheMovieHub/");
+    // IMPORTANT FOR LOCAL DEVELOPMENT:
+    // Temporarily comment out or remove these lines when developing locally.
+    // Uncomment them ONLY when building for deployment to GitHub Pages
+    // or another server where your site lives in a subfolder like /TheMovieHub/.
+
+    // eleventyConfig.addGlobalData("pathPrefix", "/TheMovieHub/"); // Commented out for local development
 
     return {
         dir: {
@@ -42,7 +36,9 @@ module.exports = function(eleventyConfig) {
             data: "_data",
             output: "_site" // <<-- Make sure this is exactly "_site"
         },
-        // This also explicitly sets the path prefix for Eleventy's internal URL generation
-        pathPrefix: "/TheMovieHub/"
+        // IMPORTANT FOR LOCAL DEVELOPMENT:
+        // Temporarily comment out or remove this line when developing locally.
+        // Uncomment it ONLY when building for deployment.
+        // pathPrefix: "/TheMovieHub/" // Commented out for local development
     };
 };
