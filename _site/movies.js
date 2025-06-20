@@ -3274,23 +3274,23 @@ const allMovies = [
         source: "okru"
      },
      {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
-        embedId: "",
-        genres: [""],
+        id: 'Big-Jake',
+        posterUrl:  'images/Big Jake.jpg',
+        year: 1971,
+        title: "Big Jake",
+        description: "In 1909, when John Fain's gang kidnaps Jacob McCandles' grandson and holds him for ransom, Big Jake sets out to rescue the boy.",
+        embedId: "8899457190490",
+        genres: ["Western"],
         source: "okru"
      },
      {
-        id: '',
-        posterUrl:  'images/.jpg',
-        year: 2024,
-        title: "",
-        description: "",
+        id: 'Chisum',
+        posterUrl:  'images/Chisum.jpg',
+        year: 1970,
+        title: "Chisum (1970)",
+        description: "Cattle baron John Chisum joins forces with Billy the Kid and Pat Garrett to fight the Lincoln County land war.",
         embedId: "",
-        genres: [""],
+        genres: ["Western"],
         source: "okru"
      },
      {
