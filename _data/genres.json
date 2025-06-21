@@ -1,0 +1,27 @@
+[
+  {"name": "Action", "slug": "action"},
+  {"name": "Adventure", "slug": "adventure"},
+  {"name": "Drama", "slug": "drama"},
+  {"name": "Crime", "slug": "crime"},
+  {"name": "Disaster", "slug": "disaster"},
+  {"name": "Superhero", "slug": "superhero"},
+  
+  {"name": "Action", "slug": "action"},
+  {"name": "Adventure", "slug": "adventure"},
+  {"name": "Drama", "slug": "drama"},
+  {"name": "Crime", "slug": "crime"},
+  {"name": "Disaster", "slug": "disaster"},
+  {"name": "Superhero", "slug": "superhero"},
+  {"name": "Animation", "slug": "animation"},
+  {"name": "Comedy", "slug": "comedy"},
+  {"name": "Fantasy", "slug": "fantasy"},
+  {"name": "Historical", "slug": "historical"},
+  {"name": "Biography", "slug": "biography"},
+  {"name": "Horror", "slug": "horror"},
+  {"name": "Romance", "slug": "romance"},
+  {"name": "Science Fiction", "slug": "science-fiction"},
+  {"name": "Thriller", "slug": "thriller"},
+  {"name": "Western", "slug": "western"},
+   {"name": "Musical", "slug": "musical"},
+    {"name": "War", "slug": "war"}
+]
