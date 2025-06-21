@@ -1,0 +1,32 @@
+name: Deploy Eleventy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Or 'master', depending on your default branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Runs on a Linux environment on GitHub's servers
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a recent LTS version
+
+      - name: Install dependencies
+        run: npm ci # 'npm ci' is preferred over 'npm install' in CI environments
+
+      - name: Run Eleventy Build
+        run: npm run build # Uses your existing 'npm run build' script
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # Action for deploying to gh-pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Automatically provided token
+          publish_dir: ./_site # Tells the action to publish the contents of your _site folder
+          publish_branch: gh-pages # The branch to deploy to (create if it doesn't exist)
