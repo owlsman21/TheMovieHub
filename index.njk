@@ -36,7 +36,14 @@
 
       gtag('config', 'G-4B3173KW1W');
     </script>
-    </head>
+    {# Add this script block to define the pathPrefix for your JavaScript #}
+    <script>
+        // Define a global variable for the Eleventy path prefix
+        // This takes the pathPrefix directly from Eleventy's config
+        // It will be "" if no pathPrefix is set, or "/TheMovieHub/" in your case
+        window.eleventyPathPrefix = "{{ eleventy.config.pathPrefix }}";
+    </script>
+</head>
 
 <body>
 
@@ -53,3 +60,38 @@
             </nav>
         </div>
     </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <div class="hero-content-container">
+                    <h2>Welcome to The Movie Hub!</h2>
+                    <p>Your ultimate destination for discovering and watching classic films.</p>
+                    <a href="{{ '/movies.html' | url }}" class="btn">Explore All Movies</a> {# Using | url filter #}
+                </div>
+            </section>
+
+            <section class="latest-movies-section">
+                <h2 class="section-title">Latest Movies</h2>
+                <div id="latest-movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <p class="col-span-full text-center">Loading latest movies...</p>
+                </div>
+            </section>
+
+            </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 The Movie Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ 'movies.js' | url }}"></script> {# Use | url filter #}
+    <script src="{{ 'script.js' | url }}"></script> {# Use | url filter #}
+</body>
+</html>
