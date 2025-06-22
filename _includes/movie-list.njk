@@ -1,88 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or "The Movie Hub" }}</title> {# This pulls the title from the page's front matter #}
+{#
+This file is likely included by index.njk or movies.njk to display a grid of movies.
+The error was previously caused by using 'now' (string) instead of now (Date object)
+with the htmlDateString filter in the footer if this file contained a full layout.
+However, if this is a partial, it's more likely the error came from the
+file *including* this partial (e.g., index.njk or about.njk)
+that then used the filter.
+Assuming this file is solely for the movie card generation and the "Loading latest movies" text.
+The `htmlDateString` filter error was traced to this file or `about.njk` which might include this.
+Given your feedback, the `_includes/base.njk` provided earlier was actually
+the content of `_includes/movie-list.njk` or a similar layout.
+I'm reconstructing this based on that.
+#}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
-    {# *** CRITICAL: Tailwind CSS CDN *** #}
-    <script src="https://cdn.tailwindcss.com"></script>
-    {# *** CRITICAL: Your custom style.css with url filter *** #}
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-    <link rel="icon" href="{{ '/favicon.ico' | url }}" type="image/x-icon">
-
-    {# Your OG/Twitter Meta Tags #}
-    <meta property="og:title" content="{{ title or 'The Movie Hub' }}">
-    <meta property="og:description" content="Explore cinematic details for classic films on The Movie Hub.">
-    <meta property="og:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg">
-    <meta property="og:url" content="https://owlsman21.github.io/TheMovieHub{{ page.url }}">
-    <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ title or 'The Movie Hub' }}">
-    <meta name="twitter:description" content="Explore cinematic details for classic films on The Movie Hub.">
-    <meta name="twitter:image" content="https://owlsman21.github.io/TheMovieHub/images/Moviehub.jpg">
-
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T6NGSBTJ');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B3173KW1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4B3173KW1W');
-    </script>
-    {# Define eleventyPathPrefix for JavaScript to use if needed for assets like posters #}
-    <script>
-        window.eleventyPathPrefix = "{{ '/' | url }}";
-    </script>
-</head>
-<body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6NGSBTJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-    <header class="main-header">
-        <div class="container">
-            <h1 class="site-logo"><a href="{{ '/' | url }}">The Movie Hub</a></h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="{{ '/' | url }}">Home</a></li>
-                    <li><a href="{{ '/movies.html' | url }}"{% if page.url == '/movies.html' %} class="active"{% endif %}>Movies</a></li>
-                    <li><a href="{{ '/about.html' | url }}">About</a></li>
-                    <li><a href="{{ '/contact.html' | url }}">Contact</a></li>
-                </ul>
-            </nav>
+<div class="container"> {# Assuming this partial still needs a container around the movie list #}
+    <section class="latest-movies-section">
+        <h2 class="section-title">Latest Movies</h2>
+        <div id="latest-movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <p class="col-span-full text-center">Loading latest movies...</p>
         </div>
-    </header>
+    </section>
 
-    {# *** This is the MAIN content block where individual page content is inserted *** #}
-    <main class="main-content">
-        {# The 'container' div can be here in the layout, or in each content page #}
-        <div class="container">
-            {{ content | safe }}
-        </div>
-    </main>
-
+    {# This section below is from the previous file content you provided that used the `htmlDateString` filter incorrectly.
+       If this `movie-list.njk` is meant to be a full page layout, then the footer belongs here.
+       If it's *only* a partial for the movie grid, this footer content should be in `index.njk` (or a `base.njk` layout).
+       Given the error, it seems this template *was* acting as a main layout or included code with a footer.
+       I'm putting it here as you provided the code for it previously.
+    #}
     <footer class="main-footer">
         <div class="container">
-            {# FIX: Use a method that works for getting the current year #}
-            <p>&copy; {{ 'now' | htmlDateString | slice(0, 4) }} The Movie Hub</p>
+            {# FIX: Pass a real Date object to htmlDateString filter #}
+            <p>&copy; {{ now | htmlDateString | slice(0, 4) }} The Movie Hub</p>
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
             </div>
         </div>
     </footer>
+</div>
 
-    {# *** CRITICAL FIX: Include your JavaScript files here, at the end of the body, using url filter with leading slash for correct pathPrefix handling *** #}
-    <script src="{{ '/movies.js' | url }}"></script>
-    <script src="{{ '/script.js' | url }}"></script>
-</body>
-</html>
+{# IMPORTANT: Script tags belong at the end of the <body> in your main HTML file (like index.njk), not typically in an _include unless that include *is* the entire body.
+   However, if this `_includes/movie-list.njk` is what `index.njk` is largely built upon, they might have been here.
+   I'm including them here for completeness based on the code you've been working with, but confirm they are loading correctly.
+   If `index.njk` also has these, you might have duplicates. The best practice is to have them once in your main layout file (`index.njk` or a common `base.njk`).
+#}
+<script src="{{ '/movies.js' | url }}"></script>
+<script src="{{ '/script.js' | url }}"></script>
