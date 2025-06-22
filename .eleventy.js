@@ -1,4 +1,4 @@
-const { DateTime } = require("luxon"); // Import Luxon - This is correct and at the top
+const { DateTime } = require("luxon"); // Import Luxon
 
 module.exports = function(eleventyConfig) {
 
@@ -18,8 +18,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
-  eleventyConfig.addPassthroughCopy("script.js"); // ADD THIS LINE
-  eleventyConfig.addPassthroughCopy("movies.js"); // ADD THIS LINE
+  eleventyConfig.addPassthroughCopy("script.js"); // Make sure this is here
+  eleventyConfig.addPassthroughCopy("movies.js"); // Make sure this is here
 
   const isProd = process.env.NODE_ENV === "production";
   const pathPrefix = isProd ? "/TheMovieHub/" : "/";
