@@ -30,10 +30,23 @@ jobs:
           node-version: '20' # Use a recent LTS version
       - name: Install dependencies
         run: npm ci # Use npm ci for clean install on CI
+
+      - name: List files before Eleventy build
+        run: ls -la # Debugging: show current directory contents
+
       - name: Build with Eleventy
         run: npm run build
+        # Add a conditional to this step to exit if the build fails
+        # This makes sure we don't proceed if _site isn't created.
+        # || exit 1
+
+      - name: List files after Eleventy build
+        run: ls -la # Debugging: show current directory contents AFTER build
+
       - name: Add .nojekyll file to _site
-        run: touch ./_site/.nojekyll # Ensure _site exists before this!
+        run: touch ./_site/.nojekyll
+        # This step will only succeed if ./_site was created by Eleventy build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
